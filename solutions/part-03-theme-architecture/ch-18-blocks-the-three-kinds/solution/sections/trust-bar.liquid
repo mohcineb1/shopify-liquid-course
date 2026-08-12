@@ -1,0 +1,37 @@
+{%- comment -%} sections/trust-bar.liquid {%- endcomment -%}
+{{ 'trust-bar.css' | asset_url | stylesheet_tag }}
+
+<div class="trust-bar" style="--trust-bar-gap: {{ section.settings.gap }}px;">
+  {% content_for 'block', type: '_bar-heading', id: 'bar-heading' %}
+
+  <ul class="trust-bar__list" role="list">
+    {% content_for 'blocks' %}
+  </ul>
+</div>
+
+{% schema %}
+{
+  "name": "Trust bar",
+  "tag": "section",
+  "class": "section-trust-bar",
+  "max_blocks": 9,
+  "settings": [
+    { "type": "range", "id": "gap", "label": "Gap", "min": 8, "max": 64, "step": 4, "unit": "px", "default": 32 }
+  ],
+  "blocks": [
+    { "type": "@theme" },
+    { "type": "@app" },
+    { "type": "_divider" }
+  ],
+  "presets": [
+    {
+      "name": "Trust bar",
+      "blocks": [
+        { "type": "icon-item" },
+        { "type": "_divider" },
+        { "type": "icon-item" }
+      ]
+    }
+  ]
+}
+{% endschema %}

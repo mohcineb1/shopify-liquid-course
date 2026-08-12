@@ -1,0 +1,20 @@
+# revealed solutions — deliberate, temporary, never committed
+**/SOLUTION-REVEALED.md
+**/solution-revealed/
+
+# generated book artifacts
+book/
+
+# shopify cli / theme dev
+playground/.shopify/
+playground/node_modules/
+.shopify/
+node_modules/
+
+# os / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.log

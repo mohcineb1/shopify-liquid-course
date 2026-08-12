@@ -1,0 +1,37 @@
+{%- comment -%} sections/product-highlights.liquid {%- endcomment -%}
+{{ 'trust-bar.css' | asset_url | stylesheet_tag }}
+
+<div class="trust-bar trust-bar--compact" style="--trust-bar-gap: {{ section.settings.gap }}px;">
+  {% content_for 'block', type: '_bar-heading', id: 'highlights-heading' %}
+
+  <ul class="trust-bar__list" role="list">
+    {% content_for 'blocks' %}
+  </ul>
+</div>
+
+{% schema %}
+{
+  "name": "Product highlights",
+  "tag": "section",
+  "class": "section-product-highlights",
+  "max_blocks": 9,
+  "settings": [
+    { "type": "range", "id": "gap", "label": "Gap", "min": 8, "max": 64, "step": 4, "unit": "px", "default": 32 }
+  ],
+  "blocks": [
+    { "type": "@theme" },
+    { "type": "@app" },
+    { "type": "_divider" }
+  ],
+  "presets": [
+    {
+      "name": "Product highlights",
+      "blocks": [
+        { "type": "icon-item" },
+        { "type": "_divider" },
+        { "type": "icon-item" }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,21 @@
+{%- comment -%} blocks/icon-item.liquid {%- endcomment -%}
+<li class="trust-bar__item" {{ block.shopify_attributes }}>
+  {%- if block.settings.icon != blank -%}
+    {{ block.settings.icon | image_url: width: 96 | image_tag: loading: 'lazy', alt: '', class: 'trust-bar__icon' }}
+  {%- endif -%}
+  <p class="trust-bar__title">{{ block.settings.title }}</p>
+  <div class="trust-bar__text">{{ block.settings.text }}</div>
+</li>
+
+{% schema %}
+{
+  "name": "Icon item",
+  "tag": null,
+  "settings": [
+    { "type": "image_picker", "id": "icon", "label": "Icon" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Free returns" },
+    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>Within 30 days, no questions asked.</p>" }
+  ],
+  "presets": [{ "name": "Icon item" }]
+}
+{% endschema %}

@@ -1,0 +1,704 @@
+# Shopify Liquid Programming — Complete Course Index
+
+**Subtitle:** Server-Rendered Storefronts for Frontend Engineers
+**Audience:** Working frontend developers (HTML/CSS/JS/React already fluent)
+**Format:** PDF course book — 14 parts · 72 chapters · 40+ labs · 10 appendices
+**Estimated length:** 520–620 pages
+**Platform baseline:** Liquid Storefronts era — theme blocks, `content_for`, section groups, Horizon-generation themes (current as of August 2026)
+
+---
+
+## FRONT MATTER
+
+**F.1 — How to Read This Book**
+- Three reading paths: linear, reference-only, migration-driven
+- Chapter anatomy: concept → mental model → code → gotchas → lab
+- Code conventions, file-path notation, version flags
+
+**F.2 — What This Course Assumes You Already Know**
+- Semantic HTML, modern CSS, ES2020+, DOM APIs, HTTP basics
+- Git, npm, terminal, JSON
+- What we will **not** re-teach: loops as a concept, CSS layout, JS fundamentals, "what is an API"
+
+**F.3 — What This Course Deliberately Excludes**
+- Hydrogen/React storefronts (referenced, not taught)
+- App development in Remix (only where it touches themes)
+- Shopify admin operations and merchandising
+
+**F.4 — Environment Setup Checklist**
+- Partner account, development store, store preview data
+- Shopify CLI (current major), Node baseline, auth flow
+- Editor setup: Liquid language server, Theme Check, syntax highlighting, formatting
+- Cloning a reference theme (Dawn and Horizon) for side-by-side study
+
+**F.5 — Version Note & How to Keep This Book Current**
+- Which Liquid features are stable, which are developer preview
+- Reading the Shopify developer changelog as a discipline
+- Deprecation map at time of writing
+
+---
+
+## PART I — THE MENTAL MODEL
+*≈ 45 pages · 3 labs · The part most frontend developers skip and then pay for*
+
+### Chapter 1 — Where Liquid Actually Sits
+1.1 Liquid is not a frontend framework — it's a sandboxed server-side template language
+1.2 The request lifecycle: request → route resolution → template → layout → CDN edge
+1.3 What runs where: Liquid (server, per render) vs JS (browser) vs Functions (Wasm) vs Storefront API (headless)
+1.4 Why there is no `fetch`, no `await`, no imports, no npm at render time
+1.5 The sandbox as a feature: multi-tenancy, upgrade safety, and why Shopify locks you down
+1.6 Liquid Storefronts vs Hydrogen/Oxygen — the honest decision matrix
+
+### Chapter 2 — Translating What You Already Know
+2.1 Liquid vs JSX: no expressions, no callbacks, no component state
+2.2 Liquid vs Handlebars/Nunjucks/Twig/ISML: the closest analogues and where they mislead you
+2.3 Liquid vs SSR frameworks: no hydration story, no build step, no bundler by default
+2.4 The unlearning list: patterns that are idiomatic in React and harmful in Liquid
+2.5 Where "component thinking" *does* map: sections, blocks, snippets
+
+### Chapter 3 — The Shopify Object Graph
+3.1 The data you are handed vs the data you must request
+3.2 Global objects, template-scoped objects, and scoped objects
+3.3 Drops: lazy proxies, not plain objects — and why that matters for performance
+3.4 A visual map of the graph you will use daily
+**Lab 1:** Dump and explore the object graph on every template type
+
+---
+
+## PART II — THE LIQUID LANGUAGE, PROPERLY
+*≈ 85 pages · 8 labs · The definitive language reference of this course*
+
+### Chapter 4 — Syntax Fundamentals
+4.1 Output markup `{{ }}` vs tag markup `{% %}`
+4.2 Whitespace control (`{%-`, `-%}`) and why your HTML output is full of blank lines
+4.3 Comments: inline, block, and the `# ` shorthand
+4.4 `{% liquid %}` — multi-line tag syntax and when to prefer it
+4.5 `{% raw %}` and escaping Liquid inside JS templates
+4.6 `{% doc %}` — documenting snippets and blocks for humans, editors, and AI tooling
+
+### Chapter 5 — Types, Truthiness & Nil
+5.1 The type list: string, number, boolean, nil, array, object/drop
+5.2 Truthiness rules that differ from JavaScript (empty string is truthy)
+5.3 `nil` and `EmptyDrop`: the two flavours of "nothing"
+5.4 `blank` vs `empty` — the distinction that causes real bugs
+5.5 Type coercion in comparisons and filters
+5.6 Silent failure: why Liquid prints nothing instead of throwing
+
+### Chapter 6 — Variables & Scope
+6.1 `assign` and `capture` — value vs rendered-string semantics
+6.2 `increment` / `decrement` and their separate namespace
+6.3 Scope boundaries: template, layout, section, block, snippet, for-loop
+6.4 The `render` isolation rule and how it kills the "global variable" habit
+6.5 Reassignment, shadowing, and mutation traps
+6.6 Naming conventions for a codebase that scales
+
+### Chapter 7 — Control Flow
+7.1 `if` / `elsif` / `else` / `unless`
+7.2 `case` / `when` with multiple values
+7.3 Operators: `==`, `!=`, `>`, `<`, `>=`, `<=`, `or`, `and`, `contains`
+7.4 **No parentheses**: operator precedence is right-to-left — the classic senior-dev trap
+7.5 Emulating complex boolean logic with `assign` and `capture`
+7.6 Ternary-style patterns and the `default` filter as a fallback operator
+
+### Chapter 8 — Iteration
+8.1 `for` and its parameters: `limit`, `offset`, `reversed`, `range`
+8.2 The `forloop` object in full: `index`, `index0`, `rindex`, `first`, `last`, `length`, `parentloop`
+8.3 `break`, `continue`, `else`
+8.4 `cycle` for alternating output
+8.5 `tablerow` and its legitimate uses
+8.6 Nested loops and the cost curve
+8.7 Iterating over `all_products`, collections, and other expensive sources
+
+### Chapter 9 — Filters: The Core Set
+9.1 How filters chain, and why order changes output
+9.2 String filters: case, trim, truncate, split, replace, append/prepend, slice, strip_*, handleize/handle
+9.3 Escaping and safety: `escape`, `escape_once`, `strip_html`, `url_encode`, `json`
+9.4 Number and math filters: `plus`, `minus`, `times`, `divided_by`, `modulo`, `round`, `ceil`, `floor`, `abs`, `at_least`, `at_most`
+9.5 Integer division gotchas and money math correctness
+9.6 Array filters: `map`, `where`, `find`, `find_index`, `has`, `reject`, `sort`, `sort_natural`, `uniq`, `compact`, `concat`, `join`, `first`, `last`, `size`, `sum`, `reverse`
+9.7 Date filters and strftime formatting, timezones, and locale-aware dates
+9.8 `default`, `json`, `inspect`, `raw`
+
+### Chapter 10 — Filters: The Shopify-Specific Set
+10.1 Money filters: `money`, `money_with_currency`, `money_without_trailing_zeros`, `money_without_currency`
+10.2 URL filters: `asset_url`, `asset_img_url`, `file_url`, `file_img_url`, `shopify_asset_url`, `global_asset_url`, `link_to`, `within`
+10.3 Media filters: `image_url`, `image_tag`, `external_video_url`, `external_video_tag`, `video_tag`, `model_viewer_tag`, `media_tag`, `article_img_url`, `collection_img_url`
+10.4 HTML filters: `stylesheet_tag`, `script_tag`, `preload_tag`, `img_tag`, `highlight`, `time_tag`, `class_list`
+10.5 Metafield filters: `metafield_tag`, `metafield_text`
+10.6 Localization filters: `t`, `currency_selector`, `translate`
+10.7 Color filters: `color_to_rgb`, `color_to_hsl`, `color_modify`, `color_mix`, `color_lighten`, `color_darken`, `color_saturate`, `color_contrast`, `color_difference`, `brightness_difference`, `color_extract`
+10.8 Font filters: `font_face`, `font_modify`, `font_url`
+10.9 Cart & customer filters: `item_count_for_variant`, `line_items_for`, `payment_type_svg_tag`, `payment_button`, `customer_login_link`
+10.10 Hosted-file and structured-data helpers
+**Lab 2–9:** One filter-category lab each, building a reusable formatting layer
+
+### Chapter 11 — Drops in Depth
+11.1 What a drop really is under the hood
+11.2 Lazy evaluation: accessing a property can trigger a query
+11.3 Which property accesses are cheap and which are expensive
+11.4 Iterating drops safely
+11.5 Serialising drops with `| json` for the browser — and what leaks
+
+### Chapter 12 — Errors, Debugging & Observability
+12.1 Liquid errors: syntax vs render vs silent nothing
+12.2 `{{ object | json }}` and pretty-printing techniques
+12.3 URL debugging parameters: `?view=`, `?section_id=`, `?preview_theme_id=`, `?_fd=0`
+12.4 Theme editor console and inspector workflows
+12.5 Building a `debug.liquid` snippet with an environment guard
+12.6 Reading the Shopify Theme Inspector flame profile
+
+---
+
+## PART III — THEME ARCHITECTURE
+*≈ 95 pages · 9 labs · The heart of the course*
+
+### Chapter 13 — Anatomy of a Theme
+13.1 The directory contract: `layout/`, `templates/`, `sections/`, `blocks/`, `snippets/`, `config/`, `locales/`, `assets/`
+13.2 Files Shopify treats as special vs files you invent
+13.3 Platform limits: theme upload size, individual file size, file counts, block and section ceilings
+13.4 What a theme is *not* allowed to do
+
+### Chapter 14 — Layouts
+14.1 `theme.liquid` — the single frame around everything
+14.2 `content_for_header` — what Shopify injects and why you must not move it
+14.3 `content_for_layout` and the render slot
+14.4 Alternate layouts and the `{% layout %}` tag
+14.5 `password.liquid` and `gift_card.liquid`
+14.6 Historical note: `checkout.liquid` and why checkout is no longer yours
+
+### Chapter 15 — Templates
+15.1 The full template type list: index, product, collection, list-collections, page, blog, article, cart, search, customers/*, 404, password, gift_card, metaobject
+15.2 JSON templates vs Liquid templates — capabilities, trade-offs, and when Liquid is still correct
+15.3 Alternate templates and suffix routing
+15.4 Anatomy of a JSON template: `sections`, `order`, `settings`, `blocks`
+15.5 Template-scoped objects and what is available where
+15.6 Merchant-assignable templates and product/collection template suffixes
+
+### Chapter 16 — Section Groups
+16.1 What a section group solves
+16.2 `header-group.json`, `footer-group.json`, `aside-group.json`
+16.3 Wiring groups into `theme.liquid` with `{% sections %}`
+16.4 Group-level vs template-level composition
+16.5 Overlay/aside groups: drawers, popups, announcement layers
+
+### Chapter 17 — Sections
+17.1 Section file anatomy: markup + `{% schema %}` + `{% stylesheet %}` + `{% javascript %}`
+17.2 The `section` object: `id`, `settings`, `blocks`, `index`, `location`
+17.3 Schema attributes: `name`, `tag`, `class`, `limit`, `settings`, `blocks`, `max_blocks`, `presets`, `default`, `locales`, `enabled_on`, `disabled_on`
+17.4 Static sections via `{% section %}` vs dynamic sections in JSON templates
+17.5 The 25-section / 50-block ceiling and how to design within it
+17.6 `{% stylesheet %}` and `{% javascript %}` — how Shopify aggregates them and the real performance cost
+17.7 Section naming, `t:` translated schema strings, and merchant-facing copy
+
+### Chapter 18 — Blocks: The Three Kinds
+18.1 Section blocks — local, simple, limited to their parent
+18.2 Theme blocks — files in `blocks/`, reusable across every section
+18.3 App blocks — merchant-installed, third-party
+18.4 The comparison table: reusability, nesting, schema rules, limits
+18.5 When each kind is the right answer
+
+### Chapter 19 — Theme Blocks in Depth
+19.1 File conventions, the underscore prefix, and private blocks
+19.2 Block schema: settings, `presets`, `tag`, `class`, and the rules that differ from sections
+19.3 Nesting: children, up to 8 levels deep, and how deep is too deep
+19.4 The `@theme` and `@app` wildcards — accepting any block without hardcoding
+19.5 Static theme blocks: fixed position, hideable but not deletable
+19.6 The 300-theme-block ceiling and unreferenced-file accounting
+19.7 `block.shopify_attributes` and the theme editor contract
+
+### Chapter 20 — `content_for`
+20.1 `{% content_for 'blocks' %}` — the child render slot
+20.2 `{% content_for 'block', type: '...', id: '...' %}` — rendering one specific static block
+20.3 Ordering semantics and the JSON source of truth
+20.4 Wrapping children: the `capture` + `render 'group'` pattern
+20.5 Building a genuinely composable section from scratch
+
+### Chapter 21 — Snippets
+21.1 `{% render %}` — the isolated call
+21.2 `{% include %}` — deprecated, and the exact reasons why
+21.3 Passing parameters, `with`, `for`, and aliasing
+21.4 Designing a snippet API: required params, defaults, guard clauses
+21.5 Recursion with `{% render %}` (menus, nested navigation)
+21.6 Documenting snippets with `{% doc %}` for editor autocomplete
+21.7 Snippet vs block vs section — the decision tree
+
+### Chapter 22 — Settings Architecture
+22.1 `settings_schema.json` structure and ordering
+22.2 Every input setting type: text, textarea, richtext, inline_richtext, html, checkbox, radio, select, range, number, color, color_background, color_scheme, color_scheme_group, font_picker, image_picker, video, video_url, url, link_list, collection, collection_list, product, product_list, blog, page, article, metaobject, metaobject_list, text_alignment, style.layout_panel, liquid
+22.3 Sidebar setting types: header, paragraph, and visual grouping
+22.4 Conditional settings and `visible_if`
+22.5 `settings_data.json`, presets, and the merchant-owned state problem
+22.6 Color schemes and design tokens as a system
+22.7 Designing settings that don't overwhelm the merchant
+**Lab 10:** Build a token-driven theme settings layer
+
+### Chapter 23 — The Theme Editor Contract
+23.1 How the editor mounts, targets, and reorders your markup
+23.2 `shopify_attributes` on sections and blocks — non-negotiable
+23.3 Theme editor JavaScript events: `shopify:section:load|unload|select|deselect|reorder`, `shopify:block:select|deselect`
+23.4 Writing sections that survive live reordering
+23.5 Dynamic sources: connecting settings to metafields
+23.6 Onboarding defaults and the first-install experience
+
+### Chapter 24 — AI-Generated Blocks
+24.1 What merchants can now generate in the editor, and the constraints it puts on your schema
+24.2 Making a section eligible: `@theme` + `@app`, presets, `content_for 'blocks'`, no `templates` attribute
+24.3 The `_blocks.liquid` wrapper section and overriding it
+24.4 Keeping generated output visually consistent with your design system
+
+### Chapter 25 — On the Horizon: `{% block %}` and `{% partial %}`
+25.1 The July '26 developer preview and what it changes
+25.2 `{% block %}` — rendering a theme block directly from a template
+25.3 `{% partial %}` — named server-rendered regions refreshed without a full reload
+25.4 Composing whole pages in Liquid: fewer files, one readable source
+25.5 What this means for the future of section groups and JSON templates
+25.6 Preview-track discipline: how to experiment without shipping instability
+
+---
+
+## PART IV — DATA & OBJECTS
+*≈ 90 pages · 7 labs · Reference-grade coverage*
+
+### Chapter 26 — Global Objects
+26.1 `shop` — every property worth knowing
+26.2 `request` — `page_type`, `path`, `host`, `origin`, `design_mode`, `visual_preview_mode`, `locale`
+26.3 `routes` — never hardcode a URL again
+26.4 `settings`, `template`, `canonical_url`, `handle`, `current_page`, `current_tags`
+26.5 `localization`, `country`, `language`, `market`
+26.6 `linklists` and the `link` object — navigation trees
+
+### Chapter 27 — Products
+27.1 The `product` object in full
+27.2 Options and `options_with_values`, option ordering, swatches
+27.3 `selected_variant`, `selected_or_first_available_variant`, and URL variant state
+27.4 Price fields: `price`, `compare_at_price`, `price_min`/`price_max`, `price_varies`
+27.5 Availability, inventory policy, inventory quantity, `quantity_rule`, `quantity_price_breaks`
+27.6 Media: images, videos, 3D models, external video, media ordering, featured media
+27.7 Selling plans and subscriptions in the theme layer
+27.8 Product metafields and structured product data
+27.9 Tags, type, vendor, collections, and template suffix
+
+### Chapter 28 — Variants
+28.1 The `variant` object in full
+28.2 Variant matching, combined listings, unavailable combinations
+28.3 Variant-aware rendering without a JS framework
+28.4 Serialising variant data to the browser safely
+**Lab 11:** Build a fully accessible variant picker with zero dependencies
+
+### Chapter 29 — Collections, Filtering & Pagination
+29.1 The `collection` object, sorting, `sort_by`, `default_sort_by`
+29.2 Storefront filtering: the `filter`, `filter_value`, `filter_value_display` objects
+29.3 Price-range filters, boolean filters, list filters, swatch filters
+29.4 Building filter UI that degrades to plain links
+29.5 `{% paginate %}`, the `paginate` object, page sizes, and limits
+29.6 The `all_products` object and its hard cap
+29.7 Facet performance and render cost
+
+### Chapter 30 — Cart & Line Items
+30.1 The `cart` object: items, totals, discounts, attributes, note, currency
+30.2 The `line_item` object in full
+30.3 Line item properties: hidden properties, file uploads, personalization
+30.4 Discount allocations, automatic discounts, and displaying savings correctly
+30.5 Cart-level vs line-level attributes
+30.6 Free gifts, bundles, and the limits of theme-side cart logic
+
+### Chapter 31 — Customers & Accounts
+31.1 The `customer` object, `customer.orders`, addresses, tags
+31.2 Classic customer accounts vs new customer accounts — what still lives in your theme
+31.3 The `customers/*` templates and their objects
+31.4 Order, order line items, fulfillment, transaction objects
+31.5 Gating content by customer tag (and why it isn't security)
+
+### Chapter 32 — Content Objects
+32.1 `blog`, `article`, `comment`, `page`
+32.2 Rich text output, `metafield_tag`, and sanitising merchant HTML
+32.3 Blog tagging, filtering, and archive patterns
+32.4 The `search` object, result types, and search result templates
+32.5 Predictive search resources and result shaping
+
+### Chapter 33 — Metafields
+33.1 Definitions, namespaces, keys, and ownership types
+33.2 Every metafield type: single-line text, multi-line, rich text, integer, decimal, boolean, date, date_time, JSON, URL, color, rating, dimension, volume, weight, money, and every reference type
+33.3 List-type metafields and iteration
+33.4 Reference metafields: product, variant, collection, page, file, metaobject
+33.5 `metafield_tag` vs manual rendering vs `| metafield_text`
+33.6 Metafields in section settings via dynamic sources
+33.7 Designing a metafield schema a merchant can actually maintain
+**Lab 12:** Build a spec-table component driven entirely by metafields
+
+### Chapter 34 — Metaobjects
+34.1 Metaobject definitions and entries
+34.2 Rendering metaobjects in Liquid
+34.3 Metaobject templates and dedicated routes
+34.4 Modelling real content: size guides, ingredients, store locations, brand pages, FAQs
+34.5 Metaobjects vs pages vs metafields — the modelling decision
+34.6 Referencing metaobjects from settings
+
+---
+
+## PART V — FORMS & NATIVE INTERACTIONS
+*≈ 40 pages · 4 labs*
+
+### Chapter 35 — The `{% form %}` Tag
+35.1 How `form` generates action, method, and hidden auth fields
+35.2 The `form` object: `errors`, `posted_successfully?`, and returned values
+35.3 Error handling, `form.errors.translated_fields`, and accessible error summaries
+35.4 Passing extra attributes, IDs, and classes
+
+### Chapter 36 — Every Form Type
+36.1 `product` — add to cart, quantity, properties, selling plans
+36.2 `cart` — update, note, attributes, checkout
+36.3 `customer_login`, `create_customer`, `recover_customer_password`, `reset_customer_password`, `activate_customer_password`
+36.4 `customer_address` — country/province selectors
+36.5 `contact` and `customer` (newsletter)
+36.6 `new_comment`
+36.7 `localization` — country and language selectors
+36.8 `guest_login`, `storefront_password`
+36.9 Gift card recipient forms
+**Lab 13:** A complete account area, no JS required
+
+---
+
+## PART VI — INTERACTIVITY WITHOUT A FRAMEWORK
+*≈ 60 pages · 5 labs · Where your JS background finally pays off*
+
+### Chapter 37 — The Section Rendering API
+37.1 `?sections=` and `?section_id=` — server-rendered partial updates
+37.2 Re-rendering filters, cart drawers, and pagination
+37.3 Response shape, parsing, and DOM swapping strategies
+37.4 Race conditions, request cancellation, and stale responses
+37.5 Cost model: what a section re-render actually costs you
+
+### Chapter 38 — The Cart AJAX API
+38.1 Every endpoint: `/cart.js`, `/cart/add.js`, `/cart/change.js`, `/cart/update.js`, `/cart/clear.js`
+38.2 Sections parameter on cart endpoints — the combined pattern
+38.3 Optimistic UI and rollback
+38.4 Error shapes, sold-out handling, quantity rules
+38.5 Cart state as a pub/sub layer across components
+
+### Chapter 39 — Search & Suggest APIs
+39.1 The Predictive Search API and its resource types
+39.2 Rendering suggestions with a Liquid section instead of client templates
+39.3 Debouncing, keyboard navigation, ARIA combobox pattern
+
+### Chapter 40 — Web Components in a Liquid Theme
+40.1 Why custom elements are the native fit for section-based markup
+40.2 Component lifecycle vs theme editor events
+40.3 Shadow DOM: what it breaks (apps, global CSS, third-party scripts) and when to avoid it
+40.4 Attribute-driven configuration from Liquid settings
+40.5 A component base class for a whole theme
+40.6 Islands, progressive enhancement, and no-JS fallbacks
+**Lab 14–17:** Cart drawer, quick add, facet panel, media gallery — all as web components
+
+### Chapter 41 — When to Reach for a Framework
+41.1 Alpine, htmx, Stimulus, Preact — honest trade-offs on a Liquid storefront
+41.2 The bundle-cost argument in a conversion-rate context
+41.3 Hard signals that you should be building headless instead
+
+---
+
+## PART VII — ASSETS, MEDIA & PERFORMANCE
+*≈ 65 pages · 5 labs*
+
+### Chapter 42 — Assets & the CDN
+42.1 `assets/` and how Shopify serves and versions files
+42.2 `asset_url` vs `file_url` vs `shopify_asset_url` vs `global_asset_url`
+42.3 What you cannot do: no subdirectories, no build output conventions
+42.4 Cache behaviour and busting
+
+### Chapter 43 — Images & Media
+43.1 `image_url` parameters: width, height, crop, format, pad_color
+43.2 `image_tag`: `widths`, `sizes`, `loading`, `fetchpriority`, `preload`, `alt`, `class`
+43.3 Responsive images done correctly — the srcset arithmetic
+43.4 Aspect ratio, CLS prevention, and placeholder strategies
+43.5 Focal points and art direction
+43.6 Video, external video, and 3D model rendering
+43.7 SVG handling and inlining strategies
+
+### Chapter 44 — CSS Strategy
+44.1 Single bundle vs per-section stylesheets vs `{% stylesheet %}`
+44.2 Critical CSS in a theme without a build step
+44.3 Using a build step anyway: SCSS/PostCSS/Tailwind pipelines that ship to `assets/`
+44.4 Design tokens from theme settings → CSS custom properties
+44.5 Scoping styles to `section.id` without leaking
+
+### Chapter 45 — JavaScript Strategy
+45.1 Loading: `defer`, `async`, `type="module"`, import maps
+45.2 One bundle vs per-component modules
+45.3 Passing data from Liquid to JS: `| json`, data attributes, script type=application/json
+45.4 Third-party scripts, app scripts, and the tag-bloat problem
+45.5 Build pipelines: Vite/esbuild into `assets/`, source maps, and the CLI watch loop
+
+### Chapter 46 — Fonts & Typography
+46.1 `font_picker`, `font_face`, `font_modify` — Shopify-hosted fonts
+46.2 Self-hosted fonts, preloading, `font-display`, and FOUT control
+46.3 Variable fonts in a settings-driven theme
+
+### Chapter 47 — Performance Engineering
+47.1 Core Web Vitals on Shopify: what you control and what you don't
+47.2 The Shopify Web Performance dashboard and Lighthouse in the theme editor
+47.3 Server-side render cost: expensive filters, nested loops, oversized loops, `all_products`
+47.4 The Theme Inspector profile: reading and acting on it
+47.5 Reducing DOM weight in section-heavy templates
+47.6 A performance budget you can enforce in CI
+**Lab 18:** Take a bloated theme from 40 to 85+ and document every gain
+
+---
+
+## PART VIII — INTERNATIONALIZATION & MARKETS
+*≈ 35 pages · 3 labs*
+
+### Chapter 48 — Translations
+48.1 `locales/*.json` and `locales/*.schema.json`
+48.2 The `t` filter, interpolation, pluralization rules
+48.3 Translating schema strings with `t:` keys
+48.4 Missing-translation behaviour and fallbacks
+48.5 Keeping a translation catalogue maintainable at scale
+
+### Chapter 49 — Markets, Currency & Regions
+49.1 The `localization` object and market-aware rendering
+49.2 Country and language selectors as real forms
+49.3 Multi-currency display, rounding, and price presentation rules
+49.4 Region-specific content, catalogs, and conditional sections
+49.5 hreflang, canonical, and international SEO from Liquid
+
+---
+
+## PART IX — QUALITY, TOOLING & WORKFLOW
+*≈ 60 pages · 5 labs*
+
+### Chapter 50 — The Shopify CLI
+50.1 `theme dev`, `pull`, `push`, `publish`, `list`, `package`
+50.2 Hot reload: what it reloads and what it doesn't
+50.3 Theme environments and `shopify.theme.toml`
+50.4 Development themes, unpublished themes, and preview links
+50.5 Working against real store data safely
+
+### Chapter 51 — Theme Check
+51.1 Running Theme Check locally and in the editor
+51.2 The full check catalogue: correctness, performance, deprecation, accessibility
+51.3 `.theme-check.yml` configuration and severity tuning
+51.4 Writing a custom check for team conventions
+51.5 Theme Check as a merge gate
+
+### Chapter 52 — Git & Environments
+52.1 The GitHub integration: branch → theme mapping
+52.2 The `settings_data.json` conflict problem and how teams solve it
+52.3 JSON template drift between staging and production
+52.4 Branching strategy for a live storefront
+52.5 Release, rollback, and the "merchant edited production" reality
+
+### Chapter 53 — Code Organization at Scale
+53.1 A naming convention for sections, blocks, snippets, and settings
+53.2 Building an internal component library inside a theme
+53.3 Shared utility snippets and a theme-level "standard library"
+53.4 Documentation that survives handoff
+53.5 Multi-store / multi-brand theme strategies
+
+### Chapter 54 — Testing
+54.1 What is testable in a Liquid theme and what isn't
+54.2 Visual regression testing across templates and settings presets
+54.3 Lighthouse CI and performance regression gates
+54.4 End-to-end smoke tests: add to cart, checkout entry, account flows
+54.5 Testing against edge data: no images, long titles, 100 variants, empty collections
+
+### Chapter 55 — AI-Assisted Theme Development
+55.1 The Shopify Dev MCP server: current docs and schemas instead of stale model memory
+55.2 Agent workflows: generating sections, migrating Dawn markup, running Theme Check fix loops
+55.3 `{% doc %}` and schema clarity as machine-readable context
+55.4 Guardrails: what you must review before it ships
+55.5 Why Shopify's newer Liquid features are being designed for agent readability
+
+---
+
+## PART X — APPS, EXTENSIONS & THE EDGE OF LIQUID
+*≈ 45 pages · 3 labs*
+
+### Chapter 56 — Theme App Extensions
+56.1 App blocks vs app embed blocks
+56.2 How merchants add app content without touching your code
+56.3 Designing sections that accept `@app` blocks gracefully
+56.4 Styling and containing third-party markup
+
+### Chapter 57 — Script Tags, Pixels & Tracking
+57.1 The script-tag sunset and what replaced it
+57.2 Web Pixels: custom pixels, sandboxing, and the events API
+57.3 Consent Tracking API and privacy-compliant loading
+57.4 Migrating legacy analytics off theme code
+
+### Chapter 58 — Checkout Is No Longer Yours
+58.1 The `checkout.liquid` timeline: in-checkout steps (Aug 2024), Thank You/Order Status (Aug 2025), non-Plus script tags (Aug 2026)
+58.2 Checkout UI Extensions: extension points, capabilities, plan requirements
+58.3 Shopify Functions: discounts, delivery, payment, cart validation
+58.4 Shopify Scripts retirement and the Functions migration path
+58.5 What still belongs in your theme: cart page, cart drawer, pre-checkout logic
+58.6 Order status and post-purchase surfaces today
+
+### Chapter 59 — Customer Accounts Extensibility
+59.1 New customer accounts vs classic — the architectural difference
+59.2 What you can and cannot theme
+59.3 Extension points and B2B considerations
+
+### Chapter 60 — Where Liquid Ends
+60.1 The Storefront API and Ajax API compared
+60.2 Hybrid patterns: Liquid shell + API-driven islands
+60.3 Headless with Hydrogen/Oxygen — the migration decision framework
+60.4 Cost, team, and maintenance realities
+
+---
+
+## PART XI — ACCESSIBILITY, SEO & TRUST
+*≈ 40 pages · 3 labs*
+
+### Chapter 61 — Accessible Liquid
+61.1 Semantic output from generated markup
+61.2 Focus management across section re-renders and drawers
+61.3 Accessible variant pickers, facets, carousels, modals, and announcements
+61.4 Merchant-authored content and the accessibility you cannot control
+61.5 Auditing a theme: automated checks plus manual keyboard passes
+
+### Chapter 62 — SEO from the Template Layer
+62.1 Title, description, and Open Graph patterns
+62.2 JSON-LD structured data: Product, Offer, BreadcrumbList, Organization, Article, FAQ
+62.3 Canonical URLs, pagination, and filtered-collection indexing
+62.4 `robots.liquid` and sitemap control
+62.5 Handling duplicate content from tags, filters, and alternate templates
+
+### Chapter 63 — Privacy, Consent & Compliance
+63.1 Customer Privacy API and consent gating
+63.2 Cookie banners that don't break Core Web Vitals
+63.3 GDPR-adjacent theme responsibilities
+63.4 Accessibility statements and legal page patterns
+
+---
+
+## PART XII — MIGRATION & MODERNIZATION
+*≈ 50 pages · 4 labs*
+
+### Chapter 64 — Vintage → OS 2.0 → Theme Blocks
+64.1 Identifying which generation a theme belongs to
+64.2 Converting Liquid templates to JSON templates
+64.3 Converting section blocks to theme blocks
+64.4 Introducing `content_for` into existing sections
+64.5 Preserving merchant content through the migration
+
+### Chapter 65 — Dawn vs Horizon
+65.1 Two architectures compared file by file
+65.2 Monolithic sections vs composable nested blocks
+65.3 Web components and Shadow DOM in the newer generation
+65.4 What breaks: app integrations, DOM-dependent scripts, global CSS
+65.5 Choosing a base theme for a new client build
+
+### Chapter 66 — Arriving from Another Platform
+66.1 SFCC/SFRA → Shopify: ISML vs Liquid, controllers vs templates, cartridges vs themes, OCAPI/SCAPI vs Ajax/Storefront API
+66.2 Magento/WooCommerce/BigCommerce mental-model mapping
+66.3 What you lose (server-side control) and what you gain (velocity, hosting, upgrade safety)
+66.4 Data modelling translation: custom attributes → metafields/metaobjects
+66.5 Re-platforming checklist for a frontend lead
+
+### Chapter 67 — Auditing an Inherited Theme
+67.1 A 30-point audit checklist
+67.2 Finding dead code, orphaned sections, and unreferenced blocks
+67.3 Deprecation sweep: `include`, script tags, checkout remnants, legacy Scripts
+67.4 Estimating a refactor honestly
+67.5 Writing the audit report a client will pay for
+
+---
+
+## PART XIII — CAPSTONE BUILD
+*≈ 70 pages · 10 labs · One theme, built end to end*
+
+### Chapter 68 — Brief & Architecture
+68.1 The client brief: a multi-market apparel store
+68.2 Information architecture and content modelling
+68.3 Design tokens and the settings contract
+68.4 Component inventory: sections, blocks, snippets
+68.5 Performance and accessibility budgets agreed up front
+
+### Chapter 69 — Building the Foundations
+69.1 Layout, section groups, global settings, color schemes
+69.2 The theme's standard library of snippets
+69.3 Base web component class and event bus
+
+### Chapter 70 — Building the Commerce Surfaces
+70.1 Home page from composable theme blocks
+70.2 Collection page with filtering, sorting, pagination
+70.3 Product page: gallery, variant picker, metafield spec tables, related products
+70.4 Cart drawer and cart page with Section Rendering API
+70.5 Search, account, blog, and content templates
+70.6 Metaobject-driven size guides and store locator
+
+### Chapter 71 — Hardening & Shipping
+71.1 Theme Check clean, Lighthouse targets hit, a11y pass
+71.2 Multi-market and translation pass
+71.3 Merchant onboarding defaults and presets
+71.4 Documentation, handoff, and training
+71.5 Deploy, monitor, iterate
+
+---
+
+## PART XIV — WORKING AS A LIQUID SPECIALIST
+*≈ 30 pages*
+
+### Chapter 72 — The Professional Layer
+72.1 Shopify Theme Store requirements and review criteria
+72.2 Building a theme as a product vs a client deliverable
+72.3 Scoping and pricing theme work
+72.4 Maintenance contracts and platform-update risk
+72.5 Staying current: changelog, developer previews, editions
+72.6 Career paths: theme specialist, app developer, headless architect, technical lead
+
+---
+
+## APPENDICES
+
+**Appendix A — Complete Liquid Tag Reference**
+Every tag, grouped: control flow, iteration, variable, theme, HTML, syntax — with signature, parameters, and one canonical example each.
+
+**Appendix B — Complete Filter Reference**
+All filters by category (string, math, array, date, money, URL, media, HTML, color, font, metafield, localization, cart, customer, hosted file) with input/output types and edge-case notes.
+
+**Appendix C — Complete Object Reference**
+Every object and its properties, marked cheap/expensive to access and noting which templates expose it.
+
+**Appendix D — Schema & Settings Reference**
+All section, block, and theme setting input types with full JSON examples and validation rules.
+
+**Appendix E — Platform Limits & Quotas**
+File sizes, theme size, section and block ceilings, nesting depth, pagination caps, `all_products` limits, request timeouts.
+
+**Appendix F — Deprecated & Removed**
+`include`, `checkout.liquid`, script tags, Shopify Scripts, vintage section behaviour, legacy customer accounts — with dates, replacements, and detection tips.
+
+**Appendix G — Snippet Cookbook**
+40+ production-ready snippets: money formatting, responsive image, icon system, breadcrumb, JSON-LD, pagination, rating stars, badge logic, truncation, safe metafield access.
+
+**Appendix H — Cheat Sheets (printable)**
+Syntax card · Filter card · Object map · Theme directory map · Debugging card · Deprecation card.
+
+**Appendix I — Glossary**
+Every Shopify-specific term used in the book, defined for someone coming from another platform.
+
+**Appendix J — Resources**
+Official docs and changelog, reference themes, community sources, tooling, and a suggested learning cadence after finishing the book.
+
+---
+
+## INDEX OF LABS
+
+| # | Lab | Part |
+|---|---|---|
+| 1 | Object graph exploration across every template | I |
+| 2–9 | Filter-category deep dives → reusable formatting layer | II |
+| 10 | Token-driven theme settings layer | III |
+| 11 | Accessible variant picker, zero dependencies | IV |
+| 12 | Metafield-driven spec table | IV |
+| 13 | Complete no-JS account area | V |
+| 14–17 | Cart drawer, quick add, facet panel, media gallery | VI |
+| 18 | Performance rescue: 40 → 85+ | VII |
+| 19–21 | Translation catalogue, market selector, region content | VIII |
+| 22–26 | CLI workflow, custom Theme Check, CI gate, visual regression, agent loop | IX |
+| 27–29 | App block container, custom pixel, checkout-to-cart logic move | X |
+| 30–32 | a11y audit, JSON-LD suite, consent gating | XI |
+| 33–36 | Template conversion, block conversion, platform mapping, theme audit | XII |
+| 37–46 | Capstone build sequence | XIII |

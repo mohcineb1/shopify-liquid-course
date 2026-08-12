@@ -1,0 +1,14 @@
+{%- comment -%} blocks/_bar-heading.liquid — private: rendered statically, never picked {%- endcomment -%}
+{%- if block.settings.heading != blank -%}
+  <h2 class="trust-bar__heading" {{ block.shopify_attributes }}>{{ block.settings.heading }}</h2>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Heading",
+  "tag": null,
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Why buy from us" }
+  ]
+}
+{% endschema %}

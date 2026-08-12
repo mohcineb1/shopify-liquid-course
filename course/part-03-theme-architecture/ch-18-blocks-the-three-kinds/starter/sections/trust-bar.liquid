@@ -1,0 +1,60 @@
+{%- comment -%} sections/trust-bar.liquid {%- endcomment -%}
+{{ 'trust-bar.css' | asset_url | stylesheet_tag }}
+
+<div class="trust-bar" style="--trust-bar-gap: {{ section.settings.gap }}px;">
+  {%- if section.settings.heading != blank -%}
+    <h2 class="trust-bar__heading">{{ section.settings.heading }}</h2>
+  {%- endif -%}
+
+  <ul class="trust-bar__list" role="list">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'icon_item' -%}
+          <li class="trust-bar__item" {{ block.shopify_attributes }}>
+            {%- if block.settings.icon != blank -%}
+              {{ block.settings.icon | image_url: width: 96 | image_tag: loading: 'lazy', alt: '', class: 'trust-bar__icon' }}
+            {%- endif -%}
+            <p class="trust-bar__title">{{ block.settings.title }}</p>
+            <div class="trust-bar__text">{{ block.settings.text }}</div>
+          </li>
+        {%- when 'divider' -%}
+          <li class="trust-bar__divider" aria-hidden="true" {{ block.shopify_attributes }}></li>
+      {%- endcase -%}
+    {%- endfor -%}
+  </ul>
+</div>
+
+{% schema %}
+{
+  "name": "Trust bar",
+  "tag": "section",
+  "class": "section-trust-bar",
+  "max_blocks": 9,
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Why buy from us" },
+    { "type": "range", "id": "gap", "label": "Gap", "min": 8, "max": 64, "step": 4, "unit": "px", "default": 32 }
+  ],
+  "blocks": [
+    {
+      "type": "icon_item",
+      "name": "Icon item",
+      "settings": [
+        { "type": "image_picker", "id": "icon", "label": "Icon" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Free returns" },
+        { "type": "richtext", "id": "text", "label": "Text", "default": "<p>Within 30 days, no questions asked.</p>" }
+      ]
+    },
+    { "type": "divider", "name": "Divider", "settings": [] }
+  ],
+  "presets": [
+    {
+      "name": "Trust bar",
+      "blocks": [
+        { "type": "icon_item" },
+        { "type": "divider" },
+        { "type": "icon_item" }
+      ]
+    }
+  ]
+}
+{% endschema %}

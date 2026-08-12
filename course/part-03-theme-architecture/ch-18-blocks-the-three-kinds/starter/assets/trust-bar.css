@@ -1,0 +1,16 @@
+/* assets/trust-bar.css — finished; the exercise should not need changes here */
+.trust-bar { padding-block: 3rem; }
+.trust-bar__heading { margin: 0 0 1.5rem; font-size: 1.25rem; text-align: center; }
+.trust-bar__heading[hidden] { display: none; }
+.trust-bar__list {
+  display: flex; align-items: flex-start; justify-content: center;
+  gap: var(--trust-bar-gap, 32px);
+  margin: 0; padding: 0; list-style: none; flex-wrap: wrap;
+}
+.trust-bar__item { flex: 0 1 16rem; text-align: center; }
+.trust-bar__icon { width: 48px; height: 48px; margin-inline: auto; }
+.trust-bar__title { margin: 0.75rem 0 0.25rem; font-weight: 600; }
+.trust-bar__text { font-size: 0.9rem; opacity: 0.75; }
+.trust-bar__text > p { margin: 0; }
+.trust-bar__divider { align-self: stretch; width: 1px; background: currentColor; opacity: 0.15; }
+.trust-bar--compact { padding-block: 1.5rem; }
