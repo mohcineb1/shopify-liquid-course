@@ -45,3 +45,9 @@ Entry format:
 - flagged: [VERIFY] preset object form with `block_order` for nested children
 - decided: stretch goal left unanswered by design, per the content contract
 - next: ch-18 review
+
+## 2026-08-13 · gate · deprecations
+- wrote: `docs/DEPRECATIONS.md`
+- flagged: none
+- decided: replaced the obsolete 20 MB individual-file claim with Shopify's current per-file limits; added the missing template, section-group, block, naming, and aggregate-theme limits; retained `{% block %}` / `{% partial %}` as developer-preview-only material.
+- next: ch-18 review
