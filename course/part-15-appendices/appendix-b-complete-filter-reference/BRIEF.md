@@ -6,7 +6,7 @@ unit: "Appendix B"
 title: "Complete Filter Reference"
 type: reference
 has_exercise: false
-status: todo
+status: draft
 ---
 
 # Appendix B — Complete Filter Reference
@@ -15,7 +15,7 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] All filters by category (string, math, array, date, money, URL, media, HTML, color, font, metafield, localization, cart, customer, hosted file) with input/output types and edge-case notes.
+- [x] All filters by category (string, math, array, date, money, URL, media, HTML, color, font, metafield, localization, cart, customer, hosted file) with input/output types and edge-case notes.
 
 ## Labs assigned to this unit
 

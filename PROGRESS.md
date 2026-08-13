@@ -69,3 +69,9 @@ Entry format:
 - flagged: none
 - decided: review checklist passed 10/10; verified preview-tag syntax, completed the form-type inventory, and documented `paginate` and static `content_for` parameters.
 - next: app-b lesson
+
+## 2026-08-13 · app-b · lesson
+- wrote: `course/part-15-appendices/appendix-b-complete-filter-reference/lesson.md` (2,781 words)
+- flagged: none
+- decided: reconciled the reference against all 153 current Shopify filter pages; marked `img_url` and `product_img_url` as deprecated in favour of `image_url`.
+- next: app-b review
