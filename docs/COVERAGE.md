@@ -33,3 +33,9 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** Liquid object, template-scoped object, traversal access.
 **Assumed known from earlier:** Liquid output, tags, filters, snippets, sections, blocks, and the filter input/output model (app-a and app-b).
 **Deliberately deferred:** the object graph and Drop internals → ch-03 and ch-11; global objects → ch-26; products/variants → ch-27 and ch-28; collections/filtering/pagination → ch-29; cart/line items → ch-30; accounts → ch-31; content/search → ch-32; metafields and metaobjects → ch-33 and ch-34.
+
+### app-d — Schema & Settings Reference
+**Taught:** every current basic and specialized input-setting type for Shopify section, local-block, theme-block, and theme settings schemas; complete JSON definitions; returned values; resource/list limits; section, block, preset, placement, wrapper, and metadata validation rules.
+**Introduced terms:** input setting, schema home, resource picker, schema placement constraint.
+**Assumed known from earlier:** Liquid output and objects; the section/block setting access paths (app-c); tags and filters (app-a and app-b).
+**Deliberately deferred:** section architecture → ch-17; theme/local/app blocks → ch-18 and ch-19; block rendering → ch-20; settings UX and dynamic sources → ch-24 and ch-25; product, media, menu, and metaobject display patterns → ch-27 to ch-34.

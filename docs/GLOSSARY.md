@@ -24,3 +24,7 @@ use; never introduce a synonym for something already listed.
 | Liquid object | A Shopify-supplied data object available to Liquid in a documented global, template, or local rendering context. | app-c |
 | Template-scoped object | A Liquid object supplied by a particular template or resource context, such as `product` on a product template or `collection` on a collection template. | app-c |
 | Traversal access | Reading an associated object or collection from a Liquid object, such as `cart.items` or `product.variants`, rather than a scalar property already on the current Drop. | app-c |
+| Input setting | A schema entry that stores a merchant-configurable value and is defined by a documented setting `type`. | app-d |
+| Schema home | The file and schema scope in which a setting is declared: a section, a local section block, a theme block, or `settings_schema.json`. | app-d |
+| Resource picker | An input setting that selects a Shopify resource and returns its Liquid object or `blank`, rather than a free-form identifier. | app-d |
+| Schema placement constraint | A validation rule governing where a schema attribute may be used, such as theme-only color palettes or mutually exclusive `enabled_on` and `disabled_on`. | app-d |

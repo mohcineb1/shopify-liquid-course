@@ -6,7 +6,7 @@ unit: "Appendix D"
 title: "Schema & Settings Reference"
 type: reference
 has_exercise: false
-status: todo
+status: draft
 ---
 
 # Appendix D — Schema & Settings Reference
@@ -15,7 +15,7 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] All section, block, and theme setting input types with full JSON examples and validation rules.
+- [x] All section, block, and theme setting input types with full JSON examples and validation rules.
 
 ## Labs assigned to this unit
 

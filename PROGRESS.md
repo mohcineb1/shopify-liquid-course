@@ -93,3 +93,9 @@ Entry format:
 - flagged: none
 - decided: review checklist passed 10/10; corrected the deprecated `theme` object, the line-item property surface, and the constrained availability of the `checkout` object.
 - next: app-d lesson
+
+## 2026-08-13 · app-d · lesson
+- wrote: `course/part-15-appendices/appendix-d-schema-settings-reference/lesson.md` (2,399 words)
+- flagged: none
+- decided: verified all 33 current input-setting types, including theme-only color palettes and color-scheme groups, and documented their JSON and validation boundaries.
+- next: app-d review
