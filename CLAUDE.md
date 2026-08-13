@@ -87,6 +87,13 @@ the target to match what you already wrote.
 if anything is short. Run it before every commit — it is faster and more honest than
 estimating your own word count.
 
+**The floor is not the goal.** It is where a pass is rejected, not where it is finished.
+Write to the target — lesson ~2,450, exercise ~700, solution ~1,350. `check.py` also
+prints a `THIN` list for files that clear the floor but sit under 95% of target; that
+list is not a failure, but a file parked a few words above the floor is under-written,
+and a run that keeps landing there is drifting. Chapter 18 is at 102–106% of target on
+all three files. Aim there.
+
 ## Hard rules
 
 1. **Scope is the contract.** Cover every numbered sub-topic in `BRIEF.md`, in order,

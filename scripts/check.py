@@ -9,8 +9,11 @@ sys.stdout.reconfigure(encoding="utf-8")  # unit titles contain UTF-8; Windows c
 ROOT = Path(__file__).resolve().parent.parent
 M = json.loads((ROOT / "manifest.json").read_text(encoding="utf-8"))
 
-# ~85% of the calibration targets in CLAUDE.md (lesson 2,450 / exercise 700 / solution 1,350)
+# the calibration targets in CLAUDE.md; the floor is ~85% of each and is a rejection
+# threshold, not a goal — landing on it means the pass stopped as soon as it could.
+TARGET = {"lesson": 2450, "exercise": 700, "solution": 1350}
 FLOOR = {"lesson": 2100, "exercise": 600, "solution": 1150}
+THIN = 0.95  # at or above floor but under this share of target: written to the threshold
 
 
 def words(path):
@@ -23,7 +26,7 @@ def words(path):
 
 
 def main():
-    rows = []
+    short, thin = [], []
     for part in M["parts"]:
         for unit in part["units"]:
             c = ROOT / "course" / part["slug"] / unit["slug"]
@@ -33,18 +36,32 @@ def main():
                 targets += [("exercise", c / "exercise.md"), ("solution", s / "solution.md")]
             for kind, path in targets:
                 n = words(path)
-                if n is not None and n < FLOOR[kind]:
-                    rows.append((unit["id"], kind, n, FLOOR[kind]))
+                if n is None:
+                    continue
+                if n < FLOOR[kind]:
+                    short.append((unit["id"], kind, n))
+                elif n < TARGET[kind] * THIN:
+                    thin.append((unit["id"], kind, n))
 
-    if not rows:
-        print("calibration OK — every generated file is at or above its floor.")
-        return 0
+    if short:
+        print(f"FAIL — {len(short)} file(s) below the calibration floor:\n")
+        for uid, kind, n in short:
+            print(f"  {uid:7s} {kind:9s} {n:5d} words  (floor {FLOOR[kind]}, short by {FLOOR[kind] - n})")
 
-    print(f"{len(rows)} file(s) below the chapter 18 calibration floor:\n")
-    for uid, kind, n, floor in rows:
-        print(f"  {uid:7s} {kind:9s} {n:5d} words  (floor {floor}, short by {floor - n})")
-    print("\nRedo these passes: python3 scripts/prompt.py <unit> --kind <pass>")
-    return 1
+    if thin:
+        print(f"\nTHIN — {len(thin)} file(s) clear the floor but sit under target:\n")
+        for uid, kind, n in thin:
+            pct = n / TARGET[kind] * 100
+            print(f"  {uid:7s} {kind:9s} {n:5d} words  ({pct:.0f}% of target {TARGET[kind]})")
+        print("\nThe floor is where a pass is rejected, not where it is finished.")
+        print("Write to the target; a file parked just above the floor is under-written.")
+
+    if short:
+        print("\nRedo these passes: python3 scripts/prompt.py <unit> --kind <pass>")
+        return 1
+    if not thin:
+        print("calibration OK — every generated file is at or near its target.")
+    return 0
 
 
 if __name__ == "__main__":
