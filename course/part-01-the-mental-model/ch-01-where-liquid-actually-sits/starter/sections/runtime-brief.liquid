@@ -1,0 +1,51 @@
+{{ 'runtime-brief.js' | asset_url | script_tag }}
+
+<section class="runtime-brief" data-runtime-brief>
+  <div class="runtime-brief__inner">
+    <p class="runtime-brief__eyebrow">Launch team briefing</p>
+    <h2>Where this feature runs</h2>
+
+    <dl class="runtime-brief__owners">
+      <div class="runtime-brief__row">
+        <dt>Current product</dt>
+        <dd data-product-title>Connect the current product here.</dd>
+        <dd class="runtime-brief__owner" data-product-owner>Unassigned</dd>
+      </div>
+
+      <div class="runtime-brief__row">
+        <dt>Dispatch preview</dt>
+        <dd data-dispatch-preview>Choose a dispatch preference to see its preview.</dd>
+        <dd class="runtime-brief__owner" data-dispatch-owner>Unassigned</dd>
+      </div>
+
+      <div class="runtime-brief__row">
+        <dt>Discount eligibility</dt>
+        <dd data-discount-rule>Connect the correct owner statement here.</dd>
+        <dd class="runtime-brief__owner" data-discount-owner>Unassigned</dd>
+      </div>
+    </dl>
+
+    <fieldset class="runtime-brief__choices">
+      <legend>Dispatch preference</legend>
+      <label>
+        <input type="radio" name="dispatch-{{ section.id }}" value="standard" checked>
+        Standard dispatch
+      </label>
+      <label>
+        <input type="radio" name="dispatch-{{ section.id }}" value="priority">
+        Priority dispatch
+      </label>
+    </fieldset>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Runtime brief",
+  "tag": "section",
+  "class": "section-runtime-brief",
+  "settings": [],
+  "presets": [{ "name": "Runtime brief" }],
+  "enabled_on": { "templates": ["product"] }
+}
+{% endschema %}
