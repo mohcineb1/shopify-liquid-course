@@ -1,9 +1,9 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 ---
 id: app-b
 title: "Complete Filter Reference"
 part: 15
-words: 2781
+words: 2899
 ---
 
 # Appendix B — Complete Filter Reference
@@ -80,7 +80,8 @@ The notation `string → string` means the filter receives a rendered Liquid str
 | Filter | Input → output | Signature / canonical use | Edge case or constraint |
 |---|---|---|---|
 | `image_url` | supported image object → CDN URL string | `{{ product.featured_image | image_url: width: 720 }}` | Requires `width` or `height`; neither is optional. Maximum requested dimension is 5760 px.[2] |
-| `image_tag`, `img_tag` | image URL or object → HTML | `{{ product.featured_image | image_url: width: 720 | image_tag: alt: product.title }}` | Supply meaningful `alt`; `image_tag` is the current responsive helper. |
+| `image_tag` | image URL or object → HTML | `{{ product.featured_image | image_url: width: 720 | image_tag: alt: product.title }}` | Supply meaningful `alt`; this is the current responsive helper. |
+| `img_tag` | image URL or supported image object → HTML | `{{ product.featured_image | img_tag: product.title }}` | Deprecated; replace it with `image_url` followed by `image_tag`.[7] |
 | `media_tag`, `video_tag`, `external_video_tag`, `model_viewer_tag` | media object → HTML | `{{ product.media.first | media_tag }}` | Only use with the corresponding media object type. |
 | `external_video_url` | external video object → URL string | `{{ media | external_video_url: autoplay: true }}` | Produces a provider URL, not a complete player element. |
 | `placeholder_svg_tag` | placeholder name → SVG HTML | `{{ 'product-1' | placeholder_svg_tag: 'placeholder' }}` | Use for empty-editor states, not production product imagery. |
@@ -108,7 +109,8 @@ The notation `string → string` means the filter receives a rendered Liquid str
 | `default_pagination` | paginate object → HTML | `{{ paginate | default_pagination }}` | Only valid inside a `{% paginate %}` block. |
 | `script_tag`, `stylesheet_tag` | asset URL → HTML | `{{ 'theme.js' | asset_url | script_tag }}` | Shopify emits the element; do not add a second manual tag around it. |
 | `time_tag` | date-like value → HTML | `{{ article.published_at | time_tag: format: 'date' }}` | Produces a semantic `<time>` element. |
-| `payment_button`, `payment_terms` | product or form context → HTML | `{{ form | payment_button }}` | Context-dependent commerce UI; do not expect it in arbitrary snippets. |
+| `payment_button` | product-form `form` → HTML | `{{ form | payment_button }}` | Must be called on `form` inside a product form. |
+| `payment_terms` | product- or cart-form `form` → HTML | `{{ form | payment_terms }}` | Must be called on `form` inside a product or cart form. |
 | `payment_type_img_url`, `payment_type_svg_tag` | payment type → URL or HTML | `{{ type | payment_type_svg_tag }}` | Use for supported payment-type objects only. |
 
 ### Money, localization, customers, carts, and product measurements
@@ -119,8 +121,10 @@ The notation `string → string` means the filter receives a rendered Liquid str
 | `currency_selector` | form or currency context → HTML | `{{ form | currency_selector }}` | Belongs to the legacy `currency` form; use a `localization` form for new multi-market selectors. |
 | `translate` / `t` | locale key string → translated string | `{{ 'products.product.add_to_cart' | t }}` | `t` is the common alias of `translate`; keys can come from theme or section locales.[4] |
 | `avatar`, `customer_login_link`, `customer_logout_link`, `customer_register_link`, `login_button`, `format_address` | customer or address context → HTML | `{{ customer.default_address | format_address }}` | Require the relevant customer or address object and should not be called from unrelated templates. |
-| `item_count_for_variant`, `line_items_for` | cart → number or array | `{{ cart | item_count_for_variant: product.selected_or_first_available_variant.id }}` | Cart-specific; use the returned line-item collection for one variant only. |
-| `unit_price_with_measurement`, `weight_with_unit` | line item / weight → formatted string | `{{ line_item.unit_price | unit_price_with_measurement: line_item.unit_price_measurement }}` | Preserve Shopify’s localized unit formatting instead of concatenating values yourself. |
+| `item_count_for_variant` | cart + variant ID → number | `{{ cart | item_count_for_variant: product.selected_or_first_available_variant.id }}` | Counts all cart quantity for the specified variant ID. |
+| `line_items_for` | cart + product or variant → array<line_item> | `{% assign items = cart | line_items_for: product %}` | Returns only cart lines containing that product or variant. |
+| `unit_price_with_measurement` | number or formatted money + measurement → string | `{{ line_item.unit_price | unit_price_with_measurement: line_item.unit_price_measurement }}` | Preserve Shopify’s localized unit formatting instead of concatenating values yourself. |
+| `weight_with_unit` | number → formatted string | `{{ variant.weight | weight_with_unit: variant.weight_unit }}` | Uses the store’s weight unit unless an override is supplied. |
 
 ### Color and font filters
 
@@ -152,7 +156,7 @@ The notation `string → string` means the filter receives a rendered Liquid str
 - **Using image filters without dimensions.** `image_url` rejects calls that provide neither `width` nor `height`, while old helpers silently encouraged named-size strings.[2]
 - **Confusing `t` with an arbitrary lookup.** It reads locale keys, including a section’s own schema locales, not strings supplied by a merchant setting.[4]
 - **Treating hashes or Base64 as browser security.** Theme Liquid renders to the client. Never put a secret or a security decision into a filter chain.
-- **Copying legacy image code from old themes.** `img_url` and `product_img_url` are retained but deprecated; new code should use `image_url`.[3]
+- **Copying legacy image code from old themes.** `img_url`, `product_img_url`, and `img_tag` are retained but deprecated; new code should use `image_url` and `image_tag`.[3] [7]
 
 ---
 
@@ -180,3 +184,4 @@ The notation `string → string` means the filter receives a rendered Liquid str
 [4]: https://shopify.dev/docs/api/liquid/filters/translate "Shopify — Liquid filters: translate"
 [5]: https://shopify.dev/docs/api/liquid/filters/structured_data "Shopify — Liquid filters: structured_data"
 [6]: https://shopify.dev/docs/api/liquid/filters/standard_event_data "Shopify — Liquid filters: standard_event_data"
+[7]: https://shopify.dev/docs/api/liquid/filters/img_tag "Shopify — Liquid filters: img_tag"

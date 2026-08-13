@@ -75,3 +75,9 @@ Entry format:
 - flagged: none
 - decided: reconciled the reference against all 153 current Shopify filter pages; marked `img_url` and `product_img_url` as deprecated in favour of `image_url`.
 - next: app-b review
+
+## 2026-08-13 · app-b · review
+- wrote: finalised `course/part-15-appendices/appendix-b-complete-filter-reference/{lesson.md,BRIEF.md}`
+- flagged: none
+- decided: review checklist passed 10/10; corrected the documented contexts for payment, cart, measurement, and deprecated `img_tag` filters.
+- next: app-c lesson

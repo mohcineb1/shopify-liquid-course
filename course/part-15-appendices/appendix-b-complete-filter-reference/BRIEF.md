@@ -6,7 +6,7 @@ unit: "Appendix B"
 title: "Complete Filter Reference"
 type: reference
 has_exercise: false
-status: draft
+status: final
 ---
 
 # Appendix B — Complete Filter Reference
