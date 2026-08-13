@@ -27,3 +27,9 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** Liquid filter, context-bound filter.
 **Assumed known from earlier:** Liquid tags and output delimiters (app-a), basic objects, filters as a concept, conditions, and loops.
 **Deliberately deferred:** filter chaining patterns and performance → ch-09; resource, media, localization, and commerce filters in depth → ch-10; metafield modelling → ch-33; forms → ch-35 and ch-36; client-side use of rendered JSON → ch-37 to ch-41.
+
+### app-c — Complete Object Reference
+**Taught:** every current Shopify theme Liquid object grouped by global/storefront, localization/navigation, product/collection, cart/customer/order, content/search/media, and local rendering contexts; their property surfaces, availability, relationship traversal, and authoring cost labels; the 20-handle `all_products` ceiling; contextual versus global object access.
+**Introduced terms:** Liquid object, template-scoped object, traversal access.
+**Assumed known from earlier:** Liquid output, tags, filters, snippets, sections, blocks, and the filter input/output model (app-a and app-b).
+**Deliberately deferred:** the object graph and Drop internals → ch-03 and ch-11; global objects → ch-26; products/variants → ch-27 and ch-28; collections/filtering/pagination → ch-29; cart/line items → ch-30; accounts → ch-31; content/search → ch-32; metafields and metaobjects → ch-33 and ch-34.

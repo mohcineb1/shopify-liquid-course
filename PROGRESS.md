@@ -81,3 +81,9 @@ Entry format:
 - flagged: none
 - decided: review checklist passed 10/10; corrected the documented contexts for payment, cart, measurement, and deprecated `img_tag` filters.
 - next: app-c lesson
+
+## 2026-08-13 · app-c · lesson
+- wrote: `course/part-15-appendices/appendix-c-complete-object-reference/lesson.md` (2,382 words)
+- flagged: none
+- decided: reconciled the reference against all 138 current Shopify Liquid object pages; labelled access classes as authoring guidance rather than platform latency guarantees and recorded the 20-handle `all_products` ceiling.
+- next: app-c review

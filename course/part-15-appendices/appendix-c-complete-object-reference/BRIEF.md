@@ -6,7 +6,7 @@ unit: "Appendix C"
 title: "Complete Object Reference"
 type: reference
 has_exercise: false
-status: todo
+status: draft
 ---
 
 # Appendix C — Complete Object Reference
@@ -15,7 +15,7 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] Every object and its properties, marked cheap/expensive to access and noting which templates expose it.
+- [x] Every object and its properties, marked cheap/expensive to access and noting which templates expose it.
 
 ## Labs assigned to this unit
 
