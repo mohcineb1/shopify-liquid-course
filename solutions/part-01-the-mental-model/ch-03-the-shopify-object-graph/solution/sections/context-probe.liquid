@@ -1,0 +1,79 @@
+<section class="context-probe" aria-labelledby="ContextProbe-{{ section.id }}">
+  <h2 id="ContextProbe-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+  <p>{{ section.settings.audit_label | escape }}</p>
+
+  <dl>
+    <div>
+      <dt>Global object — request context</dt>
+      <dd>{{ request.page_type | escape }}</dd>
+    </div>
+
+    <div>
+      <dt>Template-scoped object — product</dt>
+      <dd>
+        {% if product != blank %}
+          Available: {{ product.title | escape }}
+        {% else %}
+          Unavailable in this render
+        {% endif %}
+      </dd>
+    </div>
+
+    <div>
+      <dt>Template-scoped object — collection</dt>
+      <dd>
+        {% if collection != blank %}
+          Available: {{ collection.title | escape }}
+        {% else %}
+          Unavailable in this render
+        {% endif %}
+      </dd>
+    </div>
+
+    <div>
+      <dt>Template-scoped object — cart</dt>
+      <dd>
+        {% if request.page_type == 'cart' %}
+          Available: {{ cart.item_count }} item{% if cart.item_count != 1 %}s{% endif %}
+        {% else %}
+          Unavailable in this render
+        {% endif %}
+      </dd>
+    </div>
+
+    <div>
+      <dt>Scoped object — section setting</dt>
+      <dd>{{ section.settings.audit_label | escape }}</dd>
+    </div>
+  </dl>
+
+  <p>Global values describe the request. Template-scoped values exist only when this template supplies them. Scoped values belong to this section instance.</p>
+</section>
+
+{% schema %}
+{
+  "name": "Context probe",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Render context probe"
+    },
+    {
+      "type": "text",
+      "id": "audit_label",
+      "label": "Audit label",
+      "default": "Development theme diagnostic"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Context probe"
+    }
+  ],
+  "enabled_on": {
+    "templates": ["product", "collection", "cart"]
+  }
+}
+{% endschema %}

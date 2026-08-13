@@ -190,3 +190,9 @@ Entry format:
 - flagged: none
 - decided: deepened the root/relationship/context decision test, explicit scoped-input refactoring, and traversal-intent discipline without adding object surfaces beyond this chapter.
 - next: ch-03 solution
+
+## 2026-08-14 · ch-03 · solution
+- wrote: `solutions/part-01-the-mental-model/ch-03-the-shopify-object-graph/solution.md` (1,426 words) and mirrored `solution/sections/context-probe.liquid`
+- flagged: none
+- decided: the solution treats unavailable template objects as diagnostic evidence, separates request, template, and section roots, and avoids browser or network behavior so the initial render remains authoritative.
+- next: ch-03 review; do not add solution-derived structure or hints to `course/`.
