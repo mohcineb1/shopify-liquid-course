@@ -1,9 +1,9 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 ---
 id: app-a
 title: "Complete Liquid Tag Reference"
 part: 15
-words: 2351
+words: 2401
 ---
 
 # Appendix A — Complete Liquid Tag Reference
@@ -112,11 +112,11 @@ These tags are where a template stops being plain string templating and starts p
 | Tag | Signature | Canonical example | Contract |
 |---|---|---|---|
 | `content_for` | `{% content_for 'blocks' %}` | `{% content_for 'blocks' %}` | Renders the dynamic theme blocks configured for the current section or block. |
-| `content_for` static form | `{% content_for 'block', type: 'name', id: 'id' %}` | `{% content_for 'block', type: '_heading', id: 'hero-heading' %}` | Renders one static theme block in a fixed position. |
-| `form` | `{% form 'type', object %}…{% endform %}` | `{% form 'product', product %}<button>Add to cart</button>{% endform %}` | Generates the endpoint and required hidden fields for a Shopify form. |
+| `content_for` static form | `{% content_for 'block', type: 'name', id: 'id'[, key: value] %}` | `{% content_for 'block', type: '_heading', id: 'hero-heading' %}` | Renders one static theme block in a fixed position and can pass named parameters into it. |
+| `form` | `{% form 'type'[, object][, return_to: path][, attribute: value] %}…{% endform %}` | `{% form 'product', product, return_to: routes.cart_url %}<button>Add to cart</button>{% endform %}` | Generates the endpoint and required hidden fields for a Shopify form. |
 | `include` | `{% include 'filename' %}` | `{% include 'legacy-card' %}` | Deprecated. Read it in legacy code; do not add it. Use `render`. |
 | `layout` | `{% layout 'name' %}` | `{% layout 'full-width' %}` | Selects a layout; `{% layout none %}` removes the layout. |
-| `paginate` | `{% paginate array by size %}…{% endpaginate %}` | `{% paginate search.results by 20 %}…{% endpaginate %}` | Paginates supported arrays; page size is 1–250 and traversal ends at item 25,000. |
+| `paginate` | `{% paginate array by size[, window_size: n] %}…{% endpaginate %}` | `{% paginate search.results by 20, window_size: 1 %}…{% endpaginate %}` | Paginates supported arrays; page size is 1–250, `window_size` controls visible navigation pages, and traversal ends at item 25,000. |
 | `render` | `{% render 'filename', key: value %}` | `{% render 'product-card', product: product %}` | Renders an isolated snippet or app block. |
 | `section` | `{% section 'name' %}` | `{% section 'newsletter-signup' %}` | Renders a static section. |
 | `sections` | `{% sections 'name' %}` | `{% sections 'header-group' %}` | Renders a section group from a layout. |
@@ -139,7 +139,7 @@ These tags are where a template stops being plain string templating and starts p
 
 `render` has `with`, `for`, and `as` forms when the calling site needs a one-object or collection-oriented API. Variables created outside a snippet do not leak into it; pass what the snippet requires. `include` remains recognized for legacy themes but is deprecated in favor of `render`.[5]
 
-For `form`, the first argument is a required form type. Current theme form types include `product`, `cart`, `contact`, `customer`, `customer_login`, `customer_address`, `create_customer`, `localization`, `new_comment`, password-recovery types, and storefront-password types. The old `currency` form is deprecated; use `localization` for language and country selection.[6]
+For `form`, the first argument is a required form type. The complete current set is `activate_customer_password`, `cart`, `contact`, `create_customer`, `currency`, `customer`, `customer_address`, `customer_login`, `guest_login`, `localization`, `new_comment`, `product`, `recover_customer_password`, `reset_customer_password`, and `storefront_password`. `cart`, `product`, and `new_comment` take their corresponding object; `customer_address` takes `customer.new_address` or an existing `address`. Every form can take `return_to` and normal HTML attributes. The old `currency` form is deprecated; use `localization` for language and country selection.[6]
 
 ### Markup, assets, and authoring tags
 

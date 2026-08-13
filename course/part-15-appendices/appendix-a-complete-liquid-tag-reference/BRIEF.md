@@ -6,7 +6,7 @@ unit: "Appendix A"
 title: "Complete Liquid Tag Reference"
 type: reference
 has_exercise: false
-status: draft
+status: final
 ---
 
 # Appendix A — Complete Liquid Tag Reference
