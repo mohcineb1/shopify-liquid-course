@@ -11,6 +11,10 @@ playground/node_modules/
 .shopify/
 node_modules/
 
+# python artifacts from scripts/
+__pycache__/
+*.pyc
+
 # os / editor
 .DS_Store
 Thumbs.db
