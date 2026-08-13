@@ -1,0 +1,14 @@
+/* assets/cart-guard.css */
+.cart-guard {
+  border: 1px solid currentColor;
+  padding: 1.25rem;
+}
+
+.cart-guard__heading,
+.cart-guard__message {
+  margin: 0;
+}
+
+.cart-guard__message {
+  margin-top: 0.5rem;
+}

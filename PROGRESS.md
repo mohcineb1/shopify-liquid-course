@@ -141,3 +141,9 @@ Entry format:
 - flagged: none
 - decided: the starter contains presentation only; the learner must decide the theme boundaries, explicit inputs, server-rendered cart truth, and editor configuration from the lesson.
 - next: ch-02 solution
+
+## 2026-08-13 · ch-02 · solution
+- wrote: `solutions/part-01-the-mental-model/ch-02-translating-what-you-already-know/solution.md` and mirrored `solution/{sections/cart-guard.liquid,snippets/cart-guard-message.liquid,assets/cart-guard.css}`
+- flagged: none
+- decided: the cart request supplies the initial truth; the section owns editor configuration, the snippet owns repeated markup with named inputs, and the stretch remains direction-only for post-render cart updates.
+- next: ch-02 review; do not add solution-derived structure or hints to `course/`.

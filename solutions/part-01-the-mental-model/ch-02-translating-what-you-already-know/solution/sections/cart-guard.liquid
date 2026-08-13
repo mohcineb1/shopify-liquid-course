@@ -1,0 +1,36 @@
+{% assign heading_id = 'CartGuard-' | append: section.id %}
+
+{% if cart.item_count > 0 %}
+  {% assign message = 'Your cart is ready for checkout.' %}
+{% else %}
+  {% assign message = 'Your cart is empty. Add an item to continue.' %}
+{% endif %}
+
+<section class="cart-guard" aria-labelledby="{{ heading_id }}">
+  {% render 'cart-guard-message',
+    heading: section.settings.heading,
+    heading_id: heading_id,
+    message: message
+  %}
+</section>
+
+{{ 'cart-guard.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+{
+  "name": "Cart guard",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Checkout status"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Cart guard"
+    }
+  ]
+}
+{% endschema %}
