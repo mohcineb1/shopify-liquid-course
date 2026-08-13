@@ -4,6 +4,8 @@
 import argparse, json, sys
 from pathlib import Path
 
+sys.stdout.reconfigure(encoding="utf-8")  # the assembled prompt is UTF-8; Windows consoles default to cp1252
+
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = json.loads((ROOT / "manifest.json").read_text(encoding="utf-8"))
 

@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Resolve the single next action. The agent runs this instead of choosing."""
 
-import json
+import json, sys
 from pathlib import Path
+
+sys.stdout.reconfigure(encoding="utf-8")  # unit titles contain UTF-8; Windows consoles default to cp1252
 
 ROOT = Path(__file__).resolve().parent.parent
 M = json.loads((ROOT / "manifest.json").read_text(encoding="utf-8"))
