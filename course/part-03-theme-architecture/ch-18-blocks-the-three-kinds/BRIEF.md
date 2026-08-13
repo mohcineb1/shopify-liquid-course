@@ -6,7 +6,7 @@ unit: "Chapter 18"
 title: "Blocks: The Three Kinds"
 type: practice
 has_exercise: true
-status: draft
+status: final
 ---
 
 # Chapter 18 — Blocks: The Three Kinds

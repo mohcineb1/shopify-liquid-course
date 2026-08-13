@@ -11,7 +11,8 @@ Every session, without exception:
 3. Write the files to the paths the action named.
 4. Update `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
 5. Append one entry to `PROGRESS.md`.
-6. Stop and report in three lines.
+6. **Commit and push every completed pass.** Stage only the files produced or updated by the pass, create a descriptive commit, and push it to the active remote branch before reporting. Never start the next pass with uncommitted work from a completed pass.
+7. Stop and report in three lines.
 
 **One pass per instruction.** `next` and `continue` both mean exactly one pass. Do not
 chain passes, do not "get ahead", do not generate a second unit because the first was

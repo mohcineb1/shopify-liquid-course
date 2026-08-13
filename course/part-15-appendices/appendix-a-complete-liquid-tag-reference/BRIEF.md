@@ -6,7 +6,7 @@ unit: "Appendix A"
 title: "Complete Liquid Tag Reference"
 type: reference
 has_exercise: false
-status: todo
+status: draft
 ---
 
 # Appendix A — Complete Liquid Tag Reference
@@ -15,7 +15,7 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] Every tag, grouped: control flow, iteration, variable, theme, HTML, syntax — with signature, parameters, and one canonical example each.
+- [x] Every tag, grouped: control flow, iteration, variable, theme, HTML, syntax — with signature, parameters, and one canonical example each.
 
 ## Labs assigned to this unit
 

@@ -1,4 +1,4 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 ---
 id: ch-18
 title: "Blocks: The Three Kinds"
@@ -147,7 +147,7 @@ Five rules distinguish theme blocks from section blocks:
 
 **`"tag": null` suppresses the generated wrapper.** By default Shopify wraps a theme block in a `div`. Set `tag` to `null` when the surrounding markup dictates the element — a block that must render as an `<li>` inside the section's `<ul>`, for example — and take responsibility for `{{ block.shopify_attributes }}` yourself.
 
-> [VERIFY] Confirm whether Shopify applies the editor attributes automatically to a generated wrapper. Output them explicitly either way; a duplicate attribute is harmless, a missing one is not.
+Shopify applies the editor attributes automatically when it generates a block wrapper. With `"tag": null`, there is no wrapper, so the block's single top-level element must output `{{ block.shopify_attributes }}` itself. [Shopify’s block-schema reference](https://shopify.dev/docs/storefronts/themes/architecture/blocks/theme-blocks/schema) makes this distinction explicit.
 
 **Theme blocks accept children; section blocks never do.** A theme block's schema can list other block types, and render them with `{% content_for 'blocks' %}` inside itself. Nesting is allowed up to **8 levels deep, excluding the section level**. What a theme block *cannot* do is define a block type inline the way a section can — its `blocks` array only ever references types that already exist as files, or the `@theme` / `@app` wildcards.
 

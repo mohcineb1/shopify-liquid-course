@@ -16,3 +16,6 @@ use; never introduce a synonym for something already listed.
 | Static block | A theme block rendered at a fixed position by `{% content_for 'block' %}`. Merchants can hide it but not delete or reorder it. | ch-18 |
 | `@theme` wildcard | A block type entry admitting every non-private theme block in `blocks/`. | ch-18 |
 | Block picker | The theme editor UI a merchant uses to add a block to a section. | ch-18 |
+| Liquid tag | An instruction enclosed in `{% %}` that controls flow, rendering, output, or theme behavior. | app-a |
+| Static section | A section rendered with `{% section %}`; merchants cannot add, remove, or reorder it like a section in a JSON template or section group. | app-a |
+| Snippet | A reusable Liquid file in `snippets/`, rendered with `{% render %}` and isolated from caller-created variables unless they are passed as parameters. | app-a |

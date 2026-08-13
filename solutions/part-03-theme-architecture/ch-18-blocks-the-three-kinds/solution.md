@@ -1,4 +1,4 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 <!-- DO NOT OPEN until you have attempted the exercise. -->
 # Chapter 18 — Solution
 
@@ -154,9 +154,46 @@ Note what this replaced: the starter had `heading` as a *section setting*. Movin
 
 ### `sections/product-highlights.liquid`
 
-Identical, with `"name": "Product highlights"`, `"class": "section-product-highlights"`, the `trust-bar--compact` modifier on the wrapper, and `id: 'highlights-heading'` on the static block. That the second file is now a near-empty variant of the first — rather than eighty duplicated lines — is the point of the exercise.
+```liquid
+{{ 'trust-bar.css' | asset_url | stylesheet_tag }}
 
-> [VERIFY] Preset syntax for nested children. The flat `"blocks": [{ "type": "..." }]` array used above is correct for a section's direct children. If you later need a preset that places children *inside* a block, check whether the object form with explicit ids and `block_order` is required. Confirm against the current section-schema docs before shipping presets with nesting.
+<div class="trust-bar trust-bar--compact" style="--trust-bar-gap: {{ section.settings.gap }}px;">
+  {% content_for 'block', type: '_bar-heading', id: 'highlights-heading' %}
+
+  <ul class="trust-bar__list" role="list">
+    {% content_for 'blocks' %}
+  </ul>
+</div>
+
+{% schema %}
+{
+  "name": "Product highlights",
+  "tag": "section",
+  "class": "section-product-highlights",
+  "max_blocks": 9,
+  "settings": [
+    { "type": "range", "id": "gap", "label": "Gap", "min": 8, "max": 64, "step": 4, "unit": "px", "default": 32 }
+  ],
+  "blocks": [
+    { "type": "@theme" },
+    { "type": "@app" },
+    { "type": "_divider" }
+  ],
+  "presets": [
+    {
+      "name": "Product highlights",
+      "blocks": [
+        { "type": "icon-item" },
+        { "type": "_divider" },
+        { "type": "icon-item" }
+      ]
+    }
+  ]
+}
+{% endschema %}
+```
+
+For direct children, the flat `"blocks": [{ "type": "..." }]` preset array used in both sections is correct. For nested preset children, place a `blocks` array on the parent block entry. Use `id` and `static: true` only when the preset overrides a statically rendered block; `block_order` belongs to persisted JSON data, not to the schema preset. See Shopify’s [block-schema](https://shopify.dev/docs/storefronts/themes/architecture/blocks/theme-blocks/schema) and [static-block](https://shopify.dev/docs/storefronts/themes/architecture/blocks/theme-blocks/static-blocks) references.
 
 ## What people get wrong here
 

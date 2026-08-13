@@ -1,4 +1,4 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 # Chapter 18 — Exercise
 
 **Time:** 45–60 minutes · **Type:** refactor
