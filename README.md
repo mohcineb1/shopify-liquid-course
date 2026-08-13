@@ -61,7 +61,8 @@ Then: read the lesson → do the exercise in `starter/` → only then reveal.
 Paste `prompts/00-kickoff.md` once. After that the whole vocabulary is:
 
 ```
-next          one pass, then stop
+next          run passes until a stop condition
+one pass      exactly one pass, then stop
 next unit     finish the current unit
 status        report only
 redo ch-18 lesson

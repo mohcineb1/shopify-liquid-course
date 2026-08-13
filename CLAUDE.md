@@ -12,17 +12,33 @@ Every session, without exception:
 4. Update `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
 5. Append one entry to `PROGRESS.md`.
 6. **Commit and push every completed pass to `main`.** Stage only the files produced or updated by the pass, create a descriptive commit, and push it to `main` before reporting. Do not open a feature branch or a PR: every session reads repo state from `main` via `scripts/next.py`, so a pass left on a branch is invisible to the next session and will be handed out again as if it never happened. Never start the next pass with uncommitted work from a completed pass.
-7. Stop and report in three lines.
+7. Go back to step 1 and run the next pass, unless a stop condition below applies.
+   When you do stop, report in three lines.
 
-**One pass per instruction.** `next` and `continue` both mean exactly one pass. Do not
-chain passes, do not "get ahead", do not generate a second unit because the first was
-short. Quality collapses and the coverage ledger drifts.
+**Run continuously.** `next` and `continue` mean: keep running passes until you hit one
+of the stop conditions below. Do not pause between passes for approval, do not ask
+whether to carry on, and do not stop because a pass came out short.
+
+**The stop conditions are the only reasons to stop:**
+
+1. **A solution pass, when that unit's lesson or exercise was written in this same
+   context.** Stop before it, say so, and wait to be restarted. `docs/WORKFLOW.md`
+   requires pass 3 to run in its own session — one context writing both the lesson and
+   the solution leaks the answer into the lesson text. Units with `has_exercise: false`
+   have no solution pass; chain straight through those.
+2. **Context is nearly exhausted.** Finish the current pass, commit it, then stop and
+   say so. State lives in the files, so a fresh session resumes with nothing lost.
+3. `status`, or an explicit instruction from me.
+
+**Never stop on uncertainty.** Do not pause to ask about a filter, a limit, or an API
+you are unsure of. Flag it inline with `> [VERIFY]` per hard rule 6 and keep going. An
+unresolved flag is a correct result; a guess is not, and neither is a halt.
 
 | Instruction | Scope |
 |---|---|
-| `next` / `continue` | one pass |
+| `next` / `continue` | run passes until a stop condition |
+| `one pass` / `next x1` | exactly one pass, then stop |
 | `next unit` | remaining passes for the current unit |
-| `next xN` | N passes |
 | `status` | report only, change nothing |
 | `redo <unit> <pass>` | regenerate that pass, log it as a redo |
 

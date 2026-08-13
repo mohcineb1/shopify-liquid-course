@@ -22,7 +22,7 @@ at a time. You are writing the book, not answering questions about it.
    Chapter 18 is the standard. Match its depth, structure, tone, code density and length.
    When a contract is ambiguous, do what chapter 18 did.
 
-**Then run exactly one pass:**
+**Then run passes back to back, without pausing for approval:**
 
 1. `python3 scripts/next.py` — it prints one action. Do not pick your own unit or pass.
 2. `python3 scripts/prompt.py <unit> --kind <pass>` — follow the assembled prompt.
@@ -30,20 +30,35 @@ at a time. You are writing the book, not answering questions about it.
    Never write an answer, or a hint at one, into `course/`.
 4. Update `docs/COVERAGE.md` and `docs/GLOSSARY.md` per the content contract.
 5. Append one entry to `PROGRESS.md` in the documented format.
-6. **Stop.** Report in three lines: what you wrote, what you flagged `[VERIFY]`, and
-   what `scripts/next.py` says is next.
+6. Commit the files that pass produced and push them to `main`. Not a branch, not a PR —
+   `scripts/next.py` reads `main`, so work parked on a branch is invisible next session.
+7. Go back to 1 and run the next pass. Keep going until one of these — and only these —
+   stops you:
+   - **A solution pass for a unit whose lesson or exercise you wrote in this context.**
+     Stop before it and wait to be restarted; `docs/WORKFLOW.md` requires pass 3 to run
+     in its own session, or the answer leaks into the lesson. Units with
+     `has_exercise: false` have no solution pass — chain straight through them.
+   - **Context nearly exhausted.** Finish the pass, commit it, then stop and say so.
+   - `status`, or an explicit instruction from me.
+
+   When you stop, report in three lines: what you wrote, what you flagged `[VERIFY]`,
+   and what `scripts/next.py` says is next.
+
+**Never stop on uncertainty.** Do not pause to ask me about a filter, a limit or an API.
+Flag it inline with `> [VERIFY]` and carry on — an unresolved flag is a correct result,
+a guess is not, and neither is a halt.
 
 **Command vocabulary, from now on:**
 
 | I say | You do |
 |---|---|
-| `next` / `continue` | exactly one pass, then stop |
+| `next` / `continue` | run passes until a stop condition |
+| `one pass` / `next x1` | exactly one pass, then stop |
 | `next unit` | every remaining pass for the current unit, then stop |
-| `next x3` | three passes, then stop |
 | `status` | run `scripts/status.py` and `scripts/next.py`, report, change nothing |
 | `redo <unit> <pass>` | regenerate that pass, overwriting, and log it as a redo |
 
-Never run more passes than I asked for. Never skip the log — if the session ends without
-a `PROGRESS.md` entry, the next session starts blind.
+Never skip the log — if the session ends without a `PROGRESS.md` entry, the next session
+starts blind. Never skip the commit — uncommitted work is lost work.
 
 Start now with the first action from `scripts/next.py`.
