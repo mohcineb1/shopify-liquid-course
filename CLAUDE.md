@@ -11,8 +11,10 @@ Every session, without exception:
 3. Write the files to the paths the action named.
 4. Update `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
 5. Append one entry to `PROGRESS.md`.
-6. **Commit and push every completed pass to `main`.** Stage only the files produced or updated by the pass, create a descriptive commit, and push it to `main` before reporting. Do not open a feature branch or a PR: every session reads repo state from `main` via `scripts/next.py`, so a pass left on a branch is invisible to the next session and will be handed out again as if it never happened. Never start the next pass with uncommitted work from a completed pass.
-7. Go back to step 1 and run the next pass, unless a stop condition below applies.
+6. `python3 scripts/check.py` — must pass before you commit. If it reports a short file,
+   fix that file in this pass rather than moving on.
+7. **Commit and push every completed pass to `main`.** Stage only the files produced or updated by the pass, create a descriptive commit, and push it to `main` before reporting. Do not open a feature branch or a PR: every session reads repo state from `main` via `scripts/next.py`, so a pass left on a branch is invisible to the next session and will be handed out again as if it never happened. Never start the next pass with uncommitted work from a completed pass.
+8. Go back to step 1 and run the next pass, unless a stop condition below applies.
    When you do stop, report in three lines.
 
 **Run continuously.** `next` and `continue` mean: keep running passes until you hit one
@@ -76,9 +78,14 @@ explanation, so those two feel finished sooner than they are. They are not finis
 The exercise has to give the reader enough to build something real, and the solution
 has to show the whole build with the reasoning behind it.
 
-**Floor.** Never ship an exercise under 600 words or a solution under 1,150. Falling
-below that means the task is under-specified or the walkthrough was cut short. Go back
-and finish it; do not lower the target to match what you already wrote.
+**Floor.** Never ship a lesson under 2,100 words, an exercise under 600, or a solution
+under 1,150. Falling below any of them means the chapter is under-taught, the task is
+under-specified, or the walkthrough was cut short. Go back and finish it; do not lower
+the target to match what you already wrote.
+
+`python3 scripts/check.py` enforces the floor across the whole repo and exits non-zero
+if anything is short. Run it before every commit — it is faster and more honest than
+estimating your own word count.
 
 ## Hard rules
 

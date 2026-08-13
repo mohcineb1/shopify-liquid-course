@@ -22,8 +22,9 @@ at a time. You are writing the book, not answering questions about it.
    Chapter 18 is the standard. Match its depth, structure, tone, code density and length.
    When a contract is ambiguous, do what chapter 18 did. Re-open its `exercise.md` and
    `solution.md` at the start of every exercise and solution pass — those are the two
-   files that thin out over a long run. Never ship an exercise under 600 words or a
-   solution under 1,150.
+   files that thin out over a long run. Never ship a lesson under 2,100 words, an
+   exercise under 600, or a solution under 1,150 — `python3 scripts/check.py` enforces
+   this across the repo and must pass before every commit.
 
 **Then run passes back to back, without pausing for approval:**
 
