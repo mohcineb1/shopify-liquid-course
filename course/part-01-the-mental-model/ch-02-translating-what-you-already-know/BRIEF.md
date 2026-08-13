@@ -6,7 +6,7 @@ unit: "Chapter 2"
 title: "Translating What You Already Know"
 type: concept
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 2 — Translating What You Already Know
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 2.1 Liquid vs JSX: no expressions, no callbacks, no component state
-- [ ] 2.2 Liquid vs Handlebars/Nunjucks/Twig/ISML: the closest analogues and where they mislead you
-- [ ] 2.3 Liquid vs SSR frameworks: no hydration story, no build step, no bundler by default
-- [ ] 2.4 The unlearning list: patterns that are idiomatic in React and harmful in Liquid
-- [ ] 2.5 Where "component thinking" *does* map: sections, blocks, snippets
+- [x] 2.1 Liquid vs JSX: no expressions, no callbacks, no component state
+- [x] 2.2 Liquid vs Handlebars/Nunjucks/Twig/ISML: the closest analogues and where they mislead you
+- [x] 2.3 Liquid vs SSR frameworks: no hydration story, no build step, no bundler by default
+- [x] 2.4 The unlearning list: patterns that are idiomatic in React and harmful in Liquid
+- [x] 2.5 Where "component thinking" *does* map: sections, blocks, snippets
 
 ## Labs assigned to this unit
 

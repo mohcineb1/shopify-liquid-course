@@ -147,3 +147,9 @@ Entry format:
 - flagged: none
 - decided: the cart request supplies the initial truth; the section owns editor configuration, the snippet owns repeated markup with named inputs, and the stretch remains direction-only for post-render cart updates.
 - next: ch-02 review; do not add solution-derived structure or hints to `course/`.
+
+## 2026-08-14 · ch-02 · review
+- wrote: finalised `course/part-01-the-mental-model/ch-02-translating-what-you-already-know/{lesson.md,exercise.md,BRIEF.md}` and its mirrored solution status
+- flagged: none
+- decided: review checklist passed 10/10; the exercise and solution were expanded solely to meet the new chapter-18 calibration floors (705 and 1,270 words) without adding solution structure to the lesson or exercise.
+- next: ch-03 lesson
