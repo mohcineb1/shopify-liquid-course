@@ -135,3 +135,9 @@ Entry format:
 - flagged: none
 - decided: covered the five contractual translations without turning an SSR comparison into framework instruction; added only hydration, build step, and bundler as new canonical terms.
 - next: ch-02 exercise
+
+## 2026-08-13 · ch-02 · exercise
+- wrote: `course/part-01-the-mental-model/ch-02-translating-what-you-already-know/exercise.md` and `starter/assets/cart-guard.css`
+- flagged: none
+- decided: the starter contains presentation only; the learner must decide the theme boundaries, explicit inputs, server-rendered cart truth, and editor configuration from the lesson.
+- next: ch-02 solution
