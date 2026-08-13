@@ -51,3 +51,9 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** hydration, build step, bundler.
 **Assumed known from earlier:** Liquid’s sandboxed render boundary and theme render (ch-01); Liquid tags, filters, objects, snippets, sections, blocks, and schema surfaces (appendices A–D).
 **Deliberately deferred:** object availability and Drops → ch-03 and ch-11; theme-versus-app architecture → ch-04; first theme implementation → ch-05; section contracts → ch-17; block types and schema constraints → ch-18 and ch-19; snippet API design → ch-21; client-side theme patterns → ch-37 to ch-41.
+
+### ch-03 — The Shopify Object Graph
+**Taught:** the difference between data supplied to a theme render and data that requires another runtime; global, template-scoped, and local scoped objects; Drops as lazy Shopify proxies; deliberate traversal access; a practical object-graph map from request context through product, collection, cart, section, block, and loop scopes.
+**Introduced terms:** object graph, global object, scoped object.
+**Assumed known from earlier:** render context and theme render (ch-01); explicit snippet inputs and runtime boundaries (ch-02); Liquid objects, template-scoped objects, and traversal access (app-c).
+**Deliberately deferred:** detailed resource object surfaces → ch-26 to ch-34; data shaping and iteration patterns → ch-09; API and data-ownership architecture → ch-04; render-cost measurement and optimization → ch-11.
