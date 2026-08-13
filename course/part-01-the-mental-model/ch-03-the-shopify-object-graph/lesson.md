@@ -3,7 +3,7 @@
 id: ch-03
 title: "The Shopify Object Graph"
 part: 1
-words: 1947
+words: 2100
 ---
 
 # Chapter 3 — The Shopify Object Graph
@@ -130,6 +130,8 @@ Read the map from top to bottom when debugging. First identify the template and 
 
 For example, cart presentation often begins at `cart`, then follows `cart.items` to a line item, then follows the line item’s product or variant relationship only if the markup needs it. A product page begins at `product`; a section inside it still has section settings, but those settings are not product properties. Store-wide configuration belongs under `settings`; it does not belong on every product object. The graph is a responsibility map as much as a data map.
 
+When an output is unexpectedly blank, diagnose the root before adding fallback logic. Confirm the current template, identify the documented root object for that template, verify the relationship or local scope that should provide the value, and only then inspect the property. A fallback can be useful for an optional value, but it cannot make a product object exist on a template where Shopify never provides one. This short debugging order saves more time than memorising a longer list of object names. It also produces a better issue report: name the template, the expected root, the relationship you attempted, and the actual rendered result. That information lets another developer verify the context contract today instead of reverse-engineering a failed guess from a copied Liquid fragment.
+
 The map also tells you when to stop. If the needed value is not reachable from the documented root, Liquid is not the place to fabricate a query. Return to the runtime-boundary decision in `ch-01-where-liquid-actually-sits`, then choose the surface that can lawfully obtain the data.
 
 ## Gotchas
@@ -139,6 +141,7 @@ The map also tells you when to stop. If the needed value is not reachable from t
 - **Using hidden contextual dependencies in snippets.** Prefer named parameters for reusable snippet inputs.
 - **Treating Drops as local JSON.** Repeated traversal and broad iteration can add avoidable render work.
 - **Confusing a section setting with a product property.** They have different roots in the graph and different owners.
+- **Debugging a blank value by guessing a new object name.** Verify the template root and documented access path before adding fallbacks or copying code from another context.
 
 ## Checklist
 

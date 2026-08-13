@@ -8,11 +8,13 @@ The panel has three different owners, so the solution keeps three different kind
 
 That split is more important than the few lines of code. The section must still communicate its product and platform facts if JavaScript fails, is blocked, or has not loaded. The script therefore changes exactly one element—the browser-owned preview—and does not fetch, calculate a discount, or alter server-owned content.
 
+This implementation also has a useful failure mode: when the asset is unavailable, the buyer loses only the optional ability to switch a local preview. The current product and the explanation of the platform-owned rule remain in the initial document. That is the standard to preserve when a feature crosses the Liquid/browser boundary: remove the enhancement mentally and confirm that the server response is still accurate rather than merely non-empty.
+
 ## Walkthrough
 
 ### 1. Add the section in product context
 
-The completed schema uses `enabled_on` with the `product` template type. That makes the component available where its `product` object is meaningful instead of letting a merchant add it to an arbitrary page. The schema preserves the starter’s preset so the section can be added through the theme editor.
+The completed schema uses `enabled_on` with the `product` template type. That makes the component available where its `product` object is meaningful instead of letting a merchant add it to an arbitrary page. The schema preserves the starter’s preset so the section can be added through the theme editor. This is not a cosmetic placement choice. Limiting the section to product templates protects the example from a misleading context where `product` would not be supplied. The restriction makes the section’s data contract visible to a merchant as well as to the next developer who reads its source.
 
 ### 2. Render the product title before JavaScript
 
@@ -20,11 +22,11 @@ The completed schema uses `enabled_on` with the `product` template type. That ma
 
 ### 3. Update the local dispatch preview in the browser
 
-The script reads only the radio inputs in this section and writes one of two fixed messages into `data-dispatch-preview`. It has no network request and it does not mutate the product title. The default standard message is already in the Liquid response; JavaScript only changes the sentence after the buyer selects another option.
+The script reads only the radio inputs in this section and writes one of two fixed messages into `data-dispatch-preview`. It has no network request and it does not mutate the product title. The default standard message is already in the Liquid response; JavaScript only changes the sentence after the buyer selects another option. The handler starts from the component shell and queries inside it, so another instance on the same page does not accidentally receive the change. It also waits for a checked choice: a radio group emits changes for more than one control over its lifetime, while the visible preview must reflect the selected value only.
 
 ### 4. Show the owner of each responsibility
 
-The three labels make the split inspectable in the storefront: **Theme render** for the current product, **Browser** for the transient preference preview, and **Shopify platform rule** for discount eligibility. The labels are not decorative. They prevent a future maintainer from adding a backend-like operation to a theme section merely because an adjacent interaction uses JavaScript.
+The three labels make the split inspectable in the storefront: **Theme render** for the current product, **Browser** for the transient preference preview, and **Shopify platform rule** for discount eligibility. The labels are not decorative. They prevent a future maintainer from adding a backend-like operation to a theme section merely because an adjacent interaction uses JavaScript. They also make review concrete: inspect page source for the Theme render and Shopify platform rule rows, then use the browser only to exercise the Browser row. If a row requires a loaded asset before it can truthfully exist, it has been assigned to the wrong owner.
 
 ### 5. Keep discount eligibility out of the theme
 
@@ -32,7 +34,7 @@ The section explicitly says that it does not calculate discount eligibility. A t
 
 ### 6. Avoid requests and runtime dependencies
 
-The JavaScript has no `fetch`, imported package, app client, or external endpoint. It uses the DOM APIs the browser already provides. Liquid has no equivalent runtime request in the first place, so the architecture remains valid without making the initial render dependent on an unavailable operation.
+The JavaScript has no `fetch`, imported package, app client, or external endpoint. It uses the DOM APIs the browser already provides. Liquid has no equivalent runtime request in the first place, so the architecture remains valid without making the initial render dependent on an unavailable operation. Do not “improve” this by adding a data endpoint solely to repeat what the product template already supplies. That would create two sources of truth for the product identity, complicate cache and failure behavior, and obscure the lesson that the storefront request already contains the appropriate server-rendered data.
 
 ### 7. Preserve text output for unusual titles
 

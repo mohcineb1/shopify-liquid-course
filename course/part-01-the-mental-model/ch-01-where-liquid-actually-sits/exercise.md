@@ -11,6 +11,8 @@ Northstar Tea is about to launch a limited seasonal product. The merchant wants 
 
 Your panel must make the boundary visible while still being useful to a buyer. It must show the current product’s identity before JavaScript runs, allow the buyer to choose a dispatch preference that updates an on-page preview, and state where discount eligibility belongs.
 
+Treat the panel as a boundary review that happens to be customer-facing. The merchant should be able to inspect it in the theme editor without concluding that Liquid owns later browser events. A buyer who disables JavaScript must still receive the product identity and the checkout-rule explanation; a buyer who changes a dispatch preference must see only a local presentation change, not a claim that Shopify has recalculated fulfillment or a discount. The distinction matters because the limited launch team will use the panel as a pattern for later work.
+
 ## Requirements
 
 - [ ] Add the starter section to a product template through the theme editor. The completed panel appears only in a product context.
@@ -20,10 +22,13 @@ Your panel must make the boundary visible while still being useful to a buyer. I
 - [ ] The discount-eligibility statement says that the theme does not calculate the rule. It remains visible and accurate before and after the browser enhancement runs.
 - [ ] The completed section does not make a network request and does not rely on a package, app framework, or custom storefront endpoint.
 - [ ] Product pages with a title containing punctuation or non-ASCII characters render that title as text, not markup.
+- [ ] The finished panel makes it possible for a reviewer to identify the first-response content separately from the behavior that starts only after the browser loads the page.
 
 ## Constraints
 
 Do not use the Storefront API, an app proxy, an external endpoint, a Shopify Function, or checkout Liquid. Do not calculate discounts in the browser. Do not replace the product template with a headless application. Keep the behavior in the starter section and its companion asset.
+
+Do not make the browser interaction look authoritative by changing the platform-rule statement, changing product data, or adding a simulated network response. The point is not to make a more elaborate widget; it is to preserve an honest boundary between the initial theme render, a local browser enhancement, and a rule owned elsewhere.
 
 ## Starter
 
@@ -32,6 +37,8 @@ Begin with `starter/sections/runtime-brief.liquid` and `starter/assets/runtime-b
 ## Done when
 
 On a product page, viewing the page source reveals the actual current product title and the platform-rule statement. In the loaded storefront, changing dispatch preference updates only the preview owned by the browser. The page shows three distinct runtime owners, contains no network request, and remains understandable when JavaScript is disabled.
+
+Verify both states deliberately: test a product whose title includes punctuation, refresh after selecting a preference, and then repeat the inspection with JavaScript disabled. The expected result is not visual complexity. It is a truthful first response plus a narrowly scoped browser enhancement whose failure does not corrupt the product or discount information.
 
 ## Stretch
 

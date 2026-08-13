@@ -160,3 +160,21 @@ Entry format:
 - decided: taught the object graph as contextual data access, not an arbitrary query surface; used named snippet input and repeated traversal as the concrete bridge from familiar frontend models.
 - updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md` with object graph, global object, and scoped object.
 - next: ch-03 exercise
+
+## 2026-08-14 · ch-01 · exercise · redo
+- wrote: expanded `course/part-01-the-mental-model/ch-01-where-liquid-actually-sits/exercise.md` to 751 words
+- flagged: none
+- decided: added merchant context, degradation checks, and observable acceptance criteria without revealing the solution’s file or code structure.
+- next: ch-01 solution redo
+
+## 2026-08-14 · ch-01 · solution · redo
+- wrote: expanded `solutions/part-01-the-mental-model/ch-01-where-liquid-actually-sits/solution.md` to 1,271 words
+- flagged: none
+- decided: deepened the ownership, degradation, and component-scope rationale while keeping the implemented answer unchanged.
+- next: ch-03 lesson redo
+
+## 2026-08-14 · ch-03 · lesson · redo
+- wrote: expanded `course/part-01-the-mental-model/ch-03-the-shopify-object-graph/lesson.md` to 2,100 words
+- flagged: none
+- decided: added a context-root diagnostic procedure and reportable debugging sequence without widening the chapter’s object-graph scope.
+- next: ch-03 exercise
