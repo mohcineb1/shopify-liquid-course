@@ -1,4 +1,4 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 # Chapter 1 — Exercise
 
 ## Goal

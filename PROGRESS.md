@@ -123,3 +123,9 @@ Entry format:
 - flagged: none
 - decided: the answer preserves the runtime boundary by server-rendering product identity, limiting JavaScript to a local preview, and keeping discount authority outside the theme.
 - next: ch-01 review; do not add solution-derived structure or hints to `course/`.
+
+## 2026-08-13 · ch-01 · review
+- wrote: finalised `course/part-01-the-mental-model/ch-01-where-liquid-actually-sits/{lesson.md,exercise.md,BRIEF.md}` and its mirrored solution status
+- flagged: none
+- decided: review checklist passed 10/10; only status markers changed, so no solution-derived detail was added to `lesson.md` or `exercise.md`.
+- next: ch-02 lesson

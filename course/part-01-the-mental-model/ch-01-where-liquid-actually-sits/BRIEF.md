@@ -6,7 +6,7 @@ unit: "Chapter 1"
 title: "Where Liquid Actually Sits"
 type: concept
 has_exercise: true
-status: draft
+status: final
 ---
 
 # Chapter 1 — Where Liquid Actually Sits
