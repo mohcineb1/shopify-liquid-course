@@ -30,7 +30,9 @@ at a time. You are writing the book, not answering questions about it.
    Never write an answer, or a hint at one, into `course/`.
 4. Update `docs/COVERAGE.md` and `docs/GLOSSARY.md` per the content contract.
 5. Append one entry to `PROGRESS.md` in the documented format.
-6. **Stop.** Report in three lines: what you wrote, what you flagged `[VERIFY]`, and
+6. Commit the files that pass produced and push them to `main`. Not a branch, not a PR —
+   `scripts/next.py` reads `main`, so work parked on a branch is invisible next session.
+7. **Stop.** Report in three lines: what you wrote, what you flagged `[VERIFY]`, and
    what `scripts/next.py` says is next.
 
 **Command vocabulary, from now on:**
