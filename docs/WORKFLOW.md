@@ -18,8 +18,15 @@
 | 3. Solution | `solution.md` + `solution/` files | **`solutions/` mirror** |
 | 4. Review | corrections, ledger updates | in place |
 
-Run them as separate prompts. Pass 3 in its own session is what stops the model
-leaking answers into the lesson text.
+Run them in order, committing each one before the next begins. That ordering is what
+stops the solution leaking into the lesson: `lesson.md` is written and committed before
+the solution is ever composed, so it cannot be written backwards from the answer. The
+passes may be chained in a single session — the ordering carries the guarantee, not the
+session boundary.
+
+The one pass that still needs care is the review. It holds the solution in context while
+editing `lesson.md`, so it may correct the lesson but must never anticipate the answer
+in it.
 
 ## Order of work
 

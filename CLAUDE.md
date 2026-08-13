@@ -17,18 +17,25 @@ Every session, without exception:
 
 **Run continuously.** `next` and `continue` mean: keep running passes until you hit one
 of the stop conditions below. Do not pause between passes for approval, do not ask
-whether to carry on, and do not stop because a pass came out short.
+whether to carry on, and do not stop because a pass came out short. Chain all four
+passes of a unit, then roll straight into the next unit.
 
 **The stop conditions are the only reasons to stop:**
 
-1. **A solution pass, when that unit's lesson or exercise was written in this same
-   context.** Stop before it, say so, and wait to be restarted. `docs/WORKFLOW.md`
-   requires pass 3 to run in its own session — one context writing both the lesson and
-   the solution leaks the answer into the lesson text. Units with `has_exercise: false`
-   have no solution pass; chain straight through those.
-2. **Context is nearly exhausted.** Finish the current pass, commit it, then stop and
+1. **Context is nearly exhausted.** Finish the current pass, commit it, then stop and
    say so. State lives in the files, so a fresh session resumes with nothing lost.
-3. `status`, or an explicit instruction from me.
+2. `status`, or an explicit instruction from me.
+
+**Commit each pass before starting the next.** That ordering is what makes chaining
+safe: `lesson.md` is written and committed before the solution is ever composed, so the
+solution cannot be written backwards into the lesson. Never carry two passes' work in
+the tree at once.
+
+**The review pass must not leak the solution.** By pass 4 you are holding the solution
+in context while editing `lesson.md`. Correct what is genuinely wrong there — errors,
+gaps against the `BRIEF.md`, stale platform facts — but never add, sharpen or foreshadow
+anything merely because you now know the answer. If an edit would make the exercise
+easier, it does not belong in the review.
 
 **Never stop on uncertainty.** Do not pause to ask about a filter, a limit, or an API
 you are unsure of. Flag it inline with `> [VERIFY]` per hard rule 6 and keep going. An

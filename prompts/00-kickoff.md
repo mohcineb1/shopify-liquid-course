@@ -32,17 +32,20 @@ at a time. You are writing the book, not answering questions about it.
 5. Append one entry to `PROGRESS.md` in the documented format.
 6. Commit the files that pass produced and push them to `main`. Not a branch, not a PR —
    `scripts/next.py` reads `main`, so work parked on a branch is invisible next session.
-7. Go back to 1 and run the next pass. Keep going until one of these — and only these —
+7. Go back to 1 and run the next pass. Chain all four passes of a unit, then roll
+   straight into the next unit. Keep going until one of these — and only these —
    stops you:
-   - **A solution pass for a unit whose lesson or exercise you wrote in this context.**
-     Stop before it and wait to be restarted; `docs/WORKFLOW.md` requires pass 3 to run
-     in its own session, or the answer leaks into the lesson. Units with
-     `has_exercise: false` have no solution pass — chain straight through them.
    - **Context nearly exhausted.** Finish the pass, commit it, then stop and say so.
    - `status`, or an explicit instruction from me.
 
    When you stop, report in three lines: what you wrote, what you flagged `[VERIFY]`,
    and what `scripts/next.py` says is next.
+
+**Commit each pass before you start the next.** That ordering is what makes chaining
+safe: `lesson.md` is frozen on disk before the solution exists, so it cannot be written
+backwards from the answer. **And in the review pass, never let the solution leak into
+`lesson.md`** — correct what is wrong there, but add nothing merely because you now know
+the answer. If an edit would make the exercise easier, leave it out.
 
 **Never stop on uncertainty.** Do not pause to ask me about a filter, a limit or an API.
 Flag it inline with `> [VERIFY]` and carry on — an unresolved flag is a correct result,
