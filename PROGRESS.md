@@ -117,3 +117,9 @@ Entry format:
 - flagged: none
 - decided: the exercise keeps the runtime-boundary decision as the learner’s work; it introduces no API surface beyond the lesson and requires no network call.
 - next: ch-01 solution — stop before this pass because ch-01 lesson and exercise were written in this context; solution must run in a fresh session.
+
+## 2026-08-13 · ch-01 · solution
+- wrote: `solutions/part-01-the-mental-model/ch-01-where-liquid-actually-sits/solution.md` and mirrored `solution/` section and JavaScript asset
+- flagged: none
+- decided: the answer preserves the runtime boundary by server-rendering product identity, limiting JavaScript to a local preview, and keeping discount authority outside the theme.
+- next: ch-01 review; do not add solution-derived structure or hints to `course/`.
