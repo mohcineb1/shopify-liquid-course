@@ -39,3 +39,9 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** input setting, schema home, resource picker, schema placement constraint.
 **Assumed known from earlier:** Liquid output and objects; the section/block setting access paths (app-c); tags and filters (app-a and app-b).
 **Deliberately deferred:** section architecture → ch-17; theme/local/app blocks → ch-18 and ch-19; block rendering → ch-20; settings UX and dynamic sources → ch-24 and ch-25; product, media, menu, and metaobject display patterns → ch-27 to ch-34.
+
+### ch-01 — Where Liquid Actually Sits
+**Taught:** Liquid as a sandboxed server-side template language; the storefront request path through route, template, layout, delivery, and browser; runtime boundaries among Liquid, browser JavaScript, Shopify Functions, Storefront API, and Hydrogen/Oxygen; why theme renders have no arbitrary fetch, await, imports, or npm; a practical Liquid-versus-headless decision matrix.
+**Introduced terms:** render context, template language, runtime boundary, theme render, headless storefront.
+**Assumed known from earlier:** basic HTML, browser JavaScript, and a frontend build tool.
+**Deliberately deferred:** the four concrete Shopify surfaces → ch-02; the Shopify object graph → ch-03; themes versus app architecture → ch-04; first Liquid implementation → ch-05; detailed Functions, Storefront API, and headless development → later specialized chapters.

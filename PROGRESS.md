@@ -105,3 +105,9 @@ Entry format:
 - flagged: none
 - decided: review checklist passed 10/10; repaired the wrong-then-right wrapperless-block example so its code now demonstrates the documented editor failure and correction.
 - next: ch-01 lesson
+
+## 2026-08-13 · ch-01 · lesson
+- wrote: `course/part-01-the-mental-model/ch-01-where-liquid-actually-sits/lesson.md` (2,255 words)
+- flagged: none
+- decided: verified the execution-boundary matrix against current Shopify Liquid, Functions, Storefront API, and Hydrogen/Oxygen documentation.
+- next: ch-01 exercise

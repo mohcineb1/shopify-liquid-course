@@ -6,7 +6,7 @@ unit: "Chapter 1"
 title: "Where Liquid Actually Sits"
 type: concept
 has_exercise: true
-status: todo
+status: draft
 ---
 
 # Chapter 1 — Where Liquid Actually Sits
@@ -15,12 +15,12 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 1.1 Liquid is not a frontend framework — it's a sandboxed server-side template language
-- [ ] 1.2 The request lifecycle: request → route resolution → template → layout → CDN edge
-- [ ] 1.3 What runs where: Liquid (server, per render) vs JS (browser) vs Functions (Wasm) vs Storefront API (headless)
-- [ ] 1.4 Why there is no `fetch`, no `await`, no imports, no npm at render time
-- [ ] 1.5 The sandbox as a feature: multi-tenancy, upgrade safety, and why Shopify locks you down
-- [ ] 1.6 Liquid Storefronts vs Hydrogen/Oxygen — the honest decision matrix
+- [x] 1.1 Liquid is not a frontend framework — it's a sandboxed server-side template language
+- [x] 1.2 The request lifecycle: request → route resolution → template → layout → CDN edge
+- [x] 1.3 What runs where: Liquid (server, per render) vs JS (browser) vs Functions (Wasm) vs Storefront API (headless)
+- [x] 1.4 Why there is no `fetch`, no `await`, no imports, no npm at render time
+- [x] 1.5 The sandbox as a feature: multi-tenancy, upgrade safety, and why Shopify locks you down
+- [x] 1.6 Liquid Storefronts vs Hydrogen/Oxygen — the honest decision matrix
 
 ## Labs assigned to this unit
 
