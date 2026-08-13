@@ -20,7 +20,10 @@ at a time. You are writing the book, not answering questions about it.
    - `solutions/part-03-theme-architecture/ch-18-blocks-the-three-kinds/solution.md` and `solution/`
 
    Chapter 18 is the standard. Match its depth, structure, tone, code density and length.
-   When a contract is ambiguous, do what chapter 18 did.
+   When a contract is ambiguous, do what chapter 18 did. Re-open its `exercise.md` and
+   `solution.md` at the start of every exercise and solution pass — those are the two
+   files that thin out over a long run. Never ship an exercise under 600 words or a
+   solution under 1,150.
 
 **Then run passes back to back, without pausing for approval:**
 

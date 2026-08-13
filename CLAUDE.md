@@ -69,6 +69,17 @@ first pass. Match its depth, structure, code density and length. Where a contrac
 ambiguous, do what chapter 18 did. Calibration: lesson ~2,450 words, exercise ~700,
 solution ~1,350.
 
+**Re-read the matching chapter 18 file at the start of every exercise pass and every
+solution pass** — not only before your first unit. Calibration decays over a long run,
+and the exercise and the solution are what thin out first: the lesson carries the
+explanation, so those two feel finished sooner than they are. They are not finished.
+The exercise has to give the reader enough to build something real, and the solution
+has to show the whole build with the reasoning behind it.
+
+**Floor.** Never ship an exercise under 600 words or a solution under 1,150. Falling
+below that means the task is under-specified or the walkthrough was cut short. Go back
+and finish it; do not lower the target to match what you already wrote.
+
 ## Hard rules
 
 1. **Scope is the contract.** Cover every numbered sub-topic in `BRIEF.md`, in order,
