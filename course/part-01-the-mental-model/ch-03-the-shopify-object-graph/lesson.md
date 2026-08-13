@@ -3,7 +3,7 @@
 id: ch-03
 title: "The Shopify Object Graph"
 part: 1
-words: 2100
+words: 2375
 ---
 
 # Chapter 3 — The Shopify Object Graph
@@ -44,6 +44,8 @@ The right first question is not “how do I query this?” It is “is this obje
 
 Some paths are handed indirectly. A cart render supplies `cart`, and cart exposes its line items; a collection render supplies `collection`, and the collection exposes products for the current page. This is **traversal access**: reading an associated object or collection from the current object rather than inventing a new query. It is powerful, but it is still bounded by the object graph Shopify documents.
 
+That distinction changes how you write a requirement. “Show the current product’s vendor on its product page” names a value that starts at a known template root. “Show the vendor for any product a merchant types into a section setting” is not the same task merely because both sentences contain the word product. The second task needs a documented resource-selection path or a different data surface. Before writing Liquid, name the root object, the relationship, and the page context that make the desired value legitimate. If you cannot name all three, you are not yet ready to choose a tag or filter.
+
 ## 3.2 Global objects, template-scoped objects, and scoped objects
 
 Classify an object before you use it. The classification tells you where an example can run, where a snippet can reasonably expect it, and what a refactor might accidentally remove.
@@ -71,6 +73,8 @@ A template-scoped object has stronger meaning. `product` is meaningful in a prod
 The named parameter says that this snippet renders a product price. It is safer than coupling the file to whatever template happened to render it first.
 
 Scoped objects are easy to overlook because their names are ordinary. In a section, `section` represents that section instance and its settings. In a loop, the loop variable represents one current item. In block-rendering code, `block` represents the current block. Those values do not travel as global state. When you move markup out of its parent, preserve the required input explicitly or keep it in the scope where Shopify provides it. Detailed section and block contracts belong in `ch-17-sections-as-editor-contracts` and `ch-18-blocks-the-three-kinds`.
+
+This is a useful refactoring test. If a fragment only works because it silently reaches into its parent’s section settings or loop variable, it is not yet a portable reusable boundary. Either keep it local because it genuinely belongs to that parent, or give it a small explicit input contract. Do not solve the uncertainty by promoting a local value into a global-looking name: that hides ownership and makes the next template reuse fail in a less obvious place.
 
 ## 3.3 Drops: lazy proxies, not plain objects — and why that matters for performance
 
@@ -104,6 +108,8 @@ The improvement is partly an authoring benefit: the chosen variant has a name an
 This is where people get burned: they serialize or dump huge object trees, build nested loops over relationships they do not display, then blame Liquid for being slow. A Drop lets Shopify defer work until you ask for it. Your template determines how often and how widely it asks. `ch-09-liquid-data-shaping` covers transformation and repetition patterns; `ch-11-performance-and-render-cost` will return to cost with measurements and larger-page strategy.
 
 Do not confuse a Drop with a promise. Liquid does not expose an asynchronous handle you can schedule, cache in browser state, or await. “Lazy” describes Shopify’s server-side object resolution, not an API you control in the template.
+
+Performance discipline therefore begins with markup intent. For each traversal, ask what the buyer will actually see, whether the value is reused, and whether the current page already supplies a narrower object that answers the question. Naming one needed relationship with `assign` can make a template clearer; assigning every property “for performance” cannot. The right optimization is usually less traversal and less output, not a larger cache of aliases. When an object path becomes central to page cost, measure it in the dedicated performance work rather than relying on intuition about a particular Drop.
 
 ## 3.4 A visual map of the graph you will use daily
 

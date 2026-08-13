@@ -184,3 +184,9 @@ Entry format:
 - flagged: none
 - decided: the exercise makes absence meaningful across product, collection, and cart contexts; it avoids a data dump or arbitrary query so the learner must reason from documented graph roots.
 - next: ch-03 solution
+
+## 2026-08-14 · ch-03 · lesson · calibration redo
+- wrote: expanded `course/part-01-the-mental-model/ch-03-the-shopify-object-graph/lesson.md` to 2,375 words
+- flagged: none
+- decided: deepened the root/relationship/context decision test, explicit scoped-input refactoring, and traversal-intent discipline without adding object surfaces beyond this chapter.
+- next: ch-03 solution
