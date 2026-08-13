@@ -178,3 +178,9 @@ Entry format:
 - flagged: none
 - decided: added a context-root diagnostic procedure and reportable debugging sequence without widening the chapter’s object-graph scope.
 - next: ch-03 exercise
+
+## 2026-08-14 · ch-03 · exercise
+- wrote: `course/part-01-the-mental-model/ch-03-the-shopify-object-graph/exercise.md` (789 words)
+- flagged: none
+- decided: the exercise makes absence meaningful across product, collection, and cart contexts; it avoids a data dump or arbitrary query so the learner must reason from documented graph roots.
+- next: ch-03 solution
