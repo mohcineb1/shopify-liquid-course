@@ -1,9 +1,9 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 ---
 id: app-c
 title: "Complete Object Reference"
 part: 15
-words: 2382
+words: 2425
 ---
 
 # Appendix C — Complete Object Reference
@@ -31,7 +31,7 @@ Liquid objects are not a global ORM you can query at will. Shopify hands a templ
 | `request` | `design_mode`, `visual_preview_mode`, `host`, `origin`, `path`, `page_type`, `locale` | Cheap | Global; request-shaped templates |
 | `routes` | Named paths such as `root_url`, `cart_url`, `cart_add_url`, `account_url`, `search_url`, `collections_url`, `all_products_collection_url`, policy and localization routes | Cheap | Global |
 | `settings` | Every `settings_schema.json` setting by ID, including resource references | Cheap scalar; traverse selected resource | Global, including Liquid assets where documented |
-| `theme` | `id`, `name`, `role`, `store_id` | Cheap | Global |
+| `theme` | `id`, `name`, `role` | Legacy/contextual | Global, but deprecated in Liquid because its values can change; do not build new theme logic on it.[6] |
 | `template` | `name`, `suffix`, `directory` | Cheap | Global |
 | `canonical_url`, `page_title`, `page_description`, `page_image`, `powered_by_link` | Render-ready URL, title, description, image, or HTML string | Cheap | Global |
 | `handle`, `current_page`, `current_tags` | Current handle, pagination number, and applied tags | Cheap | `current_tags` is collection/blog context; other values are global where relevant |
@@ -89,12 +89,12 @@ A product card can be rendered in a collection or search result, but never assum
 | Object | Properties and object surface | Cost | Exposed in |
 |---|---|---|---|
 | `cart` | `items`, `item_count`, `attributes`, `note`, `currency`, `requires_shipping`, `taxes_included`, `duties_included`, `total_price`, `original_total_price`, `items_subtotal_price`, `total_discount`, `total_weight`, `checkout_charge_amount`, discount applications | Cheap totals; traverse line items/discount arrays | Global cart state; cart template |
-| `line_item` | `product`, `variant`, `title`, `url`, `quantity`, `original_price`, `final_price`, line totals, `discount_allocations`, `discounts`, `properties`, `selling_plan_allocation`, `unit_price`, `unit_price_measurement`, `image`, `featured_media`, `sku`, `vendor`, `gift_card?`, `requires_shipping` | Traverse from cart/order; properties may be merchant/customer supplied | Cart, checkout, order contexts |
+| `line_item` | `product`, `variant`, `title`, `url`, `quantity`, `original_price`, `original_line_price`, `final_price`, `final_line_price`, `discount_allocations`, `properties`, `selling_plan_allocation`, `unit_price`, `unit_price_measurement`, `image`, `featured_media`, `sku`, `vendor`, `gift_card`, `requires_shipping` | Traverse from cart/order; properties may be merchant/customer supplied. Legacy `discounts`, `price`, and `line_price` are deprecated. | Cart, checkout, order contexts |
 | `discount_application`, `discount_allocation`, `discount` | Application `title`, `type`, `value`, `value_type`, target fields, `total_allocated_amount`; allocation `amount`, `discount_application`; legacy discount details | Traverse | Cart, line item, checkout, order |
 | `customer` | `id`, `name`, first/last names, `email`, `phone`, `tags`, `accepts_marketing`, `orders`, `orders_count`, `default_address`, `addresses`, `last_order`, `total_spent`, `metafields`, B2B company fields | Cheap identity; traverse orders/addresses | Global only when logged in; customer templates |
 | `address`, `company`, `company_location`, `company_address`, `customer_payment_method`, `store_credit_account` | Address names, lines, city, province, country, codes, zip, phone; company/location identity, addresses, tax/shipping data; payment/store-credit context | Traverse/contextual | Customer account, B2B, payment contexts |
 | `order`, `fulfillment`, `transaction`, `transaction_payment_details`, `shipping_method`, `tax_line` | Order identity, dates, line items, addresses, discounts, shipping, taxes, transactions; fulfillment tracking/status; transaction amount/status/gateway; shipping/tax labels/rates | Traverse; sensitive account state | Customer order and order-status contexts |
-| `checkout` | Cart-like checkout lines, addresses, email, discounts, taxes, shipping, payments, order/transaction state | Contextual/legacy | Checkout-related surfaces only; do not build new checkout customizations with Liquid |
+| `checkout` | Cart-like checkout lines, addresses, email, discounts, taxes, shipping, payments, order/transaction state | Contextual/legacy | Order status pages and, for Shopify Plus, `checkout.liquid`; the in-checkout Information, Shipping, and Payment surfaces are deprecated. Do not build new checkout customizations with Liquid.[4] |
 | `gift_card`, `recipient`, `pending_payment_instruction_input`, `instructions` | Gift-card code/balance/expiry and recipient delivery data; payment instruction and nested-cart relationships | Contextual | Gift-card, payment, or nested-cart contexts |
 
 `cart.discounts` is deprecated in favour of `cart.discount_applications`; new checkout work belongs in Checkout Extensibility, not `checkout.liquid`.[4]
@@ -160,3 +160,4 @@ The source inventory includes **every currently documented object** in the Shopi
 [3]: https://shopify.dev/docs/api/liquid/objects/all_products "Shopify — Liquid object: all_products"
 [4]: https://shopify.dev/docs/storefronts/themes/architecture/layouts/checkout-liquid "Shopify — checkout.liquid"
 [5]: https://shopify.dev/docs/api/liquid/objects/section "Shopify — Liquid object: section"
+[6]: https://shopify.dev/docs/api/liquid/objects/theme "Shopify — Liquid object: theme"

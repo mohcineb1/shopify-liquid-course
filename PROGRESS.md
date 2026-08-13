@@ -87,3 +87,9 @@ Entry format:
 - flagged: none
 - decided: reconciled the reference against all 138 current Shopify Liquid object pages; labelled access classes as authoring guidance rather than platform latency guarantees and recorded the 20-handle `all_products` ceiling.
 - next: app-c review
+
+## 2026-08-13 · app-c · review
+- wrote: finalised `course/part-15-appendices/appendix-c-complete-object-reference/{lesson.md,BRIEF.md}`
+- flagged: none
+- decided: review checklist passed 10/10; corrected the deprecated `theme` object, the line-item property surface, and the constrained availability of the `checkout` object.
+- next: app-d lesson

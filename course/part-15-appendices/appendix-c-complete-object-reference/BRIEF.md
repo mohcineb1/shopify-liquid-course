@@ -6,7 +6,7 @@ unit: "Appendix C"
 title: "Complete Object Reference"
 type: reference
 has_exercise: false
-status: draft
+status: final
 ---
 
 # Appendix C — Complete Object Reference
