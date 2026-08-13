@@ -129,3 +129,9 @@ Entry format:
 - flagged: none
 - decided: review checklist passed 10/10; only status markers changed, so no solution-derived detail was added to `lesson.md` or `exercise.md`.
 - next: ch-02 lesson
+
+## 2026-08-13 · ch-02 · lesson
+- wrote: `course/part-01-the-mental-model/ch-02-translating-what-you-already-know/lesson.md` (2,327 words)
+- flagged: none
+- decided: covered the five contractual translations without turning an SSR comparison into framework instruction; added only hydration, build step, and bundler as new canonical terms.
+- next: ch-02 exercise

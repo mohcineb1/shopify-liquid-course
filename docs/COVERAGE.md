@@ -45,3 +45,9 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** render context, template language, runtime boundary, theme render, headless storefront.
 **Assumed known from earlier:** basic HTML, browser JavaScript, and a frontend build tool.
 **Deliberately deferred:** the four concrete Shopify surfaces → ch-02; the Shopify object graph → ch-03; themes versus app architecture → ch-04; first Liquid implementation → ch-05; detailed Functions, Storefront API, and headless development → later specialized chapters.
+
+### ch-02 — Translating What You Already Know
+**Taught:** Liquid versus JSX (template output and tags rather than arbitrary expressions, callbacks, or component state); Liquid versus Handlebars, Nunjucks, Twig, and ISML (shared template ideas but non-portable syntax and Shopify-specific context); theme rendering versus SSR frameworks (no built-in hydration, build step, or bundler); React habits that harm theme code; the responsibility mapping from component thinking to sections, blocks, and snippets.
+**Introduced terms:** hydration, build step, bundler.
+**Assumed known from earlier:** Liquid’s sandboxed render boundary and theme render (ch-01); Liquid tags, filters, objects, snippets, sections, blocks, and schema surfaces (appendices A–D).
+**Deliberately deferred:** object availability and Drops → ch-03 and ch-11; theme-versus-app architecture → ch-04; first theme implementation → ch-05; section contracts → ch-17; block types and schema constraints → ch-18 and ch-19; snippet API design → ch-21; client-side theme patterns → ch-37 to ch-41.
