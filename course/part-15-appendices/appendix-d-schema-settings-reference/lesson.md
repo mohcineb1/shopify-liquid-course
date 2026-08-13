@@ -1,9 +1,9 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 ---
 id: app-d
 title: "Schema & Settings Reference"
 part: 15
-words: 2399
+words: 2420
 ---
 
 # Appendix D — Schema & Settings Reference
@@ -155,6 +155,24 @@ Resource values are objects in Liquid, not merely handles. Direct output of lega
 
 `presets` make a section or theme block addable in the editor; a static section instead uses `default`. Preset entries require `name` and can supply `category`, `settings`, and child `blocks`. Restrict addability with `enabled_on` *or* `disabled_on`, never both. The former accepts page-template types and section groups such as `header`, `footer`, `aside`, or `custom.<name>`; `"*"` means all valid locations.[2] [3]
 
+**Wrong:** two top-level elements are emitted, and neither carries `block.shopify_attributes`. Shopify cannot treat that output as one draggable, editor-addressable block.
+
+```liquid
+<!-- blocks/heading.liquid -->
+<h2>{{ block.settings.heading }}</h2>
+<p>Optional supporting copy</p>
+
+{% schema %}
+{
+  "name": "Heading",
+  "tag": null,
+  "settings": [{ "type": "text", "id": "heading", "label": "Heading", "default": "A clear message" }]
+}
+{% endschema %}
+```
+
+**Right:** one top-level element carries the editor attributes, so the wrapperless block remains movable and selectable in the editor.
+
 ```liquid
 <!-- blocks/heading.liquid -->
 <h2 {{ block.shopify_attributes }}>{{ block.settings.heading }}</h2>
@@ -169,18 +187,7 @@ Resource values are objects in Liquid, not merely handles. Direct output of lega
 {% endschema %}
 ```
 
-**Wrong:** putting two top-level elements in a block with `"tag": null`, or omitting `block.shopify_attributes`.
-
-```liquid
-<!-- blocks/heading.liquid -->
-<h2 {{ block.shopify_attributes }}>{{ block.settings.heading }}</h2>
-
-{% schema %}
-{ "name": "Heading", "tag": null, "settings": [{ "type": "text", "id": "heading", "label": "Heading" }] }
-{% endschema %}
-```
-
-**Right:** one top-level element holds the editor attributes. Also prefer the IDs `heading`, then `title`, then `text` for an informative editor sidebar label; that is the documented title precedence for blocks.[2] [3]
+Also prefer the IDs `heading`, then `title`, then `text` for an informative editor sidebar label; that is the documented title precedence for blocks.[2] [3]
 
 ---
 

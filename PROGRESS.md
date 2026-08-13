@@ -99,3 +99,9 @@ Entry format:
 - flagged: none
 - decided: verified all 33 current input-setting types, including theme-only color palettes and color-scheme groups, and documented their JSON and validation boundaries.
 - next: app-d review
+
+## 2026-08-13 · app-d · review
+- wrote: finalised `course/part-15-appendices/appendix-d-schema-settings-reference/{lesson.md,BRIEF.md}`
+- flagged: none
+- decided: review checklist passed 10/10; repaired the wrong-then-right wrapperless-block example so its code now demonstrates the documented editor failure and correction.
+- next: ch-01 lesson

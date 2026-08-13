@@ -6,7 +6,7 @@ unit: "Appendix D"
 title: "Schema & Settings Reference"
 type: reference
 has_exercise: false
-status: draft
+status: final
 ---
 
 # Appendix D — Schema & Settings Reference
