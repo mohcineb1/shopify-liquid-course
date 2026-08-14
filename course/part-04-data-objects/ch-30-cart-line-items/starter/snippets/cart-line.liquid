@@ -1,0 +1,6 @@
+<article class="cart-line" data-variant-id="{{ item.id }}">
+  <a href="{{ item.url }}">{{ item.title }}</a>
+  <p>{{ item.price | money }} × {{ item.quantity }}</p>
+  <ul>{% for property in item.properties %}<li>{{ property.first }}: {{ property.last }}</li>{% endfor %}</ul>
+  <a href="/cart/change?id={{ item.id }}&quantity=0">Remove</a>
+</article>

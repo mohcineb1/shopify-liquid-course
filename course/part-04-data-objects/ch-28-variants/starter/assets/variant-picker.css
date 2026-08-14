@@ -1,0 +1,5 @@
+.variant-picker { display: grid; gap: 1rem; }
+.variant-picker fieldset { display: flex; flex-wrap: wrap; gap: .5rem; }
+.variant-picker [aria-busy="true"] { opacity: .65; }
+.variant-picker__status { min-block-size: 1.5rem; }
+.variant-picker__media img, .variant-picker__media video { display: block; max-inline-size: 100%; }

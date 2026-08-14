@@ -1,0 +1,1 @@
+<nav aria-label="Filters"><ul>{% for tag in collection.all_tags %}<li><a href="?filter.p.tag={{ tag | handleize }}">{{ tag }}</a></li>{% endfor %}</ul></nav>

@@ -176,3 +176,18 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** current variant, variant deep link, price range, quantity rule, quantity price break, selling-plan allocation, product media ordering.
 **Assumed known from earlier:** global object/context discipline (ch-26); settings ownership (ch-22); Liquid rendering and guards (ch-05 to ch-09).
 **Deliberately deferred:** collection filtering and product lists → ch-28; metaobject modeling → ch-35; dynamic variant interaction implementation → ch-37.
+### ch-28 — Variants
+**Taught:** the full variant transaction object; option-value matching and unavailable combinations; high-variant constraints; combined-listing sibling transitions; progressive variant rendering; and minimal, JSON-safe browser state.
+**Introduced terms:** option-value selection, top-down availability, adjacent availability, combined-listing sibling, selected-state boundary, bounded variant projection.
+**Assumed known from earlier:** product/variant presentation state (ch-27); global context and routes (ch-26); Liquid rendering guards.
+**Deliberately deferred:** full interaction lifecycle → ch-37; Ajax and section rendering request architecture → ch-38; cart transaction behavior → ch-30 and ch-38.
+### ch-29 — Collections, Filtering & Pagination
+**Taught:** collection result and sort ownership; filter/facet objects and URL transitions; type-specific facet rendering; links-first degradation; pagination range and fetching constraints; `all_products` lookup limits; and facet render-performance discipline.
+**Introduced terms:** collection query state, facet, filter transition URL, price-range filter, pagination window, page-size budget, handle lookup cap.
+**Assumed known from earlier:** products and filtered variant context (ch-27 to ch-28); global URL/context discipline (ch-26); Liquid guards and snippets.
+**Deliberately deferred:** search-specific result behavior → ch-32; client-side request implementation → ch-37 and ch-38; collection data modeling → ch-33 to ch-35.
+### ch-30 — Cart & Line Items
+**Taught:** cart totals and context; line-item identity and final prices; personalization properties and uploads; discount allocations; cart versus line scopes; and backend authority for free gifts and bundles.
+**Introduced terms:** cart state, line-item key, line property, cart attribute, discount allocation, final line price, commerce authority boundary.
+**Assumed known from earlier:** product and selling-plan data (ch-27); global context/URLs (ch-26); quantity and variant state (ch-28).
+**Deliberately deferred:** Ajax cart mutation implementation → ch-38; customer accounts and orders → ch-31; app/extensions and backend commerce integrations → ch-52 onward.

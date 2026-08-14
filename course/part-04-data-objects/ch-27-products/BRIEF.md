@@ -6,7 +6,7 @@ unit: "Chapter 27"
 title: "Products"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 27 — Products
@@ -15,15 +15,15 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 27.1 The `product` object in full
-- [ ] 27.2 Options and `options_with_values`, option ordering, swatches
-- [ ] 27.3 `selected_variant`, `selected_or_first_available_variant`, and URL variant state
-- [ ] 27.4 Price fields: `price`, `compare_at_price`, `price_min`/`price_max`, `price_varies`
-- [ ] 27.5 Availability, inventory policy, inventory quantity, `quantity_rule`, `quantity_price_breaks`
-- [ ] 27.6 Media: images, videos, 3D models, external video, media ordering, featured media
-- [ ] 27.7 Selling plans and subscriptions in the theme layer
-- [ ] 27.8 Product metafields and structured product data
-- [ ] 27.9 Tags, type, vendor, collections, and template suffix
+- [x] 27.1 The `product` object in full
+- [x] 27.2 Options and `options_with_values`, option ordering, swatches
+- [x] 27.3 `selected_variant`, `selected_or_first_available_variant`, and URL variant state
+- [x] 27.4 Price fields: `price`, `compare_at_price`, `price_min`/`price_max`, `price_varies`
+- [x] 27.5 Availability, inventory policy, inventory quantity, `quantity_rule`, `quantity_price_breaks`
+- [x] 27.6 Media: images, videos, 3D models, external video, media ordering, featured media
+- [x] 27.7 Selling plans and subscriptions in the theme layer
+- [x] 27.8 Product metafields and structured product data
+- [x] 27.9 Tags, type, vendor, collections, and template suffix
 
 ## Labs assigned to this unit
 

@@ -1,0 +1,3 @@
+<script type="application/json" data-variant-state>
+{ "productId": {{ product.id | json }}, "variant": {% if current_variant %}{ "id": {{ current_variant.id | json }}, "available": {{ current_variant.available | json }}, "price": {{ current_variant.price | json }}, "mediaId": {{ current_variant.featured_media.id | json }} }{% else %}null{% endif %} }
+</script>

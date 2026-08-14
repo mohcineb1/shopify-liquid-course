@@ -1,0 +1,19 @@
+{{ 'variant-picker.css' | asset_url | stylesheet_tag }}
+{% assign current_variant = product.selected_or_first_available_variant %}
+<section class="variant-picker" data-product-url="{{ product.url }}" data-section-id="{{ section.id }}">
+  <h1>{{ product.title }}</h1>
+  <p data-variant-price>{{ current_variant.price | money }}</p>
+  <div data-option-picker>
+    {% for option in product.options_with_values %}
+      <fieldset><legend>{{ option.name }}</legend>
+        {% for value in option.values %}<label><input type="radio" name="{{ option.name }}" value="{{ value }}" {% if value.selected %}checked{% endif %}>{{ value }}</label>{% endfor %}
+      </fieldset>
+    {% endfor %}
+  </div>
+  <form method="post" action="{{ routes.cart_add_url }}"><input data-variant-id type="hidden" name="id" value="{{ current_variant.id }}"><button type="submit">Add to cart</button></form>
+  {% render 'variant-state', product: product %}
+</section>
+<script src="{{ 'variant-picker.js' | asset_url }}" defer></script>
+{% schema %}
+{ "name": "Variant picker", "settings": [] }
+{% endschema %}

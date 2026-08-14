@@ -162,3 +162,23 @@ use; never introduce a synonym for something already listed.
 | Quantity price break | A context-sensitive variant pricing tier for a qualifying quantity, often supplied by a B2B catalog. | ch-27 |
 | Selling-plan allocation | The selected or available plan-specific purchase and price result associated with a variant. | ch-27 |
 | Product media ordering | The product-owned order of media objects, which can include images, videos, 3D models and external videos. | ch-27 |
+| Option-value selection | The ordered selection of product-option value IDs used to determine or request the next product variant state. | ch-28 |
+| Top-down availability | An option-value availability model where a value is available when a purchasable path exists beneath it in the selected option tree. | ch-28 |
+| Adjacent availability | An option-value availability model that treats choices as graph nodes and asks whether the associated variant is purchasable. | ch-28 |
+| Combined-listing sibling | A related product reached when an option value’s `product_url` identifies a separate product in a combined listing. | ch-28 |
+| Selected-state boundary | The rule that all dependent purchase surfaces must update from one resolved variant or explicit no-variant state. | ch-28 |
+| Bounded variant projection | A deliberately limited JSON serialization of only the variant fields a specific browser component consumes. | ch-28 |
+| Collection query state | The server-owned combination of collection filters, sorting, pagination, and relevant result context represented by the current URL. | ch-29 |
+| Facet | A storefront filter dimension, such as availability, price, vendor, variant option, or configured metafield. | ch-29 |
+| Filter transition URL | The Shopify-generated URL that adds, removes, or clears a filter state while preserving the relevant query contract. | ch-29 |
+| Price-range filter | A storefront filter with minimum and maximum values whose parameter names and money context come from the filter object. | ch-29 |
+| Pagination window | The bounded server result page established by `{% paginate %}`, including its navigable page state. | ch-29 |
+| Page-size budget | A deliberate number of rendered results chosen from card and facet cost rather than an arbitrary maximum. | ch-29 |
+| Handle lookup cap | The maximum of 20 unique product handles accessible through `all_products` on a page. | ch-29 |
+| Cart state | The current Shopify-owned set of cart items, totals, discounts, currency context, notes, and attributes that the theme must render rather than recalculate. | ch-30 |
+| Line-item key | A cart-specific identifier composed from a variant ID and line characteristics; it is unique at a moment but can change after properties or discounts change. | ch-30 |
+| Line property | A customer-provided name/value detail attached to one cart line through a product-form or cart API property field. | ch-30 |
+| Cart attribute | Additional customer-provided data attached to the cart as a whole rather than to one line item. | ch-30 |
+| Discount allocation | The amount and discount application showing how a discount affects an item or cart context. | ch-30 |
+| Final line price | The current unit or aggregate line price after line-level discounts, distinct from original price fields. | ch-30 |
+| Commerce authority boundary | The distinction between theme display/intent capture and the backend rules that validate pricing, promotions, bundles, and checkout eligibility. | ch-30 |

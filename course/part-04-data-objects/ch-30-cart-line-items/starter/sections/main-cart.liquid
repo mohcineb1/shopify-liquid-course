@@ -1,0 +1,16 @@
+{{ 'cart.css' | asset_url | stylesheet_tag }}
+<section class="main-cart page-width">
+  <h1>Cart</h1>
+  <form action="{{ routes.cart_url }}" method="post">
+    {% for item in cart.items %}{% render 'cart-line', item: item %}{% endfor %}
+    <label for="GiftNote">Gift note</label>
+    <input id="GiftNote" name="properties[Gift note]">
+    <p>Subtotal: {{ cart.original_total_price | money }}</p>
+    {% for discount in cart.discounts %}<p>{{ discount.title }}</p>{% endfor %}
+    <button type="submit" name="checkout">Checkout</button>
+  </form>
+  {% if cart.total_price > 5000 %}<p>Free sample automatically added and discounted by this theme.</p>{% endif %}
+</section>
+{% schema %}
+{ "name": "Main cart", "settings": [] }
+{% endschema %}

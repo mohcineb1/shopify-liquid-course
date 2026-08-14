@@ -6,7 +6,7 @@ unit: "Chapter 29"
 title: "Collections, Filtering & Pagination"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 29 — Collections, Filtering & Pagination
@@ -15,13 +15,13 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 29.1 The `collection` object, sorting, `sort_by`, `default_sort_by`
-- [ ] 29.2 Storefront filtering: the `filter`, `filter_value`, `filter_value_display` objects
-- [ ] 29.3 Price-range filters, boolean filters, list filters, swatch filters
-- [ ] 29.4 Building filter UI that degrades to plain links
-- [ ] 29.5 `{% paginate %}`, the `paginate` object, page sizes, and limits
-- [ ] 29.6 The `all_products` object and its hard cap
-- [ ] 29.7 Facet performance and render cost
+- [x] 29.1 The `collection` object, sorting, `sort_by`, `default_sort_by`
+- [x] 29.2 Storefront filtering: the `filter`, `filter_value`, `filter_value_display` objects
+- [x] 29.3 Price-range filters, boolean filters, list filters, swatch filters
+- [x] 29.4 Building filter UI that degrades to plain links
+- [x] 29.5 `{% paginate %}`, the `paginate` object, page sizes, and limits
+- [x] 29.6 The `all_products` object and its hard cap
+- [x] 29.7 Facet performance and render cost
 
 ## Labs assigned to this unit
 

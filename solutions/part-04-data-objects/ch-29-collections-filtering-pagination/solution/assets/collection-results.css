@@ -1,0 +1,5 @@
+.collection-results { display: grid; gap: 1rem; }
+.collection-results__grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); list-style: none; padding: 0; }
+.collection-results__empty { padding: 2rem; border: 1px solid currentColor; }
+.collection-results [aria-busy="true"] { opacity: .65; }
+.collection-results nav ul { display: flex; flex-wrap: wrap; gap: .75rem; list-style: none; padding: 0; }

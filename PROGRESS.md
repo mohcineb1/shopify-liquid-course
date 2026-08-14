@@ -699,3 +699,61 @@ Entry format:
 - verified: retained selected variant, availability, media, quantity, plan, and metafield contracts from the current Shopify references.
 - decided: established one current-variant source for every transactional display and future client synchronization surface.
 - next: ch-27 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-27 · review
+- reviewed: passed all nine numbered product topics in order; no out-of-scope chapter content or solution implementation leaked into the lesson or exercise.
+- verified: retained current Shopify references and explicit `[VERIFY]` guards for option-value, media, allocation, quantity, and metafield details requiring store-level confirmation.
+- decided: applied final status markers only; no pedagogical material derived from the solution was added during review.
+- next: ch-28 lesson
+## 2026-08-14 · ch-28 · lesson
+- wrote: `course/part-04-data-objects/ch-28-variants/lesson.md` covering variant objects, high-variant matching, combined listings, framework-free rendering, and browser serialization.
+- verified: consulted current Shopify high-variant, variant-object, and product-variant references; cited their 250-variant and option-value contracts.
+- decided: treated unresolved selections and sibling-product transitions as explicit server-owned states rather than browser fallbacks.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-28 exercise
+## 2026-08-14 · ch-28 · exercise
+- wrote: `course/part-04-data-objects/ch-28-variants/exercise.md` with section, client script, CSS, JSON-state, and test-notes starter files for Lab 11.
+- flagged: `[VERIFY]` for Section Rendering API, high-variant option values, combined-listing URLs, and accessible status behavior.
+- decided: required an explicit no-variant state and server-recovery path instead of a complete variant cache or local fallback.
+- next: ch-28 solution
+## 2026-08-14 · ch-28 · solution
+- wrote: `solutions/part-04-data-objects/ch-28-variants/solution.md` with mirrored picker section, script, styles, state payload, and verification notes.
+- verified: preserved the documented high-variant option-value flow, explicit null-variant state, and combined-listing sibling-product boundary.
+- decided: replaced the full surface atomically so price, form ID, media, availability, quantity and plan data cannot originate from different selections.
+- next: ch-28 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-28 · review
+- reviewed: passed all four numbered variant topics in order, scope boundaries, source flags, exercise solvability, terminology, calibration floor, and starter/solution parity.
+- verified: retained explicit `[VERIFY]` treatment for integration-level request, option-value, combined-listing, focus, and announcement details.
+- decided: applied final markers only; no solution-derived implementation was moved into the lesson or exercise.
+- next: ch-29 lesson
+## 2026-08-14 · ch-29 · lesson
+- wrote: `course/part-04-data-objects/ch-29-collections-filtering-pagination/lesson.md` covering sorting, filtering, facets, pagination, all_products, and performance.
+- verified: consulted current official Shopify collection, storefront-filtering, paginate, and all_products references; cited their relevant limits and URL behavior.
+- decided: framed collection behavior as server-owned query state with link-first transitions and bounded page/facet cost.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-29 exercise
+## 2026-08-14 · ch-29 · exercise
+- wrote: `course/part-04-data-objects/ch-29-collections-filtering-pagination/exercise.md` with collection section, facets snippet, CSS, and query-verification starter files.
+- flagged: `[VERIFY]` for current filter types, display properties, Section Rendering integration, and merchant configuration behavior.
+- decided: required all catalog interactions to keep a URL-native fallback and made empty-result recovery part of the definition of done.
+- next: ch-29 solution
+## 2026-08-14 · ch-29 · solution
+- wrote: `solutions/part-04-data-objects/ch-29-collections-filtering-pagination/solution.md` with mirrored collection section, facets snippet, CSS, and query-verification notes.
+- verified: retained current Shopify result-count, filter URL, pagination, all_products-cap, and collection-filter availability contracts.
+- decided: used Shopify transition URLs and a collection-owned related source so the catalog preserves query state without a client-side reimplementation.
+- next: ch-29 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-29 · review
+- reviewed: passed all seven numbered collection topics in order, scope limits, source flags, exercise solvability, terminology, calibration floor, and starter/solution parity.
+- verified: retained current Shopify contracts for filters, result counts, pagination, render limits, and the `all_products` handle cap.
+- decided: applied final markers only; no worked-solution construction was added to the lesson or exercise.
+- next: ch-30 lesson
+## 2026-08-14 · ch-30 · lesson
+- wrote: `course/part-04-data-objects/ch-30-cart-line-items/lesson.md` covering cart context, line items, properties, discounts, data scope, gifts, and bundles.
+- verified: consulted current official Shopify cart, line-item, and discount-allocation object references; cited current final-price and deprecation contracts.
+- decided: treated backend commerce rules as the authority while teaching the theme to render and capture customer intent honestly.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-30 exercise
+## 2026-08-14 · ch-30 · exercise
+- wrote: `course/part-04-data-objects/ch-30-cart-line-items/exercise.md` with cart section, cart-line snippet, styles, and cart-state verification starter files.
+- flagged: `[VERIFY]` for cart form/update behavior, component/instruction support, property uploads, discount display, and backend gift/bundle configuration.
+- decided: required the exercise to preserve Shopify cart authority, distinguish cart and line scope, and prohibit browser-controlled gift pricing.
+- next: ch-30 solution

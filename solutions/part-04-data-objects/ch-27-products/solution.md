@@ -1,4 +1,4 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 <!-- DO NOT OPEN until you have attempted the exercise. -->
 # Chapter 27 — Solution
 

@@ -6,7 +6,7 @@ unit: "Chapter 28"
 title: "Variants"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 28 — Variants
@@ -15,10 +15,10 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 28.1 The `variant` object in full
-- [ ] 28.2 Variant matching, combined listings, unavailable combinations
-- [ ] 28.3 Variant-aware rendering without a JS framework
-- [ ] 28.4 Serialising variant data to the browser safely
+- [x] 28.1 The `variant` object in full
+- [x] 28.2 Variant matching, combined listings, unavailable combinations
+- [x] 28.3 Variant-aware rendering without a JS framework
+- [x] 28.4 Serialising variant data to the browser safely
 
 ## Labs assigned to this unit
 

@@ -1,0 +1,17 @@
+{{ 'collection-results.css' | asset_url | stylesheet_tag }}
+<section class="collection-results page-width">
+  <h1>{{ collection.title }}</h1>
+  <p>{{ collection.all_products_count }} products</p>
+  <label for="SortBy">Sort</label>
+  <select id="SortBy"><option value="best-selling">Best selling</option><option value="price-ascending">Price low to high</option></select>
+  {% render 'collection-facets', collection: collection %}
+  <ul class="collection-results__grid">
+    {% for product in collection.products limit: 48 %}
+      <li><a href="{{ product.url }}">{{ product.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <aside>{% for handle in section.settings.related_handles %}{{ all_products[handle].title }}{% endfor %}</aside>
+</section>
+{% schema %}
+{ "name": "Collection results", "settings": [{ "type": "text", "id": "related_handles", "label": "Related handles" }] }
+{% endschema %}
