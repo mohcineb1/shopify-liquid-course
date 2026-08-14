@@ -271,3 +271,9 @@ Entry format:
 - flagged: the brief directs any unverified counter behavior across a nesting boundary to `> [VERIFY]` instead of a hidden scope assumption.
 - decided: starter files establish a real section-to-snippet boundary but leave value ownership, explicit inputs, ordering strategy, and rendered-string choice to the learner.
 - next: ch-06 solution
+
+## 2026-08-14 · ch-06 · solution
+- wrote: `solutions/part-02-the-liquid-language-properly/ch-06-variables-scope/solution.md` (1,368 words) with mirrored section, snippet, and CSS files
+- flagged: `[VERIFY]` retained for any counter behavior whose nesting-boundary semantics become part of a production contract.
+- decided: used a loop-local ordinal instead of a named counter and treated every `render` call as the complete, reusable snippet API.
+- next: ch-06 review; do not let the solution sharpen the lesson or exercise.

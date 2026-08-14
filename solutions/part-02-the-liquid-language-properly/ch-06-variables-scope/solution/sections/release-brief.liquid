@@ -1,0 +1,43 @@
+{{ 'release-brief.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+  assign product_title = product.title
+  assign audience_label = section.settings.audience_label
+  assign check_count = 3
+%}
+
+{% capture release_summary_html %}
+  <p><strong>{{ product_title | escape }}</strong> is being reviewed by {{ audience_label | escape }}.</p>
+{% endcapture %}
+
+<section class="release-brief" aria-labelledby="ReleaseBrief-{{ section.id }}">
+  <div class="release-brief__inner">
+    <p class="release-brief__eyebrow">Release coordination</p>
+    <h2 id="ReleaseBrief-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+
+    <div class="release-brief__summary" data-release-brief-summary>
+      {{ release_summary_html }}
+    </div>
+
+    <ol class="release-brief__checks" data-release-brief-checks>
+      {% for check_number in (1..check_count) %}
+        {% assign check_label = 'Release check ' | append: check_number %}
+        {% render 'release-check', ordinal: check_number, label: check_label, product_title: product_title %}
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Release brief",
+  "tag": "section",
+  "class": "section-release-brief",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Release brief" },
+    { "type": "text", "id": "audience_label", "label": "Audience label", "default": "Store team" }
+  ],
+  "presets": [{ "name": "Release brief" }],
+  "enabled_on": { "templates": ["product"] }
+}
+{% endschema %}
