@@ -25,8 +25,15 @@ def words(path):
     return len(text.split())
 
 
+def scaffold(directory):
+    """Real files in a starter/ or solution/ tree, ignoring the .gitkeep placeholder."""
+    if not directory.exists():
+        return 0
+    return sum(1 for p in directory.rglob("*") if p.is_file() and p.name != ".gitkeep")
+
+
 def main():
-    short, thin = [], []
+    short, thin, bare = [], [], []
     for part in M["parts"]:
         for unit in part["units"]:
             c = ROOT / "course" / part["slug"] / unit["slug"]
@@ -43,6 +50,13 @@ def main():
                 elif n < TARGET[kind] * THIN:
                     thin.append((unit["id"], kind, n))
 
+                # docs/WORKFLOW.md: the exercise pass ships starter/ files, the
+                # solution pass ships solution/ files. Prose alone is not the pass.
+                if kind == "exercise" and not scaffold(c / "starter"):
+                    bare.append((unit["id"], "exercise", f"course/{part['slug']}/{unit['slug']}/starter/"))
+                if kind == "solution" and not scaffold(s / "solution"):
+                    bare.append((unit["id"], "solution", f"solutions/{part['slug']}/{unit['slug']}/solution/"))
+
     if short:
         print(f"FAIL — {len(short)} file(s) below the calibration floor:\n")
         for uid, kind, n in short:
@@ -56,7 +70,14 @@ def main():
         print("\nThe floor is where a pass is rejected, not where it is finished.")
         print("Write to the target; a file parked just above the floor is under-written.")
 
-    if short:
+    if bare:
+        print(f"\nFAIL — {len(bare)} pass(es) shipped prose with no working files:\n")
+        for uid, kind, where in bare:
+            print(f"  {uid:7s} {kind:9s} {where} is empty")
+        print("\ndocs/WORKFLOW.md: the exercise pass produces exercise.md AND starter/")
+        print("files; the solution pass produces solution.md AND solution/ files.")
+
+    if short or bare:
         print("\nRedo these passes: python3 scripts/prompt.py <unit> --kind <pass>")
         return 1
     if not thin:
