@@ -314,3 +314,8 @@ Entry format:
 - decided: treated source selection, visible bounds, and collection-empty output as one loop contract; deferred data shaping to ch-09 and performance profiling to ch-11.
 - updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
 - next: ch-08 exercise
+## 2026-08-14 · ch-08 · exercise
+- wrote: `course/part-02-the-liquid-language-properly/ch-08-iteration/exercise.md` (874 words) with a section, stylesheet, and narrow presentation snippet under `starter/`.
+- flagged: `[VERIFY]` for any added variant property beyond the explicit contextual collection and title contract.
+- decided: used a bounded collection digest to require contextual sourcing, loop metadata, named visual alternation, nested-loop limits, and a distinct collection-empty state without introducing data shaping.
+- next: ch-08 solution

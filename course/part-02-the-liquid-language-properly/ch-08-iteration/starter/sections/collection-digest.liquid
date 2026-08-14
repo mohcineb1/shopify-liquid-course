@@ -1,0 +1,47 @@
+{{ 'section-collection-digest.css' | asset_url | stylesheet_tag }}
+
+<section class="collection-digest" aria-labelledby="CollectionDigestHeading-{{ section.id }}">
+  <div class="collection-digest__inner">
+    <header class="collection-digest__header">
+      <p class="collection-digest__eyebrow">Collection preview</p>
+      <h2 id="CollectionDigestHeading-{{ section.id }}" class="collection-digest__heading">
+        {{ section.settings.heading | escape }}
+      </h2>
+      {%- comment -%}
+        Add an honest statement about the digest’s bounded visible count here.
+      {%- endcomment -%}
+    </header>
+
+    {%- comment -%}
+      Render the contextual collection preview here.
+
+      Requirements:
+      - no more than four product cards;
+      - a human-facing position and zero-based data hook;
+      - a named presentational cycle group;
+      - a bounded ordered variant preview for each product;
+      - an explicit branch for an empty collection.
+      {%- endcomment -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Collection digest",
+  "tag": "section",
+  "class": "section-collection-digest",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "From this collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection digest"
+    }
+  ]
+}
+{% endschema %}
