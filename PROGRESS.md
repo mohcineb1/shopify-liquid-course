@@ -345,3 +345,8 @@ Entry format:
 - flagged: `[VERIFY]` for production reliance on nested tag-array flattening and any expansion beyond the declared collection title, URL, description, and contextual tags.
 - decided: made each output boundary explicit—HTML escaping, query-component URL encoding, and field-level JSON serialization—while keeping the panel contextual and non-behavioral.
 - next: ch-09 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-09 · review
+- wrote: finalised the chapter’s lesson, exercise, brief, and solution statuses.
+- flagged: retained `[VERIFY]` for derived resource handles, money representation, array-property behavior, and production timezone or locale assumptions.
+- decided: checklist passed after confirming all eight scope items, calibrated prose, starter/solution parity, output-context separation, and review isolation from the completed answer.
+- next: ch-10 lesson

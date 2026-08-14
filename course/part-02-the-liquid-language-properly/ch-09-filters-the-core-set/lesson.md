@@ -1,4 +1,4 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 ---
 id: ch-09
 title: "Filters: The Core Set"

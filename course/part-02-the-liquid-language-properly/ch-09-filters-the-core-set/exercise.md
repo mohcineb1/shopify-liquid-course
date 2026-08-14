@@ -1,4 +1,4 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 ---
 id: ch-09-exercise
 title: "Build a safe collection signal panel"

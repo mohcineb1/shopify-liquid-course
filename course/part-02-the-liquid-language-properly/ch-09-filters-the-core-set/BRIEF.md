@@ -6,7 +6,7 @@ unit: "Chapter 9"
 title: "Filters: The Core Set"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 9 — Filters: The Core Set
@@ -15,14 +15,14 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 9.1 How filters chain, and why order changes output
-- [ ] 9.2 String filters: case, trim, truncate, split, replace, append/prepend, slice, strip_*, handleize/handle
-- [ ] 9.3 Escaping and safety: `escape`, `escape_once`, `strip_html`, `url_encode`, `json`
-- [ ] 9.4 Number and math filters: `plus`, `minus`, `times`, `divided_by`, `modulo`, `round`, `ceil`, `floor`, `abs`, `at_least`, `at_most`
-- [ ] 9.5 Integer division gotchas and money math correctness
-- [ ] 9.6 Array filters: `map`, `where`, `find`, `find_index`, `has`, `reject`, `sort`, `sort_natural`, `uniq`, `compact`, `concat`, `join`, `first`, `last`, `size`, `sum`, `reverse`
-- [ ] 9.7 Date filters and strftime formatting, timezones, and locale-aware dates
-- [ ] 9.8 `default`, `json`, `inspect`, `raw`
+- [x] 9.1 How filters chain, and why order changes output
+- [x] 9.2 String filters: case, trim, truncate, split, replace, append/prepend, slice, strip_*, handleize/handle
+- [x] 9.3 Escaping and safety: `escape`, `escape_once`, `strip_html`, `url_encode`, `json`
+- [x] 9.4 Number and math filters: `plus`, `minus`, `times`, `divided_by`, `modulo`, `round`, `ceil`, `floor`, `abs`, `at_least`, `at_most`
+- [x] 9.5 Integer division gotchas and money math correctness
+- [x] 9.6 Array filters: `map`, `where`, `find`, `find_index`, `has`, `reject`, `sort`, `sort_natural`, `uniq`, `compact`, `concat`, `join`, `first`, `last`, `size`, `sum`, `reverse`
+- [x] 9.7 Date filters and strftime formatting, timezones, and locale-aware dates
+- [x] 9.8 `default`, `json`, `inspect`, `raw`
 
 ## Labs assigned to this unit
 
