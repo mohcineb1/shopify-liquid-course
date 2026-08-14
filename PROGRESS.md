@@ -246,3 +246,9 @@ Entry format:
 - flagged: the learner brief directs object-specific empty-result uncertainty to `> [VERIFY]` and the documented object reference.
 - decided: the starter removes presentation but leaves the state classification, guards, fallback copy, and numeric-display separation as the learner’s actual implementation work.
 - next: ch-05 solution
+
+## 2026-08-14 · ch-05 · solution
+- wrote: `solutions/part-02-the-liquid-language-properly/ch-05-types-truthiness-nil/solution.md` (1,371 words) with mirrored `solution/sections/launch-readiness.liquid` and `solution/assets/launch-readiness.css`
+- flagged: `[VERIFY]` retained for product-image empty-result behavior when a production feature needs more granular source-specific handling.
+- decided: separated availability, blank merchant content, optional image absence, and numeric cart state into independent outputs and test cases.
+- next: ch-05 review; do not add solution-derived details to the lesson or exercise.
