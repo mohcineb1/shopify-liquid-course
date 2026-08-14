@@ -65,3 +65,8 @@ use; never introduce a synonym for something already listed.
 | Collection-empty branch | The `else` branch of a `for` tag, rendered only when its input collection has no members. | ch-08 |
 | Cycle group | A named `cycle` sequence whose alternating values are independent of other cycle sequences in the same loop. | ch-08 |
 | Iteration cost curve | The multiplicative increase in rendered work caused by nested loops and each iteration body’s additional traversal or rendering. | ch-08 |
+| Filter pipeline | A left-to-right sequence in which each Liquid filter receives and transforms the preceding value. | ch-09 |
+| Output-context encoding | A transformation selected for the value’s final boundary, such as HTML text, a URL component, or serialized JSON. | ch-09 |
+| Minor-unit money arithmetic | Calculation that keeps a Shopify money amount in its integer minor-unit representation until money formatting. | ch-09 |
+| Array shaping | Deliberate transformation of an existing array through filters such as `map`, `where`, `compact`, `sort`, or `join`. | ch-09 |
+| Display boundary | The last transformation point where a source value is formatted for a specific reader or rendering context. | ch-09 |

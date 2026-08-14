@@ -329,3 +329,9 @@ Entry format:
 - flagged: retained `[VERIFY]` for production use of `tablerow`, `all_products`, and any expanded variant-property surface.
 - decided: the review confirmed every scope item, target-calibrated files, three-file starter and solution parity, bounded contextual traversal, and isolation of the lesson from solution-derived additions.
 - next: ch-09 lesson
+## 2026-08-14 · ch-09 · lesson
+- wrote: `course/part-02-the-liquid-language-properly/ch-09-filters-the-core-set/lesson.md` (2,412 words) covering filter pipelines, strings, output-context safety, math, money, arrays, dates, and diagnostics.
+- flagged: `[VERIFY]` for derived resource handles, money representation, property-sensitive array filters, and timezone or locale-aware production date formatting.
+- decided: treated every filter chain as a typed transformation contract and kept commerce, localization, and browser handoff at their owned boundaries.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-09 exercise

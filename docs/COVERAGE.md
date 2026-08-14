@@ -86,3 +86,8 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** loop boundary, loop metadata, collection-empty branch, cycle group, iteration cost curve.
 **Assumed known from earlier:** Liquid conditions and ordered branching (ch-07); values, truthiness, and blank values (ch-05); scope and render isolation (ch-06).
 **Deliberately deferred:** filtering, sorting, grouping, and data preparation → ch-09; resource-specific collection contracts → ch-26 to ch-34; rendering profiles and production performance measurement → ch-11.
+### ch-09 — Filters: The Core Set
+**Taught:** left-to-right filter pipelines and type transitions; string normalization and handle derivation; HTML, URL, and JSON output boundaries; numerical filters, division behavior, and minor-unit money discipline; contextual array shaping; date formatting with explicit timezone and locale assumptions; and the different roles of `default`, `json`, `inspect`, and the `raw` tag.
+**Introduced terms:** filter pipeline, output-context encoding, minor-unit money arithmetic, array shaping, display boundary.
+**Assumed known from earlier:** value categories and blank semantics (ch-05); assignments and render isolation (ch-06); control flow (ch-07); bounded contextual iteration (ch-08).
+**Deliberately deferred:** composed rendered strings → ch-10; performance measurement → ch-11; resource-specific money, localization, and product data contracts → ch-26 to ch-34; browser JSON consumption → ch-37.
