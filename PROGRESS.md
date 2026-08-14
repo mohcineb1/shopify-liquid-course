@@ -966,3 +966,13 @@ Entry format:
 - shipped: starter section, custom-element JavaScript skeleton, and scoped accessibility CSS.
 - decided: constrained enhancement to local confirmation behavior so cart mutation remains explicitly deferred.
 - next: ch-40 solution.
+## 2026-08-14 · ch-40 · solution
+- wrote: a mirrored quick-add custom-element solution with local typed configuration, abortable lifecycle, scoped editor refresh, light-DOM styles, and verification evidence.
+- verified: preserved native product-form fallback and constrained cart transport outside this chapter.
+- decided: used a per-instance abort signal and a target-scoped editor adapter rather than global card initialization.
+- next: ch-40 review; do not transfer solution implementation into lesson or exercise.
+## 2026-08-14 · ch-40 · review
+- reviewed: passed all six scoped topics in order, source flags, terminology, starter/solution paths, no-JavaScript fallback, and calibration floor.
+- verified: lesson distinguishes DOM lifecycle from editor events and keeps Shadow DOM, cart transport, and apps within their appropriate boundaries.
+- decided: applied final markers with no solution-derived structural additions to course files.
+- next: ch-41 lesson.

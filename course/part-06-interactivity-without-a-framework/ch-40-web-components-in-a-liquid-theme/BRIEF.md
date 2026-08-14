@@ -6,7 +6,7 @@ unit: "Chapter 40"
 title: "Web Components in a Liquid Theme"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 40 — Web Components in a Liquid Theme
@@ -15,12 +15,12 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 40.1 Why custom elements are the native fit for section-based markup
-- [ ] 40.2 Component lifecycle vs theme editor events
-- [ ] 40.3 Shadow DOM: what it breaks (apps, global CSS, third-party scripts) and when to avoid it
-- [ ] 40.4 Attribute-driven configuration from Liquid settings
-- [ ] 40.5 A component base class for a whole theme
-- [ ] 40.6 Islands, progressive enhancement, and no-JS fallbacks
+- [x] 40.1 Why custom elements are the native fit for section-based markup
+- [x] 40.2 Component lifecycle vs theme editor events
+- [x] 40.3 Shadow DOM: what it breaks (apps, global CSS, third-party scripts) and when to avoid it
+- [x] 40.4 Attribute-driven configuration from Liquid settings
+- [x] 40.5 A component base class for a whole theme
+- [x] 40.6 Islands, progressive enhancement, and no-JS fallbacks
 
 ## Labs assigned to this unit
 
