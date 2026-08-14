@@ -361,3 +361,8 @@ Entry format:
 - flagged: `[VERIFY]` for the chosen metafield type and production image-filter options.
 - decided: constrained the card to Shopify-owned money, image, translation, metafield, and JSON boundaries without adding price authority or product eligibility logic.
 - next: ch-10 solution
+## 2026-08-14 · ch-10 · solution
+- wrote: `solutions/part-02-the-liquid-language-properly/ch-10-filters-the-shopify-specific-set/solution.md` (1,319 words) with mirrored section, stylesheet, and narrow product-data snippet.
+- flagged: `[VERIFY]` for market money policy, image options, and any change to the declared metafield type or component scope.
+- decided: used Shopify-owned boundaries for locale copy, price, image, typed metafield, and field-level JSON while leaving commerce and browser behavior to their specialized chapters.
+- next: ch-10 review; do not add solution-derived details to the lesson or exercise.

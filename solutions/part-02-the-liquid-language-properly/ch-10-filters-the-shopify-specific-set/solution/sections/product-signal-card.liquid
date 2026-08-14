@@ -1,0 +1,31 @@
+{{ 'section-product-signal-card.css' | asset_url | stylesheet_tag }}
+
+<aside class="product-signal-card" aria-labelledby="ProductSignalHeading-{{ section.id }}">
+  <h2 id="ProductSignalHeading-{{ section.id }}" class="product-signal-card__heading">
+    {{ 'products.product.product_information' | t }}
+  </h2>
+
+  <p class="product-signal-card__price">{{ product.price | money }}</p>
+
+  <div class="product-signal-card__media">
+    {% if product.featured_image %}
+      {{ product.featured_image | image_url: width: 480 | image_tag: alt: product.title }}
+    {% else %}
+      <p class="product-signal-card__fallback">{{ 'products.product.image_unavailable' | t }}</p>
+    {% endif %}
+  </div>
+
+  {% if product.metafields.custom.material != blank %}
+    <div class="product-signal-card__fact">
+      {{ product.metafields.custom.material | metafield_tag }}
+    </div>
+  {% endif %}
+
+  <script type="application/json" data-product-signal>
+    {% render 'product-signal-data', signal_product: product %}
+  </script>
+</aside>
+
+{% schema %}
+{ "name": "Product signal card", "tag": "section", "class": "section-product-signal-card", "settings": [], "presets": [{ "name": "Product signal card" }] }
+{% endschema %}

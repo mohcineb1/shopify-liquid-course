@@ -1,0 +1,9 @@
+{%- doc -%}
+  Serializes the product fields declared by the signal card.
+
+  @param {product} signal_product - The current product.
+{%- enddoc -%}
+{
+  "title": {{ signal_product.title | json }},
+  "url": {{ signal_product.url | json }}
+}
