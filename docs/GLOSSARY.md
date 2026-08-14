@@ -75,3 +75,8 @@ use; never introduce a synonym for something already listed.
 | Type-aware metafield rendering | Rendering a metafield through its declared value-type contract rather than assuming its namespace and key imply a text representation. | ch-10 |
 | Generated markup contract | The semantic and contextual obligation that remains when a filter produces HTML rather than a plain value. | ch-10 |
 | Structured-data boundary | A deliberate JSON output surface containing only the page-relevant fields and representation a consuming system expects. | ch-10 |
+| Drop interface | The documented, context-controlled Liquid surface through which Shopify exposes a resource’s permitted properties and relationships. | ch-11 |
+| Deferred relationship access | A Drop relationship read whose resolution may be delayed until the template requests it. | ch-11 |
+| Access shape | The combined source, cardinality, nested traversal, and render-boundary pattern that determines a Liquid data request’s review cost. | ch-11 |
+| Public payload contract | The explicit list of serialized fields intentionally exposed in storefront HTML for a browser consumer. | ch-11 |
+| Payload minimization | Limiting rendered JSON to the smallest declared public data set a consumer requires. | ch-11 |

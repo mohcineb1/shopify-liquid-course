@@ -371,3 +371,9 @@ Entry format:
 - flagged: retained `[VERIFY]` for legacy URL/image filters and context-sensitive media, font, localization, payment, customer, and structured-data output.
 - decided: checklist passed after confirming all ten scope items, calibrated files, starter/solution parity, platform-owned filter boundaries, and review isolation from the completed answer.
 - next: ch-11 lesson
+## 2026-08-14 · ch-11 · lesson
+- wrote: `course/part-02-the-liquid-language-properly/ch-11-drops-in-depth/lesson.md` covering Drop interfaces, deferred relations, cost review, safe iteration, and minimal public JSON.
+- flagged: `[VERIFY]` for production Drop availability, runtime property cost, and exact fields emitted when serializing any Drop or relation.
+- decided: treated every relationship access as a bounded public-data and rendering-cost decision rather than an ordinary local object read.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-11 exercise

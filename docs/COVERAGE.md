@@ -96,3 +96,8 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** Shopify-owned output filter, resource home, type-aware metafield rendering, generated markup contract, structured-data boundary.
 **Assumed known from earlier:** generic filter pipeline and output-context encoding (ch-09); value and blank semantics (ch-05); contextual traversal (ch-08).
 **Deliberately deferred:** product and variant media/pricing contracts → ch-27 and ch-28; cart/payment/customer workflows → ch-30 and ch-31; metafield and metaobject modelling → ch-33 and ch-34; browser behavior and data consumption → ch-37.
+### ch-11 — Drops in Depth
+**Taught:** Drops as controlled contextual Shopify interfaces; deferred relationship access and its review cost; scalar versus multiplied access shapes; safe bounded iteration across related Drops; and minimal public JSON serialization instead of broad Drop dumps.
+**Introduced terms:** Drop interface, deferred relationship access, access shape, public payload contract, payload minimization.
+**Assumed known from earlier:** Drop availability and object graph (ch-03); blank and EmptyDrop semantics (ch-05); render isolation (ch-06); iteration bounds (ch-08); JSON serialization (ch-09).
+**Deliberately deferred:** detailed product, collection, cart, customer, and metafield contracts → ch-27 to ch-34; browser-side JSON consumption → ch-37; reusable snippet API design → ch-21.
