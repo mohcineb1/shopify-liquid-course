@@ -221,3 +221,9 @@ Entry format:
 - flagged: none
 - decided: the starter provides a runnable section and finished presentation while leaving every syntax boundary, source-only note, literal browser template, and documentation choice to the learner.
 - next: ch-04 solution
+
+## 2026-08-14 · ch-04 · solution
+- wrote: `solutions/part-02-the-liquid-language-properly/ch-04-syntax-fundamentals/solution.md` (1,409 words) with mirrored `solution/sections/syntax-audit.liquid` and `solution/assets/syntax-audit.css`
+- flagged: none
+- decided: separated the server-rendered availability decision from the preserved browser-template literal, and mapped each required syntax form to a narrowly scoped responsibility.
+- next: ch-04 review; never let its completed answer sharpen the lesson or exercise.
