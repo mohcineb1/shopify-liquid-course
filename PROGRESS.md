@@ -202,3 +202,9 @@ Entry format:
 - flagged: none
 - decided: supplied presentation only, leaving the Liquid boundary, schema, template placement, and object-graph reasoning as the learner’s real work.
 - next: ch-03 review
+
+## 2026-08-14 · ch-03 · review
+- wrote: finalised the chapter’s lesson, exercise, brief, and solution statuses
+- flagged: corrected a genuine classification error during review: `cart` is global cart state, not a template-scoped object.
+- decided: checklist passed after aligning the graph map, exercise expectations, implementation, and walkthrough with the canonical object reference; no solution-derived structure was added to the lesson or exercise.
+- next: ch-04 lesson

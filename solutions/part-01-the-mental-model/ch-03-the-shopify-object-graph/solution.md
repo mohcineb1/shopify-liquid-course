@@ -1,14 +1,14 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 <!-- DO NOT OPEN until you have attempted the exercise. -->
 # Chapter 3 — Solution
 
 ## The approach
 
-The probe is not a data browser. Its only job is to make the render context inspectable on three template types. That constraint determines the shape: one section can be added on product, collection, and cart templates; one global object identifies the request; three template-specific rows state whether the relevant object exists; and one section setting demonstrates a local scoped value.
+The probe is not a data browser. Its only job is to make the render context inspectable on three template types. That constraint determines the shape: one section can be added on product, collection, and cart templates; global rows identify the request and current cart state; template-specific rows state whether product or collection exists; and one section setting demonstrates a local scoped value.
 
 The important design choice is to render absence as information. A product row that says “Unavailable in this render” on a cart page is more useful than silently disappearing. It proves that `product` is not a global object and prevents a developer from interpreting a blank output as a failed query. The panel is deliberately server-rendered. If browser code populated it later, it would stop teaching which values Shopify supplied to Liquid for this request.
 
-The section also keeps the merchant-facing settings separate from the diagnostic data. `section.settings.heading` and `section.settings.audit_label` belong to this section instance. `request.page_type` describes the request. `product`, `collection`, and `cart` are template-scoped roots. Giving each of those sources a visible label turns the object graph into a reviewable contract rather than a list of convenient variable names.
+The section also keeps the merchant-facing settings separate from the diagnostic data. `section.settings.heading` and `section.settings.audit_label` belong to this section instance. `request.page_type` and `cart` are global roots: one describes the request and one describes current cart state. `product` and `collection` are template-scoped roots. Giving each of those sources a visible label turns the object graph into a reviewable contract rather than a list of convenient variable names.
 
 ## Walkthrough
 
@@ -28,7 +28,7 @@ That order is worth preserving in a real debugging panel. If a template-scoped o
 
 The product and collection rows test their respective roots before reading their titles. When the object exists, the probe outputs a meaningful identity; when it does not, it outputs an explicit unavailable state. This is not defensive decoration. It distinguishes “Shopify did not supply this object in this render” from “the object exists but its title is empty.”
 
-The cart row takes the same approach but uses the request context to make its cart-specific claim. On the cart template it outputs the item count; elsewhere it says that the cart-specific diagnostic is unavailable. The result is intentionally small. The exercise does not require a line-item dump, product lookup, or a catalogue query, and adding one would make the example look like Liquid owns an arbitrary data API.
+The cart row has a different classification: `cart` is global cart state, not a template-scoped resource. It can therefore report the current item count on each supported template, while the request context still tells the reviewer which page is being inspected. The result is intentionally small. The exercise does not require a line-item dump, product lookup, or a catalogue query, and adding one would make the example look like Liquid owns an arbitrary data API.
 
 ### 4. Make the local scope visible
 
@@ -48,7 +48,7 @@ Every merchant-controlled string and resource title passes through `escape`. The
 
 ### 7. Read the access-class explanation as a contract
 
-The final paragraph summarizes the three classes used by this implementation. It is not a substitute for the Liquid reference; it tells a reviewer which root to inspect when a row behaves unexpectedly. Global values describe the request, template-scoped values arrive only with the matching template, and scoped values belong to the local section instance. That sentence is the design rule behind the markup above it.
+The final paragraph summarizes the three classes used by this implementation. It is not a substitute for the Liquid reference; it tells a reviewer which root to inspect when a row behaves unexpectedly. Global values describe the request or current cart state, template-scoped values arrive only with the matching template, and scoped values belong to the local section instance. That sentence is the design rule behind the markup above it.
 
 ## Full code
 
@@ -88,14 +88,8 @@ The final paragraph summarizes the three classes used by this implementation. It
     </div>
 
     <div>
-      <dt>Template-scoped object — cart</dt>
-      <dd>
-        {% if request.page_type == 'cart' %}
-          Available: {{ cart.item_count }} item{% if cart.item_count != 1 %}s{% endif %}
-        {% else %}
-          Unavailable in this render
-        {% endif %}
-      </dd>
+      <dt>Global object — cart state</dt>
+      <dd>Available: {{ cart.item_count }} item{% if cart.item_count != 1 %}s{% endif %}</dd>
     </div>
 
     <div>
@@ -104,7 +98,7 @@ The final paragraph summarizes the three classes used by this implementation. It
     </div>
   </dl>
 
-  <p>Global values describe the request. Template-scoped values exist only when this template supplies them. Scoped values belong to this section instance.</p>
+  <p>Global values describe the request or current cart state. Template-scoped values exist only when this template supplies them. Scoped values belong to this section instance.</p>
 </section>
 
 {% schema %}

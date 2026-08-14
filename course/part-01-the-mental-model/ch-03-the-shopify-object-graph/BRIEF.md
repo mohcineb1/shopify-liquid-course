@@ -6,7 +6,7 @@ unit: "Chapter 3"
 title: "The Shopify Object Graph"
 type: concept
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 3 — The Shopify Object Graph
@@ -15,10 +15,10 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 3.1 The data you are handed vs the data you must request
-- [ ] 3.2 Global objects, template-scoped objects, and scoped objects
-- [ ] 3.3 Drops: lazy proxies, not plain objects — and why that matters for performance
-- [ ] 3.4 A visual map of the graph you will use daily
+- [x] 3.1 The data you are handed vs the data you must request
+- [x] 3.2 Global objects, template-scoped objects, and scoped objects
+- [x] 3.3 Drops: lazy proxies, not plain objects — and why that matters for performance
+- [x] 3.4 A visual map of the graph you will use daily
 
 ## Labs assigned to this unit
 

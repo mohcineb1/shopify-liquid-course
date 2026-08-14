@@ -31,14 +31,8 @@
     </div>
 
     <div>
-      <dt>Template-scoped object — cart</dt>
-      <dd>
-        {% if request.page_type == 'cart' %}
-          Available: {{ cart.item_count }} item{% if cart.item_count != 1 %}s{% endif %}
-        {% else %}
-          Unavailable in this render
-        {% endif %}
-      </dd>
+      <dt>Global object — cart state</dt>
+      <dd>Available: {{ cart.item_count }} item{% if cart.item_count != 1 %}s{% endif %}</dd>
     </div>
 
     <div>
@@ -47,7 +41,7 @@
     </div>
   </dl>
 
-  <p>Global values describe the request. Template-scoped values exist only when this template supplies them. Scoped values belong to this section instance.</p>
+  <p>Global values describe the request or current cart state. Template-scoped values exist only when this template supplies them. Scoped values belong to this section instance.</p>
 </section>
 
 {% schema %}

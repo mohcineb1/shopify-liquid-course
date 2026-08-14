@@ -1,4 +1,4 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 # Chapter 3 — Exercise
 
 **Time:** 45–60 minutes · **Type:** investigation and theme implementation
@@ -17,8 +17,9 @@ The team needs a temporary diagnostic panel for a dev theme. It must let a devel
 
 - [ ] Create a merchant-addable diagnostic panel that can be placed on a product template, a collection template, and the cart template in a development theme.
 - [ ] The panel visibly identifies the current template or request context using an object that is available broadly in a theme render.
-- [ ] On each supported template, display a meaningful identity from the primary template-scoped object when that object exists: the current product, collection, or cart state.
+- [ ] On each supported template, display a meaningful identity from the appropriate template-scoped object when it exists, such as the current product or collection.
 - [ ] Make an unavailable template-scoped object visibly distinct from an available one; do not hide the distinction behind a generic empty string or invented fallback data.
+- [ ] Include the current cart state as a separately labeled globally available value; do not describe it as a template-scoped resource.
 - [ ] Include one locally scoped value from the panel’s own configuration and label it differently from the request and template data.
 - [ ] Render a short explanation that identifies the three access classes used by the panel: global object, template-scoped object, and scoped object.
 - [ ] Keep the first response self-contained: no browser fetch, no Storefront API, no app proxy, and no client framework.
@@ -36,7 +37,7 @@ Begin with `starter/assets/context-probe.css`. It supplies the finished presenta
 
 ## Done when
 
-In a development theme, a merchant or developer can add the panel to product, collection, and cart templates through normal theme editing. On each page, the panel names the current context and displays the appropriate template-specific identity where Shopify supplies one. The panel also displays one merchant-controlled local value, and a reviewer can tell which visible values come from global, template-scoped, and scoped access.
+In a development theme, a merchant or developer can add the panel to product, collection, and cart templates through normal theme editing. On each page, the panel names the current context and displays the appropriate template-specific identity where Shopify supplies one. The panel also displays the globally available cart state and one merchant-controlled local value, and a reviewer can tell which visible values come from global, template-scoped, and scoped access.
 
 A reviewer can deliberately compare the three pages and see that the panel has not invented data for an unavailable context. Viewing page source shows the diagnostic content in the initial HTML. Disabling JavaScript does not remove, change, or repair any of the findings. A title containing `&`, quotes, or angle brackets appears as text rather than as injected markup.
 

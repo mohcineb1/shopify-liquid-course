@@ -1,4 +1,4 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 ---
 id: ch-03
 title: "The Shopify Object Graph"
@@ -52,8 +52,8 @@ Classify an object before you use it. The classification tells you where an exam
 
 | Access class | What it means | Representative examples | Design implication |
 |---|---|---|---|
-| **Global object** | Shopify makes it available broadly across theme Liquid files. | `shop`, `request`, `settings` | Useful for store-wide and request-wide presentation, but still subject to each object’s documentation. |
-| **Template-scoped object** | Shopify supplies it only for a matching page or resource context. | `product`, `collection`, `cart`, `article` | Guard the context; do not copy the code blindly into another template. |
+| **Global object** | Shopify makes it available broadly across theme Liquid files. | `shop`, `request`, `settings`, `cart` | Useful for store-wide and request-wide presentation, but still subject to each object’s documentation. |
+| **Template-scoped object** | Shopify supplies it only for a matching page or resource context. | `product`, `collection`, `article` | Guard the context; do not copy the code blindly into another template. |
 | **Scoped object** | A parent rendering unit provides it locally. | `section`, `block`, loop item values | It exists because the enclosing section, block, or tag created that local scope. |
 
 A global object is not “all Shopify data.” `shop` describes the current shop; `request` describes the current request; `settings` exposes theme settings. They are global in the access sense, not a universal gateway. The properties and values available still follow the documented object contract.[1]
@@ -120,11 +120,11 @@ Current storefront request
 ├── global objects
 │   ├── shop
 │   ├── request
-│   └── settings
+│   ├── settings
+│   └── cart → items → line item → product / variant
 ├── template-scoped object (depends on the template)
 │   ├── product → selected_or_first_available_variant → price
 │   ├── collection → products → product
-│   ├── cart → items → line item → product / variant
 │   └── article → author / image
 └── local rendering scope
     ├── section → settings / blocks
@@ -134,7 +134,7 @@ Current storefront request
 
 Read the map from top to bottom when debugging. First identify the template and current resource. Next identify the object Shopify supplies for it. Then locate the relationship that produces the value you need. Finally identify whether a reusable snippet needs an explicit named input. That sequence prevents the two common mistakes: guessing that a contextual object is global, and turning a missing context into increasingly complex Liquid.
 
-For example, cart presentation often begins at `cart`, then follows `cart.items` to a line item, then follows the line item’s product or variant relationship only if the markup needs it. A product page begins at `product`; a section inside it still has section settings, but those settings are not product properties. Store-wide configuration belongs under `settings`; it does not belong on every product object. The graph is a responsibility map as much as a data map.
+For example, cart presentation often begins at the globally supplied `cart`, then follows `cart.items` to a line item, then follows the line item’s product or variant relationship only if the markup needs it. A product page begins at `product`; a section inside it still has section settings, but those settings are not product properties. Store-wide configuration belongs under `settings`; it does not belong on every product object. The graph is a responsibility map as much as a data map.
 
 When an output is unexpectedly blank, diagnose the root before adding fallback logic. Confirm the current template, identify the documented root object for that template, verify the relationship or local scope that should provide the value, and only then inspect the property. A fallback can be useful for an optional value, but it cannot make a product object exist on a template where Shopify never provides one. This short debugging order saves more time than memorising a longer list of object names. It also produces a better issue report: name the template, the expected root, the relationship you attempted, and the actual rendered result. That information lets another developer verify the context contract today instead of reverse-engineering a failed guess from a copied Liquid fragment.
 
@@ -143,7 +143,7 @@ The map also tells you when to stop. If the needed value is not reachable from t
 ## Gotchas
 
 - **Treating object access as a query language.** Liquid reads the documented render context; it does not expose arbitrary fetching.
-- **Assuming `product` exists everywhere.** It is template-scoped, so validate the template and render context first.
+- **Assuming `product` or `collection` exists everywhere.** They are template-scoped, so validate the template and render context first.
 - **Using hidden contextual dependencies in snippets.** Prefer named parameters for reusable snippet inputs.
 - **Treating Drops as local JSON.** Repeated traversal and broad iteration can add avoidable render work.
 - **Confusing a section setting with a product property.** They have different roots in the graph and different owners.
