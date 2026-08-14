@@ -1,0 +1,9 @@
+.reviews-slot {
+  height: 3rem;
+  overflow: hidden;
+}
+
+.reviews-slot .app-review-button {
+  color: #173f35 !important;
+  font-size: 12px;
+}

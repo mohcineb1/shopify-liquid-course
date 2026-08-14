@@ -1,0 +1,14 @@
+{{ 'cart-boundary.css' | asset_url | stylesheet_tag }}
+
+<div class="cart-boundary" data-restricted-cart>
+  <p class="cart-boundary__warning">Restricted items cannot be ordered. Checkout is blocked.</p>
+  <a class="cart-boundary__checkout is-hidden" href="{{ routes.cart_url }}">Checkout</a>
+</div>
+
+{% schema %}
+{
+  "name": "Cart footer",
+  "settings": [],
+  "presets": [{ "name": "Cart footer" }]
+}
+{% endschema %}

@@ -1,0 +1,11 @@
+{
+  "current": {
+    "theme_color": "#c86e3a",
+    "sections": {
+      "announcement": {
+        "type": "announcement-stack",
+        "settings": { "message": "Merchant edit: delivery cutoff Friday", "tone": "sand" }
+      }
+    }
+  }
+}

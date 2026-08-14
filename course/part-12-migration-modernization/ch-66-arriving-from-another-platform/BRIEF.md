@@ -6,7 +6,7 @@ unit: "Chapter 66"
 title: "Arriving from Another Platform"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 66 — Arriving from Another Platform
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 66.1 SFCC/SFRA → Shopify: ISML vs Liquid, controllers vs templates, cartridges vs themes, OCAPI/SCAPI vs Ajax/Storefront API
-- [ ] 66.2 Magento/WooCommerce/BigCommerce mental-model mapping
-- [ ] 66.3 What you lose (server-side control) and what you gain (velocity, hosting, upgrade safety)
-- [ ] 66.4 Data modelling translation: custom attributes → metafields/metaobjects
-- [ ] 66.5 Re-platforming checklist for a frontend lead
+- [x] 66.1 SFCC/SFRA → Shopify: ISML vs Liquid, controllers vs templates, cartridges vs themes, OCAPI/SCAPI vs Ajax/Storefront API
+- [x] 66.2 Magento/WooCommerce/BigCommerce mental-model mapping
+- [x] 66.3 What you lose (server-side control) and what you gain (velocity, hosting, upgrade safety)
+- [x] 66.4 Data modelling translation: custom attributes → metafields/metaobjects
+- [x] 66.5 Re-platforming checklist for a frontend lead
 
 ## Labs assigned to this unit
 

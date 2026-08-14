@@ -1,0 +1,6 @@
+<p class="price">
+  {% if card_product.compare_at_price > card_product.price %}
+    <s>{{ card_product.compare_at_price | money }}</s>
+  {% endif %}
+  {{ card_product.price | money }}
+</p>

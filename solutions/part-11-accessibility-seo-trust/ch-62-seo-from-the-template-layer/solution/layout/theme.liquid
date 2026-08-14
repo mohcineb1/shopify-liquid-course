@@ -1,0 +1,7 @@
+<!doctype html><html lang="{{ request.locale.iso_code }}"><head>
+<title>{{ page_title }}{% if current_tags %} – {{ current_tags | join: ', ' }}{% endif %}{% if current_page != 1 %} – Page {{ current_page }}{% endif %}{% unless page_title contains shop.name %} – {{ shop.name }}{% endunless %}</title>
+{% if page_description != blank %}<meta name="description" content="{{ page_description | escape }}">{% endif %}
+<link rel="canonical" href="{{ canonical_url }}">
+{% if request.page_type == 'product' and product.featured_image != blank %}<meta property="og:type" content="product"><meta property="og:title" content="{{ product.title | escape }}"><meta property="og:url" content="{{ canonical_url }}"><meta property="og:image" content="{{ product.featured_image | image_url: width: 1200 | prepend: 'https:' }}">{% endif %}
+{% render 'seo-schema' %}
+</head><body>{{ content_for_layout }}</body></html>

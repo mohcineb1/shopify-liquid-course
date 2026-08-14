@@ -1,0 +1,7 @@
+.collection-promo {
+  padding: 1.5rem;
+  background: #173f35;
+  color: #fff;
+}
+
+.collection-promo p { max-width: 65ch; }

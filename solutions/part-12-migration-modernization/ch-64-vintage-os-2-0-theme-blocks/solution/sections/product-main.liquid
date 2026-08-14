@@ -1,0 +1,2 @@
+<section class="product-main">{% for block in section.blocks %}{% case block.type %}{% when 'heading' %}<h1 {{ block.shopify_attributes }}>{{ block.settings.heading }}</h1>{% when 'text' %}<div {{ block.shopify_attributes }}>{{ block.settings.text }}</div>{% endcase %}{% endfor %}</section>
+{% schema %}{"name":"Product main","blocks":[{"type":"heading","name":"Heading","settings":[{"type":"text","id":"heading","label":"Heading"}]},{"type":"text","name":"Text","settings":[{"type":"richtext","id":"text","label":"Text"}]}]}{% endschema %}

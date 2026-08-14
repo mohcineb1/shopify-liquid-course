@@ -1,0 +1,15 @@
+<section class="campaign-banner" tabindex="-1">
+  {% assign campaign_trace = section.id %}
+  <a class="campaign-banner__link" href="{{ section.settings.link }}">{{ section.settings.label }}</a>
+</section>
+
+{% schema %}
+{
+  "name": "Campaign banner",
+  "settings": [
+    { "type": "url", "id": "link", "label": "Link" },
+    { "type": "text", "id": "label", "label": "Label", "default": "Explore the collection" }
+  ],
+  "presets": [{ "name": "Campaign banner" }]
+}
+{% endschema %}

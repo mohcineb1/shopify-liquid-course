@@ -1,0 +1,2 @@
+.product-results__list { list-style: none; padding: 0; }
+:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }

@@ -6,7 +6,7 @@ unit: "Chapter 59"
 title: "Customer Accounts Extensibility"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 59 — Customer Accounts Extensibility
@@ -15,9 +15,9 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 59.1 New customer accounts vs classic — the architectural difference
-- [ ] 59.2 What you can and cannot theme
-- [ ] 59.3 Extension points and B2B considerations
+- [x] 59.1 New customer accounts vs classic — the architectural difference
+- [x] 59.2 What you can and cannot theme
+- [x] 59.3 Extension points and B2B considerations
 
 ## Labs assigned to this unit
 

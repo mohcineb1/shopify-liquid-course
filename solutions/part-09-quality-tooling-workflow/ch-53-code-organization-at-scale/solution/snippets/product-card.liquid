@@ -1,0 +1,8 @@
+{% doc %}
+  @param {product} product - Required resource for card title, URL, and price.
+{% enddoc %}
+
+<article class="product-card">
+  <a href="{{ product.url }}">{{ product.title }}</a>
+  {% render 'product-price', product: product, show_compare_at: true %}
+</article>

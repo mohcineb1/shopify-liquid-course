@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "announcement": {
+      "type": "announcement-stack",
+      "settings": { "message": "Merchant edit: delivery cutoff Friday", "tone": "sand" }
+    },
+    "featured": {
+      "type": "featured-collection",
+      "settings": { "heading": "New arrivals" }
+    }
+  },
+  "order": ["announcement", "featured"]
+}

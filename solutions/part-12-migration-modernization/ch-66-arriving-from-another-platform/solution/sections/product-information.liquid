@@ -1,0 +1,2 @@
+<section class="product-information"><h1>{{ product.title }}</h1>{% if product.metafields.details.material != blank %}<p class="product-material"><span class="visually-hidden">Material:</span>{{ product.metafields.details.material.value | escape }}</p>{% endif %}{% render 'care-guide', product: product %}</section>
+{% schema %}{"name":"Product information","settings":[]}{% endschema %}

@@ -6,7 +6,7 @@ unit: "Chapter 64"
 title: "Vintage → OS 2.0 → Theme Blocks"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 64 — Vintage → OS 2.0 → Theme Blocks
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 64.1 Identifying which generation a theme belongs to
-- [ ] 64.2 Converting Liquid templates to JSON templates
-- [ ] 64.3 Converting section blocks to theme blocks
-- [ ] 64.4 Introducing `content_for` into existing sections
-- [ ] 64.5 Preserving merchant content through the migration
+- [x] 64.1 Identifying which generation a theme belongs to
+- [x] 64.2 Converting Liquid templates to JSON templates
+- [x] 64.3 Converting section blocks to theme blocks
+- [x] 64.4 Introducing `content_for` into existing sections
+- [x] 64.5 Preserving merchant content through the migration
 
 ## Labs assigned to this unit
 

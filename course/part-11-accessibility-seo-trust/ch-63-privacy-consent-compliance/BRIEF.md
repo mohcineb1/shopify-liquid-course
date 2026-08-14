@@ -6,7 +6,7 @@ unit: "Chapter 63"
 title: "Privacy, Consent & Compliance"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 63 — Privacy, Consent & Compliance
@@ -15,10 +15,10 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 63.1 Customer Privacy API and consent gating
-- [ ] 63.2 Cookie banners that don't break Core Web Vitals
-- [ ] 63.3 GDPR-adjacent theme responsibilities
-- [ ] 63.4 Accessibility statements and legal page patterns
+- [x] 63.1 Customer Privacy API and consent gating
+- [x] 63.2 Cookie banners that don't break Core Web Vitals
+- [x] 63.3 GDPR-adjacent theme responsibilities
+- [x] 63.4 Accessibility statements and legal page patterns
 
 ## Labs assigned to this unit
 

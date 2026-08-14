@@ -1,0 +1,11 @@
+{{ 'product-accessibility.css' | asset_url | stylesheet_tag }}
+{{ 'product-accessibility.js' | asset_url | script_tag }}
+<section class="product-results" aria-labelledby="product-results-{{ section.id }}">
+  <h2 id="product-results-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+  <ul class="product-results__list" role="list">
+    {% for product in collection.products %}
+      {% assign title_id = 'product-title-' | append: section.id | append: '-' | append: product.id %}
+      <li><article class="product-card"><a href="{{ product.url }}" aria-labelledby="{{ title_id }}">{% if product.featured_image != blank %}{{ product.featured_image | image_url: width: 720 | image_tag: alt: product.featured_image.alt }}{% endif %}<h3 id="{{ title_id }}">{{ product.title }}</h3></a><button type="button" data-open-cart>Open cart</button></article></li>
+    {% endfor %}
+  </ul>
+</section>

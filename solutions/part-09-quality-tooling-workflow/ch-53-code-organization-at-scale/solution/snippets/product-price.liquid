@@ -1,0 +1,17 @@
+{% doc %}
+  Renders an active product price and optional compare-at price.
+
+  @param {product} product - Required product-like object with price values.
+  @param {boolean} show_compare_at - Optional; output compare-at when applicable.
+
+  Consumers: product card and product purchase panel.
+  Owner: product-surface component owner [VERIFY].
+  Non-goals: availability, discount claims, currency conversion, purchase eligibility.
+{% enddoc %}
+
+<p class="product-price">
+  {% if show_compare_at and product.compare_at_price > product.price %}
+    <s class="product-price__compare">{{ product.compare_at_price | money }}</s>
+  {% endif %}
+  <span class="product-price__current">{{ product.price | money }}</span>
+</p>

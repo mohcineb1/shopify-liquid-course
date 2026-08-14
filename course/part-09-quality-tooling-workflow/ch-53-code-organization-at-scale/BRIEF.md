@@ -6,7 +6,7 @@ unit: "Chapter 53"
 title: "Code Organization at Scale"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 53 — Code Organization at Scale
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 53.1 A naming convention for sections, blocks, snippets, and settings
-- [ ] 53.2 Building an internal component library inside a theme
-- [ ] 53.3 Shared utility snippets and a theme-level "standard library"
-- [ ] 53.4 Documentation that survives handoff
-- [ ] 53.5 Multi-store / multi-brand theme strategies
+- [x] 53.1 A naming convention for sections, blocks, snippets, and settings
+- [x] 53.2 Building an internal component library inside a theme
+- [x] 53.3 Shared utility snippets and a theme-level "standard library"
+- [x] 53.4 Documentation that survives handoff
+- [x] 53.5 Multi-store / multi-brand theme strategies
 
 ## Labs assigned to this unit
 

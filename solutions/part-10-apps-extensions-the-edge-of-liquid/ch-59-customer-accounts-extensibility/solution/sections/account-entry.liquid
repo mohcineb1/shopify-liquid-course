@@ -1,0 +1,9 @@
+{{ 'account-entry.css' | asset_url | stylesheet_tag }}
+<section class="account-entry" aria-labelledby="account-entry-heading">
+  <h2 id="account-entry-heading">Your account</h2>
+  <p>Sign in to view orders and account information.</p>
+  <a class="account-entry__link" href="{{ routes.account_url }}">Go to your account</a>
+</section>
+{% schema %}
+{"name":"Account entry","settings":[],"presets":[{"name":"Account entry"}]}
+{% endschema %}

@@ -1,0 +1,25 @@
+{{ 'purchase-test-panel.css' | asset_url | stylesheet_tag }}
+
+<section class="purchase-test-panel" {{ section.shopify_attributes }}>
+  {% if section.settings.show_media and product.featured_image != blank %}
+    {{ product.featured_image | image_url: width: 640 | image_tag: widths: '320, 480, 640', sizes: '(min-width: 750px) 12rem, 100vw', alt: product.title }}
+  {% endif %}
+
+  <div class="purchase-test-panel__content">
+    <h1>{{ product.title }}</h1>
+    <p class="purchase-test-panel__price">{{ product.price | money_with_currency }}</p>
+    {% form 'product', product %}
+      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+      <button type="submit">{{ 'products.product.add_to_cart' | t }}</button>
+    {% endform %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Purchase test panel",
+  "settings": [
+    { "type": "checkbox", "id": "show_media", "label": "Show media", "default": true }
+  ]
+}
+{% endschema %}

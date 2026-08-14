@@ -6,7 +6,7 @@ unit: "Chapter 57"
 title: "Script Tags, Pixels & Tracking"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 57 — Script Tags, Pixels & Tracking
@@ -15,10 +15,10 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 57.1 The script-tag sunset and what replaced it
-- [ ] 57.2 Web Pixels: custom pixels, sandboxing, and the events API
-- [ ] 57.3 Consent Tracking API and privacy-compliant loading
-- [ ] 57.4 Migrating legacy analytics off theme code
+- [x] 57.1 The script-tag sunset and what replaced it
+- [x] 57.2 Web Pixels: custom pixels, sandboxing, and the events API
+- [x] 57.3 Consent Tracking API and privacy-compliant loading
+- [x] 57.4 Migrating legacy analytics off theme code
 
 ## Labs assigned to this unit
 

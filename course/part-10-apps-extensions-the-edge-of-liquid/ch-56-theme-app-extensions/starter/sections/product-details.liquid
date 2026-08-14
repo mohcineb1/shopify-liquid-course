@@ -1,0 +1,28 @@
+{{ 'app-slot.css' | asset_url | stylesheet_tag }}
+
+<section class="product-details">
+  <h1>{{ product.title }}</h1>
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'detail' %}
+        <p {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
+      {% when '@app' %}
+        <div class="reviews-slot">{% render block %}</div>
+    {% endcase %}
+  {% endfor %}
+</section>
+
+{% schema %}
+{
+  "name": "Product details",
+  "settings": [
+    { "type": "product", "id": "primary_product", "label": "Primary product" },
+    { "type": "product", "id": "backup_product", "label": "Backup product" }
+  ],
+  "blocks": [
+    { "type": "detail", "name": "Detail", "settings": [{ "type": "text", "id": "text", "label": "Text" }] },
+    { "type": "@app", "limit": 1 }
+  ],
+  "presets": [{ "name": "Product details" }]
+}
+{% endschema %}

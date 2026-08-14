@@ -1,0 +1,2 @@
+<isinclude template="components/product" />
+<isif condition="${pdict.product.custom.guideId}"><span>${pdict.product.custom.guideId}</span></isif>

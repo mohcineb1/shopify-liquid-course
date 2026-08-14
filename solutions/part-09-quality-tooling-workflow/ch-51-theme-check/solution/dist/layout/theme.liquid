@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  {{ content_for_header }}
+  {{ 'campaign-banner.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'campaign-tracker.js' | asset_url }}" defer></script>
+</head>
+<body>
+  {{ content_for_layout }}
+</body>
+</html>

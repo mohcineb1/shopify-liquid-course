@@ -1,0 +1,20 @@
+{{ 'seasonal-banner.css' | asset_url | stylesheet_tag }}
+
+<section class="announcement-stack announcement-stack--{{ section.settings.tone }}">
+  <p>{{ section.settings.message }}</p>
+</section>
+
+{% schema %}
+{
+  "name": "Announcement stack",
+  "settings": [
+    { "type": "text", "id": "message", "label": "Message", "default": "Free delivery over $75" },
+    { "type": "select", "id": "tone", "label": "Tone", "options": [
+      { "value": "forest", "label": "Forest" },
+      { "value": "sand", "label": "Sand" }
+    ], "default": "forest" },
+    { "type": "checkbox", "id": "dismissible", "label": "Allow dismissal", "default": false }
+  ],
+  "presets": [{ "name": "Announcement stack" }]
+}
+{% endschema %}

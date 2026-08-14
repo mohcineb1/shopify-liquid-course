@@ -1,0 +1,20 @@
+root: dist
+extends:
+  - theme-check:recommended
+ignore:
+  - 'snippets/*-generated-icon.liquid'
+
+MissingAsset:
+  enabled: true
+  severity: error
+
+ParserBlockingScript:
+  enabled: true
+  severity: error
+
+ApprovedSectionInventory:
+  enabled: true
+  severity: warning
+
+require:
+  - ./tools/team-checks.js

@@ -1,0 +1,21 @@
+<div class="apps-wrapper{% if section.settings.include_padding %} apps-wrapper--padded{% endif %}">
+  {% for block in section.blocks %}
+    {% render block %}
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "App wrapper",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "include_padding",
+      "default": true,
+      "label": "Use theme content spacing"
+    }
+  ],
+  "blocks": [{ "type": "@app" }],
+  "presets": [{ "name": "App wrapper" }]
+}
+{% endschema %}

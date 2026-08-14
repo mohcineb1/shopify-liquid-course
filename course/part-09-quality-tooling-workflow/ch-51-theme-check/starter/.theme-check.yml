@@ -1,0 +1,11 @@
+# Starter only: intentionally points at the wrong tree and hides theme source.
+root: .
+extends:
+  - theme-check:recommended
+ignore:
+  - 'snippets/**'
+  - 'dist/**'
+UnusedAssign:
+  enabled: false
+ParserBlockingScript:
+  severity: info

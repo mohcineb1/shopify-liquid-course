@@ -1,0 +1,17 @@
+<aside class="campaign-badge campaign-badge--{{ section.settings.tone }}">
+  <p>{{ section.settings.copy }}</p>
+</aside>
+
+{% schema %}
+{
+  "name": "Campaign badge",
+  "settings": [
+    { "type": "text", "id": "copy", "label": "Campaign copy", "default": "Spring trail week" },
+    { "type": "select", "id": "tone", "label": "Campaign tone", "options": [
+      { "value": "forest", "label": "Forest" },
+      { "value": "coast", "label": "Coast" }
+    ], "default": "forest" }
+  ],
+  "presets": [{ "name": "Campaign badge" }]
+}
+{% endschema %}

@@ -305,3 +305,83 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** static-analysis boundary, check disposition, severity threshold, scoped suppression, custom-check contract, merge gate.
 **Assumed known from earlier:** CLI environments and target records (ch-50), output/build boundary (ch-45), performance ownership (ch-47), translations/schema/theme architecture.
 **Deliberately deferred:** CI/CD implementation and release automation -> later quality/workflow units.
+### ch-52 — Git & Environments
+**Taught:** connected branch-to-theme identity, merchant/configuration ownership, `settings_data.json` reconciliation, JSON-template drift, live-store branching, release/rollback evidence, and production merchant-edit handling.
+**Introduced terms:** branch-theme mapping, configuration ownership model, template drift, deploy branch, merchant-edit reconciliation, rollback provenance.
+**Assumed known from earlier:** CLI environments and target records (ch-50), Theme Check/static gates (ch-51), source/output boundary, route-level Markets evidence.
+**Deliberately deferred:** automated deployment workflows, semantic JSON merge tooling, and GitHub Actions implementation -> later quality/workflow units.
+### ch-53 — Code Organization at Scale
+**Taught:** naming contracts, internal theme component-library boundaries, standard-library utilities, handoff documentation, internal API evolution, multi-brand portfolio choices, and component recovery/governance.
+**Introduced terms:** component contract, standard-library manifest, setting migration, handoff contract, brand variation boundary, shared-base upgrade, contract change inventory.
+**Assumed known from earlier:** snippets/render isolation, sections/blocks/schema, CSS/JavaScript ownership, CLI targets, Git branch/theme provenance.
+**Deliberately deferred:** automated architectural enforcement, theme app extension packaging, and visual-regression implementation -> later quality/app units.
+### ch-54 — Testing
+**Taught:** layered theme-test boundaries; deterministic visual baseline and preset matrices; Lighthouse CI versus field performance; buyer-journey smoke tests; edge-data fixtures; and test failure/fixture governance.
+**Introduced terms:** test evidence layer, visual baseline contract, preset matrix, smoke-test fixture, edge-data catalogue, fixture governance, test disposition.
+**Assumed known from earlier:** Theme Check and merge gates (ch-51), release provenance (ch-52), component contracts (ch-53), performance owner/RUM boundary (ch-47).
+**Deliberately deferred:** detailed accessibility audit methodology, browser-automation implementation, and production observability automation -> later quality units.
+### ch-55 — AI-Assisted Theme Development
+**Taught:** current-reference Dev MCP use; bounded agent workflows; explicit Liquid/schema context; review/security/release guardrails; agent-readable contracts; and autonomy/evidence governance.
+**Introduced terms:** current-reference workflow, agent task envelope, context acquisition boundary, protected operation, agent-readable contract, proposal counterfactual.
+**Assumed known from earlier:** Theme Check loops, CLI/release targets, component contracts, testing evidence layers, Liquid `{% doc %}` and explicit render inputs.
+**Deliberately deferred:** app/agent connector implementation, autonomous production operations, and detailed AI policy/legal governance -> later integrations/operations units.
+### ch-56 — Theme App Extensions
+**Taught:** app blocks versus app embeds; merchant editor placement/activation; JSON-section `@app` contracts and Apps wrapper behavior; third-party markup containment; versioned app-integration evidence and removal safety.
+**Introduced terms:** app block, app embed block, Apps wrapper, `@app` admission, app-autofill ambiguity, outer layout boundary, integration register.
+**Assumed known from earlier:** JSON sections/blocks, schema/editor boundaries, asset ownership, performance/privacy review, candidate/release evidence.
+**Deliberately deferred:** app extension creation/deployment, app-data metafields, deep-link implementation, and checkout/customer extension development -> later extension units.
+### ch-57 — Script Tags, Pixels & Tracking
+**Taught:** migration from legacy tracking placements; Web Pixel sandbox/event contracts; Customer Privacy API allowed-state loading; consent-safe custom events; analytics cutover, deduplication, and event governance.
+**Introduced terms:** web pixel, strict sandbox, lax sandbox, customer event, custom customer event, allowed-state consent check, pixel inventory, measurement cutover.
+**Assumed known from earlier:** app/theme extension boundaries, external asset performance, release evidence, customer-data ownership, Markets/localization context.
+**Deliberately deferred:** building an app pixel, vendor-specific analytics configuration, legal advice, and headless privacy implementation -> later app/operations units.
+### ch-58 — Checkout Is No Longer Yours
+**Taught:** `checkout.liquid`/ScriptTag and Scripts retirement timelines; checkout UI extension targets/capabilities/plan gating; Functions for discounts, delivery, payments, and validation; strict theme cart/pre-checkout boundary; Thank you, Order status, and post-purchase surface selection.
+**Introduced terms:** checkout extension target, block/static/runnable target, checkout capability, Shopify Function, cart and checkout validation, Scripts customizations report, pre-checkout contract, Thank you page, Order status page, post-purchase extension.
+**Assumed known from earlier:** theme cart rendering, app extension/pixel boundaries, customer-event consent principles, metafield/attribute contracts, candidate/release evidence.
+**Deliberately deferred:** building/deploying checkout apps, Function implementation details, payment-provider integration, protected customer-data approval, and live checkout migration -> later application/operations work.
+### ch-59 — Customer Accounts Extensibility
+**Taught:** current versus legacy customer-account architecture; passwordless/hosted account boundaries; theme-owned storefront doorway versus account-portal limits; customer-account extension targets/capabilities/metafields; B2B company/location-aware design; account analytics and headless decision boundaries.
+**Introduced terms:** customer accounts, legacy customer accounts, account portal boundary, customer account UI extension, account extension target, protected customer data, account integration record, company-location scope.
+**Assumed known from earlier:** theme/app-extension boundaries, pixels and consent, checkout/account editor concepts, metafield ownership, candidate/release evidence.
+**Deliberately deferred:** account-extension implementation/deployment, headless Customer Account API implementation, identity-provider configuration, B2B operations, and production account migration -> later application/operations work.
+### ch-60 — Where Liquid Ends
+**Taught:** Ajax versus Storefront API ownership/authentication/cart boundaries; Liquid-shell API islands; an evidence-led Hydrogen/Oxygen migration decision; shared-cart/checkout/routing migration concerns; and lifecycle cost/team/maintenance accounting.
+**Introduced terms:** Ajax API, Storefront API, API-driven island, architecture register, headless storefront, Hydrogen, Oxygen, vertical migration slice.
+**Assumed known from earlier:** Liquid/theme rendering, cart basics, assets/browser interactions, pixels/checkout/account boundaries, candidate/release evidence.
+**Deliberately deferred:** full Storefront API implementation, Hydrogen application development, Oxygen deployment, custom-storefront authentication, and headless production migration -> specialised application/operations work.
+### ch-61 — Accessible Liquid
+**Taught:** semantic Liquid output and generated markup; focus ownership through rerenders/drawers; accessible contracts for variants, facets, carousels, modals and live feedback; merchant-content limits; and automated/manual keyboard-led accessibility audits.
+**Introduced terms:** semantic output contract, focus ownership, return-focus target, accessible name, live-region event contract, merchant-content boundary, keyboard pass, accessibility disposition.
+**Assumed known from earlier:** Liquid rendering/sections/blocks, browser interaction basics, cart/product data boundaries, candidate/release evidence.
+**Deliberately deferred:** a legal conformance assessment, full ARIA widget implementation, assistive-technology research studies, and organization-wide accessibility governance -> later specialist practice.
+### ch-62 — SEO from the Template Layer
+**Taught:** title/description/canonical/Open Graph rendering; visible-page JSON-LD claim discipline; Product/Offer/Breadcrumb/Organization/Article/FAQ scope; canonical/pagination/filter route analysis; narrow robots and sitemap governance; duplicate URL output verification.
+**Introduced terms:** claim inventory, structured-data owner, canonical signal, URL decision record, crawl versus index, robots customization record, rendered-output verification workflow.
+**Assumed known from earlier:** Liquid objects/context, themes/layout head, QA/candidate evidence, merchant content and accessibility boundaries.
+**Deliberately deferred:** legal SEO advice, ranking prediction, Search Console operations, full schema feature implementation, and third-party SEO-app configuration -> specialised marketing/operations work.
+### ch-63 — Privacy, Consent & Compliance
+**Taught:** Customer Privacy API loading and Allowed-method gating; consent-change handling; accessible/performance-bounded banner design; technical privacy responsibilities versus merchant/legal ownership; and accessible policy/accessibility-page release records.
+**Introduced terms:** allowed processing, processing register, consent-change contract, privacy asset classification, merchant/legal boundary, policy release surface, neutral privacy fixture.
+**Assumed known from earlier:** browser assets and progressive enhancement, pixels/event governance, accessibility focus/keyboard contracts, candidate/release evidence.
+**Deliberately deferred:** legal advice, jurisdiction-specific GDPR/CCPA analysis, vendor-contract review, privacy-admin configuration, data-subject request handling, and custom-storefront consent installation -> legal/privacy/operations specialists.
+### ch-64 — Vintage → OS 2.0 → Theme Blocks
+**Taught:** architecture generation inventory; safe Liquid-to-JSON template conversion; local section-block versus reusable Theme Block decision; `content_for 'blocks'` parent contract; and merchant-content preservation/rehearsal/rollback records.
+**Introduced terms:** architecture inventory, JSON template instance, Theme Block contract, block-model fork, content preservation ledger, migration outcome, candidate migration rehearsal.
+**Assumed known from earlier:** sections/schema, local blocks, app blocks, dynamic sources, theme QA, candidate/release evidence.
+**Deliberately deferred:** live theme migration, settings_data transformation, app migration, automated content transfer, CLI deployment, and post-cutover operations -> migration delivery work.
+### ch-65 — Dawn vs Horizon
+**Taught:** file-by-file architecture comparison; local/monolithic versus composable Theme Block decisions; Web Component/Shadow DOM boundaries; app/DOM/CSS compatibility audit; and evidence-led base-theme selection.
+**Introduced terms:** component boundary, dependency audit, compatibility ledger, adaptation path, candidate-only compatibility shim, base-theme selection record.
+**Assumed known from earlier:** OS 2.0 templates, sections, Theme Blocks, `content_for`, app blocks, candidate migration and accessibility testing.
+**Deliberately deferred:** live Dawn/Horizon migration, installation of a selected Horizon release, app upgrades, Shadow DOM internals, performance benchmarking, and source-control/deployment operations -> implementation delivery.
+### ch-66 — Arriving from Another Platform
+**Taught:** SFCC/SFRA-to-Shopify translation; Magento/WooCommerce/BigCommerce mental-model mapping; control/velocity/hosting trade-offs; custom-attribute modeling with metafields/metaobjects/references; and frontend-lead re-platforming/gap/cutover checklist.
+**Introduced terms:** authority map, source-to-target migration map, target-surface disposition, gap register, data-model migration, cutover communication contract.
+**Assumed known from earlier:** Liquid/theme architecture, Ajax and Storefront APIs, extensions/functions, metafields/metaobjects, accessibility/performance/privacy and migration candidate evidence.
+**Deliberately deferred:** live data export/import, SFCC controller/cartridge conversion, API authentication implementation, headless build, ERP/OMS integration, redirect deployment, and production cutover -> cross-functional migration delivery.
+### ch-67 — Auditing an Inherited Theme
+**Taught:** 30-point inherited-theme audit; evidence-led dead/orphaned-code discovery; deprecation portfolio; honest ranges/assumptions; client-ready finding prioritisation and report structure.
+**Introduced terms:** audit finding, candidate orphan, proof ladder, deprecation portfolio, finding confidence, gap/readback record, report acceptance baseline.
+**Assumed known from earlier:** theme architecture, editor state, app blocks/embeds, candidate testing, platform deprecations, performance/accessibility/privacy and migration evidence.
+**Deliberately deferred:** live audit execution, production deletions, client/vendor interviews, Theme Check/Lighthouse runs, actual checkout/pixel migration, and paid proposal negotiation -> authorised delivery work.

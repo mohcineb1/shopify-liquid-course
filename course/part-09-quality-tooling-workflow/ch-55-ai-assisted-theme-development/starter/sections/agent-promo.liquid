@@ -1,0 +1,17 @@
+{{ 'agent-promo.css' | asset_url | stylesheet_tag }}
+
+<section class="promo">
+  <h2>{{ section.settings.title }}</h2>
+  {% render 'promo-copy' %}
+</section>
+
+{% schema %}
+{
+  "name": "Promo",
+  "settings": [
+    { "type": "text", "id": "flag", "label": "Option", "default": "Sale" },
+    { "type": "checkbox", "id": "enabled", "label": "Enabled", "default": true }
+  ],
+  "presets": [{ "name": "Promo" }]
+}
+{% endschema %}

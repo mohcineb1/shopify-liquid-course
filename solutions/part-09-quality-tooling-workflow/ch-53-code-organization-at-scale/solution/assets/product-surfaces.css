@@ -1,0 +1,10 @@
+.product-card,
+.product-purchase-panel,
+.campaign-badge {
+  padding: 1rem;
+  border: 1px solid #d8d4cb;
+}
+
+.product-price { font-weight: 700; }
+.campaign-badge--forest { background: #173f35; color: #fff; }
+.campaign-badge--coast { background: #d6eef0; color: #123b40; }

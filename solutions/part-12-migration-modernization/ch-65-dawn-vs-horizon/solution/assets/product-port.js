@@ -1,0 +1,1 @@
+(function () { const root = document.querySelector('[data-product-integration]'); if (!root) return; root.addEventListener('product-state-change', (event) => { const detail = event.detail || {}; root.dataset.productState = detail.state || 'unknown'; }); }());

@@ -1,0 +1,10 @@
+{{ 'account-entry.css' | asset_url | stylesheet_tag }}
+{{ 'account-entry.js' | asset_url | script_tag }}
+<div class="account-entry" data-account-dashboard>
+  <h2>My account</h2>
+  <p>Your legacy password dashboard is ready.</p>
+  <a href="/account/login">Open dashboard</a>
+</div>
+{% schema %}
+{"name":"Account entry","settings":[],"presets":[{"name":"Account entry"}]}
+{% endschema %}

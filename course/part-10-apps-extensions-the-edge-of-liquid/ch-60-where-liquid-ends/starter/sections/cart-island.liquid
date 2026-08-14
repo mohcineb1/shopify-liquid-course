@@ -1,0 +1,6 @@
+{{ 'cart-island.css' | asset_url | stylesheet_tag }}
+{{ 'cart-island.js' | asset_url | script_tag }}
+{% render 'storefront-token' %}
+<div class="cart-island is-loading" data-cart-island data-total="{{ cart.total_price }}">
+  <span data-cart-total>{{ cart.total_price }}</span>
+</div>

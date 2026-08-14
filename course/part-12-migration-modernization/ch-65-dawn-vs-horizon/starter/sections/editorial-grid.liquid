@@ -1,0 +1,2 @@
+<section class="editorial-grid">{% for block in section.blocks %}<div>{{ block.settings.text }}</div>{% endfor %}{% content_for 'blocks' %}</section>
+{% schema %}{"name":"Editorial grid","blocks":[{"type":"text","name":"Text","settings":[{"type":"richtext","id":"text","label":"Text"}]}]}{% endschema %}

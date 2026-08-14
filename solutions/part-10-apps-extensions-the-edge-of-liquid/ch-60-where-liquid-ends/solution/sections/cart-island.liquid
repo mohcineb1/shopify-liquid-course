@@ -1,0 +1,7 @@
+{{ 'cart-island.css' | asset_url | stylesheet_tag }}
+{{ 'cart-island.js' | asset_url | script_tag }}
+<div class="cart-island" data-cart-island aria-live="polite">
+  <a class="cart-island__link" href="{{ routes.cart_url }}">Cart (<span data-cart-count>{{ cart.item_count }}</span>)</a>
+  <p class="cart-island__status" data-cart-status hidden></p>
+</div>
+<script type="application/json" data-cart-island-config>{"cart_url":"{{ routes.cart_url }}"}</script>

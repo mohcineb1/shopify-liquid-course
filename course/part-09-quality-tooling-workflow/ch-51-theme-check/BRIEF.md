@@ -6,7 +6,7 @@ unit: "Chapter 51"
 title: "Theme Check"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 51 — Theme Check
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 51.1 Running Theme Check locally and in the editor
-- [ ] 51.2 The full check catalogue: correctness, performance, deprecation, accessibility
-- [ ] 51.3 `.theme-check.yml` configuration and severity tuning
-- [ ] 51.4 Writing a custom check for team conventions
-- [ ] 51.5 Theme Check as a merge gate
+- [x] 51.1 Running Theme Check locally and in the editor
+- [x] 51.2 The full check catalogue: correctness, performance, deprecation, accessibility
+- [x] 51.3 `.theme-check.yml` configuration and severity tuning
+- [x] 51.4 Writing a custom check for team conventions
+- [x] 51.5 Theme Check as a merge gate
 
 ## Labs assigned to this unit
 

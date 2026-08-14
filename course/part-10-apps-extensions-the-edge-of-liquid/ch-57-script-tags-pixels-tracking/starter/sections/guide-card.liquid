@@ -1,0 +1,20 @@
+{{ 'guide-tracking.js' | asset_url | script_tag }}
+
+<article class="guide-card">
+  <h2>{{ section.settings.heading }}</h2>
+  <button type="button" data-guide-open>Open guide</button>
+</article>
+
+<script>
+  document.querySelector('[data-guide-open]').addEventListener('click', function () {
+    document.dispatchEvent(new Event('guide:opened'));
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Guide card",
+  "settings": [{ "type": "text", "id": "heading", "label": "Heading", "default": "Trail guide" }],
+  "presets": [{ "name": "Guide card" }]
+}
+{% endschema %}

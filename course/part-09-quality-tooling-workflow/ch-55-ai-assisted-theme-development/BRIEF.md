@@ -6,7 +6,7 @@ unit: "Chapter 55"
 title: "AI-Assisted Theme Development"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 55 — AI-Assisted Theme Development
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 55.1 The Shopify Dev MCP server: current docs and schemas instead of stale model memory
-- [ ] 55.2 Agent workflows: generating sections, migrating Dawn markup, running Theme Check fix loops
-- [ ] 55.3 `{% doc %}` and schema clarity as machine-readable context
-- [ ] 55.4 Guardrails: what you must review before it ships
-- [ ] 55.5 Why Shopify's newer Liquid features are being designed for agent readability
+- [x] 55.1 The Shopify Dev MCP server: current docs and schemas instead of stale model memory
+- [x] 55.2 Agent workflows: generating sections, migrating Dawn markup, running Theme Check fix loops
+- [x] 55.3 `{% doc %}` and schema clarity as machine-readable context
+- [x] 55.4 Guardrails: what you must review before it ships
+- [x] 55.5 Why Shopify's newer Liquid features are being designed for agent readability
 
 ## Labs assigned to this unit
 

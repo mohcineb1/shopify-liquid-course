@@ -1,0 +1,2 @@
+.privacy-notice { border-top: 1px solid currentColor; padding: 1rem; }
+.privacy-notice:focus-within { outline: 3px solid currentColor; outline-offset: 3px; }

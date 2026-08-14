@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    {{ content_for_header }}
+    <script src="https://tracker.example.invalid/checkout.js"></script>
+  </head>
+  <body>
+    {{ content_for_layout }}
+    <script>
+      document.querySelector('[data-payment-method="manual"]').style.display = 'none';
+    </script>
+  </body>
+</html>

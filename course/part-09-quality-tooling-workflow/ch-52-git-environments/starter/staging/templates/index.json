@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "seasonal": {
+      "type": "announcement-stack",
+      "settings": { "message": "Spring event: selected outdoor gear", "tone": "forest" }
+    },
+    "featured": {
+      "type": "featured-collection",
+      "settings": { "heading": "Spring trail essentials" }
+    },
+    "newsletter": {
+      "type": "newsletter-signup",
+      "settings": { "heading": "Trail notes" }
+    }
+  },
+  "order": ["seasonal", "featured", "newsletter"]
+}

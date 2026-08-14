@@ -1,4 +1,4 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 # Chapter 51 — Theme Check
 
 Theme Check is not a storefront test runner. It is a static analyser for the Liquid and JSON in a theme (and theme app extensions) that identifies errors and enforces theme/Liquid best practices.[1] That boundary makes it valuable: it can inspect every relevant source file consistently before a reviewer opens a browser. It cannot prove that a buyer sees the correct market catalogue, that an app is configured, that checkout works, or that an image is visually appropriate. A good quality workflow treats its findings as precise code evidence and pairs them with route-level, configuration, accessibility, and merchant acceptance evidence.

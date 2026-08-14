@@ -1,0 +1,12 @@
+.cart-boundary {
+  border-inline-start: 0.25rem solid currentColor;
+  padding: 1rem;
+}
+
+.cart-boundary__notice {
+  margin-block: 0 0.75rem;
+}
+
+.cart-boundary__checkout {
+  display: inline-block;
+}

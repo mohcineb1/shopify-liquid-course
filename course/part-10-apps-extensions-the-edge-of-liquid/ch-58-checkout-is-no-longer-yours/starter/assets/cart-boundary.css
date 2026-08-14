@@ -1,0 +1,7 @@
+.cart-boundary__warning {
+  color: #b42318;
+}
+
+.cart-boundary__checkout.is-hidden {
+  display: none;
+}

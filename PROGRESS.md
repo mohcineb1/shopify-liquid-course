@@ -1178,3 +1178,324 @@ Entry format:
 - verified: aligned the lesson with current official Theme Check and configuration references.
 - decided: positioned Theme Check as a reproducible static gate paired with route, configuration, accessibility, and merchant evidence.
 - next: ch-51 exercise.
+## 2026-08-14 · ch-51 · exercise
+- wrote: a Theme Check policy lab covering checked build output, finding dispositions, severity, narrow suppression, custom team convention, and merge-gate evidence.
+- shipped: misconfigured YAML, deployable `dist` fixtures, custom-check placeholder, triage table, and unsafe gate starter documents.
+- decided: made static analysis one evidence layer while requiring separate route, configuration, accessibility, merchant, and release validation.
+- next: ch-51 solution.
+## 2026-08-14 · ch-51 · solution
+- wrote: a `dist`-rooted Theme Check policy, source fixes, narrow suppression, custom-rule contract, triage decisions, and a layered merge gate.
+- shipped: corrected YAML, deployable layout/section/assets, custom-check contract, triage matrix, and release gate mirror files.
+- verified: retained `[VERIFY]` boundaries for version-specific custom-check APIs, route ordering, team ownership, store state, and release policy.
+- decided: static analysis must reduce uncertainty about source contracts without claiming authority over runtime or merchant outcomes.
+- next: ch-51 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-51 · review
+- reviewed: passed all five Theme Check topics in scope order, official static-analysis facts, starter/solution parity, calibration, and the anti-leak boundary.
+- verified: the course distinguishes local/editor/CI feedback, check categories, YAML policy, custom conventions, and merge gating from runtime/store acceptance.
+- decided: applied final markers and retained `[VERIFY]` boundaries for tool versions, custom-check integration, store behavior, and release policy.
+- next: ch-52 lesson.
+## 2026-08-14 · ch-52 · lesson
+- wrote: connected branch-to-theme mappings, configuration ownership, settings/template drift, live-store branching, and merchant-edit-aware release/rollback practice.
+- verified: aligned the branch synchronization and conflict/recovery behavior with current official Shopify GitHub integration documentation.
+- decided: made semantic reconciliation and prior-candidate provenance mandatory before configuration-bearing theme releases.
+- next: ch-52 exercise.
+## 2026-08-14 · ch-52 · exercise
+- wrote: a branch/theme mapping, configuration-ownership, template-drift, merchant-edit reconciliation, candidate release, and rollback rehearsal.
+- shipped: production/staging JSON fixtures, merchant settings state, schema-migration section, real CSS asset, ambiguous branch state, and unsafe release note starters.
+- decided: prohibited blind synchronization and required semantic configuration decisions with owner, route impact, evidence, and reversion trigger.
+- next: ch-52 solution.
+## 2026-08-14 · ch-52 · solution
+- wrote: a branch/theme identity map, configuration ownership contract, template-drift classification, merchant-edit reconciliation protocol, release policy, and rollback provenance record.
+- shipped: decision-log mirrors plus an announcement section and stylesheet that preserve the deployable theme boundary.
+- verified: retained `[VERIFY]` for store IDs, bot-commit intent, app/context state, permissions, approval, and real recovery targets.
+- decided: never select a configuration winner by timestamp or branch name; release only a semantically reconciled unpublished candidate.
+- next: ch-52 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-52 · review
+- reviewed: passed all five Git/environments topics in scope order, current integration facts, starter/solution parity, calibration, and anti-leak boundaries.
+- verified: the course covers branch identity, shared configuration reconciliation, template drift, live-store branching, and merchant-edit-aware rollback without treating Git as commercial authority.
+- decided: applied final markers and retained `[VERIFY]` requirements for connected targets, merchant intent, app/state context, permissions, and release approval.
+- next: ch-53 lesson.
+## 2026-08-14 · ch-53 · lesson
+- wrote: scalable naming, component and utility contracts, handoff documentation, internal API evolution, and multi-brand theme governance.
+- verified: maintained settings/configuration migration and deployment boundary discipline from preceding workflow chapters.
+- decided: treated reusable theme surfaces as owned, versioned internal contracts rather than broad abstractions or folders of convenience.
+- next: ch-53 exercise.
+## 2026-08-14 · ch-53 · exercise
+- wrote: a library-governance refactor for naming, explicit price-snippet reuse, utility boundaries, handoff contracts, setting migration, and multi-brand variation.
+- shipped: ambiguous card/price/helper snippets, purchase/campaign sections, shared CSS, and stale handoff starters for a real refactor target.
+- decided: required evidence of a second consumer before extraction while treating persisted setting IDs and brand variation as owned migration contracts.
+- next: ch-53 solution.
+## 2026-08-14 · ch-53 · solution
+- wrote: explicit product-price and utility contracts, setting migration constraints, component extraction criteria, naming/handoff records, and multi-brand base strategy.
+- shipped: solution snippets, purchase-panel section, CSS artifact, and standard-library manifest as real mirror files.
+- verified: retained `[VERIFY]` for product/brand owners, live configured instances, consumer routes, and shared-base adoption evidence.
+- decided: extracted only the two-consumer price behavior and left the campaign feature local until independent contract evidence exists.
+- next: ch-53 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-53 · review
+- reviewed: passed all five code-organisation topics in scope order, library/utility boundaries, handoff quality, multi-brand ownership, starter/solution parity, and calibration.
+- verified: the course keeps setting migrations, brand decisions, and reusable contracts explicit without importing implementation-specific solution shortcuts.
+- decided: applied final markers and retained `[VERIFY]` requirements for live configuration inventory, brand owners, route evidence, and shared-base adoption.
+- next: ch-54 lesson.
+## 2026-08-14 · ch-54 · lesson
+- wrote: testable theme boundaries, visual/preset regression coverage, Lighthouse CI gates, buyer-journey smoke tests, edge-data fixtures, and failure governance.
+- verified: aligned Lighthouse CI, controlled performance data, static checks, no-JavaScript baseline, and Theme Store testing guidance with official Shopify references.
+- decided: made every test result a bounded evidence claim with a fixture, context, owner, and explicit runtime/configuration limit.
+- next: ch-54 exercise.
+## 2026-08-14 · ch-54 · exercise
+- wrote: a layered candidate-testing lab covering evidence matrix, deterministic visuals, Lighthouse policy, smoke journeys, edge fixtures, and failure triage.
+- shipped: brittle purchase-panel Liquid/CSS, no-image and long-title fixtures, unsafe test plan, and exposed-secret CI notes as real correction targets.
+- decided: prohibited static/preview overclaims and required every test signal to preserve context, artifact, owner, non-coverage, and escalation path.
+- next: ch-54 solution.
+## 2026-08-14 · ch-54 · solution
+- wrote: a bounded test-evidence matrix, deterministic visual contract, controlled Lighthouse policy, smoke journeys, edge catalogue, corrected purchase panel, and failure triage.
+- shipped: solution section/CSS plus visual, performance, smoke, edge, matrix, and triage mirror records.
+- verified: retained `[VERIFY]` for candidate/store identity, handles, tools, secrets, thresholds, app/market/account state, and approval.
+- decided: a green candidate is a layered set of observed claims, never an automated certification of payment, policy, merchant content, or production truth.
+- next: ch-54 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-54 · review
+- reviewed: passed all five Testing topics in scope order, official performance/testing facts, starter/solution parity, calibration, and anti-leak boundaries.
+- verified: the course distinguishes static, visual, lab performance, journey, edge-data, configuration, accessibility, and merchant evidence without overclaiming checkout or production truth.
+- decided: applied final markers and retained `[VERIFY]` requirements for tools, candidate identity, fixtures, store/account/market state, thresholds, and approval.
+- next: ch-55 lesson.
+## 2026-08-14 · ch-55 · lesson
+- wrote: current-reference Dev MCP usage, bounded agent workflows, `{% doc %}`/schema context, review guardrails, agent-readable architecture, and autonomy governance.
+- verified: aligned Dev MCP, Liquid search/validation, and AI Toolkit capability boundaries with current official Shopify references.
+- decided: framed AI as evidence-accelerating assistance under explicit context and human release authority, never as a merchant/store authority substitute.
+- next: ch-55 exercise.
+## 2026-08-14 · ch-55 · exercise
+- wrote: a hardened agent-task lab for current-reference research, explicit contracts, Theme Check dispositions, review gates, and Dawn dependency inventory.
+- shipped: opaque promo section/snippet, owned CSS, unclassified check report, dangerous prompt, and copy-first Dawn notes as real correction targets.
+- decided: kept all store access, secrets, market claims, publishing, and protected operations outside the task envelope and under named human approval.
+- next: ch-55 solution.
+## 2026-08-14 · ch-55 · solution
+- wrote: a bounded agent-task envelope, current-reference record, explicit promo contract, Theme Check dispositions, Dawn dependency inventory, review record, and escalation discipline.
+- shipped: solution section/snippet/CSS plus an auditable task-envelope mirror.
+- verified: retained `[VERIFY]` for tool/store/candidate/context/permission/market/approval facts and prohibited unsupported protected operations.
+- decided: an agent must stop and escalate on ambiguous platform/configuration facts, secret needs, or protected operations rather than creating certainty by inference.
+- next: ch-55 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-55 · review
+- reviewed: passed all five AI-assisted theme-development topics in scope order, official current-reference facts, starter/solution parity, calibration, and anti-leak boundaries.
+- verified: the course keeps current documentation, explicit contracts, Theme Check loops, machine-readable context, and protected-operation review distinct from agent authority.
+- decided: applied final markers and retained `[VERIFY]` requirements for tool policy, store/candidate context, configuration, permissions, markets, reviewers, and release approval.
+- next: ch-56 lesson.
+## 2026-08-14 · ch-56 · lesson
+- wrote: app-block/embed decisioning, merchant editor control, `@app` section/wrapper contracts, third-party containment, and integration evidence/removal governance.
+- verified: aligned extension types, app-block support, wrapper rules, app-embed activation/context, and schema constraints with current official Shopify references.
+- decided: assigned themes the outer layout boundary and merchant placement while preserving app-owned inner behavior, data, lifecycle, privacy, and update contracts.
+- next: ch-56 exercise.
+## 2026-08-14 · ch-56 · exercise
+- wrote: an app-integration boundary refactor for placement choice, valid `@app` hosting, Apps wrapper, outer containment, merchant flow, and candidate evidence.
+- shipped: invalid product/apps sections, unsafe CSS/layout injection, and unowned placement notes as real correction targets.
+- decided: prohibited layout script pasting, app-block limits, static-section claims, and visual clipping in favor of editor-controlled extension surfaces.
+- next: ch-56 solution.
+## 2026-08-14 · ch-56 · solution
+- wrote: app block/embed placement, valid JSON `@app` host, Apps wrapper, outer containment, merchant flow, candidate evidence, and state/removal checks.
+- shipped: solution product/apps sections, neutral CSS, clean layout, and placement decision mirror.
+- verified: retained `[VERIFY]` for app/extension/theme/editor/resource/market/styling/privacy/performance/release facts and ownership.
+- decided: treated integration version and editor state as independent release evidence; theme removal must remain clean without app-internal assumptions.
+- next: ch-56 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-56 · review
+- reviewed: passed all four Theme App Extensions topics in scope order, official current facts, starter/solution parity, calibration, and anti-leak boundaries.
+- verified: the course distinguishes inline app blocks from global app embeds, preserves merchant editor control, and contains third-party output without taking app ownership.
+- decided: applied final markers and retained `[VERIFY]` requirements for extension/theme/editor/resource/styling/privacy/performance/release context.
+- next: ch-57 lesson.
+## 2026-08-14 · ch-57 · lesson
+- wrote: script-tag migration framing, Web Pixel sandbox/event design, Customer Privacy allowed-state loading, consent-aware tracking, and legacy analytics cutover governance.
+- verified: aligned pixel sandbox/consent behavior, Customer Privacy API loading/allowed methods, and official migration facts with current Shopify references.
+- decided: made theme code a minimal custom-event publisher where justified and moved vendor collection, consent mediation, and duplication governance into managed pixel boundaries.
+- next: ch-57 exercise.
+## 2026-08-14 · ch-57 · exercise
+- wrote: a privacy-aware pixel migration brief covering inventory, owner/destination choice, custom-event publisher, Customer Privacy allowed-state gating, sandbox boundaries, deduplication, and release evidence.
+- shipped: a legacy theme layout, direct queue/cookie/automatic-consent anti-patterns, guide interaction, and unowned pixel/checkout notes as real correction targets.
+- decided: prohibited real traffic, secrets, customer data, privacy-setting changes, and legal conclusions; retained `[VERIFY]` for all store/vendor/purpose/region/configuration/approval facts.
+- next: ch-57 solution.
+## 2026-08-14 · ch-57 · solution
+- wrote: an inventory, app/custom-pixel decision record, minimal `guide_opened` publisher, consent plan, strict/lax sandbox analysis, cutover/rollback plan, and candidate validation matrix.
+- shipped: a clean solution layout, publisher and consent assets, plus auditable pixel, migration, consent, sandbox, and validation records in the solution mirror.
+- verified: removed direct vendor transport, personal identifier, automatic consent, and Shopify-cookie manipulation from the corrected implementation; retained `[VERIFY]` where merchant/vendor/pixel/privacy/release facts require authorised observation.
+- next: ch-57 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-57 · review
+- reviewed: passed all four Script Tags, Web Pixels/sandboxes, Customer Privacy consent, and legacy analytics migration topics in scope order, calibration, practical-file parity, and anti-leak boundaries.
+- verified: the course makes the theme a minimal custom-event publisher, retains platform-managed pixel/consent boundaries, and requires same-service semantic/uniqueness evidence before legacy removal.
+- decided: applied final markers and preserved `[VERIFY]` gates for pixel/app/version, endpoint/CORS, configuration, regional purpose, candidate/checkout state, traffic evidence, owners, approvals, and rollback.
+- next: ch-58 lesson.
+## 2026-08-14 · ch-58 · lesson
+- wrote: checkout retirement timelines; Checkout UI Extension target/capability/plan reasoning; Functions for discounts, delivery, payments, and validation; Scripts migration; pre-checkout theme limits; and Thank you, Order status, and post-purchase selection.
+- verified: grounded deprecations and current checkout/Functions/post-purchase distinctions in the course ledger and official Shopify documentation; calibration passed at 3,023 words.
+- decided: assigned theme code to cart/pre-checkout experience, checkout UI to approved presentation, Functions to durable commerce decisions, and pixels to approved collection; retained `[VERIFY]` for all store/plan/target/capability/configuration/privacy/release facts.
+- next: ch-58 exercise.
+## 2026-08-14 · ch-58 · exercise
+- wrote: a checkout triage exercise covering dated legacy inventory, surface authority, validation Function specification, UI capability discipline, Scripts migration, honest cart guidance, and post-purchase separation.
+- shipped: legacy checkout Liquid/DOM tracking/payment hiding, a retired shipping Script, cart CSS/section anti-patterns, and ambiguous customization/post-purchase notes as real correction targets.
+- decided: prohibited live checkout changes, buyer/payment data, installation, configuration, target/plan inference, and browser enforcement; retained `[VERIFY]` for all platform/store/app/policy/release facts.
+- next: ch-58 solution.
+## 2026-08-14 · ch-58 · solution
+- wrote: an inventory, surface-decision matrix, UI proposal, server-side validation contract, Scripts transition plan, corrected theme cart boundary, post-purchase plan, and candidate validation record.
+- shipped: accessible cart-section/CSS corrections plus auditable retirement, Function, UI, Scripts, post-purchase, and validation records in the solution mirror.
+- verified: removed the false checkout-block claim, hidden checkout control, legacy DOM payment assumption, legacy Script fallback, and one-shot confirmation assumptions from the corrected architecture.
+- next: ch-58 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-58 · review
+- reviewed: passed all six checkout retirement, UI extension, Function, Scripts, theme-boundary, and post-purchase topics in scope order, official-source alignment, calibration, practical-file parity, and anti-leak boundaries.
+- verified: the course distinguishes presentation, commerce enforcement, event collection, initial confirmation, revisitable order status, and conditional post-purchase behavior without assigning checkout ownership to themes.
+- decided: applied final markers and retained `[VERIFY]` gates for plan, target, API, app/version, configuration, payment/delivery, protected data, pixel/consent, candidate, release, cleanup, and rollback facts.
+- next: ch-59 lesson.
+## 2026-08-14 · ch-59 · lesson
+- wrote: current versus legacy customer-account architecture; the hosted portal/theme boundary; supported configuration and account-extension targets/capabilities; B2B company/location context; and account migration/analytics/headless decision records.
+- verified: grounded sign-in, account migration, customization limits, target classes, protected-data boundary, and B2B considerations in current official Shopify sources; calibration passed at 2,380 words.
+- decided: retained the theme as a storefront doorway, reserved account portal behavior for native controls/extensions/headless architecture, and marked account mode, plan, target, domain, identity, data, B2B, pixel, candidate, and release facts `[VERIFY]`.
+- next: ch-59 exercise.
+## 2026-08-14 · ch-59 · exercise
+- wrote: an account migration exercise covering legacy inventory, theme doorway correction, account-extension and B2B scope, migration alternatives, and candidate validation.
+- shipped: legacy account entry, portal DOM/data scrape, CSS/JS assumptions, and ambiguous B2B/account requests as real correction targets.
+- decided: prohibited live account, identity, customer-data, B2B, app, pixel, and consent operations; retained `[VERIFY]` for all platform/store/data/release facts.
+- next: ch-59 solution.
+## 2026-08-14 · ch-59 · solution
+- wrote: account inventory, surface decision, safe storefront doorway, B2B extension/data boundary, migration plan, and candidate validation record.
+- shipped: solution section/CSS plus account, extension, B2B, migration, and validation records in the solution mirror.
+- verified: removed hardcoded legacy account assumptions and portal DOM/customer-data scraping; kept customer/company/location data and account authority explicitly bounded.
+- next: ch-59 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-59 · review
+- reviewed: passed all three current-versus-legacy account, theme-boundary, and customer-account extension/B2B topics in scope order, source alignment, calibration, practical-file parity, and anti-leak boundaries.
+- verified: the course assigns account identity/portal ownership to Shopify, keeps theme code at the storefront doorway, and requires scoped extension/data/B2B decisions.
+- decided: applied final markers and retained `[VERIFY]` gates for mode, plan, domain, identity, target/API, data approval, B2B context, pixels, candidate, release, cleanup, and rollback.
+- next: ch-60 lesson.
+## 2026-08-14 · ch-60 · lesson
+- wrote: Ajax versus Storefront API boundaries, Liquid-shell API islands, Hydrogen/Oxygen decision criteria, shared-cart/headless migration records, and lifecycle team/maintenance realities.
+- verified: aligned theme-only Ajax limits, Storefront GraphQL/authentication, Hydrogen/Oxygen roles, and official migration considerations with current Shopify sources; calibration passed at 2,239 words.
+- decided: required named buyer outcomes, explicit authority/data/credential/fallback/performance contracts, measured alternatives, and full operational ownership before expanding a theme into hybrid or headless architecture; retained `[VERIFY]` for store/runtime/plan/integration/release facts.
+- next: ch-60 exercise.
+## 2026-08-14 · ch-60 · exercise
+- wrote: a runtime-decision exercise for Ajax/Storefront API selection, bounded cart islands, evidence-led Hydrogen/Oxygen evaluation, migration registration, and lifecycle maintenance.
+- shipped: a cart-island Liquid shell, unsafe hardcoded Ajax/token/client-state anti-patterns, minimal CSS, and headless/integration request notes as real correction targets.
+- decided: prohibited token/API/runtime provisioning, live store interaction, and framework-first migration; retained `[VERIFY]` for all API/store/platform/operational/release facts.
+- next: ch-60 solution.
+## 2026-08-14 · ch-60 · solution
+- wrote: API decision, corrected locale-aware Ajax island, island contract, headless decision, migration register, maintenance model, and candidate validation record.
+- shipped: solution section/assets plus auditable API, island, decision, migration, maintenance, and validation records in the solution mirror.
+- verified: removed token exposure, customer/global assumptions, hardcoded cart route, client-total authority, and client-only cart hiding from the corrected implementation.
+- next: ch-60 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-60 · review
+- reviewed: passed all four Ajax/Storefront, hybrid island, Hydrogen/Oxygen decision, and maintenance topics in scope order, calibration, practical-file parity, and anti-leak boundaries.
+- verified: the course uses theme-safe Ajax for bounded current-session interaction, reserves GraphQL/headless for explicit storefront contracts, and makes ongoing operational ownership a go/no-go condition.
+- decided: applied final markers and retained `[VERIFY]` gates for API/auth/token, runtime/host/plan, integration, domain, publication, metrics, team, cost, candidate, release, cleanup, and rollback.
+- next: ch-61 lesson.
+## 2026-08-14 · ch-61 · lesson
+- wrote: semantic Liquid output, focus management through dynamic updates, accessible contracts for variant/facet/carousel/modal/announcement patterns, merchant-content limits, and layered automated/manual audit practice.
+- verified: grounded theme guidance, keyboard/focus handling, dynamic component expectations, WCAG 2.2 framing, and WAI-ARIA pattern use in current Shopify/W3C references; calibration passed at 2,747 words.
+- decided: made semantic output and focus ownership explicit component contracts, reserved live regions for bounded feedback, and required manual keyboard/candidate evidence alongside automation; retained `[VERIFY]` for configuration, content, state, tool, candidate, and release facts.
+- next: ch-61 exercise.
+## 2026-08-14 · ch-61 · exercise
+- wrote: an accessibility repair brief covering semantic Liquid output, variants, drawer focus, bounded announcements, merchant-content limits, and layered keyboard-led evidence.
+- shipped: generic product cards, faux variant controls, global dynamic update/focus loss, hidden focus CSS, an unnamed drawer, and scan-only/content anti-pattern notes as real correction targets.
+- decided: prohibited live-theme/content/accessibility claims and retained `[VERIFY]` for component data, lifecycle, content, tool, candidate, reviewer, exception, and release facts.
+- next: ch-61 solution.
+## 2026-08-14 · ch-61 · solution
+- wrote: semantic card/list output, native variant contract, named drawer and return-focus policy, concise announcement map, merchant boundary, and layered audit/keyboard records.
+- shipped: solution section/snippet/assets plus semantic, focus, announcement, merchant, keyboard, and audit mirrors.
+- verified: removed faux controls, global cart live region, missing image semantics, hidden focus, and unowned drawer focus behavior from the corrected architecture.
+- next: ch-61 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-61 · review
+- reviewed: passed all five semantic output, focus/rerender, widget/announcement, merchant-content, and audit topics in scope order, calibration, practical-file parity, and anti-leak boundaries.
+- verified: the course treats focus and semantic output as explicit contracts and combines automation with keyboard, content, and candidate evidence rather than score-only acceptance.
+- decided: applied final markers and retained `[VERIFY]` gates for product/variant, section lifecycle, content, tools, browser/assistive technology, candidate, exception, reviewer, and release facts.
+- next: ch-62 lesson.
+## 2026-08-14 · ch-62 · lesson
+- wrote: head metadata and Open Graph patterns; JSON-LD claim inventories for Product, Offer, BreadcrumbList, Organization, Article and FAQ; canonicals/pagination/filter route analysis; robots/sitemap governance; and duplicate-output verification.
+- verified: grounded Shopify metadata and robots behaviors plus Google structured-data visible-content, JSON-LD, validation, and rich-result limitations in current official references; calibration passed at 2,273 words.
+- decided: required one owner per schema claim/template, `canonical_url` output inspection instead of string-built canonicals, narrow reversible robots changes, and rendered-route evidence rather than ranking/indexing promises; retained `[VERIFY]` for all store/search/configuration/state/release facts.
+- next: ch-62 exercise.
+## 2026-08-14 · ch-62 · exercise
+- wrote: a template-level SEO exercise covering metadata, visible-page JSON-LD ownership, duplicate-route records, narrow robots/sitemap governance, and rendered-output validation.
+- shipped: duplicate head/canonical output, global hand-built schema, static broad robots directives, and route/app-schema assumptions as real correction targets.
+- decided: prohibited live search/store operations and retained `[VERIFY]` for every route, domain, market, content, app, crawler, validator, owner, candidate, release and rollback fact.
+- next: ch-62 solution.
+## 2026-08-14 · ch-62 · solution
+- wrote: one head contract, template-scoped product schema, claim and metadata inventories, URL decision record, default-preserving robots proposal, and rendered-output matrix.
+- shipped: solution layout/snippet/robots/CSS plus metadata, claim, URL, robots and validation records in the solution mirror.
+- verified: removed duplicate canonicals, invisible global Product/FAQ claims, hand-built JSON, static broad robots blocks, and unowned app-schema duplication from the corrected architecture.
+- next: ch-62 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-62 · review
+- reviewed: passed title/description/Open Graph, JSON-LD object scope, canonical/pagination/filter, robots/sitemap, and duplicate-route topics in scope order, calibration, practical-file parity, and anti-leak boundaries.
+- verified: the course makes visible current content, single schema ownership, rendered route evidence, and reversible crawler controls mandatory before claims are released.
+- decided: applied final markers and retained `[VERIFY]` gates for all store/search/domain/locale/app/content/route/crawler/tool/candidate/owner/release facts.
+- next: ch-63 lesson.
+## 2026-08-14 · ch-63 · lesson
+- wrote: Customer Privacy API loading and purpose-specific Allowed-method gates; accessible, performance-bounded consent interfaces; theme versus merchant/legal responsibilities; policy/accessibility page patterns; and processing/change-state test records.
+- verified: grounded API loading, allowed processing, consent-event, visitor interaction, banner, and privacy-setting behavior in current Shopify documentation; calibration passed at 2,240 words.
+- decided: prohibited cookie manipulation, automatic consent, local boolean authorization, duplicate banner providers, and legal/ranking-style claims; required optional-asset registers, neutral fixtures, and `[VERIFY]` gates for all business/configuration/jurisdiction/release facts.
+- next: ch-63 exercise.
+## 2026-08-14 · ch-63 · exercise
+- wrote: a consent-gated theme exercise covering API purpose checks, banner accessibility/performance, privacy processing inventory, technical/legal boundaries, trust-page records, and neutral-fixture validation.
+- shipped: pre-consent vendor includes, automatic local/cookie consent, inaccessible popup CSS/markup, unsupported trust claims, and unowned processing/page notes as real correction targets.
+- decided: prohibited live privacy/vendor/policy operations and all legal claims; retained `[VERIFY]` for purpose, region, configuration, vendor, data, policy, candidate, owner, approval, release and rollback facts.
+- next: ch-63 solution.
+## 2026-08-14 · ch-63 · solution
+- wrote: asset processing register, allowed-purpose Customer Privacy loader, consent-change contract, preference entry, theme/legal boundary, trust-page record, and neutral validation matrix.
+- shipped: solution layout/assets/section plus processing, consent, boundary, trust-page and validation mirrors.
+- verified: removed pre-consent vendor tags, local/cookie authorization, automatic consent, unsupported compliance copy, hidden focus, and scan-only/ungoverned implementation assumptions.
+- next: ch-63 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-63 · review
+- reviewed: passed Customer Privacy gating, banner performance/accessibility, GDPR-adjacent theme boundary, and legal/accessibility-page topics in scope order, calibration, practical-file parity, and anti-leak boundaries.
+- verified: the course makes Allowed-method checks, visitor interaction, optional-asset inventory, accessible trust surfaces, neutral evidence, and merchant/legal ownership explicit.
+- decided: applied final markers and retained `[VERIFY]` gates for all jurisdiction, merchant, region, vendor, data, policy, configuration, candidate, owner, approval, release and rollback facts.
+- next: ch-64 lesson.
+## 2026-08-14 · ch-64 · lesson
+- wrote: theme-generation inventory; Liquid-to-JSON conversion; local versus Theme Block decision; `content_for 'blocks'` migration boundary; merchant-content ledger; and candidate rehearsal/rollback protocol.
+- verified: grounded template coexistence, section migration sequence, JSON schema/limits, Theme Block reuse/nesting/variable boundary, and `content_for`/`@theme` behavior in current Shopify documentation; calibration passed at 2,249 words.
+- decided: required copy-first candidate migration, one template type per name, one compatible parent block model, explicit data outcomes, editor/buyer comparison, content-owner acceptance, and rollback evidence; retained `[VERIFY]` for current theme/editor/data/app/release facts.
+- next: ch-64 exercise.
+## 2026-08-14 · ch-64 · exercise
+- wrote: a candidate modernization exercise covering generation inventory, JSON conversion, Theme Block extraction decisions, compatible `content_for`, merchant-content preservation, and rollback validation.
+- shipped: a Vintage template, local product blocks, invalid mixed parent, incomplete Theme Block, template-owned guide, CSS selector, and merchant-state assumptions as real correction targets.
+- decided: prohibited live template/editor/settings migration; required explicit mapping outcomes, candidate-only evidence, content-owner acceptance, and `[VERIFY]` gates for all theme/editor/data/app/release facts.
+- next: ch-64 solution.
+## 2026-08-14 · ch-64 · solution
+- wrote: candidate JSON product composition, section-owned size guide, independent editorial Theme Block, compatible Theme Block parent, migration map, preservation ledger, rehearsal protocol, validation and rollback records.
+- shipped: JSON/section/block/assets plus architecture, mapping, parent, preservation and validation files in the solution mirror.
+- verified: removed Liquid/JSON template collision, template-owned residual markup, outer-variable Theme Block dependency, mixed local/Theme Block parent model, and unowned merchant-data reset assumptions.
+- next: ch-64 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-64 · review
+- reviewed: passed theme-generation, JSON conversion, Theme Block conversion, `content_for` parent, and merchant-content preservation topics in scope order, calibration, practical-file parity, and anti-leak boundaries.
+- verified: the course requires copy-first architecture inventory, one template type per name, explicit block-model choice, independent block contracts, candidate editor proof, content-owner acceptance, and rollback.
+- decided: applied final markers and retained `[VERIFY]` gates for all theme, template, editor, settings, blocks, apps, dynamic sources, candidate, owner, release, and rollback facts.
+- next: ch-65 lesson.
+## 2026-08-14 · ch-65 · lesson
+- wrote: file-by-file Dawn/Horizon architecture comparison; local versus Theme Block composition; Web Component/Shadow DOM boundary reasoning; app/DOM/CSS compatibility audit; and evidence-led base-theme selection.
+- verified: grounded architecture-version, OS 2.0, Theme Block and standard-directory facts in current Shopify Help/developer documentation; calibration passed at 2,144 words.
+- decided: treated all exact Horizon/component/Shadow DOM/app/version behavior as `[VERIFY]`; required actual candidate inventories, public-contract adaptation paths, component UX tests, compatibility ledger, and reversible selection record.
+- next: ch-65 exercise.
+## 2026-08-14 · ch-65 · exercise
+- wrote: a Dawn-versus-Horizon candidate audit covering file/ownership comparison, local versus Theme Block composition, component boundaries, compatibility paths, and a conditional base-theme selection.
+- shipped: a Dawn-like product form, mixed block parent, outer-variable Theme Block, selector/observer script, global CSS, and unsupported app/component/client assumptions as real correction targets.
+- decided: prohibited private DOM access, live theme/app changes and unqualified compatibility claims; required `[VERIFY]` gates, candidate fixtures, public boundaries, owned adaptation paths, expiry-bound shims, and reversal evidence.
+- next: ch-65 solution.
+## 2026-08-14 · ch-65 · solution
+- wrote: architecture comparison, independent editorial tile, compatible Theme Block parent, component-boundary record, adaptation ledger, scoped owned assets, conditional base-theme selection, and candidate matrix.
+- shipped: solution sections/blocks/assets plus comparison, composition, boundary, compatibility, selection and validation records.
+- verified: removed global selector/observer coupling, private Shadow DOM assumptions, global variant CSS overrides, outer-variable block dependency, mixed parent model, and “newer wins” selection logic.
+- next: ch-65 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-65 · review
+- reviewed: passed architecture comparison, monolithic versus nested blocks, Web Component/Shadow DOM boundaries, app/DOM/CSS risk, and new-client base-theme selection in scope order, calibration, practical-file parity, and anti-leak boundaries.
+- verified: the course requires actual repository/version evidence, independent blocks, public component contracts, compatibility ownership/expiry, candidate UX checks, and reversible selection.
+- decided: applied final markers and retained `[VERIFY]` gates for all selected-Horizon, component, app, CSS, client, candidate, owner, release, and rollback facts.
+- next: ch-66 lesson.
+## 2026-08-14 · ch-66 · lesson
+- wrote: SFCC/SFRA, Magento/WooCommerce/BigCommerce mental-model translation; Ajax/Storefront API boundaries; managed-platform trade-offs; metafield/metaobject/reference data modeling; and frontend-lead gap/cutover governance.
+- verified: grounded Ajax, Storefront API, metafield/metaobject/reference, and current SCAPI/OCAPI direction in official Shopify/Salesforce documentation; calibration passed at 2,104 words.
+- decided: required authority/source-to-target/gap records, typed relationship mapping, candidate evidence, owner-approved disposals, privacy-safe reconciliation, communication/rollback contracts, and `[VERIFY]` gates for all source/target/client/release facts.
+- next: ch-66 exercise.
+## 2026-08-14 · ch-66 · exercise
+- wrote: a re-platforming exercise covering source-to-target/authority maps, SFCC/API translation, Magento/Woo/BigCommerce outcome mapping, typed data modeling, gaps, validation and cutover operations.
+- shipped: ISML/controller/cartridge fragments, unsafe target Liquid, text-ID relationship, source API/customer-order browser request, and platform/data assumptions as real correction targets.
+- decided: prohibited all source/target API calls, imports, exports, credentials, store changes and compatibility claims; required typed relationships, candidate evidence, operations records and `[VERIFY]` gates for all source/target/client facts.
+- next: ch-66 solution.
+## 2026-08-14 · ch-66 · solution
+- wrote: source-to-target/mental-model/authority records, typed product/material/care-guide rendering, gap register, lead checklist, reconciliation boundaries and candidate validation.
+- shipped: corrected solution section/snippet/asset plus mapping, authority, data, gap, checklist and matrix records.
+- verified: removed source API/token/customer-order access, browser price authority, ISML/controller emulation, text-ID relationships, untyped imports and ungoverned cutover assumptions.
+- next: ch-66 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-66 · review
+- reviewed: passed SFCC/SFRA translation, other-platform mental models, managed-platform trade-offs, metafield/metaobject modeling, and frontend-lead checklist topics in scope order, calibration, practical-file parity, and anti-leak boundaries.
+- verified: the course requires authority mapping, typed relationships, safe API boundaries, gap disposition, candidate reconciliation, communications and rollback before cutover.
+- decided: applied final markers and retained `[VERIFY]` gates for all source system, Shopify plan/surface, data, client, owner, candidate, release and rollback facts.
+- next: ch-67 lesson.

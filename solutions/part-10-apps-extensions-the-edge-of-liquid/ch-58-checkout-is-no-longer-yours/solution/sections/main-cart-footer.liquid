@@ -1,0 +1,18 @@
+{{ 'cart-boundary.css' | asset_url | stylesheet_tag }}
+
+<div class="cart-boundary" role="status">
+  <p class="cart-boundary__notice">
+    Some items have purchase restrictions. Final eligibility is validated at checkout.
+  </p>
+  <a class="cart-boundary__checkout" href="{{ routes.cart_url }}">
+    Review cart and continue to checkout
+  </a>
+</div>
+
+{% schema %}
+{
+  "name": "Cart footer",
+  "settings": [],
+  "presets": [{ "name": "Cart footer" }]
+}
+{% endschema %}

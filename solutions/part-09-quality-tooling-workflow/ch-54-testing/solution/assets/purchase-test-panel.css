@@ -1,0 +1,13 @@
+.purchase-test-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 750px) {
+  .purchase-test-panel { grid-template-columns: minmax(0, 12rem) minmax(0, 1fr); }
+}
+
+.purchase-test-panel img { width: 100%; height: auto; }
+.purchase-test-panel__content { min-width: 0; }
+.purchase-test-panel h1 { overflow-wrap: anywhere; }
+.purchase-test-panel__price { font-weight: 700; }

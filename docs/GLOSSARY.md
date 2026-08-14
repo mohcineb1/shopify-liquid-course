@@ -303,3 +303,118 @@ use; never introduce a synonym for something already listed.
 | Scoped suppression | A minimal documented Theme Check disable comment limited to the relevant rule and source span. | ch-51 |
 | Custom-check contract | A versioned team convention with named diagnostics, fixtures, configuration, owner, and maintenance policy. | ch-51 |
 | Merge gate | A reproducible decision rule that blocks integration until agreed build and static-quality evidence is satisfied. | ch-51 |
+| Branch-theme mapping | The recorded relationship among a repository branch, Shopify store, remote theme ID/role, preview purpose, and authorised owners. | ch-52 |
+| Configuration ownership model | The explicit classification of a theme surface as code-managed, merchant-managed, or shared with deliberate import/review. | ch-52 |
+| Template drift | An unreviewed difference in JSON template composition or settings between environments, branches, or connected themes. | ch-52 |
+| Deploy branch | A platform-compatible branch containing generated theme output that can safely connect to a Shopify theme. | ch-52 |
+| Merchant-edit reconciliation | The review, backfill, migration, retention, or approved reversal of a production/theme-editor change before a code deployment. | ch-52 |
+| Rollback provenance | The recorded prior candidate/theme/commit and verification evidence used to restore a storefront safely. | ch-52 |
+| Component contract | The documented inputs, output, owner, supported contexts, non-goals, and compatibility expectations of an internal theme component. | ch-53 |
+| Standard-library manifest | A maintained inventory of stable utility snippets including purpose, inputs, output boundary, consumers, owner, and deprecation path. | ch-53 |
+| Setting migration | The deliberate compatibility and rollout plan for changing a persisted schema setting ID or meaning. | ch-53 |
+| Handoff contract | Documentation that connects a code/configuration surface to ownership, operation, evidence, and update triggers for a future maintainer. | ch-53 |
+| Brand variation boundary | The explicit point at which a multi-brand difference is configuration/data rather than separate code/repository behavior. | ch-53 |
+| Shared-base upgrade | A versioned adoption of a common theme foundation with compatibility, candidate testing, migration, and rollback evidence. | ch-53 |
+| Contract change inventory | The identified callers, dependencies, migration path, and test evidence for an internal component API change. | ch-53 |
+| Test evidence layer | A named test method and its bounded claim, fixture, route/context, owner, and known non-coverage. | ch-54 |
+| Visual baseline contract | The approved rendered state identified by route, data, settings, viewport, browser, and dynamic-region policy for screenshot comparison. | ch-54 |
+| Preset matrix | The intentional bounded set of section/template presets and states selected for visual or behavioral coverage. | ch-54 |
+| Smoke-test fixture | A controlled resource, account, cart, or session used to assert a critical buyer state transition safely. | ch-54 |
+| Edge-data catalogue | An owned collection of intentionally difficult resource states used to expose absent-data, length, cardinality, availability, or localization assumptions. | ch-54 |
+| Fixture governance | The ownership, stable identity, reset procedure, change record, and restrictions that keep test data meaningful over time. | ch-54 |
+| Test disposition | The documented classification and owner decision for a failing test signal before a baseline, threshold, fixture, or source change. | ch-54 |
+| Current-reference workflow | An agent process that retrieves current authoritative docs/schemas before proposing platform-specific Shopify code. | ch-55 |
+| Agent task envelope | The explicit files, references, constraints, allowed actions, fixtures, outputs, and stop conditions framing an agent change. | ch-55 |
+| Context acquisition boundary | The distinction between an agent obtaining relevant documentation/code context and receiving authority to act on protected store state. | ch-55 |
+| Protected operation | A sensitive, irreversible, financial, customer, public, or production action requiring separately approved human confirmation. | ch-55 |
+| Agent-readable contract | Local structured code/schema/documentation context that makes a component’s inputs, output, ownership, and non-goals inspectable by tools and humans. | ch-55 |
+| Proposal counterfactual | The review question of whether another developer could reproduce an agent’s reasoning from recorded sources, contracts, fixtures, and rationale. | ch-55 |
+| App block | A theme app extension block with `section` target that merchants position as inline/section-level app content in compatible JSON-theme surfaces. | ch-56 |
+| App embed block | A theme app extension block injected at head, compliance_head, or body and activated through Theme settings, generally for global/overlay behavior. | ch-56 |
+| Apps wrapper | The platform/theme wrapper section that renders top-level app blocks added outside a specific host section. | ch-56 |
+| `@app` admission | A section or theme block schema’s explicit generic acceptance of merchant-selected app blocks. | ch-56 |
+| App-autofill ambiguity | The schema constraint that app-block-capable sections may have only one resource setting of each type at section level. | ch-56 |
+| Outer layout boundary | The theme-owned container responsibility for placement and spacing around app output without taking ownership of internal third-party markup. | ch-56 |
+| Integration register | An operational record of app version, placement, activation, owner, verification state, and removal/rollback path. | ch-56 |
+| Web pixel | A Shopify-managed, sandboxed tracking implementation that subscribes to customer events and maps their payloads to a measurement endpoint. | ch-57 |
+| Strict sandbox | The web-worker environment used by web pixel app extensions, intentionally limiting DOM/browser global assumptions. | ch-57 |
+| Lax sandbox | The iframe-based environment used by custom pixels, allowing legacy JavaScript with top-frame limitations. | ch-57 |
+| Customer event | A Shopify event-bus/data-layer event describing storefront/customer behavior for pixel subscription. | ch-57 |
+| Custom customer event | A deliberately named theme-published business interaction event that a pixel may subscribe to when no standard event expresses it. | ch-57 |
+| Allowed-state consent check | A Customer Privacy API permission decision that combines merchant settings, visitor location, and consent for a processing purpose. | ch-57 |
+| Pixel inventory | The owned register of legacy/new SDKs, events, payloads, locations, destinations, consent gates, and migration decisions. | ch-57 |
+| Measurement cutover | A bounded migration from legacy tracking to a managed pixel with explicit overlap, deduplication, comparison, cleanup, and rollback policy. | ch-57 |
+| Checkout extension target | A documented checkout location or behavior trigger that defines where and how a Checkout UI Extension runs. | ch-58 |
+| Block/static/runnable target | The three target forms: merchant-placeable UI, fixed-location UI, or non-rendering event-driven behavior. | ch-58 |
+| Checkout capability | An explicit extension permission such as network access or blocking progress that requires a bounded, reviewed use. | ch-58 |
+| Shopify Function | An app-distributed, server-side Shopify program that receives declared input and returns allowed commerce operations. | ch-58 |
+| Cart and checkout validation | A Shopify Function that can enforce business requirements across cart and checkout by returning validation errors. | ch-58 |
+| Scripts customizations report | The Shopify Admin inventory/report of relevant Scripts customizations active before their deprecation, with migration guidance. | ch-58 |
+| Pre-checkout contract | The explicit theme-to-checkout boundary documenting cart state, inputs, authority, and checkout/Function enforcement. | ch-58 |
+| Thank you page | The initial confirmation surface shown immediately after a checkout completes, before later visits become Order status. | ch-58 |
+| Order status page | The revisitable post-purchase surface that shows an order’s current information and fulfilment-related updates. | ch-58 |
+| Post-purchase extension | A specialized checkout extension surface between payment and Thank you for eligible post-payment actions. | ch-58 |
+| Customer accounts | Shopify’s current centralized, passwordless customer-account experience hosted outside normal theme document ownership. | ch-59 |
+| Legacy customer accounts | The deprecated email/password account model historically customized with theme Liquid account templates. | ch-59 |
+| Account portal boundary | The separation between theme-controlled storefront entry points and Shopify-hosted account UI, identity, data, and navigation. | ch-59 |
+| Customer account UI extension | An app-based component that renders only at documented customer-account targets using target APIs and platform UI components. | ch-59 |
+| Account extension target | A documented block, full-page, or static customer-account placement/behavior context for an extension. | ch-59 |
+| Protected customer data | Customer-related data whose app access and handling require Shopify approval and explicit least-data design. | ch-59 |
+| Account integration record | An auditable contract for an account feature’s mode, target, data, capability, audience, tests, owner, release, and rollback. | ch-59 |
+| Company-location scope | A B2B account design boundary that distinguishes company/location context from an individual customer’s context. | ch-59 |
+| Ajax API | Shopify’s lightweight REST endpoint family for current-session interactive behavior in Shopify-hosted themes. | ch-60 |
+| Storefront API | Shopify’s versioned GraphQL commerce API for custom storefronts across web and other platforms. | ch-60 |
+| API-driven island | A bounded client-side interactive component inside a server-rendered Liquid shell with explicit inputs, authority, fallbacks, and budget. | ch-60 |
+| Architecture register | An owned record of a runtime/API route’s purpose, data, credentials, version, caching, performance, errors, evidence, and retirement path. | ch-60 |
+| Headless storefront | A storefront where the team owns frontend runtime/routing while Shopify commerce APIs and hosted checkout provide commerce services. | ch-60 |
+| Hydrogen | Shopify’s React Router-based framework and utilities for building headless commerce storefronts. | ch-60 |
+| Oxygen | Shopify’s global serverless edge hosting platform for Hydrogen storefront deployments. | ch-60 |
+| Vertical migration slice | A bounded representative route/task used to validate a migration’s buyer outcome, operations, and rollback before broad rollout. | ch-60 |
+| Semantic output contract | The explicit HTML structure, names, relationships, IDs, order, and fallback meaning a Liquid component must render. | ch-61 |
+| Focus ownership | The documented component responsibility for choosing, preserving, moving, and restoring keyboard focus through an interaction. | ch-61 |
+| Return-focus target | The logical launcher or successor element that receives focus when a drawer, modal, or transient interaction closes. | ch-61 |
+| Accessible name | The programmatic label that enables assistive technology users to identify a control or meaningful element. | ch-61 |
+| Live-region event contract | A bounded mapping from meaningful state changes to concise assistive-technology announcements without unnecessary focus movement. | ch-61 |
+| Merchant-content boundary | The distinction between semantic, safe theme scaffolding and accessibility quality that depends on merchant-authored content choices. | ch-61 |
+| Keyboard pass | A scripted manual test of a task using keyboard navigation, visible focus, operation, escape, and recovery evidence. | ch-61 |
+| Accessibility disposition | The owned evidence-based classification of an accessibility signal as defect, limitation, content task, blocked check, risk, or false positive. | ch-61 |
+| Claim inventory | An auditable list connecting each metadata or structured-data assertion to its visible source, owner, scope, validation, and removal condition. | ch-62 |
+| Structured-data owner | The single theme, app, or integration responsible for emitting one schema object on a specific template/state. | ch-62 |
+| Canonical signal | A link relation that indicates the preferred URL for content consolidation; it is not a redirect or index-control command. | ch-62 |
+| URL decision record | Evidence for a route class’s user purpose, primary content, canonical/robots/sitemap behavior, owner, test, and rollback. | ch-62 |
+| Crawl versus index | The distinction between a crawler requesting a URL and a search engine making it eligible for search results. | ch-62 |
+| Robots customization record | The reasoned, reversible record for a robots.txt.liquid directive and its tested crawler impact. | ch-62 |
+| Rendered-output verification workflow | Inspection of final HTML head, visible claim sources, structured data, URL state, and validators after Liquid/apps render. | ch-62 |
+| Allowed processing | A purpose-specific Customer Privacy API result that combines merchant settings, visitor location, and visitor consent. | ch-63 |
+| Processing register | A technical inventory linking optional storefront processing to its owner, purpose, gate, data, destination, tests, and removal path. | ch-63 |
+| Consent-change contract | The documented behavior for an optional integration when a visitor changes an applicable consent choice. | ch-63 |
+| Privacy asset classification | The evidence-based designation of a storefront asset as essential, preference, analytics, marketing, pixel/app, or other governed processing. | ch-63 |
+| Merchant/legal boundary | The split between theme technical safeguards and merchant/adviser responsibility for lawful purpose, notices, contracts, and jurisdictional decisions. | ch-63 |
+| Policy release surface | A policy or accessibility page treated as a versioned, reachable, readable, and owner-reviewed storefront artifact. | ch-63 |
+| Neutral privacy fixture | A test state that proves privacy behavior without retaining real visitor, customer, cookie, consent, order, or secret data. | ch-63 |
+| Architecture inventory | A record of templates, sections, settings, blocks, apps, dynamic data, editor state, and fixtures used to classify a theme before migration. | ch-64 |
+| JSON template instance | A uniquely identified section entry and persisted settings/block data in a JSON template’s sections object. | ch-64 |
+| Theme Block contract | The independent data, markup, schema, preset, target, style, and dependency boundary of a reusable block in `/blocks`. | ch-64 |
+| Block-model fork | The migration choice between a parent’s local section-defined blocks and its opt-in Theme Block model. | ch-64 |
+| Content preservation ledger | A before/after record for merchant-owned settings, block order, app placement, custom CSS, dynamic sources, media, locales, and approval. | ch-64 |
+| Migration outcome | The explicit mapped, retained, replaced, merchant-action, or approved-retired disposition for a legacy configuration item. | ch-64 |
+| Candidate migration rehearsal | A controlled non-live migration run that compares editor and buyer behavior with rollback evidence before cutover. | ch-64 |
+| Component boundary | The documented public edge of a custom element/component that limits reliance on its internal DOM, styles, lifecycle, and events. | ch-65 |
+| Dependency audit | An inventory that reveals scripts, selectors, CSS, apps, events, tests, and merchant overrides coupled to a theme implementation. | ch-65 |
+| Compatibility ledger | A governed record of each integration dependency, observed contract, failure risk, adaptation, fixture, owner, release gate, and rollback. | ch-65 |
+| Adaptation path | The supported-contract, owned-refactor, temporary shim, approved-retirement, or blocker disposition for a compatibility dependency. | ch-65 |
+| Candidate-only compatibility shim | A time-bounded, owned temporary adaptation tested on a candidate and scheduled for removal rather than a private permanent DOM workaround. | ch-65 |
+| Base-theme selection record | The evidence-based decision record that compares client requirements, candidate findings, ownership, acceptance gates, and reversal path. | ch-65 |
+| Authority map | A feature-level record identifying enforcement, rendering, data, mutation, integration, permission, fallback, and removal authority during re-platforming. | ch-66 |
+| Source-to-target migration map | A governed mapping of source capability/data/dependency to a Shopify-native outcome, target surface, test, owner, acceptance, and rollback. | ch-66 |
+| Target-surface disposition | The explicit standard-platform, theme, extension, Function, external integration, headless, retire, or blocker decision for a migrated capability. | ch-66 |
+| Gap register | An owned record of source-target differences, their impact, target candidates, disposition, evidence, release gate, rollback, and re-evaluation. | ch-66 |
+| Data-model migration | The translation of data semantics, types, relationships, validation, access, editorial workflow, and lifecycle—not merely imported values. | ch-66 |
+| Cutover communication contract | The defined freeze, workflow change, support, monitoring, escalation, rollback, and ownership communication for a platform transition. | ch-66 |
+| Audit finding | An evidence-bounded statement of observed condition, impact, confidence, recommendation, owner, test, release gate, and rollback. | ch-67 |
+| Candidate orphan | An artifact lacking an established reference in the reviewed scope, requiring dynamic/editor/app evidence before removal. | ch-67 |
+| Proof ladder | A graduated model that distinguishes repository, configuration, rendered, controlled-test, and owner evidence for an audit claim. | ch-67 |
+| Deprecation portfolio | A deadline/dependency/owner/replacement grouping that turns deprecation findings into governed migration work. | ch-67 |
+| Finding confidence | The declared strength and limits of evidence supporting an audit conclusion. | ch-67 |
+| Finding readback | A documented review with technical and merchant owners that validates scope, evidence, assumptions, impact, and next decision. | ch-67 |
+| Report acceptance baseline | The dated candidate/evidence/reviewer/decision record that makes an audit reusable for later change work. | ch-67 |

@@ -6,7 +6,7 @@ unit: "Chapter 60"
 title: "Where Liquid Ends"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 60 — Where Liquid Ends
@@ -15,10 +15,10 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 60.1 The Storefront API and Ajax API compared
-- [ ] 60.2 Hybrid patterns: Liquid shell + API-driven islands
-- [ ] 60.3 Headless with Hydrogen/Oxygen — the migration decision framework
-- [ ] 60.4 Cost, team, and maintenance realities
+- [x] 60.1 The Storefront API and Ajax API compared
+- [x] 60.2 Hybrid patterns: Liquid shell + API-driven islands
+- [x] 60.3 Headless with Hydrogen/Oxygen — the migration decision framework
+- [x] 60.4 Cost, team, and maintenance realities
 
 ## Labs assigned to this unit
 

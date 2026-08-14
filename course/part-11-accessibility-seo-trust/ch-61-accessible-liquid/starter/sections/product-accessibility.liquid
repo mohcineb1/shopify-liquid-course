@@ -1,0 +1,9 @@
+{{ 'product-accessibility.css' | asset_url | stylesheet_tag }}
+{{ 'product-accessibility.js' | asset_url | script_tag }}
+<div class="product-cards" aria-live="polite">
+  <div class="product-card"><img src="{{ product.featured_image | image_url }}"><div class="heading">{{ product.title }}</div><div data-open-cart>View product</div></div>
+</div>
+<div class="variant-picker">{% for option in product.options_with_values %}{% for value in option.values %}<div tabindex="0" data-variant>{{ value }}</div>{% endfor %}{% endfor %}</div>
+{% schema %}
+{"name":"Product accessibility","settings":[{"type":"image_picker","id":"image","label":"Image"}],"presets":[{"name":"Product accessibility"}]}
+{% endschema %}

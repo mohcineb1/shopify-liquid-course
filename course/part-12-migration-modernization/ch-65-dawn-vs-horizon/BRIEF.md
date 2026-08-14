@@ -6,7 +6,7 @@ unit: "Chapter 65"
 title: "Dawn vs Horizon"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 65 — Dawn vs Horizon
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 65.1 Two architectures compared file by file
-- [ ] 65.2 Monolithic sections vs composable nested blocks
-- [ ] 65.3 Web components and Shadow DOM in the newer generation
-- [ ] 65.4 What breaks: app integrations, DOM-dependent scripts, global CSS
-- [ ] 65.5 Choosing a base theme for a new client build
+- [x] 65.1 Two architectures compared file by file
+- [x] 65.2 Monolithic sections vs composable nested blocks
+- [x] 65.3 Web components and Shadow DOM in the newer generation
+- [x] 65.4 What breaks: app integrations, DOM-dependent scripts, global CSS
+- [x] 65.5 Choosing a base theme for a new client build
 
 ## Labs assigned to this unit
 

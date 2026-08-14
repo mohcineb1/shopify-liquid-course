@@ -1,0 +1,8 @@
+.app-slot { min-width: 0; }
+
+.apps-wrapper {
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+}
+
+.apps-wrapper--padded { padding-block: 1.5rem; }

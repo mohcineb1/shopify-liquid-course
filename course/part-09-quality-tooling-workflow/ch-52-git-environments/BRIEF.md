@@ -6,7 +6,7 @@ unit: "Chapter 52"
 title: "Git & Environments"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 52 — Git & Environments
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 52.1 The GitHub integration: branch → theme mapping
-- [ ] 52.2 The `settings_data.json` conflict problem and how teams solve it
-- [ ] 52.3 JSON template drift between staging and production
-- [ ] 52.4 Branching strategy for a live storefront
-- [ ] 52.5 Release, rollback, and the "merchant edited production" reality
+- [x] 52.1 The GitHub integration: branch → theme mapping
+- [x] 52.2 The `settings_data.json` conflict problem and how teams solve it
+- [x] 52.3 JSON template drift between staging and production
+- [x] 52.4 Branching strategy for a live storefront
+- [x] 52.5 Release, rollback, and the "merchant edited production" reality
 
 ## Labs assigned to this unit
 

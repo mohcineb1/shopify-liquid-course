@@ -6,7 +6,7 @@ unit: "Chapter 58"
 title: "Checkout Is No Longer Yours"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 58 — Checkout Is No Longer Yours
@@ -15,12 +15,12 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 58.1 The `checkout.liquid` timeline: in-checkout steps (Aug 2024), Thank You/Order Status (Aug 2025), non-Plus script tags (Aug 2026)
-- [ ] 58.2 Checkout UI Extensions: extension points, capabilities, plan requirements
-- [ ] 58.3 Shopify Functions: discounts, delivery, payment, cart validation
-- [ ] 58.4 Shopify Scripts retirement and the Functions migration path
-- [ ] 58.5 What still belongs in your theme: cart page, cart drawer, pre-checkout logic
-- [ ] 58.6 Order status and post-purchase surfaces today
+- [x] 58.1 The `checkout.liquid` timeline: in-checkout steps (Aug 2024), Thank You/Order Status (Aug 2025), non-Plus script tags (Aug 2026)
+- [x] 58.2 Checkout UI Extensions: extension points, capabilities, plan requirements
+- [x] 58.3 Shopify Functions: discounts, delivery, payment, cart validation
+- [x] 58.4 Shopify Scripts retirement and the Functions migration path
+- [x] 58.5 What still belongs in your theme: cart page, cart drawer, pre-checkout logic
+- [x] 58.6 Order status and post-purchase surfaces today
 
 ## Labs assigned to this unit
 

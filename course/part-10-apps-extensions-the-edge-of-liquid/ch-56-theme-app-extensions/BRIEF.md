@@ -6,7 +6,7 @@ unit: "Chapter 56"
 title: "Theme App Extensions"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 56 — Theme App Extensions
@@ -15,10 +15,10 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 56.1 App blocks vs app embed blocks
-- [ ] 56.2 How merchants add app content without touching your code
-- [ ] 56.3 Designing sections that accept `@app` blocks gracefully
-- [ ] 56.4 Styling and containing third-party markup
+- [x] 56.1 App blocks vs app embed blocks
+- [x] 56.2 How merchants add app content without touching your code
+- [x] 56.3 Designing sections that accept `@app` blocks gracefully
+- [x] 56.4 Styling and containing third-party markup
 
 ## Labs assigned to this unit
 

@@ -1,0 +1,2 @@
+<section class="product-size-guide" aria-labelledby="size-guide-title-{{ section.id }}"><h2 id="size-guide-title-{{ section.id }}">{{ section.settings.heading | escape }}</h2>{% if product.metafields.details.size_guide != blank %}<div class="product-size-guide__content">{{ product.metafields.details.size_guide | metafield_tag }}</div>{% endif %}</section>
+{% schema %}{"name":"Product size guide","settings":[{"type":"text","id":"heading","label":"Heading","default":"Size guide"}],"presets":[{"name":"Product size guide"}]}{% endschema %}

@@ -6,7 +6,7 @@ unit: "Chapter 61"
 title: "Accessible Liquid"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 61 — Accessible Liquid
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 61.1 Semantic output from generated markup
-- [ ] 61.2 Focus management across section re-renders and drawers
-- [ ] 61.3 Accessible variant pickers, facets, carousels, modals, and announcements
-- [ ] 61.4 Merchant-authored content and the accessibility you cannot control
-- [ ] 61.5 Auditing a theme: automated checks plus manual keyboard passes
+- [x] 61.1 Semantic output from generated markup
+- [x] 61.2 Focus management across section re-renders and drawers
+- [x] 61.3 Accessible variant pickers, facets, carousels, modals, and announcements
+- [x] 61.4 Merchant-authored content and the accessibility you cannot control
+- [x] 61.5 Auditing a theme: automated checks plus manual keyboard passes
 
 ## Labs assigned to this unit
 

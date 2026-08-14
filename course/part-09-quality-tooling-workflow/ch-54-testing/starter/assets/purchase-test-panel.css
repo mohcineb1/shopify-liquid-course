@@ -1,0 +1,16 @@
+.purchase-test-panel {
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  gap: 1rem;
+}
+
+.purchase-test-panel h1 {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.purchase-test-panel img {
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+}

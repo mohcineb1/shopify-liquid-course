@@ -6,7 +6,7 @@ unit: "Chapter 62"
 title: "SEO from the Template Layer"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 62 — SEO from the Template Layer
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 62.1 Title, description, and Open Graph patterns
-- [ ] 62.2 JSON-LD structured data: Product, Offer, BreadcrumbList, Organization, Article, FAQ
-- [ ] 62.3 Canonical URLs, pagination, and filtered-collection indexing
-- [ ] 62.4 `robots.liquid` and sitemap control
-- [ ] 62.5 Handling duplicate content from tags, filters, and alternate templates
+- [x] 62.1 Title, description, and Open Graph patterns
+- [x] 62.2 JSON-LD structured data: Product, Offer, BreadcrumbList, Organization, Article, FAQ
+- [x] 62.3 Canonical URLs, pagination, and filtered-collection indexing
+- [x] 62.4 `robots.liquid` and sitemap control
+- [x] 62.5 Handling duplicate content from tags, filters, and alternate templates
 
 ## Labs assigned to this unit
 

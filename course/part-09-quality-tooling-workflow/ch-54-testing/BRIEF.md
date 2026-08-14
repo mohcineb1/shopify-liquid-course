@@ -6,7 +6,7 @@ unit: "Chapter 54"
 title: "Testing"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 54 — Testing
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 54.1 What is testable in a Liquid theme and what isn't
-- [ ] 54.2 Visual regression testing across templates and settings presets
-- [ ] 54.3 Lighthouse CI and performance regression gates
-- [ ] 54.4 End-to-end smoke tests: add to cart, checkout entry, account flows
-- [ ] 54.5 Testing against edge data: no images, long titles, 100 variants, empty collections
+- [x] 54.1 What is testable in a Liquid theme and what isn't
+- [x] 54.2 Visual regression testing across templates and settings presets
+- [x] 54.3 Lighthouse CI and performance regression gates
+- [x] 54.4 End-to-end smoke tests: add to cart, checkout entry, account flows
+- [x] 54.5 Testing against edge data: no images, long titles, 100 variants, empty collections
 
 ## Labs assigned to this unit
 

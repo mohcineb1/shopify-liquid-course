@@ -1,0 +1,18 @@
+{{ 'product-surfaces.css' | asset_url | stylesheet_tag }}
+
+<section class="purchase-panel">
+  <h2>{{ product.title }}</h2>
+  {% if section.settings.show_compare_at_price and product.compare_at_price > product.price %}
+    <s>{{ product.compare_at_price | money }}</s>
+  {% endif %}
+  <p class="price">{{ product.price | money }}</p>
+</section>
+
+{% schema %}
+{
+  "name": "Purchase panel",
+  "settings": [
+    { "type": "checkbox", "id": "show_compare_at_price", "label": "Show sale price", "default": true }
+  ]
+}
+{% endschema %}

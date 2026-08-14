@@ -1,0 +1,1 @@
+{% assign guide = product.metafields.details.care_guide.value %}{% if guide != blank %}<aside class="care-guide" aria-labelledby="care-guide-title"><h2 id="care-guide-title">{{ guide.title.value | escape }}</h2>{{ guide.instructions | metafield_tag }}</aside>{% endif %}

@@ -1,0 +1,4 @@
+{% assign active_product = product | default: card_product %}
+{% assign formatted_price = active_product.price | money %}
+<span class="sr-only">{{ settings.store_name }} price</span>
+{{ formatted_price }}

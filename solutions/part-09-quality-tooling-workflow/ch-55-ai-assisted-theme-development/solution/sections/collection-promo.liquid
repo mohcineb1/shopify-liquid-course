@@ -1,0 +1,31 @@
+{% doc %}
+  Candidate promotional message section.
+
+  Renders a merchant-authored message on an approved collection context.
+  It does not determine collection eligibility, market pricing, legal claims,
+  translation policy, or release approval.
+  Owner: collection-content team [VERIFY].
+{% enddoc %}
+
+{{ 'collection-promo.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings.message != blank %}
+  <section class="collection-promo" {{ section.shopify_attributes }}>
+    <p>{% render 'promo-copy', copy: section.settings.message %}</p>
+  </section>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Collection promotion",
+  "settings": [
+    {
+      "type": "text",
+      "id": "message",
+      "label": "Promotional message",
+      "default": "Explore the collection"
+    }
+  ],
+  "presets": [{ "name": "Collection promotion" }]
+}
+{% endschema %}
