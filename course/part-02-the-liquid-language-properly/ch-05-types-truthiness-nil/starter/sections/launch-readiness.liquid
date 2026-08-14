@@ -1,0 +1,43 @@
+{{ 'launch-readiness.css' | asset_url | stylesheet_tag }}
+
+<section class="launch-readiness" aria-labelledby="LaunchReadiness-{{ section.id }}">
+  <div class="launch-readiness__inner">
+    <p class="launch-readiness__eyebrow">Merchandising review</p>
+    <h2 id="LaunchReadiness-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+
+    <div class="launch-readiness__status" data-launch-readiness-status>
+      <p>Replace this placeholder with the requested readiness result.</p>
+    </div>
+
+    <div class="launch-readiness__note" data-launch-readiness-note>
+      <p>Replace this placeholder with the requested merchant-note result.</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Launch readiness",
+  "tag": "section",
+  "class": "section-launch-readiness",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Launch readiness"
+    },
+    {
+      "type": "textarea",
+      "id": "launch_note",
+      "label": "Launch note",
+      "default": ""
+    }
+  ],
+  "presets": [
+    {
+      "name": "Launch readiness"
+    }
+  ]
+}
+{% endschema %}

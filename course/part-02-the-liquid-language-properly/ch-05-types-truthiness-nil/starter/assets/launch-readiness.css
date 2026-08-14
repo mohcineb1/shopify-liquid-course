@@ -1,0 +1,32 @@
+.launch-readiness {
+  margin-block: 2rem;
+}
+
+.launch-readiness__inner {
+  border: 1px solid rgb(89 57 19 / 22%);
+  border-radius: 0.75rem;
+  background: #fffaf2;
+  color: #422b14;
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.launch-readiness__eyebrow {
+  color: #8b5a24;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-block: 0 0.5rem;
+  text-transform: uppercase;
+}
+
+.launch-readiness__status,
+.launch-readiness__note {
+  border-block-start: 1px solid rgb(89 57 19 / 16%);
+  margin-block-start: 1rem;
+  padding-block-start: 1rem;
+}
+
+.launch-readiness__status p,
+.launch-readiness__note p {
+  margin-block: 0;
+}

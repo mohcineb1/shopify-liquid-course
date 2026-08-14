@@ -240,3 +240,9 @@ Entry format:
 - decided: separated missing data, empty content, collection emptiness, and invalid property paths so silent output remains diagnosable instead of being papered over with generic fallbacks.
 - updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
 - next: ch-05 exercise
+
+## 2026-08-14 · ch-05 · exercise
+- wrote: `course/part-02-the-liquid-language-properly/ch-05-types-truthiness-nil/exercise.md` (800 words) with `starter/sections/launch-readiness.liquid` and `starter/assets/launch-readiness.css`
+- flagged: the learner brief directs object-specific empty-result uncertainty to `> [VERIFY]` and the documented object reference.
+- decided: the starter removes presentation but leaves the state classification, guards, fallback copy, and numeric-display separation as the learner’s actual implementation work.
+- next: ch-05 solution
