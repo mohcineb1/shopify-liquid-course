@@ -1,0 +1,5 @@
+.product-signal-card { border: 1px solid rgba(var(--color-foreground), .16); border-radius: .75rem; padding: 1.25rem; }
+.product-signal-card__heading, .product-signal-card__price, .product-signal-card__fallback { margin: 0; }
+.product-signal-card__media { margin: 1rem 0; }
+.product-signal-card__media img { display: block; height: auto; max-width: 100%; }
+.product-signal-card__fact { border-top: 1px solid rgba(var(--color-foreground), .14); margin-top: 1rem; padding-top: 1rem; }

@@ -1,0 +1,25 @@
+{{ 'section-product-signal-card.css' | asset_url | stylesheet_tag }}
+
+<aside class="product-signal-card" aria-labelledby="ProductSignalHeading-{{ section.id }}">
+  <h2 id="ProductSignalHeading-{{ section.id }}" class="product-signal-card__heading">
+    {%- comment -%} Render the supplied translation key here. {%- endcomment -%}
+  </h2>
+
+  <p class="product-signal-card__price">
+    {%- comment -%} Render one Shopify-formatted product price here. {%- endcomment -%}
+  </p>
+
+  <div class="product-signal-card__media">
+    {%- comment -%} Render image-object markup or the supplied image fallback here. {%- endcomment -%}
+  </div>
+
+  {%- comment -%} Conditionally render the typed custom.material metafield here. {%- endcomment -%}
+
+  <script type="application/json" data-product-signal>
+    {% render 'product-signal-data', signal_product: product %}
+  </script>
+</aside>
+
+{% schema %}
+{ "name": "Product signal card", "tag": "section", "class": "section-product-signal-card", "settings": [], "presets": [{ "name": "Product signal card" }] }
+{% endschema %}

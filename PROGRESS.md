@@ -356,3 +356,8 @@ Entry format:
 - decided: distinguished resource resolution from markup output, delegated commerce and market authority to Shopify data contracts, and treated generated HTML or JSON as explicit integration boundaries.
 - updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
 - next: ch-10 exercise
+## 2026-08-14 · ch-10 · exercise
+- wrote: `course/part-02-the-liquid-language-properly/ch-10-filters-the-shopify-specific-set/exercise.md` with a product section, CSS, and narrow product-data snippet under `starter/`.
+- flagged: `[VERIFY]` for the chosen metafield type and production image-filter options.
+- decided: constrained the card to Shopify-owned money, image, translation, metafield, and JSON boundaries without adding price authority or product eligibility logic.
+- next: ch-10 solution
