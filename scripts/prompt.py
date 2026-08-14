@@ -26,6 +26,33 @@ def tail(text, n):
     lines = [l for l in text.splitlines() if l.strip()]
     return "\n".join(lines[-n:])
 
+
+def terms(glossary):
+    """Compact the glossary to `term (first used)` pairs.
+
+    The glossary is injected into every prompt and grows with every unit, so the
+    full definition column would crowd out the unit's own material by the later
+    parts. Its job here is to stop a second name being coined for a concept that
+    already has one, and the term list alone does that. Full definitions stay in
+    docs/GLOSSARY.md for when a pass needs to check wording.
+    """
+    out = []
+    for line in glossary.splitlines():
+        if not line.startswith("|"):
+            continue
+        # Take the first and last cells, never the middle: the definition column
+        # legitimately contains pipes (the `|` filter operator is itself a term).
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) < 3 or cells[0] == "Term" or set(cells[0]) <= {"-", ":"}:
+            continue
+        out.append(f"{cells[0]} ({cells[-1]})")
+    if not out:
+        return "_(no terms yet)_"
+    return (
+        "Terms already agreed — reuse these exactly, never coin a synonym. "
+        "Full definitions in `docs/GLOSSARY.md`.\n\n" + "; ".join(out)
+    )
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("unit", help="unit id, e.g. ch-18 or app-c")
@@ -49,7 +76,7 @@ def main():
         "\n\n---\n\n",
         read("docs/DEPRECATIONS.md"),
         "\n\n---\n\n",
-        read("docs/GLOSSARY.md"),
+        terms(read("docs/GLOSSARY.md")),
         "\n\n---\n\n# Already taught (do not re-teach)\n\n",
         tail(read("docs/COVERAGE.md"), 60) or "_(nothing yet — this is the first unit)_",
         "\n\n---\n\n",
