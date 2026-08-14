@@ -43,3 +43,9 @@ use; never introduce a synonym for something already listed.
 | Whitespace control | A hyphen placed inside a Liquid delimiter to trim adjacent source whitespace from rendered output. | ch-04 |
 | Raw block | A `{% raw %}`…`{% endraw %}` region in which Liquid leaves enclosed source literal rather than parsing Liquid delimiters. | ch-04 |
 | Doc block | A `{% doc %}`…`{% enddoc %}` region that documents a Liquid file’s purpose and contract without rendering its documentation to the storefront. | ch-04 |
+| Truthiness | The Liquid rule that a value is falsy only when it is `false` or `nil`; empty strings, empty arrays, and `0` remain truthy. | ch-05 |
+| EmptyDrop | A Shopify empty object-shaped result whose handling follows the contract of the specific lookup or object surface. | ch-05 |
+| Blank comparison | A comparison to `blank` that tests presentation-level absence, including absent, false, or content-empty values. | ch-05 |
+| Empty comparison | A comparison to `empty` that tests whether a string or collection is empty, rather than the broader concept of presentation absence. | ch-05 |
+| Type coercion | A documented transformation of a Liquid value’s usable representation, often performed deliberately through a filter. | ch-05 |
+| Silent failure | Liquid’s behavior of rendering a missing or invalidly addressed value as no visible output rather than throwing a storefront runtime exception. | ch-05 |

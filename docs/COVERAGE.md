@@ -63,3 +63,9 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** output markup, whitespace control, raw block, doc block.
 **Assumed known from earlier:** render context and object availability (ch-01 and ch-03); Liquid tags and filters (appendices A and B); explicit snippet inputs (ch-02).
 **Deliberately deferred:** assignments and value types → ch-05; conditions → ch-06; data shaping and capture patterns → ch-09; section and block contracts → ch-17 and ch-18; detailed snippet APIs → ch-21; browser data serialization → ch-37.
+
+### ch-05 — Types, Truthiness & Nil
+**Taught:** Liquid’s practical value categories; truthiness where only `false` and `nil` are falsy; the distinction between `nil` and EmptyDrop; `blank` versus `empty`; deliberate filter coercion; and silent missing-value output as a contract and debugging concern.
+**Introduced terms:** truthiness, EmptyDrop, blank comparison, empty comparison, type coercion, silent failure.
+**Assumed known from earlier:** render context and Drops (ch-03); output and tag syntax (ch-04); Liquid objects and filters (appendices A–C).
+**Deliberately deferred:** condition grammar and operators → ch-06; collection iteration → ch-07; capture and data shaping → ch-09; resource-specific empty states → ch-26 to ch-34; settings UX → ch-24.

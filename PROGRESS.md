@@ -233,3 +233,10 @@ Entry format:
 - flagged: none
 - decided: checklist passed 10/10; review corrected no scope or platform gaps and did not add solution-derived structure to the lesson or exercise.
 - next: ch-05 lesson
+
+## 2026-08-14 · ch-05 · lesson
+- wrote: `course/part-02-the-liquid-language-properly/ch-05-types-truthiness-nil/lesson.md` (2,491 words)
+- flagged: `[VERIFY]` for object-specific EmptyDrop outcomes and comparison coercion contracts; the lesson directs readers to verify the relevant object or filter reference rather than assuming a universal result.
+- decided: separated missing data, empty content, collection emptiness, and invalid property paths so silent output remains diagnosable instead of being papered over with generic fallbacks.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-05 exercise
