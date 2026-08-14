@@ -1,4 +1,4 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 ---
 id: ch-10-exercise
 title: "Build a Shopify-aware product signal card"

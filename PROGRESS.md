@@ -366,3 +366,8 @@ Entry format:
 - flagged: `[VERIFY]` for market money policy, image options, and any change to the declared metafield type or component scope.
 - decided: used Shopify-owned boundaries for locale copy, price, image, typed metafield, and field-level JSON while leaving commerce and browser behavior to their specialized chapters.
 - next: ch-10 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-10 · review
+- wrote: finalised the chapter’s lesson, exercise, brief, and solution statuses.
+- flagged: retained `[VERIFY]` for legacy URL/image filters and context-sensitive media, font, localization, payment, customer, and structured-data output.
+- decided: checklist passed after confirming all ten scope items, calibrated files, starter/solution parity, platform-owned filter boundaries, and review isolation from the completed answer.
+- next: ch-11 lesson
