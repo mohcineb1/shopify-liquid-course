@@ -1,4 +1,4 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 # Chapter 5 — Exercise
 
 **Time:** 45–60 minutes · **Type:** data-state repair

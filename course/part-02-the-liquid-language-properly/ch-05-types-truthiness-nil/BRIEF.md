@@ -6,7 +6,7 @@ unit: "Chapter 5"
 title: "Types, Truthiness & Nil"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 5 — Types, Truthiness & Nil
@@ -15,12 +15,12 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 5.1 The type list: string, number, boolean, nil, array, object/drop
-- [ ] 5.2 Truthiness rules that differ from JavaScript (empty string is truthy)
-- [ ] 5.3 `nil` and `EmptyDrop`: the two flavours of "nothing"
-- [ ] 5.4 `blank` vs `empty` — the distinction that causes real bugs
-- [ ] 5.5 Type coercion in comparisons and filters
-- [ ] 5.6 Silent failure: why Liquid prints nothing instead of throwing
+- [x] 5.1 The type list: string, number, boolean, nil, array, object/drop
+- [x] 5.2 Truthiness rules that differ from JavaScript (empty string is truthy)
+- [x] 5.3 `nil` and `EmptyDrop`: the two flavours of "nothing"
+- [x] 5.4 `blank` vs `empty` — the distinction that causes real bugs
+- [x] 5.5 Type coercion in comparisons and filters
+- [x] 5.6 Silent failure: why Liquid prints nothing instead of throwing
 
 ## Labs assigned to this unit
 

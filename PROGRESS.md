@@ -252,3 +252,9 @@ Entry format:
 - flagged: `[VERIFY]` retained for product-image empty-result behavior when a production feature needs more granular source-specific handling.
 - decided: separated availability, blank merchant content, optional image absence, and numeric cart state into independent outputs and test cases.
 - next: ch-05 review; do not add solution-derived details to the lesson or exercise.
+
+## 2026-08-14 · ch-05 · review
+- wrote: finalised the chapter’s lesson, exercise, brief, and solution statuses
+- flagged: retained `[VERIFY]` for source-specific EmptyDrop and product-image empty-result behavior; no unsupported universal claim was added.
+- decided: checklist passed after confirming the six scope items, target lengths, starter/solution parity, terminology, and strict separation between review corrections and solution knowledge.
+- next: ch-06 lesson
