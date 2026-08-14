@@ -1,4 +1,4 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 # Chapter 4 — Exercise
 
 **Time:** 45–60 minutes · **Type:** syntax repair

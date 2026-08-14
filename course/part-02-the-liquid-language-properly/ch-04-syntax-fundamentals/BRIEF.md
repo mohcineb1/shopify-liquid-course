@@ -6,7 +6,7 @@ unit: "Chapter 4"
 title: "Syntax Fundamentals"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 4 — Syntax Fundamentals
@@ -15,12 +15,12 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 4.1 Output markup `{{ }}` vs tag markup `{% %}`
-- [ ] 4.2 Whitespace control (`{%-`, `-%}`) and why your HTML output is full of blank lines
-- [ ] 4.3 Comments: inline, block, and the `# ` shorthand
-- [ ] 4.4 `{% liquid %}` — multi-line tag syntax and when to prefer it
-- [ ] 4.5 `{% raw %}` and escaping Liquid inside JS templates
-- [ ] 4.6 `{% doc %}` — documenting snippets and blocks for humans, editors, and AI tooling
+- [x] 4.1 Output markup `{{ }}` vs tag markup `{% %}`
+- [x] 4.2 Whitespace control (`{%-`, `-%}`) and why your HTML output is full of blank lines
+- [x] 4.3 Comments: inline, block, and the `# ` shorthand
+- [x] 4.4 `{% liquid %}` — multi-line tag syntax and when to prefer it
+- [x] 4.5 `{% raw %}` and escaping Liquid inside JS templates
+- [x] 4.6 `{% doc %}` — documenting snippets and blocks for humans, editors, and AI tooling
 
 ## Labs assigned to this unit
 

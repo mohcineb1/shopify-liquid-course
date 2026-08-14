@@ -227,3 +227,9 @@ Entry format:
 - flagged: none
 - decided: separated the server-rendered availability decision from the preserved browser-template literal, and mapped each required syntax form to a narrowly scoped responsibility.
 - next: ch-04 review; never let its completed answer sharpen the lesson or exercise.
+
+## 2026-08-14 · ch-04 · review
+- wrote: finalised the chapter’s lesson, exercise, brief, and solution statuses
+- flagged: none
+- decided: checklist passed 10/10; review corrected no scope or platform gaps and did not add solution-derived structure to the lesson or exercise.
+- next: ch-05 lesson

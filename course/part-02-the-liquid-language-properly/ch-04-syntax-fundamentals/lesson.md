@@ -1,4 +1,4 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 ---
 id: ch-04
 title: "Syntax Fundamentals"
