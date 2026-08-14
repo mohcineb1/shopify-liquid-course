@@ -277,3 +277,9 @@ Entry format:
 - flagged: `[VERIFY]` retained for any counter behavior whose nesting-boundary semantics become part of a production contract.
 - decided: used a loop-local ordinal instead of a named counter and treated every `render` call as the complete, reusable snippet API.
 - next: ch-06 review; do not let the solution sharpen the lesson or exercise.
+
+## 2026-08-14 · ch-06 · review
+- wrote: finalised the chapter’s lesson, exercise, brief, and solution statuses
+- flagged: retained `[VERIFY]` for production reliance on counter behavior across a particular nesting boundary.
+- decided: checklist passed after confirming scope coverage, calibrated lengths, three-file starter and solution parity, terminology, and review isolation from the completed answer.
+- next: ch-07 lesson

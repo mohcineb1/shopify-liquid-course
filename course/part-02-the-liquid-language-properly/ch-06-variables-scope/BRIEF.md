@@ -6,7 +6,7 @@ unit: "Chapter 6"
 title: "Variables & Scope"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 6 — Variables & Scope
@@ -15,12 +15,12 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 6.1 `assign` and `capture` — value vs rendered-string semantics
-- [ ] 6.2 `increment` / `decrement` and their separate namespace
-- [ ] 6.3 Scope boundaries: template, layout, section, block, snippet, for-loop
-- [ ] 6.4 The `render` isolation rule and how it kills the "global variable" habit
-- [ ] 6.5 Reassignment, shadowing, and mutation traps
-- [ ] 6.6 Naming conventions for a codebase that scales
+- [x] 6.1 `assign` and `capture` — value vs rendered-string semantics
+- [x] 6.2 `increment` / `decrement` and their separate namespace
+- [x] 6.3 Scope boundaries: template, layout, section, block, snippet, for-loop
+- [x] 6.4 The `render` isolation rule and how it kills the "global variable" habit
+- [x] 6.5 Reassignment, shadowing, and mutation traps
+- [x] 6.6 Naming conventions for a codebase that scales
 
 ## Labs assigned to this unit
 

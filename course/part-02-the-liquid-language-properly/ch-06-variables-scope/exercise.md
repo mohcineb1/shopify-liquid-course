@@ -1,4 +1,4 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 # Chapter 6 — Exercise
 
 **Time:** 45–60 minutes · **Type:** component-boundary repair
