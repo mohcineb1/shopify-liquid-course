@@ -28,11 +28,11 @@ The team needs a temporary diagnostic panel for a dev theme. It must let a devel
 
 Do not turn the panel into a catalogue browser, dump a whole object tree, enumerate store resources, or query arbitrary product handles. Do not add browser JavaScript merely to discover what Liquid already knows during the render. Do not use an app, an external endpoint, a headless storefront, or `{% include %}`. The panel must communicate absence honestly: a missing object is evidence about context, not a condition to disguise.
 
-Keep the diagnostic language useful for a dev theme but calm enough that a merchant can read it. Avoid claiming that a displayed cart, product, or collection value has been fetched by the panel. The display should make clear that Shopify supplied the value for this request, and that the panel only renders it.
+Keep the diagnostic language useful for a dev theme but calm enough that a merchant can read it. Use the supplied stylesheet rather than spending the exercise on presentation changes. Avoid claiming that a displayed cart, product, or collection value has been fetched by the panel. The display should make clear that Shopify supplied the value for this request, and that the panel only renders it.
 
 ## Starter
 
-Begin with the empty `starter/` directory. Decide the component boundary, the editor-facing configuration, the supported template placement, and the minimal surface required to make each access class inspectable. Before implementing, plan how you will test the same panel on all three template types without copying it into three unrelated features.
+Begin with `starter/assets/context-probe.css`. It supplies the finished presentation for a diagnostic panel but deliberately does not decide its Liquid boundary, editor-facing configuration, template placement, or object-access logic. Decide the minimal surface required to make each access class inspectable. Before implementing, plan how you will test the same panel on all three template types without copying it into three unrelated features.
 
 ## Done when
 

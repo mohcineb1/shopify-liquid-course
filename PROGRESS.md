@@ -196,3 +196,9 @@ Entry format:
 - flagged: none
 - decided: the solution treats unavailable template objects as diagnostic evidence, separates request, template, and section roots, and avoids browser or network behavior so the initial render remains authoritative.
 - next: ch-03 review; do not add solution-derived structure or hints to `course/`.
+
+## 2026-08-14 · ch-03 · exercise · starter redo
+- wrote: added `starter/assets/context-probe.css` and updated the exercise starter guidance
+- flagged: none
+- decided: supplied presentation only, leaving the Liquid boundary, schema, template placement, and object-graph reasoning as the learner’s real work.
+- next: ch-03 review
