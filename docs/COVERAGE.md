@@ -57,3 +57,9 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** object graph, global object, scoped object.
 **Assumed known from earlier:** render context and theme render (ch-01); explicit snippet inputs and runtime boundaries (ch-02); Liquid objects, template-scoped objects, and traversal access (app-c).
 **Deliberately deferred:** detailed resource object surfaces → ch-26 to ch-34; data shaping and iteration patterns → ch-09; API and data-ownership architecture → ch-04; render-cost measurement and optimization → ch-11.
+
+### ch-04 — Syntax Fundamentals
+**Taught:** the distinction between output markup and tag markup; deliberate whitespace control; Liquid block comments, browser-visible HTML comments, and `#` comments in `{% liquid %}`; multi-line `{% liquid %}` syntax; literal Liquid preservation with `{% raw %}`; and `{% doc %}` as non-rendered structured file documentation.
+**Introduced terms:** output markup, whitespace control, raw block, doc block.
+**Assumed known from earlier:** render context and object availability (ch-01 and ch-03); Liquid tags and filters (appendices A and B); explicit snippet inputs (ch-02).
+**Deliberately deferred:** assignments and value types → ch-05; conditions → ch-06; data shaping and capture patterns → ch-09; section and block contracts → ch-17 and ch-18; detailed snippet APIs → ch-21; browser data serialization → ch-37.

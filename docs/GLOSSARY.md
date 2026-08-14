@@ -39,3 +39,7 @@ use; never introduce a synonym for something already listed.
 | Object graph | The documented set of Shopify objects available from a render context and the relationships that can be traversed from them. | ch-03 |
 | Global object | A Liquid object documented as broadly available across Shopify theme Liquid files, subject to its own access contract. | ch-03 |
 | Scoped object | A Liquid value supplied by an enclosing rendering unit or tag, such as `section`, `block`, or a loop item, rather than globally. | ch-03 |
+| Output markup | Liquid syntax enclosed in `{{ }}` that renders a value into the response. | ch-04 |
+| Whitespace control | A hyphen placed inside a Liquid delimiter to trim adjacent source whitespace from rendered output. | ch-04 |
+| Raw block | A `{% raw %}`…`{% endraw %}` region in which Liquid leaves enclosed source literal rather than parsing Liquid delimiters. | ch-04 |
+| Doc block | A `{% doc %}`…`{% enddoc %}` region that documents a Liquid file’s purpose and contract without rendering its documentation to the storefront. | ch-04 |

@@ -208,3 +208,10 @@ Entry format:
 - flagged: corrected a genuine classification error during review: `cart` is global cart state, not a template-scoped object.
 - decided: checklist passed after aligning the graph map, exercise expectations, implementation, and walkthrough with the canonical object reference; no solution-derived structure was added to the lesson or exercise.
 - next: ch-04 lesson
+
+## 2026-08-14 · ch-04 · lesson
+- wrote: `course/part-02-the-liquid-language-properly/ch-04-syntax-fundamentals/lesson.md` (2,412 words)
+- flagged: none
+- decided: taught delimiters as explicit rendering boundaries, keeping later topics such as conditions, data shaping, component contracts, and browser serialization deferred to their assigned chapters.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md` with the chapter’s syntax terms.
+- next: ch-04 exercise
