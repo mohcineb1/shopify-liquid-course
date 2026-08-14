@@ -1,0 +1,2 @@
+*, *::before, *::after { box-sizing: border-box; }
+.seasonal-edit { min-height: 1px; }

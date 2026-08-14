@@ -1,0 +1,6 @@
+<script type="module" src="{{ 'featured-performance-grid.js' | asset_url }}"></script>
+<section class="performance-grid" {{ section.shopify_attributes }}>
+  {% if section.settings.image != blank %}{{ section.settings.image | image_url: width: 2000 | image_tag: width: 2000, height: 800, alt: section.settings.image.alt }}{% endif %}
+  {% assign featured_products = collection.products | sort: 'price' %}
+  <ul class="cards" role="list">{% for product in featured_products limit: 8 %}<li class="card"><a href="{{ product.url }}" data-performance-card>{{ product.title }}</a></li>{% endfor %}</ul>
+</section>

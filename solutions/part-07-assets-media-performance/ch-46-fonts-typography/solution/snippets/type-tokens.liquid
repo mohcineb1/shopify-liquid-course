@@ -1,0 +1,5 @@
+{% assign heading_bold = settings.type_heading_font | font_modify: 'weight', 'bold' | default: settings.type_heading_font %}
+{% unless settings.type_body_font.system? %}{{ settings.type_body_font | font_face }}{% endunless %}
+{% unless settings.type_heading_font.system? %}{{ settings.type_heading_font | font_face }}{% endunless %}
+{% if heading_bold and heading_bold != settings.type_heading_font %}{{ heading_bold | font_face }}{% endif %}
+<style>:root { --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }}; --font-body-weight: {{ settings.type_body_font.weight }}; --font-body-style: {{ settings.type_body_font.style }}; --font-heading-family: {{ heading_bold.family }}, {{ heading_bold.fallback_families }}; --font-heading-weight: {{ heading_bold.weight }}; }</style>

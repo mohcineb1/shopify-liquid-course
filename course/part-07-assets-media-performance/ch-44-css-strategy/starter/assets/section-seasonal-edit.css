@@ -1,0 +1,3 @@
+.seasonal-edit { background: var(--seasonal-bg); }
+.seasonal-edit__media { min-height: 12rem; }
+.seasonal-edit + * { margin-block-start: 0; }

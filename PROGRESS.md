@@ -996,3 +996,185 @@ Entry format:
 - verified: course files remain decision-focused and disclose no solution-specific implementation structure.
 - decided: applied final markers only; the local enhancement remains deliberately separate from cart and headless implementation.
 - next: ch-42 lesson.
+## 2026-08-14 · ch-42 · lesson
+- wrote: asset ownership, CDN URL filter selection, flat output constraints, and cache-version operational guidance.
+- verified: grounded `asset_url` and `file_url` in official Shopify documentation and flagged narrower namespace filters for source confirmation.
+- decided: treated resolved URL versions as platform output and rejected arbitrary cache-busting parameters.
+- next: ch-42 exercise.
+## 2026-08-14 · ch-42 · exercise
+- wrote: an asset delivery refactor for a campaign with ownership classification, Liquid URL filters, flat naming, and cache-debug evidence.
+- shipped: a brittle Liquid starter plus real CSS and JavaScript theme assets.
+- decided: made developer deployment and merchant Admin Files distinct, with no invented Shopify/global namespace usage.
+- next: ch-42 solution.
+## 2026-08-14 · ch-42 · solution
+- wrote: an ownership-first asset delivery solution with current-theme URLs, Admin Files PDF, flat output inventory, and cache recovery evidence.
+- verified: removed copied CDN paths and arbitrary cache busting while retaining a usable static campaign.
+- decided: left Shopify/global namespaces unused and marked any such resource as verification-required.
+- next: ch-42 review; do not transfer solution-specific paths into course files.
+## 2026-08-14 · ch-42 · review
+- reviewed: passed all four asset/CDN topics in order, official filter facts, ownership terminology, starter/solution parity, and calibration floors.
+- verified: retained explicit uncertainty for Shopify/global namespace use and avoided solution-specific migration structure in the course.
+- decided: applied final markers only; cache behavior remains platform-led rather than query-string-led.
+- next: ch-43 lesson.
+## 2026-08-14 · ch-43 · lesson
+- wrote: image transformation, responsive candidate arithmetic, geometry/CLS, focal point/art direction, media-type, and SVG rendering guidance.
+- verified: used official image and media filter documentation and retained verification flags for policy-dependent priority and focal-point workflows.
+- decided: framed responsive delivery around actual CSS slots and treated media type plus ownership as the rendering boundary.
+- next: ch-43 exercise.
+## 2026-08-14 · ch-43 · exercise
+- wrote: a responsive editorial-media implementation brief spanning art direction, candidate arithmetic, geometry, focal points, media types, and SVG ownership.
+- shipped: a flawed Liquid media section, CSS geometry starter, and trusted external compass SVG.
+- decided: prohibited client-side media generation and required supported type-aware Liquid rendering.
+- next: ch-43 solution.
+## 2026-08-14 · ch-43 · solution
+- wrote: an art-directed, slot-sized, type-aware product-media solution with stable geometry and trusted external SVG handling.
+- verified: retained focal point output, first-view priority discipline, responsive candidate evidence, and server media rendering.
+- decided: used a separate mobile composition rather than conflating art direction with crop behavior.
+- next: ch-43 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-43 · review
+- reviewed: passed all seven scoped image/media topics in order, source-backed filters, terminology, starter/solution mirrors, and calibration floors.
+- verified: course content keeps art direction, focal points, media types, and SVG trust boundaries distinct without solution leakage.
+- decided: applied final markers only and kept uncertain priority/workflow claims explicitly flagged.
+- next: ch-44 lesson.
+## 2026-08-14 · ch-44 · lesson
+- wrote: CSS delivery choices, critical CSS discipline, build-output contracts, local design tokens, and section-root scoping.
+- verified: retained uncertainty flags for stylesheet-tag behavior and current tooling workflow.
+- decided: treated stylesheets as named responsibilities and merchant values as bounded local tokens.
+- next: ch-44 exercise.
+## 2026-08-14 · ch-44 · exercise
+- wrote: a CSS ownership and scoping refactor with base/section classification, local tokens, critical removal evidence, and two-instance checks.
+- shipped: a flawed section plus base and local CSS starters.
+- decided: scoped merchant values to the section root and prohibited specificity escalation as a leak fix.
+- next: ch-44 solution.
+## 2026-08-14 · ch-44 · solution
+- wrote: a section-root token solution with separated base/local responsibilities, instance-safe CSS, stable media geometry, and delivery/removal evidence.
+- verified: removed page-global token ownership and duplicate base inclusion from the section boundary.
+- decided: reused one stylesheet rule set while carrying per-instance values as bounded root properties.
+- next: ch-44 review; do not transfer solution structure into course files.
+## 2026-08-14 · ch-44 · review
+- reviewed: passed all five CSS strategy topics in order, source flags, terminology, starter/solution parity, and calibration floors.
+- verified: course content isolates delivery, build, token, and section-root concerns without solution leakage.
+- decided: applied final markers only; retained current-platform verification flags for stylesheet and CLI behavior.
+- next: ch-45 lesson.
+## 2026-08-14 · ch-45 · lesson
+- wrote: load-mode, module-boundary, JSON data, third-party tag, and final-asset pipeline guidance.
+- verified: used current Shopify documentation for parser blocking, progressive enhancement, import maps, and JS performance.
+- decided: treated scripts as optional owned enhancements with explicit route and removal contracts.
+- next: ch-45 exercise.
+## 2026-08-14 · ch-45 · exercise
+- wrote: a progressive JavaScript delivery refactor covering load mode, local data, two-root safety, vendor governance, and build/sync evidence.
+- shipped: a blocking Liquid section plus global and local JavaScript starters.
+- decided: kept native product selection/submission as the required fallback.
+- next: ch-45 solution.
+## 2026-08-14 · ch-45 · solution
+- wrote: a module-scoped product-form enhancement with inert JSON data, native fallback, script inventory, and build/sync contract.
+- verified: removed parser blocking, global mutable helper, unsafe data interpolation, and vendor inclusion from the section.
+- decided: kept transaction authority on the native form and routed external dependencies through owned records.
+- next: ch-45 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-45 · review
+- reviewed: passed all five JavaScript strategy topics in order, current source facts, terminology, starter/solution parity, and calibration floors.
+- verified: lesson maintains progressive enhancement, explicit vendor uncertainty, and narrow build/CLI claims without solution leakage.
+- decided: applied final markers only and retained explicit verification flags where platform/app behavior depends on current policy.
+- next: ch-46 lesson.
+## 2026-08-14 · ch-46 · lesson
+- wrote: Shopify font settings and variants, custom-font delivery/FOUT policy, and bounded variable-font guidance.
+- verified: used current Shopify font object, font modify, and assets versus Admin Files documentation.
+- decided: made typography an owned rendering contract with explicit fallback and axis checks.
+- next: ch-46 exercise.
+## 2026-08-14 · ch-46 · exercise
+- wrote: a typography delivery refactor spanning Shopify font settings, variant fallback, custom-font ownership, preload discipline, and variable-weight bounds.
+- shipped: incomplete font tokens, overloaded custom font declarations, and an unbounded recipe-heading starter.
+- decided: treated font failure and fallback as explicit acceptance criteria.
+- next: ch-46 solution.
+## 2026-08-14 · ch-46 · solution
+- wrote: an owned Shopify-font token system with guarded variants, deliberate self-hosted display delivery, measured preload policy, and bounded variable-weight section settings.
+- verified: preserved readable fallback paths and removed eager static variant loading.
+- decided: exposed only a verified semantic weight range rather than arbitrary variable-font axis strings.
+- next: ch-46 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-46 · review
+- reviewed: passed all three typography topics in order, official font facts, terminology, starter/solution parity, and calibration floors.
+- verified: course content keeps Shopify font selection, custom resource delivery, FOUT policy, and variable-axis uncertainty distinct without solution leakage.
+- decided: applied final markers only and retained explicit verification flags for preload and variable-font contracts.
+- next: ch-47 lesson.
+## 2026-08-14 · ch-47 · lesson
+- wrote: Core Web Vitals ownership, RUM/Lighthouse evidence, Liquid profiling, DOM reduction, CI budgets, and Lab 18 methodology.
+- verified: used current Shopify reports, Theme Inspector, Lighthouse CI, and performance guidance.
+- decided: treated score movement as evidence requiring route/resource ownership rather than a goal to game.
+- next: ch-47 exercise.
+## 2026-08-14 · ch-47 · exercise
+- wrote: Lab 18 as a controlled route baseline, Liquid/DOM/media/script refactor, Theme Inspector record, and CI budget exercise.
+- shipped: a deliberately repeated Liquid section, global blocking starter script, and duplicate responsive markup styles.
+- decided: required evidence and buyer-value ownership before declaring any score gain.
+- next: ch-47 solution.
+## 2026-08-14 · ch-47 · solution
+- wrote: a bounded collection refactor with one responsive DOM tree, normal-priority first-view hero, optional module behavior, and performance evidence records.
+- verified: removed repeated sort/all_products work, parser blocking, duplicate card markup, and score-only reasoning.
+- decided: kept CI as an enforceable measured policy with documented exceptions rather than a guaranteed score claim.
+- next: ch-47 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-47 · review
+- reviewed: passed all six performance topics in order, official RUM/Inspector/CI facts, terminology, starter/solution parity, and calibration floors.
+- verified: lesson distinguishes buyer metrics, controlled lab signals, server profiling, DOM responsibility, and budget ownership without solution leakage.
+- decided: applied final markers only and retained an explicit verification flag for store-report availability.
+- next: ch-48 lesson.
+## 2026-08-14 · ch-48 · lesson
+- wrote: locale file taxonomy, t filter contracts, plural/interpolation behavior, schema translation, missing-key discipline, and catalogue governance.
+- verified: used current Shopify locale and translate documentation including limits and section-local distinction.
+- decided: made default-key alignment and structural CI checks the primary missing-translation prevention strategy.
+- next: ch-48 exercise.
+## 2026-08-14 · ch-48 · exercise
+- wrote: a storefront/schema locale refactor covering key alignment, interpolation, pluralisation, private/global boundaries, HTML policy, and catalogue coverage.
+- shipped: hard-coded section and divergent English/French locale starters.
+- decided: made default-key alignment and explicit ownership the exercise’s missing-translation defense.
+- next: ch-48 solution.
+## 2026-08-14 · ch-48 · solution
+- wrote: aligned storefront/schema catalogues, interpolation/plural contracts, local/global translation boundaries, and coverage governance.
+- verified: removed hard-coded English, mismatched locale paths, English-only plural logic, and unreviewed HTML translation behavior.
+- decided: made the default catalogue the structural source of truth and retained explicit language-surface records.
+- next: ch-48 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-48 · review
+- reviewed: passed all five translation topics in order, official locale/filter facts, terminology, starter/solution parity, and calibration floors.
+- verified: course content distinguishes storefront/schema/local section language, plural and HTML boundaries, fallback policy, and catalogue governance without solution leakage.
+- decided: applied final markers only and retained a verification flag for portable section locale contracts.
+- next: ch-49 lesson.
+## 2026-08-14 · ch-49 · exercise
+- wrote: a localization-form, market-price, regional-content, and international SEO refactor with route-level evidence.
+- shipped: cosmetic conversion, unsafe market section, and duplicate hreflang starter files.
+- decided: made configuration ownership and no-JavaScript form behavior mandatory for every market change.
+- next: ch-49 solution.
+## 2026-08-14 · ch-49 · solution
+- wrote: a native localization form, active-market money output, bounded regional content, unavailable-product fallback, and a single SEO annotation owner.
+- shipped: solution section, optional progressive-enhancement script, clean layout, market test matrix, and responsibility decision log.
+- verified: removed client-side currency rewriting and duplicate manual hreflang while preserving no-JavaScript submission.
+- decided: Markets configuration owns destinations, catalogues, prices, and SEO routing; the theme owns transparent presentation and evidence capture.
+- next: ch-49 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-49 · review
+- reviewed: passed all five Markets, price, regional-content, and international-SEO topics in scope order, plus the starter/solution file parity.
+- verified: course material keeps real localization forms, active-market price rendering, merchant-owned notices, catalog boundaries, and a single `content_for_header` SEO source without solution leakage.
+- decided: applied final markers and retained `[VERIFY]` boundaries for configured market/catalog/policy outcomes.
+- next: ch-50 lesson.
+## 2026-08-14 · ch-50 · lesson
+- wrote: command-direction discipline for Shopify CLI, hot-reload boundaries, named `shopify.theme.toml` environments, preview lifecycle, and safe real-store operations.
+- verified: aligned command, environment, preview, and packaging facts with current official Shopify CLI references.
+- decided: made target identity, code-versus-merchant state, and rollback evidence preconditions for all destructive or release actions.
+- next: ch-50 exercise.
+## 2026-08-14 · ch-50 · exercise
+- wrote: a controlled CLI promotion rehearsal covering environments, target evidence, hot-reload limits, durable candidate previews, ownership, packaging, and rollback.
+- shipped: unsafe TOML/ignore/release-record starters plus a minimal real section, stylesheet, and layout theme output.
+- decided: prohibited production publication and credentials in the lab while requiring route-level candidate evidence and explicit merchant-state treatment.
+- next: ch-50 solution.
+## 2026-08-14 · ch-50 · solution
+- wrote: a three-environment CLI workflow with command direction, hot-reload boundaries, durable staging candidate evidence, state ownership, packaging, and authorised rollback.
+- shipped: corrected TOML and ignore files, command matrix, release record, and mirror theme section, stylesheet, and layout.
+- verified: retained `[VERIFY]` markers for store-specific IDs, permissions, approvals, and market/account route context rather than inventing release evidence.
+- decided: release safety rests on explicit remote identity and a prior verified candidate, never an implicit default or a generic preview URL.
+- next: ch-50 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-50 · review
+- reviewed: passed all five CLI topics in scope order, the official command/environment facts, target-safety constraints, starter/solution parity, and calibration floors.
+- verified: the course distinguishes development feedback, durable unpublished candidates, preview evidence, environment precedence, and real-data safety without importing solution-only workflow detail.
+- decided: applied final markers and retained `[VERIFY]` boundaries for client-specific targets, permissions, test contexts, policy, and approval.
+- next: ch-51 lesson.
+## 2026-08-14 · ch-51 · lesson
+- wrote: Theme Check execution surfaces, catalogue interpretation, YAML severity policy, custom rule design, finding triage, static-analysis limits, and merge-gate evidence.
+- verified: aligned the lesson with current official Theme Check and configuration references.
+- decided: positioned Theme Check as a reproducible static gate paired with route, configuration, accessibility, and merchant evidence.
+- next: ch-51 exercise.

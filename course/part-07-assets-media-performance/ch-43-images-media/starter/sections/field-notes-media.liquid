@@ -1,0 +1,14 @@
+<section class="field-notes-media">
+  <div class="field-notes-media__hero">
+    {{ section.settings.desktop_image | image_url: width: 2400 | image_tag: sizes: '100vw', loading: 'lazy', alt: section.settings.desktop_image.alt }}
+  </div>
+  <div class="field-notes-media__product-media">
+    {% for media in product.media %}
+      <img src="{{ media.preview_image | image_url: width: 1600 }}" alt="{{ media.alt | escape }}">
+    {% endfor %}
+  </div>
+  <svg><path d="M0 0"></path></svg>
+</section>
+{% schema %}
+{"name":"Field notes media","settings":[{"type":"image_picker","id":"desktop_image","label":"Desktop image"},{"type":"image_picker","id":"mobile_image","label":"Mobile image"}],"presets":[{"name":"Field notes media"}]}
+{% endschema %}

@@ -1,0 +1,5 @@
+# Local engineering notes are not theme runtime files.
+notes/
+# Local-only configuration must not ship.
+*.local
+# Preserve assets/, sections/, config/, layout/, locales/, snippets/, templates/.

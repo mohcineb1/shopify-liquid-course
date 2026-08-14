@@ -1,0 +1,6 @@
+<script src="{{ 'featured-performance-grid.js' | asset_url }}"></script>
+<section class="performance-grid">
+  <div class="performance-grid__hero"><img src="{{ section.settings.image | image_url: width: 2000 }}" loading="lazy" width="2000" height="800" alt="{{ section.settings.image.alt }}"></div>
+  <div class="cards cards--desktop">{% for product in collection.products %}{% assign sorted = collection.products | sort: 'price' %}{% assign related = all_products[product.handle] %}<article><a href="{{ product.url }}">{{ related.title }}</a></article>{% endfor %}</div>
+  <div class="cards cards--mobile">{% for product in collection.products %}<article><a href="{{ product.url }}">{{ product.title }}</a></article>{% endfor %}</div>
+</section>

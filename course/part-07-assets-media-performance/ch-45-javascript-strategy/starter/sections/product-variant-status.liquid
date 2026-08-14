@@ -1,0 +1,8 @@
+<script src="{{ 'theme.js' | asset_url }}"></script>
+<script src="https://reviews.example.invalid/widget.js"></script>
+<form class="product-form" action="/cart/add" method="post">
+  <label><input type="radio" name="id" value="{{ product.selected_or_first_available_variant.id }}" checked> Default variant</label>
+  <p data-variant-status>Choose a variant</p>
+  <script>window.variantConfig = '{"title":"{{ product.title }}"}';</script>
+  <button type="submit">Add to cart</button>
+</form>

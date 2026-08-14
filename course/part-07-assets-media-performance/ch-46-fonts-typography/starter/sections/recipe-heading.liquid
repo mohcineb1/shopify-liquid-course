@@ -1,0 +1,6 @@
+<section class="recipe-heading" style="font-variation-settings: '{{ section.settings.axis }}'">
+  <h2>{{ section.settings.heading | escape }}</h2>
+</section>
+{% schema %}
+{"name":"Recipe heading","settings":[{"type":"text","id":"heading","label":"Heading","default":"Slow pantry dinners"},{"type":"text","id":"axis","label":"Font variation settings","default":"wght 630"}],"presets":[{"name":"Recipe heading"}]}
+{% endschema %}

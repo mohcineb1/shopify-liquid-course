@@ -1,0 +1,10 @@
+[environments.development]
+store = "northstar-dev"
+
+[environments.staging]
+store = "northstar-review"
+theme = "STAGING_THEME_ID"
+
+[environments.production]
+store = "northstar"
+theme = "PRODUCTION_THEME_ID"

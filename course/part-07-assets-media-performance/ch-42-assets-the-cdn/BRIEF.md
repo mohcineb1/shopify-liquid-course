@@ -6,7 +6,7 @@ unit: "Chapter 42"
 title: "Assets & the CDN"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 42 — Assets & the CDN
@@ -15,10 +15,10 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 42.1 `assets/` and how Shopify serves and versions files
-- [ ] 42.2 `asset_url` vs `file_url` vs `shopify_asset_url` vs `global_asset_url`
-- [ ] 42.3 What you cannot do: no subdirectories, no build output conventions
-- [ ] 42.4 Cache behaviour and busting
+- [x] 42.1 `assets/` and how Shopify serves and versions files
+- [x] 42.2 `asset_url` vs `file_url` vs `shopify_asset_url` vs `global_asset_url`
+- [x] 42.3 What you cannot do: no subdirectories, no build output conventions
+- [x] 42.4 Cache behaviour and busting
 
 ## Labs assigned to this unit
 

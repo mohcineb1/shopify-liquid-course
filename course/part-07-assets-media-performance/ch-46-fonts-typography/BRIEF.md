@@ -6,7 +6,7 @@ unit: "Chapter 46"
 title: "Fonts & Typography"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 46 — Fonts & Typography
@@ -15,9 +15,9 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 46.1 `font_picker`, `font_face`, `font_modify` — Shopify-hosted fonts
-- [ ] 46.2 Self-hosted fonts, preloading, `font-display`, and FOUT control
-- [ ] 46.3 Variable fonts in a settings-driven theme
+- [x] 46.1 `font_picker`, `font_face`, `font_modify` — Shopify-hosted fonts
+- [x] 46.2 Self-hosted fonts, preloading, `font-display`, and FOUT control
+- [x] 46.3 Variable fonts in a settings-driven theme
 
 ## Labs assigned to this unit
 

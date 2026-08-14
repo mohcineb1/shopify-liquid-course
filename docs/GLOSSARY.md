@@ -252,3 +252,54 @@ use; never introduce a synonym for something already listed.
 | Client-rendering duplication | Recreating in client code markup, localization, or rules already owned by Liquid. | ch-41 |
 | Interaction-boundary load trigger | The moment a runtime is loaded only after the buyer reaches the feature that needs it. | ch-41 |
 | Headless signal | An explicit rendering, routing, workflow, state, or multi-channel requirement that a theme cannot responsibly own. | ch-41 |
+| Asset ownership | The decision about whether a file belongs to theme source, Shopify Admin Files, or a Shopify-owned namespace. | ch-42 |
+| Resolved asset URL | The CDN URL Shopify emits for a named theme asset through `asset_url`. | ch-42 |
+| Flat delivery namespace | The theme asset naming contract that avoids assuming nested public paths. | ch-42 |
+| Build-output translation | The deliberate mapping from organized development sources to final theme asset names. | ch-42 |
+| Cache-busting anti-pattern | Adding arbitrary URL variation instead of deploying changed assets through the platform’s versioned resolution. | ch-42 |
+| Rendered slot | The CSS space an image occupies, used to derive accurate `sizes` and candidate widths. | ch-43 |
+| Source candidate | One width-qualified image URL offered in a responsive `srcset`. | ch-43 |
+| Intrinsic geometry | The image dimensions and aspect ratio information that reserves layout space before loading. | ch-43 |
+| Crop contract | The documented decision about what image content may be discarded to fill a target aspect ratio. | ch-43 |
+| Focal-point preservation | Using merchant-defined focal positioning to retain the intended subject within a crop. | ch-43 |
+| Art direction | Choosing a different image composition for a different responsive or contextual presentation. | ch-43 |
+| Trusted inline SVG | Reviewed theme-owned SVG markup emitted directly into the document for a specific UI purpose. | ch-43 |
+| Stylesheet responsibility | The documented base, feature, section, or output role assigned to a CSS file. | ch-44 |
+| Critical CSS removal test | A cold-load check that validates whether a small inline rule set protects essential initial geometry. | ch-44 |
+| Build-output contract | The declared mapping from source styles to final theme asset names and includes. | ch-44 |
+| Local design token | A bounded CSS custom property emitted on a section root from merchant configuration. | ch-44 |
+| Section-root boundary | The selector and variable boundary that prevents one section instance’s styles from leaking into another. | ch-44 |
+| Parser-blocking script | An external script that stops DOM construction until it loads and executes. | ch-45 |
+| Module boundary | The route and component ownership boundary used to decide which JavaScript ships together. | ch-45 |
+| JSON data island | An inert `application/json` script node that transfers structured Liquid data to nearby JavaScript. | ch-45 |
+| Tag inventory | A recorded owner, trigger, loading, consent, and removal contract for external scripts. | ch-45 |
+| Watch-loop split | The distinction between a source bundler rebuilding assets and Shopify CLI syncing final theme files. | ch-45 |
+| Font object | The Shopify Liquid value returned by a `font_picker` setting, exposing family, variants, fallback and metadata. | ch-46 |
+| Font variant fallback | The explicit available font used when a requested `font_modify` variant returns nil. | ch-46 |
+| FOUT policy | The deliberate readable-fallback and swap behavior selected through `font-display` and fallback metrics. | ch-46 |
+| Font ownership path | The correct Shopify delivery location and URL filter for a font based on theme-management workflow. | ch-46 |
+| Variable-font axis contract | The verified supported axis range that a bounded merchant setting may safely expose. | ch-46 |
+| Performance owner | The theme, app, resource, route, or environment factor accountable for an observed performance cost. | ch-47 |
+| P75 RUM signal | The 75th-percentile real-user metric used by Shopify performance reporting. | ch-47 |
+| Sandwich view | Theme Inspector aggregation that separates repeated node self time from total time including children. | ch-47 |
+| Liquid hot path | A repeatedly executed Liquid tag, filter, loop, or include responsible for material server render cost. | ch-47 |
+| DOM responsibility | The semantic, styling, editor, or scripting job that justifies a rendered DOM node. | ch-47 |
+| Performance-budget exception | A documented time-limited deviation from a CI performance rule with owner and follow-up measurement. | ch-47 |
+| Default locale | The one `*.default` locale file per storefront or schema catalog type that defines a theme’s baseline translations. | ch-48 |
+| Storefront locale | A `.json` locale catalog used by `t` for customer-facing theme language. | ch-48 |
+| Schema locale | A `.schema.json` locale catalog used by schema `t:` references for merchant-facing editor text. | ch-48 |
+| Translation key contract | The stable key, interpolation names, plural forms, audience, and context agreed between Liquid and a locale catalog. | ch-48 |
+| HTML translation | A translation whose key ends `_html`, intentionally emitted unescaped and therefore subject to markup review. | ch-48 |
+| Catalogue inventory | A maintained record of translation keys, audiences, variables, ownership, and source surfaces. | ch-48 |
+| Development theme | A temporary, hidden store theme used by `shopify theme dev` to render local theme files against store data. | ch-50 |
+| Unpublished candidate | A non-live theme-library entry used as a durable remote review or release target. | ch-50 |
+| Environment precedence | The CLI rule that command flags override environment variables, which override a named `shopify.theme.toml` environment. | ch-50 |
+| Theme target record | The recorded store, theme ID, role, environment, Git revision, and command context for a remote theme operation. | ch-50 |
+| Code/merchant-state boundary | The explicit decision about whether a file or value is governed by version-controlled theme code or merchant-administered configuration. | ch-50 |
+| Release rollback target | A previously verified remote theme/version selected in advance for recovery from a faulty storefront release. | ch-50 |
+| Static-analysis boundary | The distinction between source contracts Theme Check can inspect and runtime/storefront behavior it cannot execute or prove. | ch-51 |
+| Check disposition | The documented decision to fix, configure, locally suppress, defer, or escalate a Theme Check finding. | ch-51 |
+| Severity threshold | The configured finding level that makes a Theme Check run fail, such as an error-level merge gate. | ch-51 |
+| Scoped suppression | A minimal documented Theme Check disable comment limited to the relevant rule and source span. | ch-51 |
+| Custom-check contract | A versioned team convention with named diagnostics, fixtures, configuration, owner, and maintenance policy. | ch-51 |
+| Merge gate | A reproducible decision rule that blocks integration until agreed build and static-quality evidence is satisfied. | ch-51 |

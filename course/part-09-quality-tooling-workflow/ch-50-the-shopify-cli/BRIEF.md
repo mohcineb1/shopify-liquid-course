@@ -6,7 +6,7 @@ unit: "Chapter 50"
 title: "The Shopify CLI"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 50 — The Shopify CLI
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 50.1 `theme dev`, `pull`, `push`, `publish`, `list`, `package`
-- [ ] 50.2 Hot reload: what it reloads and what it doesn't
-- [ ] 50.3 Theme environments and `shopify.theme.toml`
-- [ ] 50.4 Development themes, unpublished themes, and preview links
-- [ ] 50.5 Working against real store data safely
+- [x] 50.1 `theme dev`, `pull`, `push`, `publish`, `list`, `package`
+- [x] 50.2 Hot reload: what it reloads and what it doesn't
+- [x] 50.3 Theme environments and `shopify.theme.toml`
+- [x] 50.4 Development themes, unpublished themes, and preview links
+- [x] 50.5 Working against real store data safely
 
 ## Labs assigned to this unit
 

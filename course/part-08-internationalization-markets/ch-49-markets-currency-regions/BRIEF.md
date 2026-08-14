@@ -6,7 +6,7 @@ unit: "Chapter 49"
 title: "Markets, Currency & Regions"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 49 — Markets, Currency & Regions
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 49.1 The `localization` object and market-aware rendering
-- [ ] 49.2 Country and language selectors as real forms
-- [ ] 49.3 Multi-currency display, rounding, and price presentation rules
-- [ ] 49.4 Region-specific content, catalogs, and conditional sections
-- [ ] 49.5 hreflang, canonical, and international SEO from Liquid
+- [x] 49.1 The `localization` object and market-aware rendering
+- [x] 49.2 Country and language selectors as real forms
+- [x] 49.3 Multi-currency display, rounding, and price presentation rules
+- [x] 49.4 Region-specific content, catalogs, and conditional sections
+- [x] 49.5 hreflang, canonical, and international SEO from Liquid
 
 ## Labs assigned to this unit
 

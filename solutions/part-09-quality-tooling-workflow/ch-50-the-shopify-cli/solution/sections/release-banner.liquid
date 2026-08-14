@@ -1,0 +1,18 @@
+{{ 'release-banner.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings.enabled %}
+  <aside class="release-banner" role="status">
+    {{ section.settings.message }}
+  </aside>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Release banner",
+  "settings": [
+    { "type": "checkbox", "id": "enabled", "label": "Show banner", "default": true },
+    { "type": "text", "id": "message", "label": "Message", "default": "Free delivery on selected orders" }
+  ],
+  "presets": [{ "name": "Release banner" }]
+}
+{% endschema %}

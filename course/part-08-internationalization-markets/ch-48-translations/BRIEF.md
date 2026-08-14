@@ -6,7 +6,7 @@ unit: "Chapter 48"
 title: "Translations"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 48 — Translations
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 48.1 `locales/*.json` and `locales/*.schema.json`
-- [ ] 48.2 The `t` filter, interpolation, pluralization rules
-- [ ] 48.3 Translating schema strings with `t:` keys
-- [ ] 48.4 Missing-translation behaviour and fallbacks
-- [ ] 48.5 Keeping a translation catalogue maintainable at scale
+- [x] 48.1 `locales/*.json` and `locales/*.schema.json`
+- [x] 48.2 The `t` filter, interpolation, pluralization rules
+- [x] 48.3 Translating schema strings with `t:` keys
+- [x] 48.4 Missing-translation behaviour and fallbacks
+- [x] 48.5 Keeping a translation catalogue maintainable at scale
 
 ## Labs assigned to this unit
 

@@ -1,0 +1,11 @@
+# Starter only: do not copy this targeting pattern into a real project.
+[environments.default]
+store = "northstar-live"
+theme = "LIVE_THEME_ID"
+password = "paste-a-real-theme-access-password-here"
+allow-live = true
+
+[environments.review]
+store = "northstar-live"
+theme = "Maybe the campaign theme"
+force = true

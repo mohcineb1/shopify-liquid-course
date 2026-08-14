@@ -1,0 +1,7 @@
+.field-notes-media__hero { aspect-ratio: 16 / 9; overflow: hidden; }
+.field-notes-media__hero picture, .field-notes-media__hero img { display: block; width: 100%; height: 100%; }
+.field-notes-media__hero img { object-fit: cover; }
+.field-notes-media__hero img:not([style]) { object-position: center; }
+.field-notes-media__item { aspect-ratio: 16 / 9; }
+.field-notes-media__item > * { width: 100%; height: 100%; }
+@media (max-width: 749px) { .field-notes-media__hero { aspect-ratio: 4 / 5; } }

@@ -248,3 +248,60 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** framework decision record, removal test, client-rendering duplication, interaction-boundary load trigger, headless signal.
 **Assumed known from earlier:** progressive enhancement (ch-30), server-rendered fragments (ch-37), accessible interactive state (ch-38), custom-element lifecycle (ch-40).
 **Deliberately deferred:** actual cart behavior -> ch-42; migration architecture and external storefront implementation -> later advanced topics.
+
+### ch-42 — Assets & the CDN
+**Taught:** theme asset ownership and CDN resolution; URL-filter ownership choices; flat asset delivery names and build-output constraints; platform-managed cache versioning and disciplined busting.
+**Introduced terms:** asset ownership, resolved asset URL, flat delivery namespace, build-output translation, cache-busting anti-pattern.
+**Assumed known from earlier:** Liquid filters (ch-06), theme file roles (ch-10), progressive enhancement (ch-30).
+**Deliberately deferred:** Shopify image objects and responsive media -> ch-43 and ch-44; performance measurement -> later part-07 units.
+
+### ch-43 — Images & Media
+**Taught:** image URL transformations; responsive `image_tag` markup and source arithmetic; layout reservation and placeholders; focal points versus art direction; video, external video, 3D media, and SVG boundaries.
+**Introduced terms:** rendered slot, source candidate, intrinsic geometry, crop contract, focal-point preservation, art direction, media-type renderer, trusted inline SVG.
+**Assumed known from earlier:** asset ownership/CDN URLs (ch-42), Liquid filters (ch-06), component styling (ch-40).
+**Deliberately deferred:** responsive-image audit and performance measurement -> ch-44 and later part-07 units.
+
+### ch-44 — CSS Strategy
+**Taught:** bundle versus section stylesheet decisions; critical CSS without a build; theme-compatible SCSS/PostCSS/Tailwind output; local design tokens from settings; instance scoping without global leakage.
+**Introduced terms:** stylesheet responsibility, critical CSS removal test, build-output contract, local design token, section-root boundary.
+**Assumed known from earlier:** asset delivery (ch-42), responsive geometry (ch-43), section settings (ch-17).
+**Deliberately deferred:** font loading -> ch-45; broader performance audit -> later part-07 units.
+
+### ch-45 — JavaScript Strategy
+**Taught:** script loading modes; bundle/module boundaries; data contracts from Liquid; third-party/app tag governance; final build assets and development watch loops.
+**Introduced terms:** parser-blocking script, module boundary, JSON data island, tag inventory, build-output contract, watch-loop split.
+**Assumed known from earlier:** component lifecycle (ch-40), asset delivery (ch-42), CSS delivery ownership (ch-44).
+**Deliberately deferred:** feature-specific AJAX behavior -> later interaction chapters and performance measurement -> later part-07 units.
+
+### ch-46 — Fonts & Typography
+**Taught:** Shopify font picker/object filters; custom-font ownership, preload and font-display decisions; bounded variable-font settings.
+**Introduced terms:** font object, font variant fallback, FOUT policy, font ownership path, variable-font axis contract.
+**Assumed known from earlier:** asset delivery (ch-42), CSS custom properties and settings tokens (ch-44).
+**Deliberately deferred:** full performance measurement and accessibility audits -> later performance units.
+
+### ch-47 — Performance Engineering
+**Taught:** Shopify Core Web Vitals/RUM boundaries; dashboard and controlled Lighthouse use; Liquid render profiling; DOM reduction; enforceable CI budgets; documented performance-lab workflow.
+**Introduced terms:** performance owner, P75 RUM signal, sandwich view, Liquid hot path, DOM responsibility, performance-budget exception.
+**Assumed known from earlier:** asset/media strategy (ch-42–46), section architecture, progressive enhancement.
+**Deliberately deferred:** security/accessibility audits and advanced deployment observability -> later units.
+
+### ch-48 — Translations
+**Taught:** storefront/schema locale files, translation filter contracts, interpolation/plurals, schema localization, missing-key review, and scalable catalogue governance.
+**Introduced terms:** default locale, storefront locale, schema locale, translation key contract, `_html` translation, catalogue inventory.
+**Assumed known from earlier:** Liquid filters, JSON schema, section ownership and theme assets.
+**Deliberately deferred:** Markets URL/currency behaviour and client-side locale routing -> chapters 49–50.
+### ch-49 — Markets, Currency & Regions
+**Taught:** market-aware localization context, real country/language forms, active-market money presentation, bounded regional content, catalog ownership, and a single automatic international SEO owner.
+**Introduced terms:** localization form, active-market price, market-content owner, route-level market evidence, hreflang source owner.
+**Assumed known from earlier:** Liquid objects/forms, translations, theme layout/head composition, and presentation/configuration boundaries.
+**Deliberately deferred:** CLI environment management and deployment workflow -> chapter 50.
+### ch-50 — The Shopify CLI
+**Taught:** command direction and remote-target discipline for `dev`, `pull`, `push`, `publish`, `list`, and `package`; hot-reload boundaries; named TOML environments; preview-surface lifecycle; and safe real-data release practice.
+**Introduced terms:** development theme, unpublished candidate, environment precedence, theme target record, code/merchant-state boundary, release rollback target.
+**Assumed known from earlier:** default theme structure, source/build output boundary, Git review, Markets route testing, and configuration ownership.
+**Deliberately deferred:** CI/CD implementation, Theme Check configuration, and production release automation -> later quality/workflow units.
+### ch-51 — Theme Check
+**Taught:** static-analysis boundaries; local/editor/CI execution; correctness, composition, performance, deprecation, and accessibility-adjacent checks; YAML policy; custom-check design; finding triage; and merge-gate evidence.
+**Introduced terms:** static-analysis boundary, check disposition, severity threshold, scoped suppression, custom-check contract, merge gate.
+**Assumed known from earlier:** CLI environments and target records (ch-50), output/build boundary (ch-45), performance ownership (ch-47), translations/schema/theme architecture.
+**Deliberately deferred:** CI/CD implementation and release automation -> later quality/workflow units.

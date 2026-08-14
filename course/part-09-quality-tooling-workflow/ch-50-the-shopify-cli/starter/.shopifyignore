@@ -1,0 +1,5 @@
+# Starter only: this pattern is overbroad and hides deployable output.
+assets/*
+sections/*
+notes/
+*.local

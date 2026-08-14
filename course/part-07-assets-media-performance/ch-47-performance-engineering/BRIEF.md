@@ -6,7 +6,7 @@ unit: "Chapter 47"
 title: "Performance Engineering"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 47 — Performance Engineering
@@ -15,12 +15,12 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 47.1 Core Web Vitals on Shopify: what you control and what you don't
-- [ ] 47.2 The Shopify Web Performance dashboard and Lighthouse in the theme editor
-- [ ] 47.3 Server-side render cost: expensive filters, nested loops, oversized loops, `all_products`
-- [ ] 47.4 The Theme Inspector profile: reading and acting on it
-- [ ] 47.5 Reducing DOM weight in section-heavy templates
-- [ ] 47.6 A performance budget you can enforce in CI
+- [x] 47.1 Core Web Vitals on Shopify: what you control and what you don't
+- [x] 47.2 The Shopify Web Performance dashboard and Lighthouse in the theme editor
+- [x] 47.3 Server-side render cost: expensive filters, nested loops, oversized loops, `all_products`
+- [x] 47.4 The Theme Inspector profile: reading and acting on it
+- [x] 47.5 Reducing DOM weight in section-heavy templates
+- [x] 47.6 A performance budget you can enforce in CI
 
 ## Labs assigned to this unit
 

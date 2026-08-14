@@ -1,0 +1,2 @@
+<section class="recipe-heading" style="--recipe-heading-weight: {{ section.settings.heading_weight }};"><h2>{{ section.settings.heading | escape }}</h2></section>
+{% schema %}{"name":"Recipe heading","settings":[{"type":"text","id":"heading","label":"Heading","default":"Slow pantry dinners"},{"type":"range","id":"heading_weight","label":"Heading weight","min":400,"max":700,"step":50,"default":600}],"presets":[{"name":"Recipe heading"}]}{% endschema %}

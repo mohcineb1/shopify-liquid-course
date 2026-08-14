@@ -6,7 +6,7 @@ unit: "Chapter 45"
 title: "JavaScript Strategy"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 45 — JavaScript Strategy
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 45.1 Loading: `defer`, `async`, `type="module"`, import maps
-- [ ] 45.2 One bundle vs per-component modules
-- [ ] 45.3 Passing data from Liquid to JS: `| json`, data attributes, script type=application/json
-- [ ] 45.4 Third-party scripts, app scripts, and the tag-bloat problem
-- [ ] 45.5 Build pipelines: Vite/esbuild into `assets/`, source maps, and the CLI watch loop
+- [x] 45.1 Loading: `defer`, `async`, `type="module"`, import maps
+- [x] 45.2 One bundle vs per-component modules
+- [x] 45.3 Passing data from Liquid to JS: `| json`, data attributes, script type=application/json
+- [x] 45.4 Third-party scripts, app scripts, and the tag-bloat problem
+- [x] 45.5 Build pipelines: Vite/esbuild into `assets/`, source maps, and the CLI watch loop
 
 ## Labs assigned to this unit
 

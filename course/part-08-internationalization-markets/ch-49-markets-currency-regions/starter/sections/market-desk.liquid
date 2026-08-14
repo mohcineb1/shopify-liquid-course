@@ -1,0 +1,6 @@
+<section class="market-desk">
+  <button data-currency="EUR">Change to €</button>
+  <p class="price" data-base-price="{{ product.price }}">${{ product.price | divided_by: 100 }}</p>
+  {% if localization.country.iso_code == 'CA' %}<p>Free delivery everywhere in Canada</p>{% endif %}
+  <a href="{{ product.url }}">Buy {{ product.title }}</a>
+</section>

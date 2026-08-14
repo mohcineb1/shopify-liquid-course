@@ -1,0 +1,7 @@
+<script type="module" src="{{ 'product-variant-status.js' | asset_url }}"></script>
+<form class="product-form" action="/cart/add" method="post" data-variant-status-root>
+  <label><input type="radio" name="id" value="{{ product.selected_or_first_available_variant.id }}" checked> Default variant</label>
+  <p data-variant-status aria-live="polite">Choose a variant</p>
+  <script type="application/json" data-variant-status-config>{{ product.selected_or_first_available_variant | json }}</script>
+  <button type="submit">Add to cart</button>
+</form>

@@ -6,7 +6,7 @@ unit: "Chapter 43"
 title: "Images & Media"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 43 — Images & Media
@@ -15,13 +15,13 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 43.1 `image_url` parameters: width, height, crop, format, pad_color
-- [ ] 43.2 `image_tag`: `widths`, `sizes`, `loading`, `fetchpriority`, `preload`, `alt`, `class`
-- [ ] 43.3 Responsive images done correctly — the srcset arithmetic
-- [ ] 43.4 Aspect ratio, CLS prevention, and placeholder strategies
-- [ ] 43.5 Focal points and art direction
-- [ ] 43.6 Video, external video, and 3D model rendering
-- [ ] 43.7 SVG handling and inlining strategies
+- [x] 43.1 `image_url` parameters: width, height, crop, format, pad_color
+- [x] 43.2 `image_tag`: `widths`, `sizes`, `loading`, `fetchpriority`, `preload`, `alt`, `class`
+- [x] 43.3 Responsive images done correctly — the srcset arithmetic
+- [x] 43.4 Aspect ratio, CLS prevention, and placeholder strategies
+- [x] 43.5 Focal points and art direction
+- [x] 43.6 Video, external video, and 3D model rendering
+- [x] 43.7 SVG handling and inlining strategies
 
 ## Labs assigned to this unit
 

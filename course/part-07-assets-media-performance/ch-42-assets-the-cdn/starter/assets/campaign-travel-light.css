@@ -1,0 +1,3 @@
+.travel-light-campaign { padding: 2rem; }
+.travel-light-campaign img { display: block; max-width: 12rem; }
+.travel-light-enhanced .travel-light-campaign { border-inline-start: .25rem solid currentColor; }

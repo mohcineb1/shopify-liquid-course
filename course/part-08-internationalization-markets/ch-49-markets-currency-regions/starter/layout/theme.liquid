@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  {{ content_for_header }}
+  <link rel="canonical" href="{{ canonical_url }}">
+  <link rel="alternate" hreflang="en-ca" href="https://example.com/ca{{ request.path }}">
+  <link rel="alternate" hreflang="fr-fr" href="https://example.com/fr{{ request.path }}">
+</head>
+<body>{{ content_for_layout }}</body>
+</html>

@@ -1,0 +1,5 @@
+<style>
+  :root { --font-body: {{ settings.type_body_font.family }}; --font-heading: {{ settings.type_heading_font.family }}; }
+</style>
+{{ settings.type_body_font | font_face }}
+{{ settings.type_heading_font | font_modify: 'weight', 'bold' | font_face }}

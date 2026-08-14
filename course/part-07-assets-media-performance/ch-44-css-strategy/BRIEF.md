@@ -6,7 +6,7 @@ unit: "Chapter 44"
 title: "CSS Strategy"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 44 — CSS Strategy
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 44.1 Single bundle vs per-section stylesheets vs `{% stylesheet %}`
-- [ ] 44.2 Critical CSS in a theme without a build step
-- [ ] 44.3 Using a build step anyway: SCSS/PostCSS/Tailwind pipelines that ship to `assets/`
-- [ ] 44.4 Design tokens from theme settings → CSS custom properties
-- [ ] 44.5 Scoping styles to `section.id` without leaking
+- [x] 44.1 Single bundle vs per-section stylesheets vs `{% stylesheet %}`
+- [x] 44.2 Critical CSS in a theme without a build step
+- [x] 44.3 Using a build step anyway: SCSS/PostCSS/Tailwind pipelines that ship to `assets/`
+- [x] 44.4 Design tokens from theme settings → CSS custom properties
+- [x] 44.5 Scoping styles to `section.id` without leaking
 
 ## Labs assigned to this unit
 

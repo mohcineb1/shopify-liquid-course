@@ -1,0 +1,8 @@
+<section class="garden-picks">
+  <h2>Garden picks</h2>
+  <p data-status="Only {{ collection.products_count }} left">Only {{ collection.products_count }} left</p>
+  <a href="{{ collection.url }}">See all</a>
+</section>
+{% schema %}
+{"name":"Garden picks","settings":[{"type":"text","id":"heading","label":"Heading","default":"Garden picks"},{"type":"text","id":"note","label":"Note","default":"Spend <strong>more</strong> time outside"}]}
+{% endschema %}
