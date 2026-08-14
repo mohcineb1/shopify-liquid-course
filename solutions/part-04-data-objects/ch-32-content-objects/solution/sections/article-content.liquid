@@ -1,0 +1,17 @@
+<article class="article-content">
+  <h1>{{ article.title | escape }}</h1>
+  <p>By {{ article.author | escape }} · {{ article.published_at | date: '%B %d, %Y' }}</p>
+  {% if article.image %}{{ article.image | image_url: width: 1440 | image_tag: alt: article.title, loading: 'lazy' }}{% endif %}
+  <div class="article-content__body">{{ article.content }}</div>
+  {% assign callout = article.metafields.editorial.callout %}
+  {% if callout != blank %}<aside class="article-content__callout">{{ callout | metafield_tag }}</aside>{% endif %}
+  {% if article.comments_enabled? %}
+    <section><h2>Comments ({{ article.comments_count }})</h2>
+      {% paginate article.comments by 20 %}{% for comment in article.comments %}<article><p>{{ comment.content | escape }}</p></article>{% endfor %}{{ paginate | default_pagination }}{% endpaginate %}
+      {% if article.moderated? %}<p>Comments are moderated before publication.</p>{% endif %}
+    </section>
+  {% endif %}
+</article>
+{% schema %}
+{ "name": "Article content", "settings": [] }
+{% endschema %}

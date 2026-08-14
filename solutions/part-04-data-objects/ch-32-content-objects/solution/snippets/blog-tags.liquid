@@ -1,0 +1,7 @@
+{% if blog.all_tags != blank %}
+  <nav class="blog-tags" aria-label="Article tags"><ul>
+    {% for tag in blog.all_tags %}
+      <li><a href="{{ blog.url }}/tagged/{{ tag | handleize }}">{{ tag | escape }}</a></li>
+    {% endfor %}
+  </ul></nav>
+{% endif %}

@@ -1,0 +1,2 @@
+{% if predictive_search.performed %}<div id="predictive-search-results">{% for product in predictive_search.resources.products %}<div>{{ product.title }}</div>{% endfor %}</div>{% endif %}
+{% schema %}{ "name": "Predictive search", "settings": [] }{% endschema %}

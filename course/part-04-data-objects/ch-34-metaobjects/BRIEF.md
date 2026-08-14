@@ -6,7 +6,7 @@ unit: "Chapter 34"
 title: "Metaobjects"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 34 — Metaobjects
@@ -15,12 +15,12 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 34.1 Metaobject definitions and entries
-- [ ] 34.2 Rendering metaobjects in Liquid
-- [ ] 34.3 Metaobject templates and dedicated routes
-- [ ] 34.4 Modelling real content: size guides, ingredients, store locations, brand pages, FAQs
-- [ ] 34.5 Metaobjects vs pages vs metafields — the modelling decision
-- [ ] 34.6 Referencing metaobjects from settings
+- [x] 34.1 Metaobject definitions and entries
+- [x] 34.2 Rendering metaobjects in Liquid
+- [x] 34.3 Metaobject templates and dedicated routes
+- [x] 34.4 Modelling real content: size guides, ingredients, store locations, brand pages, FAQs
+- [x] 34.5 Metaobjects vs pages vs metafields — the modelling decision
+- [x] 34.6 Referencing metaobjects from settings
 
 ## Labs assigned to this unit
 

@@ -1,0 +1,12 @@
+<section id="shopify-section-{{ section.id }}" data-cart-drawer>
+  <h2>Your cart</h2><p data-cart-status aria-live="polite"></p>
+  {% for item in cart.items %}
+    <article data-line-key="{{ item.key }}">
+      <p>{{ item.product.title | escape }}</p>
+      <label for="Quantity-{{ item.key }}">Quantity</label>
+      <input id="Quantity-{{ item.key }}" data-cart-quantity type="number" value="{{ item.quantity }}" min="{{ item.quantity_rule.min }}"{% if item.quantity_rule.max %} max="{{ item.quantity_rule.max }}"{% endif %} step="{{ item.quantity_rule.increment }}">
+      <button type="button" data-cart-remove>Remove</button>
+    </article>
+  {% endfor %}
+</section>
+{% schema %}{ "name": "Cart drawer", "settings": [] }{% endschema %}

@@ -1,0 +1,12 @@
+{% if location %}
+  <article class="location-card">
+    {% if location.image != blank %}{{ location.image | metafield_tag }}{% endif %}
+    <h2>{{ location.name.value | escape }}</h2>
+    {% if location.address != blank %}<div>{{ location.address | metafield_tag }}</div>{% endif %}
+    {% if location.hours != blank %}<div>{{ location.hours | metafield_tag }}</div>{% endif %}
+    {% if location.phone != blank %}<p><a href="tel:{{ location.phone.value | remove: ' ' | escape }}">{{ location.phone.value | escape }}</a></p>{% endif %}
+    {% if location.directions != blank %}<p><a href="{{ location.directions.value }}">Get directions</a></p>{% endif %}
+    {% if location.pickup_note != blank %}{{ location.pickup_note | metafield_tag }}{% endif %}
+    {% if location.system.url %}<a href="{{ location.system.url }}">Location details</a>{% endif %}
+  </article>
+{% endif %}

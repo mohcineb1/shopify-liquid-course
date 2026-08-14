@@ -1,0 +1,16 @@
+<section class="account-order page-width">
+  <h1>{{ order.name | escape }}</h1>
+  <p>Placed {{ order.created_at | date: '%B %d, %Y' }}</p>
+  <p class="account-status">Payment: {{ order.financial_status_label | escape }}</p>
+  <p class="account-status">Fulfillment: {{ order.fulfillment_status_label | escape }}</p>
+  {% if order.cancelled %}<p>Cancellation: {{ order.cancel_reason_label | escape }}</p>{% endif %}
+  <ul class="account-order__items">
+    {% for item in order.line_items %}
+      <li>{{ item.title | escape }} × {{ item.quantity }} — {{ item.final_line_price | money }}</li>
+    {% endfor %}
+  </ul>
+  <p>Order total: {{ order.total_price | money }}</p>
+  {% if order.total_refunded_amount > 0 %}<p>Refunded: {{ order.total_refunded_amount | money }}</p>{% endif %}
+  {% if order.shipping_address %}<address>{{ order.shipping_address | format_address }}</address>{% endif %}
+  <a href="{{ routes.account_url }}">Back to account</a>
+</section>

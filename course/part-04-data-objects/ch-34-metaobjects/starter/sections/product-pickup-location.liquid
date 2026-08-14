@@ -1,0 +1,4 @@
+<section class="product-pickup-location"><h2>{{ section.settings.location_name }}</h2><p>{{ section.settings.location_hours }}</p><a href="{{ section.settings.location_map }}">Directions</a></section>
+{% schema %}
+{ "name": "Pickup location", "settings": [{ "type": "text", "id": "location_name", "label": "Location name" }, { "type": "text", "id": "location_hours", "label": "Hours" }, { "type": "url", "id": "location_map", "label": "Map URL" }] }
+{% endschema %}

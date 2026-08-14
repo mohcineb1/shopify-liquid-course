@@ -1,0 +1,8 @@
+{% if predictive_search.performed %}
+  <div class="predictive-results">
+    {% if predictive_search.resources.products.size > 0 %}<section class="predictive-results__group"><h2>Products</h2>{% for product in predictive_search.resources.products %}<a href="{{ product.url }}">{{ product.title | escape }}</a>{% endfor %}</section>{% endif %}
+    {% if predictive_search.resources.articles.size > 0 %}<section class="predictive-results__group"><h2>Articles</h2>{% for article in predictive_search.resources.articles %}<a href="{{ article.url }}">{{ article.title | escape }}</a>{% endfor %}</section>{% endif %}
+    {% if predictive_search.resources.pages.size > 0 %}<section class="predictive-results__group"><h2>Pages</h2>{% for page in predictive_search.resources.pages %}<a href="{{ page.url }}">{{ page.title | escape }}</a>{% endfor %}</section>{% endif %}
+    <a href="{{ routes.search_url }}?q={{ predictive_search.terms | url_encode }}">See all results for {{ predictive_search.terms | escape }}</a>
+  </div>
+{% endif %}

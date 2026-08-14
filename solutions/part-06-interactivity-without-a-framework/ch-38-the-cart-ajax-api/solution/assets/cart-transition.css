@@ -1,0 +1,2 @@
+.is-cart-pending { opacity: .65; }
+[data-cart-status] { border-left: .25rem solid currentColor; min-height: 1.5rem; padding: .75rem; }

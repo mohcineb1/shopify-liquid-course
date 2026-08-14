@@ -6,7 +6,7 @@ unit: "Chapter 37"
 title: "The Section Rendering API"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 37 — The Section Rendering API
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 37.1 `?sections=` and `?section_id=` — server-rendered partial updates
-- [ ] 37.2 Re-rendering filters, cart drawers, and pagination
-- [ ] 37.3 Response shape, parsing, and DOM swapping strategies
-- [ ] 37.4 Race conditions, request cancellation, and stale responses
-- [ ] 37.5 Cost model: what a section re-render actually costs you
+- [x] 37.1 `?sections=` and `?section_id=` — server-rendered partial updates
+- [x] 37.2 Re-rendering filters, cart drawers, and pagination
+- [x] 37.3 Response shape, parsing, and DOM swapping strategies
+- [x] 37.4 Race conditions, request cancellation, and stale responses
+- [x] 37.5 Cost model: what a section re-render actually costs you
 
 ## Labs assigned to this unit
 

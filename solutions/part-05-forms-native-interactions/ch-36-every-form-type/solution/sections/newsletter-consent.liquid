@@ -1,0 +1,9 @@
+<section class="newsletter-consent"><h2>{{ section.settings.heading | escape }}</h2>
+  {% form 'customer', id: 'Newsletter-' | append: section.id %}
+    {% render 'account-form-feedback', form: form, key: 'Newsletter-' | append: section.id %}
+    <label for="NewsletterEmail-{{ section.id }}">Email</label>
+    <input id="NewsletterEmail-{{ section.id }}" type="email" name="contact[email]" value="{{ form.email | escape }}" autocomplete="email" required>
+    <p>{{ section.settings.consent_copy | escape }}</p><button type="submit">Subscribe</button>
+  {% endform %}
+</section>
+{% schema %}{ "name": "Newsletter consent", "settings": [{ "type": "text", "id": "heading", "label": "Heading", "default": "Newsletter" }, { "type": "text", "id": "consent_copy", "label": "Consent copy" }] }{% endschema %}

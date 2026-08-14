@@ -1,0 +1,3 @@
+.facets, .collection-results { display: grid; gap: 1rem; }
+.is-loading .collection-results { opacity: .65; }
+.collection-update-status { border-left: .25rem solid currentColor; padding: .75rem; min-height: 1.5rem; }

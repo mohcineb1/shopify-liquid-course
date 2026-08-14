@@ -1,0 +1,13 @@
+<script src="{{ 'predictive-search.js' | asset_url }}" defer></script>
+<section class="main-search">
+  <predictive-search data-section-id="predictive-search">
+    <form action="{{ routes.search_url }}" method="get" role="search">
+      <label for="Search">Search</label>
+      <input id="Search" name="q" type="search" role="combobox" aria-expanded="false" aria-controls="predictive-search-results" aria-autocomplete="list" aria-haspopup="listbox">
+      <input type="hidden" name="options[prefix]" value="last">
+      <button type="submit">Search</button>
+      <div data-predictive-slot></div>
+    </form>
+  </predictive-search>
+</section>
+{% schema %}{ "name": "Main search", "settings": [] }{% endschema %}

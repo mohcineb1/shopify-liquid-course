@@ -1,0 +1,18 @@
+<div class="header-account">
+  {% if shop.customer_accounts_enabled %}
+    <shopify-account menu="{{ section.settings.customer_account_menu }}"></shopify-account>
+  {% endif %}
+  {% if customer %}
+    <span class="header-account__greeting">Hello, {{ customer.first_name | escape }}</span>
+  {% else %}
+    <span class="visually-hidden">Customer account menu</span>
+  {% endif %}
+</div>
+{% schema %}
+{
+  "name": "Header account",
+  "settings": [
+    { "type": "link_list", "id": "customer_account_menu", "label": "Customer account menu", "default": "customer-account-main-menu" }
+  ]
+}
+{% endschema %}

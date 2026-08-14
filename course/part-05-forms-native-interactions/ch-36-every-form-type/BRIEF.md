@@ -6,7 +6,7 @@ unit: "Chapter 36"
 title: "Every Form Type"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 36 — Every Form Type
@@ -15,15 +15,15 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 36.1 `product` — add to cart, quantity, properties, selling plans
-- [ ] 36.2 `cart` — update, note, attributes, checkout
-- [ ] 36.3 `customer_login`, `create_customer`, `recover_customer_password`, `reset_customer_password`, `activate_customer_password`
-- [ ] 36.4 `customer_address` — country/province selectors
-- [ ] 36.5 `contact` and `customer` (newsletter)
-- [ ] 36.6 `new_comment`
-- [ ] 36.7 `localization` — country and language selectors
-- [ ] 36.8 `guest_login`, `storefront_password`
-- [ ] 36.9 Gift card recipient forms
+- [x] 36.1 `product` — add to cart, quantity, properties, selling plans
+- [x] 36.2 `cart` — update, note, attributes, checkout
+- [x] 36.3 `customer_login`, `create_customer`, `recover_customer_password`, `reset_customer_password`, `activate_customer_password`
+- [x] 36.4 `customer_address` — country/province selectors
+- [x] 36.5 `contact` and `customer` (newsletter)
+- [x] 36.6 `new_comment`
+- [x] 36.7 `localization` — country and language selectors
+- [x] 36.8 `guest_login`, `storefront_password`
+- [x] 36.9 Gift card recipient forms
 
 ## Labs assigned to this unit
 

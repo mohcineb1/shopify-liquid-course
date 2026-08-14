@@ -1,0 +1,2 @@
+{% if form.posted_successfully? %}<p class="form-success" role="status">Your request was completed.</p>{% endif %}
+{% if form.errors %}<div class="form-errors" id="{{ key }}-errors" role="alert"><h2>Please correct the following</h2><ul>{% for error in form.errors %}<li>{% if error == 'form' %}{{ form.errors.messages[error] | escape }}{% else %}{{ form.errors.translated_fields[error] | escape }}: {{ form.errors.messages[error] | escape }}{% endif %}</li>{% endfor %}</ul></div>{% endif %}

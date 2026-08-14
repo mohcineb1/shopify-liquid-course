@@ -1,0 +1,21 @@
+{{ 'location.css' | asset_url | stylesheet_tag }}
+{% assign locations = section.settings.locations %}
+<section class="location-index page-width">
+  <h1>{{ section.settings.heading | escape }}</h1>
+  {% if locations != blank %}
+    <div class="location-grid">
+      {% for location in locations %}{% render 'location-card', location: location %}{% endfor %}
+    </div>
+  {% else %}
+    <p>No locations are available at this time.</p>
+  {% endif %}
+</section>
+{% schema %}
+{
+  "name": "Location index",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Our stores" },
+    { "type": "metaobject_list", "id": "locations", "label": "Locations", "metaobject_type": "store_location" }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,4 @@
+{% if field != blank %}
+  <dt>{{ label | escape }}</dt>
+  <dd>{{ field | metafield_tag }}</dd>
+{% endif %}

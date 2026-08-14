@@ -6,7 +6,7 @@ unit: "Chapter 33"
 title: "Metafields"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 33 — Metafields
@@ -15,13 +15,13 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 33.1 Definitions, namespaces, keys, and ownership types
-- [ ] 33.2 Every metafield type: single-line text, multi-line, rich text, integer, decimal, boolean, date, date_time, JSON, URL, color, rating, dimension, volume, weight, money, and every reference type
-- [ ] 33.3 List-type metafields and iteration
-- [ ] 33.4 Reference metafields: product, variant, collection, page, file, metaobject
-- [ ] 33.5 `metafield_tag` vs manual rendering vs `| metafield_text`
-- [ ] 33.6 Metafields in section settings via dynamic sources
-- [ ] 33.7 Designing a metafield schema a merchant can actually maintain
+- [x] 33.1 Definitions, namespaces, keys, and ownership types
+- [x] 33.2 Every metafield type: single-line text, multi-line, rich text, integer, decimal, boolean, date, date_time, JSON, URL, color, rating, dimension, volume, weight, money, and every reference type
+- [x] 33.3 List-type metafields and iteration
+- [x] 33.4 Reference metafields: product, variant, collection, page, file, metaobject
+- [x] 33.5 `metafield_tag` vs manual rendering vs `| metafield_text`
+- [x] 33.6 Metafields in section settings via dynamic sources
+- [x] 33.7 Designing a metafield schema a merchant can actually maintain
 
 ## Labs assigned to this unit
 

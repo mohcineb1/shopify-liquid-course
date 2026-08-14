@@ -6,7 +6,7 @@ unit: "Chapter 39"
 title: "Search & Suggest APIs"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 39 — Search & Suggest APIs
@@ -15,9 +15,9 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 39.1 The Predictive Search API and its resource types
-- [ ] 39.2 Rendering suggestions with a Liquid section instead of client templates
-- [ ] 39.3 Debouncing, keyboard navigation, ARIA combobox pattern
+- [x] 39.1 The Predictive Search API and its resource types
+- [x] 39.2 Rendering suggestions with a Liquid section instead of client templates
+- [x] 39.3 Debouncing, keyboard navigation, ARIA combobox pattern
 
 ## Labs assigned to this unit
 

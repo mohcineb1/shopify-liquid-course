@@ -1,0 +1,15 @@
+{% assign location = product.metafields.fulfillment.pickup_location.value | default: section.settings.location %}
+{% if location %}
+  <section class="product-pickup-location page-width">
+    <h2>Pickup location</h2>
+    {% render 'location-card', location: location %}
+  </section>
+{% endif %}
+{% schema %}
+{
+  "name": "Pickup location",
+  "settings": [
+    { "type": "metaobject", "id": "location", "label": "Fallback location", "metaobject_type": "store_location" }
+  ]
+}
+{% endschema %}

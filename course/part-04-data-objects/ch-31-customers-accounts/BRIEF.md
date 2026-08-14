@@ -6,7 +6,7 @@ unit: "Chapter 31"
 title: "Customers & Accounts"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 31 — Customers & Accounts
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 31.1 The `customer` object, `customer.orders`, addresses, tags
-- [ ] 31.2 Classic customer accounts vs new customer accounts — what still lives in your theme
-- [ ] 31.3 The `customers/*` templates and their objects
-- [ ] 31.4 Order, order line items, fulfillment, transaction objects
-- [ ] 31.5 Gating content by customer tag (and why it isn't security)
+- [x] 31.1 The `customer` object, `customer.orders`, addresses, tags
+- [x] 31.2 Classic customer accounts vs new customer accounts — what still lives in your theme
+- [x] 31.3 The `customers/*` templates and their objects
+- [x] 31.4 Order, order line items, fulfillment, transaction objects
+- [x] 31.5 Gating content by customer tag (and why it isn't security)
 
 ## Labs assigned to this unit
 

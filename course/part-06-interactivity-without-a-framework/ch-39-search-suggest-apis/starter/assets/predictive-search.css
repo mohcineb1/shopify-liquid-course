@@ -1,0 +1,3 @@
+[data-predictive-slot] { display: none; }
+[data-predictive-slot].is-open { display: block; }
+[role="option"][aria-selected="true"] { outline: .15rem solid currentColor; }

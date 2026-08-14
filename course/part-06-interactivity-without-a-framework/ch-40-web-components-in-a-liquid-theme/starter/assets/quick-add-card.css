@@ -1,0 +1,19 @@
+quick-add-card {
+  display: block;
+  margin-block-start: 1rem;
+}
+
+quick-add-card [data-confirmation][hidden] {
+  display: none;
+}
+
+quick-add-card [data-confirmation] {
+  border-inline-start: 0.25rem solid currentColor;
+  margin-block-start: 0.75rem;
+  padding-inline-start: 0.75rem;
+}
+
+quick-add-card button:focus-visible {
+  outline: 0.2rem solid currentColor;
+  outline-offset: 0.2rem;
+}

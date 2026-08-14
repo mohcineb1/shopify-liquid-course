@@ -1,0 +1,1 @@
+document.querySelector('[data-predictive-input]')?.addEventListener('input', (event) => { fetch(`/search/suggest.json?q=${event.target.value}`).then((r) => r.json()).then((data) => { document.querySelector('[data-predictive-slot]').innerHTML = data.resources.results.products.map((p) => `<a href="${p.url}">${p.title}</a>`).join(''); }); });

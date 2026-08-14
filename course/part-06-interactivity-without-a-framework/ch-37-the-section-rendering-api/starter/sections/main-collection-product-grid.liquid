@@ -1,0 +1,2 @@
+<section id="shopify-section-{{ section.id }}" data-section-id="{{ section.id }}" class="collection-results"><p data-result-count>{{ collection.products_count }} products</p><div data-product-grid>{% paginate collection.products by 24 %}{% for product in collection.products %}<article>{{ product.title }}</article>{% endfor %}{{ paginate | default_pagination }}{% endpaginate %}</div></section>
+{% schema %}{ "name": "Collection grid", "settings": [] }{% endschema %}

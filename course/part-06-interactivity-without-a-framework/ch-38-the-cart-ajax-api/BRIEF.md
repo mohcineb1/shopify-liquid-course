@@ -6,7 +6,7 @@ unit: "Chapter 38"
 title: "The Cart AJAX API"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 38 — The Cart AJAX API
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 38.1 Every endpoint: `/cart.js`, `/cart/add.js`, `/cart/change.js`, `/cart/update.js`, `/cart/clear.js`
-- [ ] 38.2 Sections parameter on cart endpoints — the combined pattern
-- [ ] 38.3 Optimistic UI and rollback
-- [ ] 38.4 Error shapes, sold-out handling, quantity rules
-- [ ] 38.5 Cart state as a pub/sub layer across components
+- [x] 38.1 Every endpoint: `/cart.js`, `/cart/add.js`, `/cart/change.js`, `/cart/update.js`, `/cart/clear.js`
+- [x] 38.2 Sections parameter on cart endpoints — the combined pattern
+- [x] 38.3 Optimistic UI and rollback
+- [x] 38.4 Error shapes, sold-out handling, quantity rules
+- [x] 38.5 Cart state as a pub/sub layer across components
 
 ## Labs assigned to this unit
 

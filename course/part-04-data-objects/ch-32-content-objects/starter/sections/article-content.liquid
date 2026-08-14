@@ -1,0 +1,9 @@
+<article class="article-content">
+  <h1>{{ article.title }}</h1>
+  <div>{{ article.content | escape }}</div>
+  <div data-callout="{{ article.metafields.editorial.callout.value }}"></div>
+  <section><h2>Comments</h2>{% for comment in article.comments %}<p>{{ comment.content }}</p>{% endfor %}</section>
+</article>
+{% schema %}
+{ "name": "Article content", "settings": [] }
+{% endschema %}

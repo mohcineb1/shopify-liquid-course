@@ -1,0 +1,3 @@
+.facets, .collection-results { display: grid; gap: 1rem; }
+.is-loading { opacity: .65; }
+.collection-update-status, .collection-update-error { border-left: .25rem solid currentColor; padding: .75rem; }

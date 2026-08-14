@@ -1,0 +1,4 @@
+.article-content, .search-results { display: grid; gap: 1rem; }
+.search-results__grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); list-style: none; padding: 0; }
+.predictive-results__group { display: grid; gap: .5rem; }
+.content-empty { border: 1px solid currentColor; padding: 1rem; }

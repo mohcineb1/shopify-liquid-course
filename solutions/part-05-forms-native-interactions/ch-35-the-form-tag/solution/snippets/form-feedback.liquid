@@ -1,0 +1,19 @@
+{% if form.posted_successfully? %}
+  <p class="form-success" role="status">Thanks — your request was sent.</p>
+{% endif %}
+{% if form.errors %}
+  <div class="form-errors" id="{{ form_key }}-errors" role="alert" tabindex="-1">
+    <h3>There was a problem with your submission</h3>
+    <ul>
+      {% for error in form.errors %}
+        <li>
+          {% if error == 'form' %}
+            {{ form.errors.messages[error] | escape }}
+          {% else %}
+            <a href="#{{ form_key }}-{{ error }}">{{ form.errors.translated_fields[error] | escape }}: {{ form.errors.messages[error] | escape }}</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}

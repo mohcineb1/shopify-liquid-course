@@ -1,0 +1,5 @@
+<h1>Search results</h1>
+{% if search.results_count == 0 %}<p>No results.</p>{% endif %}
+{% for result in search.results %}
+  <article><a href="{{ result.url }}">{{ result.title }}</a><p>{{ result.price | money }}</p>{{ result.featured_image | image_url: width: 300 | image_tag }}</article>
+{% endfor %}

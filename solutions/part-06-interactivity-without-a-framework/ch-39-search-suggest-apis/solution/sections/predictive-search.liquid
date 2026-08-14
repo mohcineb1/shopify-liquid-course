@@ -1,0 +1,19 @@
+{%- if predictive_search.performed -%}
+  <div id="predictive-search-results">
+    {%- assign option_index = 0 -%}
+    {%- if predictive_search.resources.queries.size > 0 -%}
+      <h2 id="PredictiveQueries">Suggested searches</h2><ul role="listbox" aria-labelledby="PredictiveQueries">
+      {%- for query in predictive_search.resources.queries -%}{%- assign option_index = option_index | plus: 1 -%}<li id="PredictiveOption-{{ option_index }}" role="option" aria-selected="false"><a href="{{ query.url }}">{{ query.text | escape }}</a></li>{%- endfor -%}</ul>
+    {%- endif -%}
+    {%- if predictive_search.resources.collections.size > 0 -%}
+      <h2 id="PredictiveCollections">Collections</h2><ul role="listbox" aria-labelledby="PredictiveCollections">
+      {%- for collection in predictive_search.resources.collections -%}{%- assign option_index = option_index | plus: 1 -%}<li id="PredictiveOption-{{ option_index }}" role="option" aria-selected="false"><a href="{{ collection.url }}">{{ collection.title | escape }}</a></li>{%- endfor -%}</ul>
+    {%- endif -%}
+    {%- if predictive_search.resources.products.size > 0 -%}
+      <h2 id="PredictiveProducts">Products</h2><ul role="listbox" aria-labelledby="PredictiveProducts">
+      {%- for product in predictive_search.resources.products -%}{%- assign option_index = option_index | plus: 1 -%}<li id="PredictiveOption-{{ option_index }}" role="option" aria-selected="false"><a href="{{ product.url }}">{{ product.title | escape }}</a></li>{%- endfor -%}</ul>
+    {%- endif -%}
+    {%- if option_index == 0 -%}<p>No suggestions. Submit search for all results.</p>{%- endif -%}
+  </div>
+{%- endif -%}
+{% schema %}{ "name": "Predictive search", "settings": [] }{% endschema %}

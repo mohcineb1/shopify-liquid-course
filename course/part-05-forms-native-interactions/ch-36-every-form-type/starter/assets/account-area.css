@@ -1,0 +1,3 @@
+.account-area, .newsletter-consent { display: grid; gap: 1rem; max-width: 42rem; }
+.account-area form, .newsletter-consent form { display: grid; gap: .5rem; }
+.form-errors { border-left: .25rem solid currentColor; padding: 1rem; }

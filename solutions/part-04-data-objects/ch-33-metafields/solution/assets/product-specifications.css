@@ -1,0 +1,6 @@
+.product-specifications { display: grid; gap: 1rem; }
+.product-specifications dl { display: grid; grid-template-columns: minmax(10rem, 1fr) 2fr; gap: .75rem 1rem; margin: 0; }
+.product-specifications dt { font-weight: 700; }
+.product-specifications dd { margin: 0; }
+.product-specifications__related { display: grid; gap: .5rem; }
+.product-specifications__empty { border: 1px solid currentColor; padding: 1rem; }

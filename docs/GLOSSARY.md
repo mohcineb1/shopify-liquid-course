@@ -182,3 +182,68 @@ use; never introduce a synonym for something already listed.
 | Discount allocation | The amount and discount application showing how a discount affects an item or cart context. | ch-30 |
 | Final line price | The current unit or aggregate line price after line-level discounts, distinct from original price fields. | ch-30 |
 | Commerce authority boundary | The distinction between theme display/intent capture and the backend rules that validate pricing, promotions, bundles, and checkout eligibility. | ch-30 |
+| Customer context | A Liquid context in which a customer object is defined, generally because the customer is logged in or the template/object explicitly carries customer data. | ch-31 |
+| Latest customer accounts | Shopify-controlled customer-account experience extended through supported components and customer account UI extensions rather than theme Liquid account pages. | ch-31 |
+| Legacy account template | A `customers/*` Liquid template used by legacy customer accounts; it is a maintenance surface, not the default path for new account work after deprecation. | ch-31 |
+| Account component | The Shopify-controlled `<shopify-account>` web component that exposes a header account menu and current sign-in/account experience. | ch-31 |
+| Order-history disclosure | The deliberate rendering of buyer-relevant historic order data without exposing payment receipts, operational data, or current-product assumptions. | ch-31 |
+| Presentation gate | A customer-state or tag-based UI condition that changes what is shown but does not enforce authorization. | ch-31 |
+| Content-object contract | The object-specific fields, lifecycle, and semantic rendering rules that distinguish articles, pages, comments, blogs, and search results. | ch-32 |
+| Rich-text rendering boundary | The rule that structured Shopify rich content uses its type-aware rendering contract while external or untrusted text never gains arbitrary HTML execution. | ch-32 |
+| Editorial taxonomy | Navigable content classification, such as article tags, owned by the blog/archive result state rather than a client-side subset. | ch-32 |
+| Result shaping | Selecting a type-appropriate, bounded set of fields for a result surface rather than forcing every resource into one data model. | ch-32 |
+| Predictive-search context | The section/API rendering context in which the `predictive_search` object is populated for a query. | ch-32 |
+| Full-search recovery | An ordinary full-search route available when a compact suggestion surface is incomplete or client enhancement fails. | ch-32 |
+| Metafield definition | The typed, validated merchant-data contract that names an owner resource, namespace/key, and intended value model. | ch-33 |
+| Owner type | The Shopify resource class to which a metafield definition/value belongs, such as product, variant, collection, page, or metaobject. | ch-33 |
+| Namespace/key contract | The stable two-part Liquid access path of a metafield, treated as a theme and integration API rather than a cosmetic label. | ch-33 |
+| Reference list | A list metafield whose values resolve to Shopify resource objects and whose documented length is obtained with `count`. | ch-33 |
+| Type-aware renderer | A deliberate output method, such as `metafield_tag`, that respects the type and semantic representation of a metafield. | ch-33 |
+| Dynamic source | A compatible resource attribute, metafield, or visible metaobject field bound to a section or block setting in the theme editor. | ch-33 |
+| Schema migration | A planned change from one merchant-data definition/model to another that preserves or deliberately retires consumers and values. | ch-33 |
+| Metaobject definition | The reusable schema and capability contract defining fields, validation, and lifecycle for a class of structured merchant content. | ch-34 |
+| Metaobject entry | One record of a metaobject definition, containing typed field values and a unique handle. | ch-34 |
+| Entry handle | The unique identifier used with a metaobject definition type to access a specific entry in Liquid. | ch-34 |
+| Publishable entry | A metaobject entry eligible for storefront output according to its definition capability and active publication state. | ch-34 |
+| Metaobject template | A reusable theme template whose `metaobject` object is the entry currently rendered for a metaobject page. | ch-34 |
+| Embedded entity | A structured record rendered inside another resource/page rather than as its own canonical route. | ch-34 |
+| Entity lifecycle | The planned draft, review, publication, reference, update, and retirement process for structured content records. | ch-34 |
+| Native form contract | Shopify’s form-type-specific endpoint, generated fields, submission protocol, and returned server state created by the Liquid `form` tag. | ch-35 |
+| Generated form field | A hidden or type-specific input emitted by Shopify’s `form` tag that should survive theme customization. | ch-35 |
+| Form return state | The documented post-render form values, errors, and success information supplied through the `form` object. | ch-35 |
+| Translated error field | The localized field name accessed from `form.errors.translated_fields` for an error category. | ch-35 |
+| Error summary | An accessible early-form message group that identifies submission problems and links to associated controls where possible. | ch-35 |
+| Progressive form baseline | A native, no-JavaScript-capable form workflow retained as the functional and recovery path for enhancements. | ch-35 |
+| Form-family decision | Selecting a native Shopify form by intended server workflow, required context, and field contract rather than visual similarity. | ch-36 |
+| Resource-bound form | A native form type that requires a Shopify object such as product, cart, article, or address to establish its transaction context. | ch-36 |
+| Line item property | Buyer-supplied contextual data submitted as `properties[...]` with a product form and attached to the resulting cart line. | ch-36 |
+| Cart attribute | Cart-level buyer/context data submitted as `attributes[...]`, distinct from a line item property or cart note. | ch-36 |
+| Form context | The template/resource/account/merchant configuration in which a particular native form type is valid and meaningful. | ch-36 |
+| Recipient-property workflow | The documented gift-card delivery flow that submits recipient data as required product-form line item properties. | ch-36 |
+| Native form evidence | Recorded rendered-markup and behavior checks proving a form remains aligned with its expected Shopify server contract. | ch-36 |
+| Section-response contract | The explicit URL, requested section IDs, response shape, DOM roots, null/error handling, and recovery behavior for a partial server-render update. | ch-37 |
+| Dynamic section ID | The rendered instance identifier Shopify assigns to a section in a JSON template or section group, distinct from its section type/file name. | ch-37 |
+| Partial-update transaction | The ordered request, validation, parse, coherent DOM commit, restoration, history, and recovery lifecycle of a section update. | ch-37 |
+| Stale response | A valid response whose requested UI state has been superseded by a later interaction and must not mutate the current DOM. | ch-37 |
+| Root replacement | Replacing a validated stable section root with its server-rendered counterpart rather than splicing unverified inner markup. | ch-37 |
+| Current-request token | A monotonically increasing request identity used to reject a response that is no longer current after asynchronous overlap. | ch-37 |
+| Native navigation fallback | The ordinary URL/form behavior preserved as accessible recovery when a partial JavaScript update fails or is unavailable. | ch-37 |
+| Cart transition | A named, ordered cart mutation lifecycle from intent through server reconciliation, UI commit, subscriber notification, and failure recovery. | ch-38 |
+| Mutation coordinator | The single theme-side module that executes cart mutations, validates/reconciles responses, and publishes confirmed changes. | ch-38 |
+| Bundled section response | A cart-mutation response that includes updated cart data and requested rendered sections from the same server-side transition. | ch-38 |
+| Confirmed cart state | Cart data or rendered cart UI accepted from a current authoritative Shopify response, not a user-action prediction. | ch-38 |
+| Optimistic snapshot | The prior confirmed UI/state retained so a temporary cart prediction can reconcile or roll back safely. | ch-38 |
+| Line-key volatility | The fact that a cart line key can change when its characteristics, such as properties or discounts, change. | ch-38 |
+| Cart subscriber | An independently owned component that renders a confirmed cart transition without issuing its own competing cart mutation. | ch-38 |
+| Predictive resource scope | The intentionally selected predictive resource types, limits, limit distribution, and availability policy for a suggestion request. | ch-39 |
+| Suggestion lifecycle | The explicit idle, pending, open, empty, error/unavailable, and committed-navigation states of predictive search. | ch-39 |
+| Server-rendered suggestion slot | A stable browser container whose content is supplied by a Liquid section rendered with the `predictive_search` object. | ch-39 |
+| Active descendant | The `aria-activedescendant` relationship that exposes the current combobox option while focus stays in the input. | ch-39 |
+| Request throttle recovery | The behavior that reduces/refrains from predictive requests and preserves full search after a 429 response. | ch-39 |
+| Search submission fallback | The ordinary localized search-form submission retained when prediction is disabled, unavailable, empty, or fails. | ch-39 |
+| Component boundary | The server-rendered DOM region whose interactive behavior is owned by one custom-element instance. | ch-40 |
+| Connection lifecycle | The `connectedCallback()` and `disconnectedCallback()` transitions for a particular custom-element instance. | ch-40 |
+| Editor adapter | Small document-level code that translates a Shopify theme-editor event into a narrow component method. | ch-40 |
+| Light-DOM default | The decision to preserve ordinary theme DOM and its extension contracts unless Shadow DOM has a specific tested benefit. | ch-40 |
+| Attribute configuration | Escaped scalar Liquid settings passed from server markup to a component through HTML attributes. | ch-40 |
+| Interaction island | A local enhanced interaction whose HTML baseline remains useful without its JavaScript. | ch-40 |

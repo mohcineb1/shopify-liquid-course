@@ -6,7 +6,7 @@ unit: "Chapter 32"
 title: "Content Objects"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 32 — Content Objects
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 32.1 `blog`, `article`, `comment`, `page`
-- [ ] 32.2 Rich text output, `metafield_tag`, and sanitising merchant HTML
-- [ ] 32.3 Blog tagging, filtering, and archive patterns
-- [ ] 32.4 The `search` object, result types, and search result templates
-- [ ] 32.5 Predictive search resources and result shaping
+- [x] 32.1 `blog`, `article`, `comment`, `page`
+- [x] 32.2 Rich text output, `metafield_tag`, and sanitising merchant HTML
+- [x] 32.3 Blog tagging, filtering, and archive patterns
+- [x] 32.4 The `search` object, result types, and search result templates
+- [x] 32.5 Predictive search resources and result shaping
 
 ## Labs assigned to this unit
 

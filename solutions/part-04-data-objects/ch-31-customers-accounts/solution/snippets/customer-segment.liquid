@@ -1,0 +1,6 @@
+{% if customer and customer.tags contains 'wholesale' %}
+  <aside class="customer-segment" aria-label="Account information">
+    <p>Wholesale account detected. Eligible catalog access and pricing are determined by Shopify and your account configuration.</p>
+    <a href="{{ routes.contact_url }}">Contact trade support</a>
+  </aside>
+{% endif %}

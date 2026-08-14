@@ -1,0 +1,13 @@
+<section class="contact-inquiry" id="contact-inquiry">
+  <h2>{{ section.settings.heading }}</h2>
+  <p id="ContactErrors" class="form-errors" hidden>Something went wrong.</p>
+  <p id="ContactSuccess" class="form-success" hidden>Thanks — your request was sent.</p>
+  <form method="post" action="/contact" id="ContactForm" class="contact-form" data-contact-form>
+    <label for="ContactEmail">Email</label><input id="ContactEmail" name="email" type="email">
+    <label for="ContactBody">Message</label><textarea id="ContactBody" name="message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+{% schema %}
+{ "name": "Contact inquiry", "settings": [{ "type": "text", "id": "heading", "label": "Heading", "default": "Get in touch" }] }
+{% endschema %}

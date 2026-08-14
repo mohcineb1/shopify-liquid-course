@@ -1,0 +1,29 @@
+{{ 'contact-inquiry.css' | asset_url | stylesheet_tag }}
+{% assign form_key = 'ContactInquiry-' | append: section.id %}
+<section class="contact-inquiry" id="{{ form_key }}-section">
+  <h2>{{ section.settings.heading | escape }}</h2>
+  {% form 'contact', id: form_key, class: 'contact-form', data-contact-form: 'true', data-section-id: section.id %}
+    {% render 'form-feedback', form: form, form_key: form_key %}
+    <div class="contact-form__field">
+      <label for="{{ form_key }}-email">Email</label>
+      <input id="{{ form_key }}-email" name="contact[email]" type="email" value="{{ form.email | escape }}" autocomplete="email" required{% if form.errors contains 'email' %} aria-invalid="true" aria-describedby="{{ form_key }}-email-error"{% endif %}>
+      {% if form.errors contains 'email' %}<p id="{{ form_key }}-email-error">{{ form.errors.messages.email | escape }}</p>{% endif %}
+    </div>
+    <div class="contact-form__field">
+      <label for="{{ form_key }}-body">Message</label>
+      <textarea id="{{ form_key }}-body" name="contact[body]" required{% if form.errors contains 'body' %} aria-invalid="true" aria-describedby="{{ form_key }}-body-error"{% endif %}>{{ form.body | escape }}</textarea>
+      {% if form.errors contains 'body' %}<p id="{{ form_key }}-body-error">{{ form.errors.messages.body | escape }}</p>{% endif %}
+    </div>
+    {% if section.settings.topic != blank %}<input type="hidden" name="contact[Topic]" value="{{ section.settings.topic | escape }}">{% endif %}
+    <button type="submit">Send</button>
+  {% endform %}
+</section>
+{% schema %}
+{
+  "name": "Contact inquiry",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Get in touch" },
+    { "type": "text", "id": "topic", "label": "Inquiry topic" }
+  ]
+}
+{% endschema %}

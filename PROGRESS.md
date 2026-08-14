@@ -757,3 +757,212 @@ Entry format:
 - flagged: `[VERIFY]` for cart form/update behavior, component/instruction support, property uploads, discount display, and backend gift/bundle configuration.
 - decided: required the exercise to preserve Shopify cart authority, distinguish cart and line scope, and prohibit browser-controlled gift pricing.
 - next: ch-30 solution
+## 2026-08-14 · ch-30 · solution
+- wrote: `solutions/part-04-data-objects/ch-30-cart-line-items/solution.md` with mirrored cart section, row snippet, styles, and verification notes.
+- verified: used current final prices, allocation objects, cart-level applications, line keys, and scope boundaries rather than deprecated cart/line discount fields.
+- decided: left gift and bundle eligibility/pricing with backend commerce rules and treated the theme as an honest current-state renderer.
+- next: ch-30 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-30 · review
+- reviewed: passed all six numbered cart topics in order, scope limits, official-source flags, exercise solvability, terminology, calibration floor, and starter/solution parity.
+- verified: retained uncertainty flags for cart integration, component support, property uploads, and backend commerce configuration.
+- decided: applied final markers only; no solution-derived implementation was transferred into lesson or exercise content.
+- next: ch-31 lesson
+## 2026-08-14 · ch-31 · lesson
+- wrote: `course/part-04-data-objects/ch-31-customers-accounts/lesson.md` covering customer data, account surfaces, templates, orders, transactions, and tag-gating limits.
+- verified: consulted current Shopify customer/order/transaction docs plus 2026 legacy-account deprecation and account-component requirements.
+- decided: framed legacy Liquid account pages as maintenance-only and tags strictly as presentation—not authorization.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-31 exercise
+## 2026-08-14 · ch-31 · exercise
+- wrote: `course/part-04-data-objects/ch-31-customers-accounts/exercise.md` with header, legacy order, segment, style, and verification starter files.
+- flagged: `[VERIFY]` for account mode, account-component/menu support, legacy template activation, extension ownership, and B2B authorization.
+- decided: required a supported latest-account header integration and defined tags as presentation-only instead of access control.
+- next: ch-31 solution
+## 2026-08-14 · ch-31 · solution
+- wrote: `solutions/part-04-data-objects/ch-31-customers-accounts/solution.md` with mirrored header, legacy order, segment, styles, and account-mode verification files.
+- verified: preserved current account-component ownership, buyer-safe order history, and a strict tag-presentation/authorization boundary.
+- decided: kept latest account work on Shopify component/extension surfaces while retaining the order template only for legacy maintenance.
+- next: ch-31 review; do not add solution-derived implementation to the lesson or exercise.
+## 2026-08-14 · ch-31 · review
+- reviewed: passed all five numbered customer-account topics in order, source flags, scope limits, exercise solvability, terminology, calibration floor, and starter/solution parity.
+- verified: retained the 2026 legacy-account deprecation and account-component boundary without overclaiming Liquid control over latest account pages.
+- decided: applied final markers only; no solution implementation was transferred into lesson or exercise content.
+- next: ch-32 lesson
+## 2026-08-14 · ch-32 · lesson
+- wrote: `course/part-04-data-objects/ch-32-content-objects/lesson.md` covering content objects, rich text, archives, full search, and predictive search.
+- verified: consulted current official Shopify article, search, predictive-search, and metafield_tag references; cited their type, pagination, and context limits.
+- decided: treated content/search output as type-aware server state with a full-search recovery path rather than a generic client data cache.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-32 exercise
+## 2026-08-14 · ch-32 · exercise
+- wrote: `course/part-04-data-objects/ch-32-content-objects/exercise.md` with article, search, archive, predictive, styles, and verification starter files.
+- flagged: `[VERIFY]` for tag routes, comment workflow, metafield support, Predictive Search request context, and localization behavior.
+- decided: required server-navigable archive/search behavior and prevented raw rich content from crossing into browser injection paths.
+- next: ch-32 solution
+## 2026-08-14 · ch-32 · solution
+- wrote: `solutions/part-04-data-objects/ch-32-content-objects/solution.md` with mirrored article, full-search, archive, predictive, style, and verification files.
+- verified: used type-aware rich text, object-type branches, server archive state, and predictive section context with a full-search route.
+- decided: kept browser interaction out of the answer and retained complete server-rendered content/search recovery surfaces.
+- next: ch-32 review; do not add solution-derived implementation to the lesson or exercise.
+## 2026-08-14 · ch-32 · review
+- reviewed: passed all five numbered content-object topics in order, source flags, scope limits, exercise solvability, terminology, calibration floor, and starter/solution parity.
+- verified: retained documented `metafield_tag`, search, and predictive-search context boundaries; no raw merchant/external HTML path was introduced.
+- decided: applied final markers only; no solution implementation was transferred into lesson or exercise content.
+- next: ch-33 lesson
+## 2026-08-14 · ch-33 · lesson
+- wrote: `course/part-04-data-objects/ch-33-metafields/lesson.md` covering definitions, every requested type family, lists, references, rendering choices, dynamic sources, and maintainable schema design.
+- verified: consulted current Shopify metafield object, renderer filters, and dynamic-source documentation, including list and binding limits.
+- decided: centered the lesson on typed owner contracts and merchant workflow rather than treating metafields as unstructured page-slot text.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-33 exercise
+## 2026-08-14 · ch-33 · exercise
+- wrote: `course/part-04-data-objects/ch-33-metafields/exercise.md` and substantive product-specifications, spec-row, styles, and schema-verification starter files for Lab 12.
+- flagged: `[VERIFY]` for definition validation, reference/file availability, selected-variant context, dynamic-source compatibility, and locale/market behavior.
+- decided: required replacement of delimiter parsing with typed product/variant definitions and an explicit merchant-maintainable inventory.
+- next: ch-33 solution
+## 2026-08-14 · ch-33 · solution
+- wrote: `solutions/part-04-data-objects/ch-33-metafields/solution.md` with mirrored specification section, guarded row snippet, styles, and a definition/test inventory.
+- verified: separated product from variant ownership, used reference-list `count`, bracket access for a collision key, type-aware output, and contextual dynamic-source guidance.
+- decided: modeled the table as typed definitions rather than a delimiter format and directed reusable multi-field rows toward metaobjects.
+- next: ch-33 review; do not add solution-derived implementation to lesson or exercise content.
+## 2026-08-14 · ch-33 · review
+- reviewed: passed all seven numbered metafield topics in order, source flags, scope limits, exercise solvability, terminology, calibration floor, and starter/solution parity.
+- verified: retained modern metafield versus deprecated-type distinction, list count/size behavior, filter support boundaries, and contextual dynamic-source limits.
+- decided: applied final markers only; no solution implementation was transferred into lesson or exercise content.
+- next: ch-34 lesson
+## 2026-08-14 · ch-34 · lesson
+- wrote: `course/part-04-data-objects/ch-34-metaobjects/lesson.md` covering definitions/entries, Liquid rendering, routes/templates, content models, modeling choices, settings references, and lifecycle governance.
+- verified: consulted current Shopify metaobject Liquid, Web pages, dynamic-source, storefront-access, and publication behavior documentation.
+- decided: treated metaobjects as reusable entities with ownership and lifecycle rather than generic page replacements.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-34 exercise
+## 2026-08-14 · ch-34 · exercise
+- wrote: `course/part-04-data-objects/ch-34-metaobjects/exercise.md` with location-index, product pickup, card, styles, and definition/lifecycle verification starter files.
+- flagged: `[VERIFY]` for storefront access, Web pages capability, entry status, settings compatibility, and SEO/route configuration.
+- decided: framed locations as reusable entities with a single model rather than copied pages and product-level field duplication.
+- next: ch-34 solution
+## 2026-08-14 · ch-34 · solution
+- wrote: `solutions/part-04-data-objects/ch-34-metaobjects/solution.md` with mirrored location index, product pickup, card, dedicated metaobject template, style, and lifecycle-definition files.
+- verified: guarded entry and field availability, used resource relation versus merchant setting deliberately, and retained admin-owned Web pages/entry publication configuration.
+- decided: separated reusable entity content from page layout and directed routes through one metaobject template rather than copied files.
+- next: ch-34 review; do not add solution-derived implementation to lesson or exercise content.
+## 2026-08-14 · ch-34 · review
+- reviewed: passed all six numbered metaobject topics in order, source flags, scope limits, exercise solvability, terminology, calibration floor, and starter/solution parity.
+- verified: retained storefront-access, publishable-entry, dedicated-template, and compatible-setting boundaries without overclaiming route availability.
+- decided: applied final markers only; no solution implementation was transferred into lesson or exercise content.
+- next: ch-35 lesson
+## 2026-08-14 · ch-35 · lesson
+- wrote: `course/part-05-forms-native-interactions/ch-35-the-form-tag/lesson.md` covering native generation, return states, translated accessible errors, and HTML/return-path attributes.
+- verified: consulted the current Shopify form tag, form object, and form_errors references, including the deprecated currency-form replacement.
+- decided: made the generated native form the implementation baseline and treated error/success output as a server-state accessibility concern.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-35 exercise
+## 2026-08-14 · ch-35 · exercise
+- wrote: `course/part-05-forms-native-interactions/ch-35-the-form-tag/exercise.md` with native-contact, feedback, style, and verification starter files.
+- flagged: `[VERIFY]` for contact validation, translated server errors, delivery workflow, rendered fields, and focus behavior in the target store.
+- decided: required a server-confirmed accessible native-form baseline rather than a click-driven visual confirmation.
+- next: ch-35 solution
+## 2026-08-14 · ch-35 · solution
+- wrote: `solutions/part-05-forms-native-interactions/ch-35-the-form-tag/solution.md` with mirrored scoped contact section, translated feedback snippet, styles, and native-protocol verification record.
+- verified: preserved native generated fields, server-confirmed success/error state, scoped error associations, safe value restoration, and no-JavaScript recovery.
+- decided: treated form transport as Shopify-owned and limited the theme contract to accessible controls, presentation, and minimal enhancement hooks.
+- next: ch-35 review; do not add solution-derived implementation to lesson or exercise content.
+## 2026-08-14 · ch-35 · review
+- reviewed: passed all four numbered native-form topics in order, source flags, scope limits, exercise solvability, terminology, calibration floor, and starter/solution parity.
+- verified: retained documented generated-field, form-state, translated-error, deprecated-currency, and attribute boundaries.
+- decided: applied final markers only; no solution implementation was transferred into lesson or exercise content.
+- next: ch-36 lesson
+## 2026-08-14 · ch-36 · lesson
+- wrote: `course/part-05-forms-native-interactions/ch-36-every-form-type/lesson.md` covering every required native form family, form context, data scopes, account-mode caveats, localization, and gift-card recipients.
+- verified: consulted current Shopify form, email-consent, gift-card recipient, template, and legacy-account references.
+- decided: organized implementation choice around intended server outcomes and native recovery testing rather than visual form patterns.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-36 exercise
+## 2026-08-14 · ch-36 · exercise
+- wrote: `course/part-05-forms-native-interactions/ch-36-every-form-type/exercise.md` with legacy-account login/register/address, newsletter, feedback, style, and form-evidence starter files for Lab 13.
+- flagged: `[VERIFY]` for account mode, legacy templates, guest flow, account errors, address selectors, and migration plan.
+- decided: constrained the exercise to verified legacy account maintenance and made latest-account migration a documented boundary.
+- next: ch-36 solution
+## 2026-08-14 · ch-36 · solution
+- wrote: `solutions/part-05-forms-native-interactions/ch-36-every-form-type/solution.md` with mirrored legacy login/register/address, newsletter, feedback, styles, and native form/migration evidence files.
+- verified: separated account, recovery, guest, address, and newsletter form contexts; kept passwords non-restored and legacy-account deployment conditional.
+- decided: made a verified no-JavaScript legacy maintenance baseline the prerequisite for an eventual account-component migration.
+- next: ch-36 review; do not add solution-derived implementation to lesson or exercise content.
+## 2026-08-14 · ch-36 · review
+- reviewed: passed all nine numbered native-form topics in order, source flags, scope limits, exercise solvability, terminology, calibration floor, and starter/solution parity.
+- verified: retained product/cart data scope, legacy-account constraints, contextual address behavior, localization replacement, and gift-card recipient limits.
+- decided: applied final markers only; no solution implementation was transferred into lesson or exercise content.
+- next: ch-37 lesson
+## 2026-08-14 · ch-37 · lesson
+- wrote: `course/part-06-interactivity-without-a-framework/ch-37-the-section-rendering-api/lesson.md` covering request forms, context, filters/cart/pagination, response/root swapping, stale safety, and cost model.
+- verified: consulted current Shopify Section Rendering, Cart API, and storefront-filtering documentation for response/null/limit/locale contracts.
+- decided: framed partial updates as a progressive, URL-driven transaction with cancellation and coherent fallback rather than an unstructured fetch-and-innerHTML pattern.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-37 exercise
+## 2026-08-14 · ch-37 · exercise
+- wrote: `course/part-06-interactivity-without-a-framework/ch-37-the-section-rendering-api/exercise.md` with facets/grid, unsafe update script, styles, and response-contract verification starter files.
+- flagged: `[VERIFY]` for real dynamic IDs, published response behavior, locale root, form URL, and null sections in the target theme.
+- decided: required coherent current-state commits and native navigation fallback instead of unrelated innerHTML updates.
+- next: ch-37 solution
+## 2026-08-14 · ch-37 · solution
+- wrote: `solutions/part-06-interactivity-without-a-framework/ch-37-the-section-rendering-api/solution.md` with mirrored facets/grid, race-safe request script, styles, and response-contract verification record.
+- verified: retained URL/context fidelity, full response/root validation, coherent commits, locale awareness, cancellation/token guards, history timing, and cart boundary.
+- decided: used full validated root replacement with native navigation fallback rather than partial unvalidated DOM injection.
+- next: ch-37 review; do not add solution-derived implementation to lesson or exercise content.
+## 2026-08-14 · ch-37 · review
+- reviewed: passed all five Section Rendering API topics in order, source flags, scope limits, exercise solvability, terminology, calibration floor, and starter/solution parity.
+- verified: retained current section response shapes, null handling, locale/context behavior, race guards, and partial-render cost boundary.
+- decided: applied final markers only; no solution implementation was transferred into lesson or exercise content.
+- next: ch-38 lesson
+## 2026-08-14 · ch-38 · lesson
+- wrote: `course/part-06-interactivity-without-a-framework/ch-38-the-cart-ajax-api/lesson.md` covering every Cart API endpoint, bundled sections, optimistic reconciliation, errors/rules, and confirmed cart pub/sub.
+- verified: consulted current Shopify Ajax and Cart API documentation for locale, endpoint, line-key, JSON-error, and server-authority contracts.
+- decided: made the mutation response the sole reconciliation point and constrained pub/sub to confirmed server transitions.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-38 exercise
+## 2026-08-14 · ch-38 · exercise
+- wrote: `course/part-06-interactivity-without-a-framework/ch-38-the-cart-ajax-api/exercise.md` with cart drawer/count, competing behavior, styles, and transition-evidence starter files.
+- flagged: `[VERIFY]` for target cart payloads, key changes, bundled sections/context, quantity/inventory errors, and null sections.
+- decided: required one coordinator to publish confirmed server transitions after response/section reconciliation.
+- next: ch-38 solution
+## 2026-08-14 · ch-38 · solution
+- wrote: `solutions/part-06-interactivity-without-a-framework/ch-38-the-cart-ajax-api/solution.md` with mirrored drawer/count, locale-aware bundled mutation coordinator, styles, and confirmed-transition verification record.
+- verified: retained native form fallback, current line-key targeting, response/root validation, error reconciliation, server-authoritative cart state, and confirmed subscriber publication.
+- decided: assigned all cart writes to one coordinator and treated bundled response handling as the commit boundary.
+- next: ch-38 review; do not add solution-derived implementation to lesson or exercise content.
+## 2026-08-14 · ch-38 · review
+- reviewed: passed all five Cart AJAX API topics in order, source flags, scope limits, exercise solvability, terminology, calibration floor, and starter/solution parity.
+- verified: retained endpoint, bundled-section, server-reconciliation, error/quantity, and confirmed-pub/sub boundaries.
+- decided: applied final markers only; no solution implementation was transferred into lesson or exercise content.
+- next: ch-39 lesson
+## 2026-08-14 · ch-39 · lesson
+- wrote: `course/part-06-interactivity-without-a-framework/ch-39-search-suggest-apis/lesson.md` covering predictive resources, Liquid section rendering, suggestion lifecycle, request control, and combobox keyboard/accessibility behavior.
+- verified: consulted current Shopify Predictive Search, theme implementation, and storefront search documentation for resources, limits, response/errors, locale, and server-rendering contracts.
+- decided: kept server-rendered Liquid as the suggestion display boundary and native search submission as the universal recovery path.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-39 exercise
+## 2026-08-14 · ch-39 · exercise
+- wrote: `course/part-06-interactivity-without-a-framework/ch-39-search-suggest-apis/exercise.md` with native search, predictive section, unsafe script, styles, and predictive-contract starter files.
+- flagged: `[VERIFY]` for feature/locales, discovery settings, resource URLs, section root, errors, and target throttling behavior.
+- decided: made Liquid rendering and native submit the durable suggestion/fallback boundary.
+- next: ch-39 solution
+## 2026-08-14 · ch-39 · solution
+- wrote: `solutions/part-06-interactivity-without-a-framework/ch-39-search-suggest-apis/solution.md` with mirrored localized search, Liquid suggestions, debounced combobox controller, styles, and verification record.
+- verified: retained server-rendered resource/URL formatting, current-request guards, ARIA active-descendant interaction, throttle/error recovery, and native search fallback.
+- decided: made the server section the display authority and kept browser code limited to lifecycle and interaction orchestration.
+- next: ch-39 review; do not add solution-derived implementation to lesson or exercise content.
+## 2026-08-14 · ch-39 · review
+- reviewed: passed all three Predictive Search topics in order, source flags, scope limits, exercise solvability, terminology, calibration floor, and starter/solution parity.
+- verified: retained resource/section separation, locale/error recovery, debounced current-request behavior, and accessible combobox boundaries.
+- decided: applied final markers only; no solution implementation was transferred into lesson or exercise content.
+- next: ch-40 lesson
+## 2026-08-14 · ch-40 · lesson
+- wrote: section-bound custom-element architecture, lifecycle/editor distinction, Shadow DOM decision criteria, Liquid attribute configuration, base class, and no-JS islands.
+- verified: grounded editor event statements in current Shopify theme-editor guidance and retained inline verification flags for browser/app-specific contracts.
+- decided: used light DOM as the extensibility default and treated the editor as a narrow adapter rather than a global initializer.
+- next: ch-40 exercise.
+## 2026-08-14 · ch-40 · exercise
+- wrote: a Room-ready picks quick-add island brief with section-safe lifecycle, light-DOM integration, typed Liquid settings, fallback behavior, and editor verification.
+- shipped: starter section, custom-element JavaScript skeleton, and scoped accessibility CSS.
+- decided: constrained enhancement to local confirmation behavior so cart mutation remains explicitly deferred.
+- next: ch-40 solution.

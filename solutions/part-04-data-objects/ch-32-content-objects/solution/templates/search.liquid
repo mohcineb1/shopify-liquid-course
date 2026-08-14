@@ -1,0 +1,23 @@
+<section class="search-results page-width">
+  {% if search.performed %}
+    <h1>Results for {{ search.terms | escape }}</h1>
+    {% if search.results_count == 0 %}<p class="content-empty">No results. Try another search.</p>{% else %}
+      {% paginate search.results by 24 %}
+        <ul class="search-results__grid">
+          {% for result in search.results %}
+            <li>
+              {% case result.object_type %}
+                {% when 'product' %}<a href="{{ result.url }}">{{ result.title | escape }}</a>{% if result.featured_image %}{{ result.featured_image | image_url: width: 300 | image_tag: alt: result.title, loading: 'lazy' }}{% endif %}<p>{{ result.price | money }}</p>
+                {% when 'article' %}<a href="{{ result.url }}">{{ result.title | escape }}</a><p>{{ result.excerpt_or_content | strip_html | truncatewords: 30 }}</p>
+                {% when 'page' %}<a href="{{ result.url }}">{{ result.title | escape }}</a><p>{{ result.content | strip_html | truncatewords: 30 }}</p>
+              {% endcase %}
+            </li>
+          {% endfor %}
+        </ul>
+        {{ paginate | default_pagination }}
+      {% endpaginate %}
+    {% endif %}
+  {% else %}
+    <h1>Search</h1><p>Enter a term to search products and content.</p>
+  {% endif %}
+</section>

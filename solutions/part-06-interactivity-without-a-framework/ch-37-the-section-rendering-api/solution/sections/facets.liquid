@@ -1,0 +1,12 @@
+<section id="shopify-section-{{ section.id }}" data-section-id="{{ section.id }}" class="facets">
+  <form action="{{ collection.url }}" method="get" data-filter-form>
+    {% for filter in collection.filters %}
+      <details><summary>{{ filter.label }}</summary>
+        {% for value in filter.values %}<label><input type="checkbox" name="{{ value.param_name }}" value="{{ value.value }}"{% if value.active %} checked{% endif %}>{{ value.label }}</label>{% endfor %}
+      </details>
+    {% endfor %}
+    <button type="submit">Apply filters</button>
+  </form>
+  <p class="collection-update-status" data-collection-status aria-live="polite"></p>
+</section>
+{% schema %}{ "name": "Facets", "settings": [] }{% endschema %}

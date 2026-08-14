@@ -1,0 +1,2 @@
+<section id="shopify-section-{{ section.id }}" data-cart-drawer><h2>Your cart</h2><div data-cart-status></div>{% for item in cart.items %}<article data-line-key="{{ item.key }}"><p>{{ item.product.title }}</p><input name="updates[{{ item.key }}]" type="number" value="{{ item.quantity }}"><button data-remove="{{ item.variant_id }}">Remove</button></article>{% endfor %}</section>
+{% schema %}{ "name": "Cart drawer", "settings": [] }{% endschema %}

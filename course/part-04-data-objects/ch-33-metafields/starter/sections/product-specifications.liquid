@@ -1,0 +1,12 @@
+<section class="product-specifications">
+  <h2>{{ section.settings.heading }}</h2>
+  <dl>
+    {% assign pairs = product.metafields.custom.specs_blob.value | split: '|' %}
+    {% for pair in pairs %}{% assign bits = pair | split: ':' %}<dt>{{ bits.first }}</dt><dd>{{ bits.last }}</dd>{% endfor %}
+    <dt>Capacity</dt><dd>{{ product.metafields.custom.capacity.value }} ml</dd>
+    <dt>Size</dt><dd>{{ product.metafields.specs.size.value }}</dd>
+  </dl>
+</section>
+{% schema %}
+{ "name": "Product specifications", "settings": [{ "type": "text", "id": "heading", "label": "Heading", "default": "Specifications" }] }
+{% endschema %}

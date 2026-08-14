@@ -1,0 +1,3 @@
+document.addEventListener('submit', (event) => { if (!event.target.matches('form[action*="/cart/add"]')) return; event.preventDefault(); fetch('/cart/add.js', { method: 'POST', body: JSON.stringify({ id: event.target.querySelector('[name=id]').value }) }); document.querySelector('[data-cart-count]').textContent++; document.dispatchEvent(new Event('cart:changed')); });
+document.addEventListener('click', (event) => { if (!event.target.matches('[data-remove]')) return; fetch('/cart/change.js', { method: 'POST', body: JSON.stringify({ id: event.target.dataset.remove, quantity: 0 }) }); });
+document.addEventListener('cart:changed', () => fetch('/cart.js').then((r) => r.json()).then((cart) => document.querySelector('[data-cart-count]').textContent = cart.item_count));

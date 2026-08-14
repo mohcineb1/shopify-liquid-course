@@ -1,0 +1,2 @@
+<section class="newsletter-consent"><h2>{{ section.settings.heading }}</h2><form action="/contact" method="post"><label for="Email">Email</label><input id="Email" name="email" type="email"><button>Subscribe</button></form></section>
+{% schema %}{ "name": "Newsletter consent", "settings": [{ "type": "text", "id": "heading", "label": "Heading", "default": "Newsletter" }] }{% endschema %}

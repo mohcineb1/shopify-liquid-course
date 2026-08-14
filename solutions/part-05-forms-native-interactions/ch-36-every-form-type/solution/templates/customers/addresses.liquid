@@ -1,0 +1,14 @@
+<section class="account-area"><h1>Addresses</h1>
+  {% form 'customer_address', customer.new_address, id: 'AddressNew' %}
+    {% render 'account-form-feedback', form: form, key: 'AddressNew' %}
+    <label for="AddressCountryNew">Country</label><select id="AddressCountryNew" name="address[country]" data-default="{{ form.country }}">{{ all_country_option_tags }}</select>
+    <label for="AddressProvinceNew">Province</label><select id="AddressProvinceNew" name="address[province]" data-default="{{ form.province }}"></select>
+    <button type="submit">Add address</button>
+  {% endform %}
+  {% for address in customer.addresses %}
+    {% form 'customer_address', address, id: 'Address-' | append: address.id %}
+      <label for="Address-{{ address.id }}-city">City</label><input id="Address-{{ address.id }}-city" name="address[city]" value="{{ form.city | escape }}">
+      <button type="submit">Save address</button>
+    {% endform %}
+  {% endfor %}
+</section>

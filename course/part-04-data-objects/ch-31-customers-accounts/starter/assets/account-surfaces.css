@@ -1,0 +1,4 @@
+.header-account { display: flex; align-items: center; gap: .75rem; }
+.account-order { display: grid; gap: 1rem; }
+.account-order__items { list-style: none; margin: 0; padding: 0; }
+.account-status { font-weight: 600; }

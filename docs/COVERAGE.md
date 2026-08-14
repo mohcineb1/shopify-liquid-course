@@ -191,3 +191,54 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** cart state, line-item key, line property, cart attribute, discount allocation, final line price, commerce authority boundary.
 **Assumed known from earlier:** product and selling-plan data (ch-27); global context/URLs (ch-26); quantity and variant state (ch-28).
 **Deliberately deferred:** Ajax cart mutation implementation → ch-38; customer accounts and orders → ch-31; app/extensions and backend commerce integrations → ch-52 onward.
+### ch-31 — Customers & Accounts
+**Taught:** guarded customer identity/orders/addresses/tags; the legacy-account deprecation and latest account-component boundary; customers-template roles; buyer-safe order/fulfillment/transaction presentation; and tag personalization versus authorization.
+**Introduced terms:** customer context, latest customer accounts, legacy account template, account component, order-history disclosure, presentation gate.
+**Assumed known from earlier:** cart/order transition and line data (ch-30); Liquid context/guards (ch-03 and ch-26); pagination (ch-29).
+**Deliberately deferred:** customer-account extension implementation → ch-52; security/privacy enforcement → ch-56; app/backend customer APIs → later integration chapters.
+### ch-32 — Content Objects
+**Taught:** blog/article/comment/page semantics; type-aware rich text and metafield rendering; tag/archive navigation; typed full-search results; predictive-search section context and compact resource shaping.
+**Introduced terms:** content-object contract, rich-text rendering boundary, editorial taxonomy, result shaping, predictive-search context, full-search recovery.
+**Assumed known from earlier:** pagination/query-state navigation (ch-29); context guards and output safety (ch-03); customer account privacy boundary (ch-31).
+**Deliberately deferred:** metafield design → ch-33; metaobject content modeling → ch-34; client-side interaction lifecycle → ch-37; request mechanics → ch-38.
+### ch-33 — Metafields
+**Taught:** definition ownership and namespace/key stability; scalar/rich/measurement/money/JSON/reference type selection; lists and count/size behavior; reference rendering; `metafield_tag`/manual/`metafield_text` choices; dynamic-source compatibility; merchant-maintainable schema design.
+**Introduced terms:** metafield definition, owner type, namespace/key contract, reference list, type-aware renderer, dynamic source, schema migration.
+**Assumed known from earlier:** Liquid guards and output context (ch-03); rich content output (ch-32); product/variant data (ch-27 and ch-28).
+**Deliberately deferred:** metaobject definitions and reusable entries → ch-34; broader data-model architecture → ch-35; client data/API consumption → ch-37 and ch-38.
+### ch-34 — Metaobjects
+**Taught:** definitions versus entries; Liquid lookup/reference/template context; publishable web pages and routes; real entity models; page/metafield/metaobject decisions; and compatible settings references.
+**Introduced terms:** metaobject definition, metaobject entry, entry handle, publishable entry, metaobject template, embedded entity, entity lifecycle.
+**Assumed known from earlier:** metafield types/references/dynamic sources (ch-33); content templates/routing semantics (ch-32).
+**Deliberately deferred:** full data-model architecture → ch-35; interactive client consumption → ch-37; API request mechanics → ch-38.
+### ch-35 — The `{% form %}` Tag
+**Taught:** native form generation and hidden protocol fields; form state/value/error behavior; translated accessible error summaries; and attribute/ID/return-path contracts.
+**Introduced terms:** native form contract, generated form field, form return state, translated error field, error summary, progressive form baseline.
+**Assumed known from earlier:** Liquid conditional/output/escape discipline (ch-03); cart/customer ownership boundaries (ch-30 and ch-31).
+**Deliberately deferred:** browser enhancement lifecycle → ch-37; asynchronous storefront requests → ch-38; form-specific workflows and advanced interactions → ch-36 and beyond.
+### ch-36 — Every Form Type
+**Taught:** native product/cart/account/address/contact/newsletter/comment/localization/guest/password/gift-card form families, required contexts, data scopes, and tested native recovery paths.
+**Introduced terms:** form-family decision, resource-bound form, line item property, cart attribute, form context, recipient-property workflow, native form evidence.
+**Assumed known from earlier:** generated form protocol and accessible form state (ch-35); cart/customer/account boundaries (ch-30 and ch-31).
+**Deliberately deferred:** JavaScript enhancement → ch-37; asynchronous requests → ch-38; advanced commerce workflows outside theme authority.
+### ch-37 — The Section Rendering API
+**Taught:** `sections`/`section_id` requests; URL/context/response contracts; filters/cart/pagination partial updates; DOM root swapping; race safety; and server/browser cost modelling.
+**Introduced terms:** section-response contract, dynamic section ID, partial-update transaction, stale response, root replacement, current-request token, native navigation fallback.
+**Assumed known from earlier:** collection/filter URL semantics (ch-29); cart display boundary (ch-30); native form progressive baseline (ch-35 and ch-36).
+**Deliberately deferred:** Cart API mutation implementation → ch-38; component lifecycle design → ch-39; advanced browser data/interaction architecture → ch-40 and ch-41.
+### ch-38 — The Cart AJAX API
+**Taught:** all Cart AJAX endpoints; locale-aware mutations; bundled section rendering; optimistic reconciliation; JSON error/quantity handling; and confirmed cart pub/sub transitions.
+**Introduced terms:** cart transition, mutation coordinator, bundled section response, confirmed cart state, optimistic snapshot, line-key volatility, cart subscriber.
+**Assumed known from earlier:** cart and line-item semantics (ch-30); native cart/product forms (ch-35 and ch-36); partial rendering contracts (ch-37).
+**Deliberately deferred:** component lifecycle architecture → ch-39; browser data ownership → ch-40; advanced product/media interaction → ch-41.
+### ch-39 — Search & Suggest APIs
+**Taught:** predictive resource/query contracts, server-rendered `predictive_search` sections, debounced/cancellation-safe request lifecycle, and accessible combobox/listbox keyboard behavior.
+**Introduced terms:** predictive resource scope, suggestion lifecycle, server-rendered suggestion slot, active descendant, request throttle recovery, search submission fallback.
+**Assumed known from earlier:** full storefront search and content result semantics (ch-29 and ch-32); partial HTML/root replacement (ch-37).
+**Deliberately deferred:** durable browser-state ownership → ch-40; media/product interaction systems → ch-41; external search infrastructure.
+
+### ch-40 — Web Components in a Liquid Theme
+**Taught:** custom elements as section-bound interaction boundaries; DOM lifecycle versus theme-editor events; Shadow DOM integration costs; attribute-driven Liquid configuration; a lightweight abortable component base; islands and no-JavaScript fallbacks.
+**Introduced terms:** component boundary, connection lifecycle, editor adapter, light-DOM default, attribute configuration, theme component base, interaction island.
+**Assumed known from earlier:** section schema (ch-17), assets (ch-10), progressive enhancement (ch-30), accessible interaction state (ch-38).
+**Deliberately deferred:** product/media behavior -> ch-41; cart mutation -> ch-42; fetch/render protocols -> ch-43.

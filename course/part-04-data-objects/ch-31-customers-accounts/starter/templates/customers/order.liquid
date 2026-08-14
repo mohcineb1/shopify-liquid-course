@@ -1,0 +1,6 @@
+<h1>{{ order.name }}</h1>
+<p>{{ order.financial_status }}</p>
+<p>{{ order.fulfillment_status }}</p>
+{% for item in order.line_items %}<p>{{ item.product.title }} × {{ item.quantity }}</p>{% endfor %}
+{% for transaction in order.transactions %}<pre>{{ transaction.receipt }}</pre>{% endfor %}
+<ul>{% for attribute in order.attributes %}<li>{{ attribute.first }}: {{ attribute.last }}</li>{% endfor %}</ul>

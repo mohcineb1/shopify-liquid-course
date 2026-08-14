@@ -1,0 +1,7 @@
+{{ 'location.css' | asset_url | stylesheet_tag }}
+<article class="location-detail page-width">
+  {% render 'location-card', location: metaobject %}
+  {% if metaobject.featured_products != blank and metaobject.featured_products.value.count > 0 %}
+    <section><h2>Featured locally</h2><ul>{% for product in metaobject.featured_products.value %}<li><a href="{{ product.url }}">{{ product.title | escape }}</a></li>{% endfor %}</ul></section>
+  {% endif %}
+</article>

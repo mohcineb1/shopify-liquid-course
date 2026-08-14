@@ -6,7 +6,7 @@ unit: "Chapter 30"
 title: "Cart & Line Items"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 30 — Cart & Line Items
@@ -15,12 +15,12 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 30.1 The `cart` object: items, totals, discounts, attributes, note, currency
-- [ ] 30.2 The `line_item` object in full
-- [ ] 30.3 Line item properties: hidden properties, file uploads, personalization
-- [ ] 30.4 Discount allocations, automatic discounts, and displaying savings correctly
-- [ ] 30.5 Cart-level vs line-level attributes
-- [ ] 30.6 Free gifts, bundles, and the limits of theme-side cart logic
+- [x] 30.1 The `cart` object: items, totals, discounts, attributes, note, currency
+- [x] 30.2 The `line_item` object in full
+- [x] 30.3 Line item properties: hidden properties, file uploads, personalization
+- [x] 30.4 Discount allocations, automatic discounts, and displaying savings correctly
+- [x] 30.5 Cart-level vs line-level attributes
+- [x] 30.6 Free gifts, bundles, and the limits of theme-side cart logic
 
 ## Labs assigned to this unit
 

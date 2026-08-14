@@ -1,0 +1,22 @@
+{{ 'product-specifications.css' | asset_url | stylesheet_tag }}
+{% assign material = product.metafields.specs.material %}
+{% assign dimensions = product.metafields.specs.dimensions %}
+{% assign care = product.metafields.specs.care %}
+{% assign capacity = product.selected_or_first_available_variant.metafields.specs.capacity %}
+{% assign guide = product.metafields.specs.guide %}
+{% assign collection = product.metafields.specs.related_collection %}
+{% assign page = product.metafields.specs.fitting_page %}
+{% assign companions = product.metafields.specs.compatible_products %}
+
+<section class="product-specifications page-width">
+  <h2>{{ section.settings.heading | escape }}</h2>
+  {% if material != blank or dimensions != blank or care != blank or capacity != blank or guide != blank or collection != blank or page != blank or companions != blank %}
+    <dl>{% render 'spec-row', label: 'Material', field: material %}{% render 'spec-row', label: 'Dimensions', field: dimensions %}{% render 'spec-row', label: 'Capacity', field: capacity %}{% render 'spec-row', label: 'Care', field: care %}{% render 'spec-row', label: 'Guide', field: guide %}{% render 'spec-row', label: 'Related collection', field: collection %}{% render 'spec-row', label: 'Fitting guide', field: page %}</dl>
+    {% if companions != blank and companions.value.count > 0 %}
+      <section class="product-specifications__related"><h3>Compatible products</h3><ul>{% for companion in companions.value %}<li><a href="{{ companion.url }}">{{ companion.title | escape }}</a></li>{% endfor %}</ul></section>
+    {% endif %}
+  {% else %}<p class="product-specifications__empty">Specifications will appear when product data is available.</p>{% endif %}
+</section>
+{% schema %}
+{ "name": "Product specifications", "settings": [{ "type": "text", "id": "heading", "label": "Heading", "default": "Specifications" }] }
+{% endschema %}
