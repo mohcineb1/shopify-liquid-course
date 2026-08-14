@@ -1,0 +1,55 @@
+{{ 'section-collection-digest.css' | asset_url | stylesheet_tag }}
+
+<section class="collection-digest" aria-labelledby="CollectionDigestHeading-{{ section.id }}">
+  <div class="collection-digest__inner">
+    <header class="collection-digest__header">
+      <p class="collection-digest__eyebrow">Collection preview</p>
+      <h2 id="CollectionDigestHeading-{{ section.id }}" class="collection-digest__heading">
+        {{ section.settings.heading | escape }}
+      </h2>
+    </header>
+
+    {% for product in collection.products limit: 4 %}
+      {% if forloop.first %}
+        {% assign digest_count_label = 'product' %}
+        {% if forloop.length != 1 %}
+          {% assign digest_count_label = 'products' %}
+        {% endif %}
+        <p class="collection-digest__count">Showing {{ forloop.length }} {{ digest_count_label }} from this collection.</p>
+        <ol class="collection-digest__list" aria-describedby="CollectionDigestHeading-{{ section.id }}">
+      {% endif %}
+
+      <li class="collection-digest__card collection-digest__card--{% cycle 'digest-card-tone': 'odd', 'even' %}" data-digest-index="{{ forloop.index0 }}">
+        <p class="collection-digest__position">Product {{ forloop.index }} of {{ forloop.length }}</p>
+        <h3 class="collection-digest__product-title">{{ product.title | escape }}</h3>
+        {% if product.variants.size > 0 %}
+          <ol class="collection-digest__variants">
+            {% for variant in product.variants limit: 2 %}
+              <li>{% render 'collection-digest-variant-note', text: variant.title %}</li>
+            {% endfor %}
+          </ol>
+        {% endif %}
+      </li>
+
+      {% if forloop.last %}
+        </ol>
+      {% endif %}
+    {% else %}
+      <p class="collection-digest__empty" id="CollectionDigestEmpty-{{ section.id }}" aria-describedby="CollectionDigestHeading-{{ section.id }}">There are no products in this collection to preview yet.</p>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Collection digest",
+  "tag": "section",
+  "class": "section-collection-digest",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "From this collection" }
+  ],
+  "presets": [
+    { "name": "Collection digest" }
+  ]
+}
+{% endschema %}

@@ -319,3 +319,8 @@ Entry format:
 - flagged: `[VERIFY]` for any added variant property beyond the explicit contextual collection and title contract.
 - decided: used a bounded collection digest to require contextual sourcing, loop metadata, named visual alternation, nested-loop limits, and a distinct collection-empty state without introducing data shaping.
 - next: ch-08 solution
+## 2026-08-14 · ch-08 · solution
+- wrote: `solutions/part-02-the-liquid-language-properly/ch-08-iteration/solution.md` (1,332 words) with mirrored section, stylesheet, and narrow variant-note snippet.
+- flagged: `[VERIFY]` for any production expansion beyond the explicit variant-title contract.
+- decided: bounded the output at four contextual products and two variant notes per product, separated collection absence from per-product variant absence, and kept the named cycle presentation-only.
+- next: ch-08 review; do not add solution-derived details to the lesson or exercise.

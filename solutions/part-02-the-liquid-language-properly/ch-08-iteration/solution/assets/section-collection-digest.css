@@ -1,0 +1,73 @@
+.collection-digest {
+  background: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+}
+
+.collection-digest__inner {
+  margin: 0 auto;
+  max-width: 72rem;
+  padding: 3rem 1.5rem;
+}
+
+.collection-digest__header {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.collection-digest__eyebrow {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.collection-digest__heading,
+.collection-digest__product-title {
+  margin: 0;
+}
+
+.collection-digest__list,
+.collection-digest__variants {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.collection-digest__list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+.collection-digest__card {
+  border: 1px solid rgba(var(--color-foreground), 0.16);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+}
+
+.collection-digest__card--odd {
+  background: rgba(var(--color-foreground), 0.04);
+}
+
+.collection-digest__card--even {
+  background: transparent;
+}
+
+.collection-digest__position,
+.collection-digest__count,
+.collection-digest__empty {
+  margin: 0;
+}
+
+.collection-digest__variants {
+  display: grid;
+  gap: 0.35rem;
+  margin-top: 1rem;
+}
+
+.collection-digest__variant-note {
+  color: rgba(var(--color-foreground), 0.72);
+  font-size: 0.9rem;
+}
