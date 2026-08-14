@@ -308,3 +308,9 @@ Entry format:
 - flagged: retained `[VERIFY]` for any production replacement of the explicit seasonal-tag contract by an object-specific eligibility surface.
 - decided: checklist passed after confirming all six scope items, target lengths, starter and solution parity, right-to-left precedence guidance, and review isolation from solution knowledge.
 - next: ch-08 lesson
+## 2026-08-14 · ch-08 · lesson
+- wrote: `course/part-02-the-liquid-language-properly/ch-08-iteration/lesson.md` (target-calibrated) covering bounded traversal, loop metadata, controls, `cycle`, `tablerow`, nested-loop cost, and costly sources.
+- flagged: `[VERIFY]` for production `tablerow` structure and metadata requirements, and for current `all_products` lookup limits and behavior.
+- decided: treated source selection, visible bounds, and collection-empty output as one loop contract; deferred data shaping to ch-09 and performance profiling to ch-11.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-08 exercise

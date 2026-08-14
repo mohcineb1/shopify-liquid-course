@@ -60,3 +60,8 @@ use; never introduce a synonym for something already listed.
 | Intermediate decision | A named assigned flag that expresses one business condition before a later branch renders its outcome. | ch-07 |
 | Ternary-style pattern | Assigning a normal value first and replacing it in an explicit exception branch because Liquid has no ternary expression. | ch-07 |
 | Fallback operator | The `default` filter used to render an alternative when a value is blank, without validating the source contract. | ch-07 |
+| Loop boundary | The declared source and parameters that determine which members a loop may traverse and render. | ch-08 |
+| Loop metadata | The `forloop` values that describe the current iteration’s position, length, and parent traversal context. | ch-08 |
+| Collection-empty branch | The `else` branch of a `for` tag, rendered only when its input collection has no members. | ch-08 |
+| Cycle group | A named `cycle` sequence whose alternating values are independent of other cycle sequences in the same loop. | ch-08 |
+| Iteration cost curve | The multiplicative increase in rendered work caused by nested loops and each iteration body’s additional traversal or rendering. | ch-08 |
