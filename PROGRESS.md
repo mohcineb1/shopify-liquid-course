@@ -290,3 +290,9 @@ Entry format:
 - decided: converted no-parentheses precedence into nested and named decisions, and kept default fallbacks honest about their data owner.
 - updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
 - next: ch-07 exercise
+
+## 2026-08-14 · ch-07 · exercise
+- wrote: `course/part-02-the-liquid-language-properly/ch-07-control-flow/exercise.md` (743 words) with starter section and CSS asset
+- flagged: the brief directs any unverified object-specific eligibility surface to `> [VERIFY]` rather than broad text classification.
+- decided: starter preserves a merchant-facing priority panel while leaving the nested grouping, intermediate decisions, tone dispatch, and fallback ownership to the learner.
+- next: ch-07 solution
