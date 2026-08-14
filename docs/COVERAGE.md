@@ -69,3 +69,9 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** truthiness, EmptyDrop, blank comparison, empty comparison, type coercion, silent failure.
 **Assumed known from earlier:** render context and Drops (ch-03); output and tag syntax (ch-04); Liquid objects and filters (appendices A–C).
 **Deliberately deferred:** condition grammar and operators → ch-06; collection iteration → ch-07; capture and data shaping → ch-09; resource-specific empty states → ch-26 to ch-34; settings UX → ch-24.
+
+### ch-06 — Variables & Scope
+**Taught:** `assign` versus `capture`; isolated `increment` and `decrement` counters; scope boundaries across templates, layouts, sections, blocks, snippets, and loops; render isolation; reassignment and shadowing traps; and names as scalable component contracts.
+**Introduced terms:** rendered-string semantics, counter namespace, render isolation, shadowing, snippet input contract.
+**Assumed known from earlier:** Liquid values and truthiness (ch-05); output and tag syntax (ch-04); object and context boundaries (ch-03).
+**Deliberately deferred:** complete condition grammar → ch-07; iteration state and collection patterns → ch-08; data shaping → ch-09; detailed snippet APIs → ch-21.

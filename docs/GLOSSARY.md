@@ -49,3 +49,8 @@ use; never introduce a synonym for something already listed.
 | Empty comparison | A comparison to `empty` that tests whether a string or collection is empty, rather than the broader concept of presentation absence. | ch-05 |
 | Type coercion | A documented transformation of a Liquid value’s usable representation, often performed deliberately through a filter. | ch-05 |
 | Silent failure | Liquid’s behavior of rendering a missing or invalidly addressed value as no visible output rather than throwing a storefront runtime exception. | ch-05 |
+| Rendered-string semantics | The behavior of `capture`, which stores the rendered content of its block as a string rather than preserving a source object or calculation value. | ch-06 |
+| Counter namespace | The separate named-counter space used by `increment` and `decrement`, independent of values made with `assign` or `capture`. | ch-06 |
+| Render isolation | The boundary created by `render` in which a snippet receives only its documented arguments rather than a caller’s arbitrary local variables. | ch-06 |
+| Shadowing | Reusing a name in a narrower context so that it obscures an already meaningful outer value. | ch-06 |
+| Snippet input contract | The explicit named values a snippet expects at its render call and may rely on inside its isolated scope. | ch-06 |

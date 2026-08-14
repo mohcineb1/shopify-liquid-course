@@ -258,3 +258,10 @@ Entry format:
 - flagged: retained `[VERIFY]` for source-specific EmptyDrop and product-image empty-result behavior; no unsupported universal claim was added.
 - decided: checklist passed after confirming the six scope items, target lengths, starter/solution parity, terminology, and strict separation between review corrections and solution knowledge.
 - next: ch-06 lesson
+
+## 2026-08-14 · ch-06 · lesson
+- wrote: `course/part-02-the-liquid-language-properly/ch-06-variables-scope/lesson.md` (2,506 words)
+- flagged: `[VERIFY]` for any counter behavior relied upon across a specific nesting boundary; the lesson keeps counters out of hidden component state.
+- decided: framed `render` arguments as explicit function signatures and local names as type-and-ownership signals rather than informal global state.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-06 exercise
