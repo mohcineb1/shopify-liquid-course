@@ -1,0 +1,36 @@
+{{ 'section-collection-signal.css' | asset_url | stylesheet_tag }}
+
+<section class="collection-signal" aria-labelledby="CollectionSignalHeading-{{ section.id }}">
+  <div class="collection-signal__inner">
+    <header class="collection-signal__header">
+      <p class="collection-signal__eyebrow">Collection signal</p>
+      <h2 id="CollectionSignalHeading-{{ section.id }}" class="collection-signal__heading">
+        {{ section.settings.heading | escape }}
+      </h2>
+      {%- comment -%} Add a readable, bounded collection description excerpt. {%- endcomment -%}
+    </header>
+
+    <div class="collection-signal__content">
+      {%- comment -%}
+        Add the clean, derived tag list and its explicit empty state.
+        Add a safe internal search link for the current collection title.
+      {%- endcomment -%}
+    </div>
+
+    <script type="application/json" data-collection-signal>
+      {% render 'collection-signal-data', signal_collection: collection %}
+    </script>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Collection signal",
+  "tag": "section",
+  "class": "section-collection-signal",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Collection signal" }
+  ],
+  "presets": [ { "name": "Collection signal" } ]
+}
+{% endschema %}

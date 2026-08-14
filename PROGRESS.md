@@ -335,3 +335,8 @@ Entry format:
 - decided: treated every filter chain as a typed transformation contract and kept commerce, localization, and browser handoff at their owned boundaries.
 - updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
 - next: ch-09 exercise
+## 2026-08-14 · ch-09 · exercise
+- wrote: `course/part-02-the-liquid-language-properly/ch-09-filters-the-core-set/exercise.md` (843 words) with a section, stylesheet, and JSON-boundary snippet under `starter/`.
+- flagged: `[VERIFY]` for any expansion beyond the supplied contextual collection and tag property contract.
+- decided: made the learner establish distinct HTML, URL, and JSON boundaries while keeping all derived tags contextual, clean, unique, and naturally ordered.
+- next: ch-09 solution
