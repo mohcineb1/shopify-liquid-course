@@ -296,3 +296,9 @@ Entry format:
 - flagged: the brief directs any unverified object-specific eligibility surface to `> [VERIFY]` rather than broad text classification.
 - decided: starter preserves a merchant-facing priority panel while leaving the nested grouping, intermediate decisions, tone dispatch, and fallback ownership to the learner.
 - next: ch-07 solution
+
+## 2026-08-14 · ch-07 · solution
+- wrote: `solutions/part-02-the-liquid-language-properly/ch-07-control-flow/solution.md` (1,358 words) with mirrored section and CSS files
+- flagged: `[VERIFY]` retained for any object-specific production eligibility surface substituted for the explicit seasonal-tag contract.
+- decided: made availability the outer gate, used a named membership decision, and nested tone presentation under established eligibility.
+- next: ch-07 review; do not add solution-derived details to the lesson or exercise.

@@ -1,0 +1,32 @@
+.release-eligibility {
+  margin-block: 2rem;
+}
+
+.release-eligibility__inner {
+  border: 1px solid rgb(77 44 108 / 22%);
+  border-radius: 0.75rem;
+  background: #fbf8ff;
+  color: #312044;
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.release-eligibility__eyebrow {
+  color: #6f4a98;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-block: 0 0.5rem;
+  text-transform: uppercase;
+}
+
+.release-eligibility__status,
+.release-eligibility__notice {
+  border-block-start: 1px solid rgb(77 44 108 / 16%);
+  margin-block-start: 1rem;
+  padding-block-start: 1rem;
+}
+
+.release-eligibility__status p,
+.release-eligibility__notice p {
+  margin-block: 0;
+}
