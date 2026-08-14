@@ -6,7 +6,7 @@ unit: "Chapter 8"
 title: "Iteration"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 8 — Iteration
@@ -15,13 +15,13 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 8.1 `for` and its parameters: `limit`, `offset`, `reversed`, `range`
-- [ ] 8.2 The `forloop` object in full: `index`, `index0`, `rindex`, `first`, `last`, `length`, `parentloop`
-- [ ] 8.3 `break`, `continue`, `else`
-- [ ] 8.4 `cycle` for alternating output
-- [ ] 8.5 `tablerow` and its legitimate uses
-- [ ] 8.6 Nested loops and the cost curve
-- [ ] 8.7 Iterating over `all_products`, collections, and other expensive sources
+- [x] 8.1 `for` and its parameters: `limit`, `offset`, `reversed`, `range`
+- [x] 8.2 The `forloop` object in full: `index`, `index0`, `rindex`, `first`, `last`, `length`, `parentloop`
+- [x] 8.3 `break`, `continue`, `else`
+- [x] 8.4 `cycle` for alternating output
+- [x] 8.5 `tablerow` and its legitimate uses
+- [x] 8.6 Nested loops and the cost curve
+- [x] 8.7 Iterating over `all_products`, collections, and other expensive sources
 
 ## Labs assigned to this unit
 

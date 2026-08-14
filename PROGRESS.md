@@ -324,3 +324,8 @@ Entry format:
 - flagged: `[VERIFY]` for any production expansion beyond the explicit variant-title contract.
 - decided: bounded the output at four contextual products and two variant notes per product, separated collection absence from per-product variant absence, and kept the named cycle presentation-only.
 - next: ch-08 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-08 · review
+- wrote: finalised the chapter’s lesson, exercise, brief, and solution statuses.
+- flagged: retained `[VERIFY]` for production use of `tablerow`, `all_products`, and any expanded variant-property surface.
+- decided: the review confirmed every scope item, target-calibrated files, three-file starter and solution parity, bounded contextual traversal, and isolation of the lesson from solution-derived additions.
+- next: ch-09 lesson
