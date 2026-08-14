@@ -91,3 +91,8 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** filter pipeline, output-context encoding, minor-unit money arithmetic, array shaping, display boundary.
 **Assumed known from earlier:** value categories and blank semantics (ch-05); assignments and render isolation (ch-06); control flow (ch-07); bounded contextual iteration (ch-08).
 **Deliberately deferred:** composed rendered strings → ch-10; performance measurement → ch-11; resource-specific money, localization, and product data contracts → ch-26 to ch-34; browser JSON consumption → ch-37.
+### ch-10 — Filters: The Shopify-Specific Set
+**Taught:** Shopify-owned money formatting; asset, file, collection-scoped, and legacy URL paths; current object-aware media rendering; markup-generating helpers; type-aware metafield output; translation and localization helpers; color and font transformations; context-bound cart, payment, and customer helpers; and hosted-file or structured-data output boundaries.
+**Introduced terms:** Shopify-owned output filter, resource home, type-aware metafield rendering, generated markup contract, structured-data boundary.
+**Assumed known from earlier:** generic filter pipeline and output-context encoding (ch-09); value and blank semantics (ch-05); contextual traversal (ch-08).
+**Deliberately deferred:** product and variant media/pricing contracts → ch-27 and ch-28; cart/payment/customer workflows → ch-30 and ch-31; metafield and metaobject modelling → ch-33 and ch-34; browser behavior and data consumption → ch-37.

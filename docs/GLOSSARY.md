@@ -70,3 +70,8 @@ use; never introduce a synonym for something already listed.
 | Minor-unit money arithmetic | Calculation that keeps a Shopify money amount in its integer minor-unit representation until money formatting. | ch-09 |
 | Array shaping | Deliberate transformation of an existing array through filters such as `map`, `where`, `compact`, `sort`, or `join`. | ch-09 |
 | Display boundary | The last transformation point where a source value is formatted for a specific reader or rendering context. | ch-09 |
+| Shopify-owned output filter | A Liquid filter whose correct input and output behavior depends on a Shopify-managed object, context, or runtime contract. | ch-10 |
+| Resource home | The Shopify-managed location that owns a resolved resource, such as a theme asset, uploaded file, media object, or platform asset. | ch-10 |
+| Type-aware metafield rendering | Rendering a metafield through its declared value-type contract rather than assuming its namespace and key imply a text representation. | ch-10 |
+| Generated markup contract | The semantic and contextual obligation that remains when a filter produces HTML rather than a plain value. | ch-10 |
+| Structured-data boundary | A deliberate JSON output surface containing only the page-relevant fields and representation a consuming system expects. | ch-10 |

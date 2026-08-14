@@ -350,3 +350,9 @@ Entry format:
 - flagged: retained `[VERIFY]` for derived resource handles, money representation, array-property behavior, and production timezone or locale assumptions.
 - decided: checklist passed after confirming all eight scope items, calibrated prose, starter/solution parity, output-context separation, and review isolation from the completed answer.
 - next: ch-10 lesson
+## 2026-08-14 · ch-10 · lesson
+- wrote: `course/part-02-the-liquid-language-properly/ch-10-filters-the-shopify-specific-set/lesson.md` (2,358 words) covering Shopify-specific filter categories and their owning data contexts.
+- flagged: `[VERIFY]` for legacy URL/image filters and context-sensitive media, localization, font, payment, customer, and structured-data helper behavior.
+- decided: distinguished resource resolution from markup output, delegated commerce and market authority to Shopify data contracts, and treated generated HTML or JSON as explicit integration boundaries.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-10 exercise
