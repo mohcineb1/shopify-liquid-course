@@ -1,0 +1,39 @@
+{{ 'release-brief.css' | asset_url | stylesheet_tag }}
+
+<section class="release-brief" aria-labelledby="ReleaseBrief-{{ section.id }}">
+  <div class="release-brief__inner">
+    <p class="release-brief__eyebrow">Release coordination</p>
+    <h2 id="ReleaseBrief-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+
+    <div class="release-brief__summary" data-release-brief-summary>
+      <p>Replace this placeholder with the requested product summary.</p>
+    </div>
+
+    <ol class="release-brief__checks" data-release-brief-checks>
+      <li>Replace this placeholder with the requested ordered checks.</li>
+    </ol>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Release brief",
+  "tag": "section",
+  "class": "section-release-brief",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Release brief"
+    },
+    {
+      "type": "text",
+      "id": "audience_label",
+      "label": "Audience label",
+      "default": "Store team"
+    }
+  ],
+  "presets": [{ "name": "Release brief" }]
+}
+{% endschema %}

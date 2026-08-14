@@ -265,3 +265,9 @@ Entry format:
 - decided: framed `render` arguments as explicit function signatures and local names as type-and-ownership signals rather than informal global state.
 - updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
 - next: ch-06 exercise
+
+## 2026-08-14 · ch-06 · exercise
+- wrote: `course/part-02-the-liquid-language-properly/ch-06-variables-scope/exercise.md` (802 words) with starter section, snippet, and CSS asset
+- flagged: the brief directs any unverified counter behavior across a nesting boundary to `> [VERIFY]` instead of a hidden scope assumption.
+- decided: starter files establish a real section-to-snippet boundary but leave value ownership, explicit inputs, ordering strategy, and rendered-string choice to the learner.
+- next: ch-06 solution

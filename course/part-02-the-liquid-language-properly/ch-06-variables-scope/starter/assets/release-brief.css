@@ -1,0 +1,26 @@
+.release-brief {
+  margin-block: 2rem;
+}
+
+.release-brief__inner {
+  border: 1px solid rgb(20 79 69 / 22%);
+  border-radius: 0.75rem;
+  background: #f4fbf8;
+  color: #123c35;
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.release-brief__eyebrow {
+  color: #256c60;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-block: 0 0.5rem;
+  text-transform: uppercase;
+}
+
+.release-brief__checks {
+  border-block-start: 1px solid rgb(20 79 69 / 16%);
+  margin-block: 1.25rem 0;
+  padding-block-start: 1.25rem;
+}
