@@ -283,3 +283,10 @@ Entry format:
 - flagged: retained `[VERIFY]` for production reliance on counter behavior across a particular nesting boundary.
 - decided: checklist passed after confirming scope coverage, calibrated lengths, three-file starter and solution parity, terminology, and review isolation from the completed answer.
 - next: ch-07 lesson
+
+## 2026-08-14 · ch-07 · lesson
+- wrote: `course/part-02-the-liquid-language-properly/ch-07-control-flow/lesson.md` (2,504 words)
+- flagged: `[VERIFY]` for object-specific properties or tag contracts that would otherwise be inferred through broad `contains` logic.
+- decided: converted no-parentheses precedence into nested and named decisions, and kept default fallbacks honest about their data owner.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-07 exercise

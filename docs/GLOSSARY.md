@@ -54,3 +54,9 @@ use; never introduce a synonym for something already listed.
 | Render isolation | The boundary created by `render` in which a snippet receives only its documented arguments rather than a caller’s arbitrary local variables. | ch-06 |
 | Shadowing | Reusing a name in a narrower context so that it obscures an already meaningful outer value. | ch-06 |
 | Snippet input contract | The explicit named values a snippet expects at its render call and may rely on inside its isolated scope. | ch-06 |
+| Branch order | The ordered priority of `if`, `elsif`, and `else` branches, where the first matching condition determines the rendered result. | ch-07 |
+| Value dispatch | Selecting output from one expression’s known literal variants through `case` and `when`. | ch-07 |
+| Right-to-left precedence | Liquid’s evaluation order for compound `and` and `or` conditions, which cannot be changed with parentheses. | ch-07 |
+| Intermediate decision | A named assigned flag that expresses one business condition before a later branch renders its outcome. | ch-07 |
+| Ternary-style pattern | Assigning a normal value first and replacing it in an explicit exception branch because Liquid has no ternary expression. | ch-07 |
+| Fallback operator | The `default` filter used to render an alternative when a value is blank, without validating the source contract. | ch-07 |

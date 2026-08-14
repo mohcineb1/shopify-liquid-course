@@ -75,3 +75,9 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** rendered-string semantics, counter namespace, render isolation, shadowing, snippet input contract.
 **Assumed known from earlier:** Liquid values and truthiness (ch-05); output and tag syntax (ch-04); object and context boundaries (ch-03).
 **Deliberately deferred:** complete condition grammar → ch-07; iteration state and collection patterns → ch-08; data shaping → ch-09; detailed snippet APIs → ch-21.
+
+### ch-07 — Control Flow
+**Taught:** ordered `if`/`elsif`/`else` and `unless`; `case`/`when` dispatch; comparison, logical, and `contains` operators; right-to-left logical precedence without parentheses; named intermediate boolean decisions; and ternary-style assignments with `default`.
+**Introduced terms:** branch order, value dispatch, right-to-left precedence, intermediate decision, ternary-style pattern, fallback operator.
+**Assumed known from earlier:** truthiness and blank values (ch-05); local variables and rendered-string semantics (ch-06); output and tag syntax (ch-04).
+**Deliberately deferred:** iteration and loop controls → ch-08; larger data shaping → ch-09; resource-specific eligibility rules → ch-26 to ch-34; snippet API design → ch-21.
