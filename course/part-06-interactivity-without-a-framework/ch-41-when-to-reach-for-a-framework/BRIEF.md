@@ -6,7 +6,7 @@ unit: "Chapter 41"
 title: "When to Reach for a Framework"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 41 — When to Reach for a Framework
@@ -15,9 +15,9 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 41.1 Alpine, htmx, Stimulus, Preact — honest trade-offs on a Liquid storefront
-- [ ] 41.2 The bundle-cost argument in a conversion-rate context
-- [ ] 41.3 Hard signals that you should be building headless instead
+- [x] 41.1 Alpine, htmx, Stimulus, Preact — honest trade-offs on a Liquid storefront
+- [x] 41.2 The bundle-cost argument in a conversion-rate context
+- [x] 41.3 Hard signals that you should be building headless instead
 
 ## Labs assigned to this unit
 

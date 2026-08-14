@@ -247,3 +247,8 @@ use; never introduce a synonym for something already listed.
 | Light-DOM default | The decision to preserve ordinary theme DOM and its extension contracts unless Shadow DOM has a specific tested benefit. | ch-40 |
 | Attribute configuration | Escaped scalar Liquid settings passed from server markup to a component through HTML attributes. | ch-40 |
 | Interaction island | A local enhanced interaction whose HTML baseline remains useful without its JavaScript. | ch-40 |
+| Framework decision record | A testable written statement of an interaction’s buyer task, baseline, boundary, loading, ownership, failure behavior, and removal test. | ch-41 |
+| Removal test | The check that deleting an enhancement runtime still leaves the buyer’s core task operational. | ch-41 |
+| Client-rendering duplication | Recreating in client code markup, localization, or rules already owned by Liquid. | ch-41 |
+| Interaction-boundary load trigger | The moment a runtime is loaded only after the buyer reaches the feature that needs it. | ch-41 |
+| Headless signal | An explicit rendering, routing, workflow, state, or multi-channel requirement that a theme cannot responsibly own. | ch-41 |

@@ -242,3 +242,9 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** component boundary, connection lifecycle, editor adapter, light-DOM default, attribute configuration, theme component base, interaction island.
 **Assumed known from earlier:** section schema (ch-17), assets (ch-10), progressive enhancement (ch-30), accessible interaction state (ch-38).
 **Deliberately deferred:** product/media behavior -> ch-41; cart mutation -> ch-42; fetch/render protocols -> ch-43.
+
+### ch-41 — When to Reach for a Framework
+**Taught:** honest Liquid-storefront trade-offs among Alpine, htmx, Stimulus, and Preact; bundle cost as a buyer-task and conversion-path risk; hard architectural signals for headless.
+**Introduced terms:** framework decision record, removal test, client-rendering duplication, interaction-boundary load trigger, headless signal.
+**Assumed known from earlier:** progressive enhancement (ch-30), server-rendered fragments (ch-37), accessible interactive state (ch-38), custom-element lifecycle (ch-40).
+**Deliberately deferred:** actual cart behavior -> ch-42; migration architecture and external storefront implementation -> later advanced topics.

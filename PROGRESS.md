@@ -976,3 +976,23 @@ Entry format:
 - verified: lesson distinguishes DOM lifecycle from editor events and keeps Shadow DOM, cart transport, and apps within their appropriate boundaries.
 - decided: applied final markers with no solution-derived structural additions to course files.
 - next: ch-41 lesson.
+## 2026-08-14 · ch-41 · lesson
+- wrote: a framework decision model covering Alpine, htmx, Stimulus, Preact, conversion-path bundle cost, and concrete headless signals.
+- verified: retained sources for server-rendered enhancement tools and marked versioned library and headless-platform claims for verification.
+- decided: required a buyer-task decision record and runtime removal test before adopting client infrastructure.
+- next: ch-41 exercise.
+## 2026-08-14 · ch-41 · exercise
+- wrote: a framework-decision practice brief for a modular-shelving configurator with a Liquid-first purchase path and intent-triggered enhancement boundary.
+- shipped: a starter section, intentionally problematic global JavaScript stub, and accessible summary styles.
+- decided: constrained implementation to a local summary so framework choice remains evidence-led and cart work stays deferred.
+- next: ch-41 solution.
+## 2026-08-14 · ch-41 · solution
+- wrote: a no-framework configurator solution with a Liquid-first purchase path, intent-triggered local module, decision record, and fallback evidence.
+- verified: avoided client reconstruction of server markup and concluded that no hard headless signal is present.
+- decided: selected native local enhancement because it eliminates the stated complexity without adopting a runtime.
+- next: ch-41 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-41 · review
+- reviewed: passed all three framework and headless topics in order, source flags, terminology, exercise solvability, calibration, and mirror integrity.
+- verified: course files remain decision-focused and disclose no solution-specific implementation structure.
+- decided: applied final markers only; the local enhancement remains deliberately separate from cart and headless implementation.
+- next: ch-42 lesson.

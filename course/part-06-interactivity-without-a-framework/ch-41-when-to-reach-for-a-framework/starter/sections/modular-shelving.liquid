@@ -1,0 +1,20 @@
+<section class="modular-shelving" data-configurator-section>
+  <h1>{{ product.title }}</h1>
+  <p data-product-price>{{ product.selected_or_first_available_variant.price | money }}</p>
+  <form method="post" action="{{ routes.cart_add_url }}">
+    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+    <fieldset>
+      <legend>{{ 'products.product.variant' | t }}</legend>
+      {% for variant in product.variants %}
+        <label><input type="radio" name="shelf_option" value="{{ variant.title | escape }}" {% if variant == product.selected_or_first_available_variant %}checked{% endif %}> {{ variant.title }}</label>
+      {% endfor %}
+    </fieldset>
+    <button type="submit">{{ 'products.product.add_to_cart' | t }}</button>
+  </form>
+  <aside data-configuration-summary aria-live="polite">
+    <p>{{ product.selected_or_first_available_variant.title }}</p>
+  </aside>
+</section>
+{% schema %}
+{"name":"Modular shelving","settings":[],"presets":[{"name":"Modular shelving"}]}
+{% endschema %}

@@ -1,0 +1,2 @@
+[data-configuration-summary] { border-inline-start: .25rem solid currentColor; margin-block: 1rem; padding-inline-start: .75rem; }
+.modular-shelving input:focus-visible, .modular-shelving button:focus-visible { outline: .2rem solid currentColor; outline-offset: .2rem; }
