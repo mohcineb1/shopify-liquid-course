@@ -302,3 +302,9 @@ Entry format:
 - flagged: `[VERIFY]` retained for any object-specific production eligibility surface substituted for the explicit seasonal-tag contract.
 - decided: made availability the outer gate, used a named membership decision, and nested tone presentation under established eligibility.
 - next: ch-07 review; do not add solution-derived details to the lesson or exercise.
+
+## 2026-08-14 · ch-07 · review
+- wrote: finalised the chapter’s lesson, exercise, brief, and solution statuses
+- flagged: retained `[VERIFY]` for any production replacement of the explicit seasonal-tag contract by an object-specific eligibility surface.
+- decided: checklist passed after confirming all six scope items, target lengths, starter and solution parity, right-to-left precedence guidance, and review isolation from solution knowledge.
+- next: ch-08 lesson

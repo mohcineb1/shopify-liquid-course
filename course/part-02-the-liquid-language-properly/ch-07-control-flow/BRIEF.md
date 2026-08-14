@@ -6,7 +6,7 @@ unit: "Chapter 7"
 title: "Control Flow"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 7 — Control Flow
@@ -15,12 +15,12 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 7.1 `if` / `elsif` / `else` / `unless`
-- [ ] 7.2 `case` / `when` with multiple values
-- [ ] 7.3 Operators: `==`, `!=`, `>`, `<`, `>=`, `<=`, `or`, `and`, `contains`
-- [ ] 7.4 **No parentheses**: operator precedence is right-to-left — the classic senior-dev trap
-- [ ] 7.5 Emulating complex boolean logic with `assign` and `capture`
-- [ ] 7.6 Ternary-style patterns and the `default` filter as a fallback operator
+- [x] 7.1 `if` / `elsif` / `else` / `unless`
+- [x] 7.2 `case` / `when` with multiple values
+- [x] 7.3 Operators: `==`, `!=`, `>`, `<`, `>=`, `<=`, `or`, `and`, `contains`
+- [x] 7.4 **No parentheses**: operator precedence is right-to-left — the classic senior-dev trap
+- [x] 7.5 Emulating complex boolean logic with `assign` and `capture`
+- [x] 7.6 Ternary-style patterns and the `default` filter as a fallback operator
 
 ## Labs assigned to this unit
 
