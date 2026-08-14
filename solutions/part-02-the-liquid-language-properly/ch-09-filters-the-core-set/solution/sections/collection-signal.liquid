@@ -1,0 +1,48 @@
+{{ 'section-collection-signal.css' | asset_url | stylesheet_tag }}
+
+{% assign panel_heading = section.settings.heading | default: 'Collection signal' | strip %}
+{% assign description_text = collection.description | strip_html | strip %}
+{% assign collection_tags = collection.products | map: 'tags' | join: ',' | split: ',' | compact | uniq | sort_natural %}
+{% assign search_query = collection.title | url_encode %}
+
+<section class="collection-signal" aria-labelledby="CollectionSignalHeading-{{ section.id }}">
+  <div class="collection-signal__inner">
+    <header class="collection-signal__header">
+      <p class="collection-signal__eyebrow">Collection signal</p>
+      <h2 id="CollectionSignalHeading-{{ section.id }}" class="collection-signal__heading">{{ panel_heading | escape }}</h2>
+      {% if description_text != blank %}
+        <p class="collection-signal__description">{{ description_text | truncate: 160 | escape }}</p>
+      {% endif %}
+    </header>
+
+    <div class="collection-signal__content">
+      {% if collection_tags.size > 0 %}
+        <ul class="collection-signal__tags" aria-label="Collection tags">
+          {% for tag in collection_tags %}
+            <li class="collection-signal__tag">{{ tag | escape }}</li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p class="collection-signal__empty">No collection tags are available yet.</p>
+      {% endif %}
+
+      <a class="collection-signal__link" href="{{ '/search?q=' | append: search_query | escape }}">Search this collection</a>
+    </div>
+
+    <script type="application/json" data-collection-signal>
+      {% render 'collection-signal-data', signal_collection: collection %}
+    </script>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Collection signal",
+  "tag": "section",
+  "class": "section-collection-signal",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Collection signal" }
+  ],
+  "presets": [ { "name": "Collection signal" } ]
+}
+{% endschema %}

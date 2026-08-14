@@ -340,3 +340,8 @@ Entry format:
 - flagged: `[VERIFY]` for any expansion beyond the supplied contextual collection and tag property contract.
 - decided: made the learner establish distinct HTML, URL, and JSON boundaries while keeping all derived tags contextual, clean, unique, and naturally ordered.
 - next: ch-09 solution
+## 2026-08-14 · ch-09 · solution
+- wrote: `solutions/part-02-the-liquid-language-properly/ch-09-filters-the-core-set/solution.md` (1,344 words) with mirrored section, stylesheet, and narrow JSON serialization snippet.
+- flagged: `[VERIFY]` for production reliance on nested tag-array flattening and any expansion beyond the declared collection title, URL, description, and contextual tags.
+- decided: made each output boundary explicit—HTML escaping, query-component URL encoding, and field-level JSON serialization—while keeping the panel contextual and non-behavioral.
+- next: ch-09 review; do not add solution-derived details to the lesson or exercise.

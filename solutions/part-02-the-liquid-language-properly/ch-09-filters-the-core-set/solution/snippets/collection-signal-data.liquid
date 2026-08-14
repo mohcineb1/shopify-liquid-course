@@ -1,0 +1,9 @@
+{%- doc -%}
+  Serializes the declared contextual collection fields for browser data.
+
+  @param {collection} signal_collection - The collection whose title and URL are emitted.
+{%- enddoc -%}
+{
+  "title": {{ signal_collection.title | json }},
+  "url": {{ signal_collection.url | json }}
+}
