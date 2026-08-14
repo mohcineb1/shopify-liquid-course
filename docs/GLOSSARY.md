@@ -80,3 +80,85 @@ use; never introduce a synonym for something already listed.
 | Access shape | The combined source, cardinality, nested traversal, and render-boundary pattern that determines a Liquid data request’s review cost. | ch-11 |
 | Public payload contract | The explicit list of serialized fields intentionally exposed in storefront HTML for a browser consumer. | ch-11 |
 | Payload minimization | Limiting rendered JSON to the smallest declared public data set a consumer requires. | ch-11 |
+| Silent output absence | A Liquid result in which an unavailable, blank, or false value produces no visible output without a parse or render error. | ch-12 |
+| Diagnostic boundary | A deliberately minimal development output surface used to test one server-side data hypothesis. | ch-12 |
+| Reproduction state | The recorded route, preview, editor, and resource conditions required to observe a specific theme behavior. | ch-12 |
+| Environment guard | A team-controlled condition that prevents development-only diagnostic output from rendering in a normal storefront response. | ch-12 |
+| Flame-profile hypothesis | A concrete explanation of measured render work that can be tested by one comparable template change. | ch-12 |
+| Directory contract | The Shopify-defined runtime meaning assigned to a theme directory and the files it contains. | ch-13 |
+| Special file | A theme file whose location, filename, or structure Shopify interprets for rendering, editor, configuration, localization, or deployment behavior. | ch-13 |
+| Resource home | The platform-recognized location that owns a theme resource and determines how it is resolved or consumed. | ch-13 |
+| Theme composition graph | The route-to-template-to-section-to-block-or-snippet relationship through which a theme assembles storefront output. | ch-13 |
+| Architecture surface | A file or platform boundary whose shape creates an observable contract for Shopify, merchants, browsers, or theme developers. | ch-13 |
+| Document frame | The layout-owned HTML document structure surrounding the active template’s rendered page composition. | ch-14 |
+| Header injection slot | The single `content_for_header` placeholder in a layout head where Shopify emits platform-managed head output. | ch-14 |
+| Layout render slot | The `content_for_layout` placeholder through which the active template’s rendered output enters a layout. | ch-14 |
+| Alternate layout | A distinct document frame explicitly selected for a template when its global page shell truly differs. | ch-14 |
+| Special layout contract | Platform-defined behavior associated with a special layout filename such as `password.liquid` or `gift_card.liquid`. | ch-14 |
+| Template family | The base route and resource category, such as product or collection, that determines a template’s primary storefront contract. | ch-15 |
+| Template suffix | The alternate composition identifier appended to a base template type, such as `promo` in `product.promo.json`. | ch-15 |
+| Section instance | A configured occurrence of a section type declared by an ID, type, and settings in template composition. | ch-15 |
+| Composition manifest | The JSON template structure that declares section instances, their configuration, and their rendered order. | ch-15 |
+| Assignment lifecycle | The operational management of merchant-assigned templates through creation, replacement, migration, and removal. | ch-15 |
+| Section group | A Shopify-managed ordered composition of sections mounted once in a persistent layout region. | ch-16 |
+| Persistent composition boundary | A layout-owned region whose configurable section composition applies across the relevant document frame. | ch-16 |
+| Group mount | The deliberate layout position where a section group renders through the `sections` tag. | ch-16 |
+| Group-level composition | Merchant-managed section ordering for persistent layout content rather than one route template. | ch-16 |
+| Overlay group | A persistent section-group region used as a document mount for global drawers, popup layers, or announcement infrastructure. | ch-16 |
+| Section type | The Shopify-recognized section file and schema that define a reusable merchant-configurable component capability. | ch-17 |
+| Section instance | One rendered, configured occurrence of a section type with its own ID, settings, blocks, and placement. | ch-17 |
+| Schema contract | The validated editor-facing definition of a section’s settings, blocks, limits, placement, defaults, and localized labels. | ch-17 |
+| Static section | A section rendered from Liquid at a fixed code-defined placement using the `section` tag. | ch-17 |
+| Dynamic section | A schema-backed section instance placed and ordered through a JSON template or section group. | ch-17 |
+| Placement restriction | A schema rule that limits the templates or groups where a section can be added. | ch-17 |
+| Aggregated section resource | CSS or JavaScript declared in a section resource block that Shopify aggregates for the sections rendered on a page. | ch-17 |
+| Public block | A theme block file intended to be available as an editor-addable child type in compatible parent contracts. | ch-19 |
+| Private block | An underscore-prefixed theme block used as an internal compositional dependency rather than an editor-addable public type. | ch-19 |
+| Parent block contract | The declared layout, semantics, inputs, compatibility, and fallback rules a parent establishes for its child block region. | ch-19 |
+| Open block acceptance | A parent block or section capability that accepts compatible types through wildcard entries such as `@theme` or `@app`. | ch-19 |
+| Static theme block | A fixed-position block declared by its parent that can be configured or hidden but not normally deleted or reordered. | ch-19 |
+| Block library governance | The inventory, naming, usage tracing, deprecation, and cleanup discipline applied to theme block files. | ch-19 |
+| Child render slot | The `{% content_for 'blocks' %}` position where Shopify renders a parent instance’s configured dynamic child blocks. | ch-20 |
+| Static block render | The singular `content_for 'block'` call that renders one declared fixed-position static block by type and ID. | ch-20 |
+| Composition order source of truth | The Shopify JSON/editor configuration that determines the order of dynamic block instances. | ch-20 |
+| Child wrapper API | An explicit snippet interface that receives already-rendered child content captured from a `content_for` slot. | ch-20 |
+| Composable parent contract | The bounded purpose, child eligibility, ordering, semantics, empty-state, and lifecycle rules of a parent section or block. | ch-20 |
+| Render isolation | The explicit snippet scope created by `render`, which requires values to cross the call boundary as parameters. | ch-21 |
+| Snippet API | The documented required inputs, optional defaults, valid shapes, guards, and output behavior of a reusable snippet. | ch-21 |
+| Guard clause | An early snippet decision that handles a missing or invalid required input before incomplete markup is emitted. | ch-21 |
+| Recursive snippet | A snippet that renders a smaller child portion of a hierarchical input through an explicit self-render call. | ch-21 |
+| Snippet documentation | A colocated `{% doc %}` description of snippet purpose, parameters, types, defaults, and output. | ch-21 |
+| Renderer boundary | The explicit division between a caller that selects data and a snippet that renders supplied data. | ch-21 |
+| Settings schema API | The versioned global editor contract formed by setting IDs, types, groups, defaults, labels, and descriptions in `settings_schema.json`. | ch-22 |
+| Merchant-owned state | Theme configuration values retained for a merchant in `settings_data.json`, which schema changes must preserve or deliberately migrate. | ch-22 |
+| Conditional setting | A setting whose editor visibility is controlled by a predicate such as `visible_if`, while its persisted value still requires safe rendering behavior. | ch-22 |
+| Color scheme | A named, coherent selection of design-token values applied as a system instead of independent local color overrides. | ch-22 |
+| Settings ownership | The choice of whether a decision belongs to global theme settings, a section, a block, a template, or a content resource. | ch-22 |
+| Editor instance boundary | The stable root DOM scope for one section or block instance that the theme editor can mount, target, replace, select, or reorder. | ch-23 |
+| Editor identity attribute | The Shopify-generated attributes emitted through `section.shopify_attributes` or `block.shopify_attributes` to connect editor actions with rendered markup. | ch-23 |
+| Lifecycle cleanup | The explicit destruction of listeners, observers, timers, and third-party state when an editor-managed instance unloads. | ch-23 |
+| Dynamic source | A compatible editor connection between a setting and structured data available from the current resource context. | ch-23 |
+| Onboarding default | A safe initial setting or preset value that produces a usable new installation without overwriting merchant-owned configuration. | ch-23 |
+| Generated theme block | A theme block created through the theme editor’s generation workflow and retained as a Liquid file in the theme `blocks/` directory. | ch-24 |
+| Acceptance surface | A section or wrapper contract that intentionally allows a category of child blocks such as `@theme` or `@app`. | ch-24 |
+| Generated-block wrapper | The special `_blocks.liquid` section used by Shopify to situate generated theme blocks that are added as a new section. | ch-24 |
+| Wrapper precondition | A required capability of `_blocks.liquid`: `@theme`, `@app`, presets, a `content_for 'blocks'` slot, and no `templates` restriction. | ch-24 |
+| Generated-code review | The accessibility, responsiveness, compatibility, performance, token, and ownership assessment applied before retaining generated block code. | ch-24 |
+| Liquid-first composition | The developer-preview model in which a Liquid template names and composes page blocks directly rather than relying only on JSON composition. | ch-25 |
+| Direct block call | A developer-preview `{% block %}` invocation that renders a named theme block from `blocks/` with parameters and optional body content. | ch-25 |
+| Block body content | The markup nested between a direct block call and its end tag, rendered by the block through `block.content`. | ch-25 |
+| Named partial | A developer-preview region of server-rendered HTML declared with `{% partial %}` and addressable for a targeted update. | ch-25 |
+| Partial refresh | A request-and-apply update that replaces one or more named partial regions without a full page reload. | ch-25 |
+| Preview-track discipline | The isolation, validation, explicit labeling, observability, and reversibility required when evaluating an unstable platform feature. | ch-25 |
+| Request-scoped context | Information that belongs to the current storefront request, such as host, path, locale, page type, or editor state, rather than to the shop resource. | ch-26 |
+| Route-generated URL | A storefront URL produced by a `routes` property so it follows the store’s supported URL, account, language, and market contracts. | ch-26 |
+| Localization selection | The country, language, and market currently selected for a storefront request, distinct from the countries and languages available to choose. | ch-26 |
+| Navigation tree | The merchant-managed hierarchy of menu links accessed through `linklists` and rendered through `link` objects and their children. | ch-26 |
+| Context audit | The practice of recording data ownership, minimum context, absence behavior, and rendering purpose before introducing a global Liquid read. | ch-26 |
+| Current variant | The selected or deliberate fallback variant whose price, media, availability and purchase constraints a product surface must render consistently. | ch-27 |
+| Variant deep link | A product URL whose `variant` parameter identifies a product-page variant selection. | ch-27 |
+| Price range | Product-level minimum/maximum pricing data used to summarize multiple variants, distinct from a selected variant’s transactional price. | ch-27 |
+| Quantity rule | The context-sensitive minimum, maximum and increment contract governing purchasable quantity for a variant. | ch-27 |
+| Quantity price break | A context-sensitive variant pricing tier for a qualifying quantity, often supplied by a B2B catalog. | ch-27 |
+| Selling-plan allocation | The selected or available plan-specific purchase and price result associated with a variant. | ch-27 |
+| Product media ordering | The product-owned order of media objects, which can include images, videos, 3D models and external videos. | ch-27 |

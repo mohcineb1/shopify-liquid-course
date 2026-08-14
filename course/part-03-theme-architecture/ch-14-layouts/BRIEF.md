@@ -6,7 +6,7 @@ unit: "Chapter 14"
 title: "Layouts"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 14 — Layouts
@@ -15,12 +15,12 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 14.1 `theme.liquid` — the single frame around everything
-- [ ] 14.2 `content_for_header` — what Shopify injects and why you must not move it
-- [ ] 14.3 `content_for_layout` and the render slot
-- [ ] 14.4 Alternate layouts and the `{% layout %}` tag
-- [ ] 14.5 `password.liquid` and `gift_card.liquid`
-- [ ] 14.6 Historical note: `checkout.liquid` and why checkout is no longer yours
+- [x] 14.1 `theme.liquid` — the single frame around everything
+- [x] 14.2 `content_for_header` — what Shopify injects and why you must not move it
+- [x] 14.3 `content_for_layout` and the render slot
+- [x] 14.4 Alternate layouts and the `{% layout %}` tag
+- [x] 14.5 `password.liquid` and `gift_card.liquid`
+- [x] 14.6 Historical note: `checkout.liquid` and why checkout is no longer yours
 
 ## Labs assigned to this unit
 

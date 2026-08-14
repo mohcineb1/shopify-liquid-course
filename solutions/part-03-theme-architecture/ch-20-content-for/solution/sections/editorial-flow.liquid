@@ -1,0 +1,10 @@
+<section class="editorial-flow">
+  <header class="editorial-flow__header">
+    {% content_for 'block', type: '_flow-title', id: 'title' %}
+  </header>
+  {% capture child_content %}
+    {% content_for 'blocks' %}
+  {% endcapture %}
+  {% render 'group', content: child_content, class: 'editorial-flow__cards' %}
+</section>
+{% schema %}{ "name": "Editorial flow", "blocks": [{ "type": "@theme" }], "presets": [{ "name": "Editorial flow" }] }{% endschema %}

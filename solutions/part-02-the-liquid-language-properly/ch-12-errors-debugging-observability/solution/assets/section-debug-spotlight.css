@@ -1,0 +1,4 @@
+.debug-spotlight { padding: 2rem 1.5rem; }
+.debug-spotlight__list { display: grid; gap: .75rem; list-style: none; margin: 0; padding: 0; }
+.debug-spotlight__item { border: 1px solid rgba(var(--color-foreground), .16); padding: .75rem; }
+.debug-output { overflow: auto; padding: 1rem; white-space: pre-wrap; }

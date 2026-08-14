@@ -1,0 +1,9 @@
+.collection-notes { padding-block: 3rem; }
+.collection-notes__inner { display: grid; gap: 1.5rem; }
+.collection-notes__panels { display: grid; gap: 1rem; }
+.collection-notes__panel { border: 1px solid currentColor; padding: 1rem; }
+.collection-notes__panel h3, .collection-notes__panel p { margin-block: 0; }
+.collection-notes__panel h3 { margin-bottom: 0.5rem; }
+.collection-notes--editor-selected { outline: 3px solid Highlight; outline-offset: 0.35rem; }
+.collection-notes__panel--editor-selected { background: color-mix(in srgb, currentColor 10%, transparent); }
+.collection-notes__panel--expanded { border-width: 2px; }

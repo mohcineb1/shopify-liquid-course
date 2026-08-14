@@ -1,0 +1,7 @@
+{{ 'section-menu-links.css' | asset_url | stylesheet_tag }}
+{% if section.settings.menu != blank %}
+  <nav class="menu-links" aria-label="{{ section.settings.label | escape }}">
+    {% render 'menu-list', links: section.settings.menu.links, label: section.settings.label, level: 1 %}
+  </nav>
+{% endif %}
+{% schema %}{ "name": "Menu links", "settings": [{ "type": "link_list", "id": "menu", "label": "Menu" }, { "type": "text", "id": "label", "label": "Navigation label", "default": "Primary navigation" }] }{% endschema %}

@@ -101,3 +101,78 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** Drop interface, deferred relationship access, access shape, public payload contract, payload minimization.
 **Assumed known from earlier:** Drop availability and object graph (ch-03); blank and EmptyDrop semantics (ch-05); render isolation (ch-06); iteration bounds (ch-08); JSON serialization (ch-09).
 **Deliberately deferred:** detailed product, collection, cart, customer, and metafield contracts → ch-27 to ch-34; browser-side JSON consumption → ch-37; reusable snippet API design → ch-21.
+### ch-12 — Errors, Debugging & Observability
+**Taught:** syntax versus render versus silent-output failure classes; minimal JSON diagnostics; current URL and editor inspection workflows; guarded debug snippet contracts; and evidence-led Theme Inspector flame-profile analysis.
+**Introduced terms:** silent output absence, diagnostic boundary, reproduction state, environment guard, flame-profile hypothesis.
+**Assumed known from earlier:** Drop access shapes and public payload contracts (ch-11); JSON serialization (ch-09); explicit snippet inputs (ch-06).
+**Deliberately deferred:** section editor architecture → ch-17; formal snippet APIs → ch-21; browser implementation and console workflows → ch-37; resource-specific diagnostics → ch-27 to ch-34.
+### ch-13 — Anatomy of a Theme
+**Taught:** the runtime roles of theme directories; Shopify-special versus team-invented files; verified package, file, template, section, and block limits; and the application, checkout, data, and network responsibilities a theme must not absorb.
+**Introduced terms:** directory contract, special file, resource home, theme composition graph, architecture surface.
+**Assumed known from earlier:** Liquid runtime boundaries (ch-01); explicit snippet inputs (ch-06); theme asset filters (ch-10).
+**Deliberately deferred:** JSON template composition → ch-15; section groups → ch-16; section and block schemas → ch-17 to ch-20; snippet APIs → ch-21; settings UX → ch-24.
+### ch-14 — Layouts
+**Taught:** `theme.liquid` as the global document frame; the single documented placement of `content_for_header` and `content_for_layout`; alternate layout selection; special password and gift-card frames; and checkout’s migration away from theme-owned `checkout.liquid`.
+**Introduced terms:** document frame, header injection slot, layout render slot, alternate layout, special layout contract.
+**Assumed known from earlier:** theme directory and special-file contracts (ch-13); theme asset delivery (ch-10); runtime boundaries (ch-01).
+**Deliberately deferred:** JSON template composition → ch-15; persistent section groups → ch-16; checkout extensibility → ch-56; browser data behavior → ch-37.
+### ch-15 — Templates
+**Taught:** storefront template families; JSON versus Liquid composition; alternate suffix routing; JSON `sections`, `order`, `settings`, and block instances; template-scoped resource context; and merchant template-assignment lifecycle.
+**Introduced terms:** template family, template suffix, section instance, composition manifest, assignment lifecycle.
+**Assumed known from earlier:** theme directory and special-file contracts (ch-13); layouts and render slots (ch-14); context-dependent Drops (ch-03 and ch-11).
+**Deliberately deferred:** section groups → ch-16; section schema design → ch-17; blocks → ch-18 to ch-20; product and collection objects → ch-27; metaobjects → ch-35.
+### ch-16 — Section Groups
+**Taught:** persistent composition boundaries; header, footer, and aside group files; layout wiring through `{% sections %}`; group versus template ownership; and global overlay placement with separate behavior/accessibility contracts.
+**Introduced terms:** section group, persistent composition boundary, group mount, group-level composition, overlay group.
+**Assumed known from earlier:** layouts and render slots (ch-14); template JSON composition (ch-15); section settings and context discipline (ch-03 and ch-11).
+**Deliberately deferred:** detailed section schemas → ch-17; block systems → ch-18 to ch-20; overlay JavaScript and accessibility implementation → ch-37 and later UI chapters.
+### ch-17 — Sections
+**Taught:** section-file anatomy; the contextual section object; schema attributes and placement controls; static versus dynamic placement; verified section/block ceilings; aggregated section resources; and localized merchant-facing schema copy.
+**Introduced terms:** section type, section instance, schema contract, static section, dynamic section, placement restriction, aggregated section resource.
+**Assumed known from earlier:** template composition (ch-15); section groups (ch-16); object/context discipline (ch-03 and ch-11).
+**Deliberately deferred:** blocks in depth → ch-18 to ch-20; snippets as APIs → ch-21; theme settings → ch-24; client interaction implementation → ch-37.
+### ch-19 — Theme Blocks in Depth
+**Taught:** public versus private block-file conventions; block schema and parent differences; bounded nesting; `@theme` and `@app` acceptance; static versus dynamic block position; verified 300-file accounting; and editor identity through `block.shopify_attributes`.
+**Introduced terms:** public block, private block, parent block contract, open block acceptance, static theme block, block library governance.
+**Assumed known from earlier:** section schemas and editor contracts (ch-17); the three block models (ch-18); theme directory and verified limits (ch-13).
+**Deliberately deferred:** detailed cross-block composition patterns → ch-20; snippet API boundaries → ch-21; app embedding mechanics → ch-56.
+### ch-20 — `content_for`
+**Taught:** dynamic child slots; singular static-block rendering; JSON/editor ordering ownership; capture-and-render wrapper APIs; and the bounded parent contract required for genuinely composable sections.
+**Introduced terms:** child render slot, static block render, composition order source of truth, child wrapper API, composable parent contract.
+**Assumed known from earlier:** section schema contracts (ch-17); theme-block child contracts (ch-19); snippet APIs (previewed, ch-21 follows).
+**Deliberately deferred:** reusable snippet API design → ch-21; client behavior inside composed sections → ch-37; application blocks in depth → ch-56.
+### ch-21 — Snippets
+**Taught:** isolated `render`; the deprecated shared scope of `include`; named/with/for parameter passing; constrained snippet APIs; recursive menu rendering; `{% doc %}` documentation; and snippet/block/section ownership decisions.
+**Introduced terms:** render isolation, snippet API, guard clause, recursive snippet, snippet documentation, renderer boundary.
+**Assumed known from earlier:** Liquid scope (ch-06); sections and blocks (ch-17 to ch-20); current deprecations (docs/DEPRECATIONS.md).
+**Deliberately deferred:** JSON data boundaries → ch-22; menu object specifics → ch-32; client-side menu interaction → ch-37.
+### ch-22 — Settings Architecture
+**Taught:** global `settings_schema.json` structure and ordering; supported input and sidebar setting categories; conditional visibility through `visible_if`; the merchant-owned state represented by `settings_data.json` and presets; color schemes as design-token systems; and merchant-focused settings UX.
+**Introduced terms:** settings schema API, merchant-owned state, conditional setting, color scheme, design token, settings ownership.
+**Assumed known from earlier:** section schemas and local controls (ch-17); blocks and composition ownership (ch-18 to ch-20); explicit snippet rendering contracts (ch-21).
+**Deliberately deferred:** Liquid consumption of global settings → ch-24; detailed navigation data → ch-32; structured content sources → ch-35.
+### ch-23 — The Theme Editor Contract
+**Taught:** editor instance mounting, targeting and reordering; `shopify_attributes` identity on sections and blocks; editor lifecycle events; reorder-resilient sections; dynamic-source ownership; and first-install defaults.
+**Introduced terms:** editor instance boundary, editor identity attribute, lifecycle cleanup, live-reorder resilience, dynamic source, onboarding default.
+**Assumed known from earlier:** section schema and instances (ch-17); block identity and composition (ch-19 to ch-20); global settings ownership (ch-22).
+**Deliberately deferred:** metafield type rendering → ch-35; client interaction architecture → ch-37; advanced accessibility behavior → ch-45.
+### ch-24 — AI-Generated Blocks
+**Taught:** merchant-generated theme blocks; intentional `@theme` and `@app` acceptance; block render slots; the special `_blocks.liquid` wrapper contract; and design-system governance for generated code.
+**Introduced terms:** generated theme block, acceptance surface, generated-block wrapper, wrapper precondition, generated-code review.
+**Assumed known from earlier:** section schemas (ch-17); block contracts and public blocks (ch-19); `content_for` composition (ch-20); settings systems (ch-22); editor behavior (ch-23).
+**Deliberately deferred:** full app extension implementation → ch-56; general JavaScript architecture → ch-37; block library migration strategy → ch-59.
+### ch-25 — On the Horizon: `{% block %}` and `{% partial %}`
+**Taught:** the Liquid July ’26 developer preview; direct block composition; named server-rendered partial regions; Liquid-first template ownership; coexistence with JSON and section groups; and reversible preview discipline.
+**Introduced terms:** Liquid-first composition, direct block call, block body content, named partial, partial refresh, preview-track discipline.
+**Assumed known from earlier:** theme blocks and child contracts (ch-19); `content_for` and JSON-owned order (ch-20); snippet APIs (ch-21); section/editor ownership (ch-23).
+**Deliberately deferred:** stable client-side architecture → ch-37; production app integration → ch-56; future platform migration governance → ch-59.
+### ch-26 — Global Objects
+**Taught:** store identity/capability reads through `shop`; request-scoped context; route-generated URLs; global settings, templates, canonical URLs, handles, pagination and tags; localization selections; and merchant-managed navigation trees.
+**Introduced terms:** request-scoped context, route-generated URL, canonical URL, localization selection, navigation tree, context audit.
+**Assumed known from earlier:** Liquid object access (ch-03); schema-owned global settings (ch-22); snippet API rendering (ch-21).
+**Deliberately deferred:** product and collection resource detail → ch-27 to ch-28; metaobjects → ch-35; full client-side navigation behavior → ch-37.
+### ch-27 — Products
+**Taught:** product versus selected-variant responsibilities; option ordering and swatches; variant deep links; product and variant pricing; availability, quantity rules and breaks; ordered multi-media; selling-plan data; product metafields; and organizational metadata.
+**Introduced terms:** current variant, variant deep link, price range, quantity rule, quantity price break, selling-plan allocation, product media ordering.
+**Assumed known from earlier:** global object/context discipline (ch-26); settings ownership (ch-22); Liquid rendering and guards (ch-05 to ch-09).
+**Deliberately deferred:** collection filtering and product lists → ch-28; metaobject modeling → ch-35; dynamic variant interaction implementation → ch-37.

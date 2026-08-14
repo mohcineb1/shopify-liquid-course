@@ -1,0 +1,12 @@
+{{ 'section-collection-highlight.css' | asset_url | stylesheet_tag }}
+<section class="collection-highlight" aria-labelledby="CollectionHighlightHeading-{{ section.id }}">
+  <h2 id="CollectionHighlightHeading-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+  {% if section.settings.collection != blank %}
+    {% for product in section.settings.collection.products limit: 3 %}
+      {% if forloop.first %}<ol class="collection-highlight__list">{% endif %}
+      {% render 'collection-highlight-card', product: product %}
+      {% if forloop.last %}</ol>{% endif %}
+    {% else %}<p>{{ 'sections.collection_highlight.empty_collection' | t }}</p>{% endfor %}
+  {% else %}<p>{{ 'sections.collection_highlight.select_collection' | t }}</p>{% endif %}
+</section>
+{% schema %}{ "name": "Collection highlight", "tag": "section", "settings": [{ "type": "text", "id": "heading", "label": "Heading", "default": "Collection highlight" }, { "type": "collection", "id": "collection", "label": "Collection" }], "presets": [{ "name": "Collection highlight" }] }{% endschema %}

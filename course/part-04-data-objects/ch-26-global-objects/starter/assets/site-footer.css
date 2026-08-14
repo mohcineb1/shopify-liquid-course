@@ -1,0 +1,4 @@
+.site-footer { border-top: 1px solid currentColor; padding-block: 2rem; }
+.site-footer .page-width { display: grid; gap: 1rem; }
+.site-footer__brand, .site-footer__locale, .site-footer__policy { margin: 0; }
+.site-footer__menu { display: flex; flex-wrap: wrap; gap: 0.75rem; list-style: none; margin: 0; padding: 0; }

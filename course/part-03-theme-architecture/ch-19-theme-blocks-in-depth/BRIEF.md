@@ -6,7 +6,7 @@ unit: "Chapter 19"
 title: "Theme Blocks in Depth"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 19 — Theme Blocks in Depth
@@ -15,13 +15,13 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 19.1 File conventions, the underscore prefix, and private blocks
-- [ ] 19.2 Block schema: settings, `presets`, `tag`, `class`, and the rules that differ from sections
-- [ ] 19.3 Nesting: children, up to 8 levels deep, and how deep is too deep
-- [ ] 19.4 The `@theme` and `@app` wildcards — accepting any block without hardcoding
-- [ ] 19.5 Static theme blocks: fixed position, hideable but not deletable
-- [ ] 19.6 The 300-theme-block ceiling and unreferenced-file accounting
-- [ ] 19.7 `block.shopify_attributes` and the theme editor contract
+- [x] 19.1 File conventions, the underscore prefix, and private blocks
+- [x] 19.2 Block schema: settings, `presets`, `tag`, `class`, and the rules that differ from sections
+- [x] 19.3 Nesting: children, up to 8 levels deep, and how deep is too deep
+- [x] 19.4 The `@theme` and `@app` wildcards — accepting any block without hardcoding
+- [x] 19.5 Static theme blocks: fixed position, hideable but not deletable
+- [x] 19.6 The 300-theme-block ceiling and unreferenced-file accounting
+- [x] 19.7 `block.shopify_attributes` and the theme editor contract
 
 ## Labs assigned to this unit
 

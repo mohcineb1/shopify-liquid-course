@@ -1,0 +1,4 @@
+{
+  "sections": { "drawer": { "type": "cart-drawer-shell", "settings": {} } },
+  "order": ["drawer"]
+}

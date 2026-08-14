@@ -6,7 +6,7 @@ unit: "Chapter 26"
 title: "Global Objects"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 26 — Global Objects
@@ -15,12 +15,12 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 26.1 `shop` — every property worth knowing
-- [ ] 26.2 `request` — `page_type`, `path`, `host`, `origin`, `design_mode`, `visual_preview_mode`, `locale`
-- [ ] 26.3 `routes` — never hardcode a URL again
-- [ ] 26.4 `settings`, `template`, `canonical_url`, `handle`, `current_page`, `current_tags`
-- [ ] 26.5 `localization`, `country`, `language`, `market`
-- [ ] 26.6 `linklists` and the `link` object — navigation trees
+- [x] 26.1 `shop` — every property worth knowing
+- [x] 26.2 `request` — `page_type`, `path`, `host`, `origin`, `design_mode`, `visual_preview_mode`, `locale`
+- [x] 26.3 `routes` — never hardcode a URL again
+- [x] 26.4 `settings`, `template`, `canonical_url`, `handle`, `current_page`, `current_tags`
+- [x] 26.5 `localization`, `country`, `language`, `market`
+- [x] 26.6 `linklists` and the `link` object — navigation trees
 
 ## Labs assigned to this unit
 

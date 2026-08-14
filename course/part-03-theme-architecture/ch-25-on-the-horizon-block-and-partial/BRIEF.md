@@ -6,7 +6,7 @@ unit: "Chapter 25"
 title: "On the Horizon: `{% block %}` and `{% partial %}`"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 25 — On the Horizon: `{% block %}` and `{% partial %}`
@@ -15,12 +15,12 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 25.1 The July '26 developer preview and what it changes
-- [ ] 25.2 `{% block %}` — rendering a theme block directly from a template
-- [ ] 25.3 `{% partial %}` — named server-rendered regions refreshed without a full reload
-- [ ] 25.4 Composing whole pages in Liquid: fewer files, one readable source
-- [ ] 25.5 What this means for the future of section groups and JSON templates
-- [ ] 25.6 Preview-track discipline: how to experiment without shipping instability
+- [x] 25.1 The July '26 developer preview and what it changes
+- [x] 25.2 `{% block %}` — rendering a theme block directly from a template
+- [x] 25.3 `{% partial %}` — named server-rendered regions refreshed without a full reload
+- [x] 25.4 Composing whole pages in Liquid: fewer files, one readable source
+- [x] 25.5 What this means for the future of section groups and JSON templates
+- [x] 25.6 Preview-track discipline: how to experiment without shipping instability
 
 ## Labs assigned to this unit
 

@@ -1,0 +1,18 @@
+<section class="feature-list" id="FeatureList-{{ section.id }}" aria-labelledby="FeatureListHeading-{{ section.id }}">
+  {% if section.settings.heading != blank %}<h2 id="FeatureListHeading-{{ section.id }}">{{ section.settings.heading | escape }}</h2>{% endif %}
+  <ul class="feature-list__items">
+    {% for block in section.blocks %}
+      <li class="feature-list__item" {{ block.shopify_attributes }}><h3>{{ block.settings.heading | escape }}</h3><p>{{ block.settings.body | escape }}</p></li>
+    {% endfor %}
+  </ul>
+</section>
+{% stylesheet %}
+.feature-list { padding: 2rem 1.5rem; }
+.feature-list__items { display: grid; gap: 1rem; list-style: none; margin: 0; padding: 0; }
+{% endstylesheet %}
+{% javascript %}
+document.querySelectorAll('[id^="FeatureList-"]').forEach((section) => { section.dataset.featureListReady = 'true'; });
+{% endjavascript %}
+{% schema %}
+{ "name": "t:sections.feature_list.name", "tag": "section", "class": "section-feature-list", "settings": [{ "type": "text", "id": "heading", "label": "t:sections.feature_list.heading", "default": "t:sections.feature_list.default_heading" }], "blocks": [{ "type": "feature", "name": "t:sections.feature_list.feature", "settings": [{ "type": "text", "id": "heading", "label": "t:sections.feature_list.feature_heading" }, { "type": "textarea", "id": "body", "label": "t:sections.feature_list.feature_body" }] }], "max_blocks": 4, "presets": [{ "name": "t:sections.feature_list.name" }], "locales": {}, "enabled_on": { "templates": ["page", "product", "collection"] } }
+{% endschema %}

@@ -1,0 +1,5 @@
+{{ 'generated-blocks.css' | asset_url | stylesheet_tag }}
+<section class="campaign-content-band color-{{ section.settings.color_scheme }}" {{ section.shopify_attributes }}><div class="campaign-content-band__inner page-width">{% content_for 'blocks' %}</div></section>
+{% schema %}
+{ "name": "Campaign content band", "settings": [{ "type": "color_scheme", "id": "color_scheme", "label": "Colour scheme", "default": "scheme-1" }], "blocks": [{ "type": "@theme" }, { "type": "@app" }], "presets": [{ "name": "Campaign content band" }] }
+{% endschema %}

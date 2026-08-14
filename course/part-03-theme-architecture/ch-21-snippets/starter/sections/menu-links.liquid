@@ -1,0 +1,5 @@
+{{ 'section-menu-links.css' | asset_url | stylesheet_tag }}
+<nav class="menu-links" aria-label="{{ section.settings.label | escape }}">
+  {%- comment -%} Select menu here, then pass its links and label through render. {%- endcomment -%}
+</nav>
+{% schema %}{ "name": "Menu links", "settings": [{ "type": "link_list", "id": "menu", "label": "Menu" }, { "type": "text", "id": "label", "label": "Navigation label", "default": "Primary navigation" }] }{% endschema %}

@@ -1,0 +1,14 @@
+{% doc %}
+  Renders one accessible navigation list level.
+  @param {linklist} links - Required links for this level.
+  @param {string} label - Optional accessible navigation label.
+  @param {number} level - Optional current nesting level.
+{% enddoc %}
+{% if links == blank %}{% break %}{% endif %}
+<ul class="menu-links__list menu-links__list--level-{{ level | default: 1 }}" aria-label="{{ label | escape }}">
+  {% for link in links %}
+    <li class="menu-links__item"><a href="{{ link.url }}">{{ link.title | escape }}</a>
+      {% if link.links != blank %}{% assign next_level = level | default: 1 | plus: 1 %}{% render 'menu-list', links: link.links, label: link.title, level: next_level %}{% endif %}
+    </li>
+  {% endfor %}
+</ul>

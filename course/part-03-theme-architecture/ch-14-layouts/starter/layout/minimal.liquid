@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+  <head>
+    <meta charset="utf-8">
+    {{ 'layout-minimal.css' | asset_url | stylesheet_tag }}
+    {%- comment -%} Place the unmodified Shopify head slot here exactly once. {%- endcomment -%}
+  </head>
+  <body class="layout-minimal">
+    <a class="layout-minimal__skip-link" href="#MainContent">Skip to content</a>
+    <header class="layout-minimal__brand"><a href="{{ routes.root_url }}">{{ shop.name | escape }}</a></header>
+    <main id="MainContent" class="layout-minimal__main" role="main" tabindex="-1">
+      {%- comment -%} Place the unmodified template render slot here exactly once. {%- endcomment -%}
+    </main>
+  </body>
+</html>

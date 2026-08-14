@@ -1,0 +1,6 @@
+<section class="editorial-flow">
+  <header class="editorial-flow__header">{%- comment -%} Render fixed title here. {%- endcomment -%}</header>
+  {%- capture child_content -%}{%- comment -%} Render dynamic child slot here. {%- endcomment -%}{%- endcapture -%}
+  {%- comment -%} Pass child_content and group class to the group snippet here. {%- endcomment -%}
+</section>
+{% schema %}{ "name": "Editorial flow", "blocks": [{ "type": "@theme" }], "presets": [{ "name": "Editorial flow" }] }{% endschema %}

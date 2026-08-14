@@ -6,7 +6,7 @@ unit: "Chapter 17"
 title: "Sections"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 17 — Sections
@@ -15,13 +15,13 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 17.1 Section file anatomy: markup + `{% schema %}` + `{% stylesheet %}` + `{% javascript %}`
-- [ ] 17.2 The `section` object: `id`, `settings`, `blocks`, `index`, `location`
-- [ ] 17.3 Schema attributes: `name`, `tag`, `class`, `limit`, `settings`, `blocks`, `max_blocks`, `presets`, `default`, `locales`, `enabled_on`, `disabled_on`
-- [ ] 17.4 Static sections via `{% section %}` vs dynamic sections in JSON templates
-- [ ] 17.5 The 25-section / 50-block ceiling and how to design within it
-- [ ] 17.6 `{% stylesheet %}` and `{% javascript %}` — how Shopify aggregates them and the real performance cost
-- [ ] 17.7 Section naming, `t:` translated schema strings, and merchant-facing copy
+- [x] 17.1 Section file anatomy: markup + `{% schema %}` + `{% stylesheet %}` + `{% javascript %}`
+- [x] 17.2 The `section` object: `id`, `settings`, `blocks`, `index`, `location`
+- [x] 17.3 Schema attributes: `name`, `tag`, `class`, `limit`, `settings`, `blocks`, `max_blocks`, `presets`, `default`, `locales`, `enabled_on`, `disabled_on`
+- [x] 17.4 Static sections via `{% section %}` vs dynamic sections in JSON templates
+- [x] 17.5 The 25-section / 50-block ceiling and how to design within it
+- [x] 17.6 `{% stylesheet %}` and `{% javascript %}` — how Shopify aggregates them and the real performance cost
+- [x] 17.7 Section naming, `t:` translated schema strings, and merchant-facing copy
 
 ## Labs assigned to this unit
 

@@ -1,0 +1,5 @@
+<article class="editorial-card" {{ block.shopify_attributes }}>
+  <h3>{{ block.settings.heading | escape }}</h3>
+  <p>{{ block.settings.body | escape }}</p>
+</article>
+{% schema %}{ "name": "Editorial card", "settings": [{ "type": "text", "id": "heading", "label": "Heading" }, { "type": "textarea", "id": "body", "label": "Body" }], "presets": [{ "name": "Editorial card" }] }{% endschema %}

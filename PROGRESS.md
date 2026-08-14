@@ -377,3 +377,325 @@ Entry format:
 - decided: treated every relationship access as a bounded public-data and rendering-cost decision rather than an ordinary local object read.
 - updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
 - next: ch-11 exercise
+## 2026-08-14 · ch-11 · exercise
+- wrote: `course/part-02-the-liquid-language-properly/ch-11-drops-in-depth/exercise.md` with a bounded-drop section, stylesheet, and minimal JSON snippet under `starter/`.
+- flagged: `[VERIFY]` for any expanded Drop relationship, its runtime cost, and its public exposure need.
+- decided: made the learner state four outer products, two inner variants, one visible image relationship, and a three-field public payload.
+- next: ch-11 solution
+## 2026-08-14 · ch-11 · solution
+- wrote: `solutions/part-02-the-liquid-language-properly/ch-11-drops-in-depth/solution.md` with mirrored section, stylesheet, and three-field JSON snippet.
+- flagged: `[VERIFY]` for every future Drop relation’s availability, cost, and public exposure requirement.
+- decided: bounded the implementation at four contextual products, two variants per card, one direct image relation, and a minimal public payload.
+- next: ch-11 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-11 · review
+- wrote: finalised the chapter’s lesson, exercise, brief, and solution statuses.
+- flagged: retained `[VERIFY]` for Drop availability, relation cost, and public JSON exposure before production expansion.
+- decided: checklist confirmed all five scope items, starter/solution parity, bounded access shapes, and review isolation from the solution.
+- next: ch-12 lesson
+## 2026-08-14 · ch-12 · lesson
+- wrote: `course/part-02-the-liquid-language-properly/ch-12-errors-debugging-observability/lesson.md` covering error classes, minimal diagnostics, URL/editor workflows, guards, and flame profiles.
+- flagged: `[VERIFY]` for current URL-parameter behavior, environment signals, and serialized Drop field surfaces.
+- decided: treated every debugging output as a minimal public boundary and every performance change as a comparable measured hypothesis.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-12 exercise
+## 2026-08-14 · ch-12 · exercise
+- wrote: `course/part-02-the-liquid-language-properly/ch-12-errors-debugging-observability/exercise.md` with a guarded diagnostic section, CSS, and minimal debug snippet under `starter/`.
+- flagged: `[VERIFY]` for actual debug-guard ownership and the current exposure surface of any serialized value.
+- decided: separated missing-setting, selected-empty, and normal states while making the debug API explicit and disabled by default.
+- next: ch-12 solution
+## 2026-08-14 · ch-12 · solution
+- wrote: `solutions/part-02-the-liquid-language-properly/ch-12-errors-debugging-observability/solution.md` with mirrored section, CSS, and guarded minimal debug snippet.
+- flagged: `[VERIFY]` for debug-guard ownership and any expansion of the public diagnostic payload.
+- decided: kept configuration absence, selected-empty state, normal output, and guarded diagnostics as distinct, reproducible contracts.
+- next: ch-12 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-12 · review
+- wrote: finalised the chapter’s lesson, exercise, brief, and solution statuses.
+- flagged: retained `[VERIFY]` for URL diagnostic behavior, guard ownership, and serialized payload exposure.
+- decided: checklist confirmed all six scope items, starter/solution parity, distinct debug states, and review isolation from the completed answer.
+- next: ch-13 lesson
+## 2026-08-14 · ch-13 · lesson
+- wrote: `course/part-03-theme-architecture/ch-13-anatomy-of-a-theme/lesson.md` covering directory contracts, special files, verified limits, and theme runtime boundaries.
+- flagged: `[VERIFY]` for current special-file schema and placement rules before creating architecture surfaces.
+- decided: used verified limits as component-design signals and separated theme rendering responsibilities from application, API, and checkout work.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-13 exercise
+## 2026-08-14 · ch-13 · exercise
+- wrote: `course/part-03-theme-architecture/ch-13-anatomy-of-a-theme/exercise.md` with section, snippet, CSS, and locale starter files.
+- flagged: `[VERIFY]` for current locale and section-schema file-shape requirements before production use.
+- decided: made directory placement, explicit snippet input, locale-owned copy, and bounded section preview observable in one small component.
+- next: ch-13 solution
+## 2026-08-14 · ch-13 · solution
+- wrote: `solutions/part-03-theme-architecture/ch-13-anatomy-of-a-theme/solution.md` with mirrored section, snippet, asset, and locale files.
+- flagged: `[VERIFY]` for production locale and section-schema conventions before merging into a target theme.
+- decided: separated editor schema, selected-collection state, bounded snippet rendering, theme asset delivery, and locale copy into their owning homes.
+- next: ch-13 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-13 · review
+- wrote: finalised the chapter’s lesson, exercise, brief, and solution statuses.
+- flagged: retained `[VERIFY]` for current production locale and schema conventions.
+- decided: checklist confirmed all four scope items, file-home parity, verified platform limits, and review isolation from the completed answer.
+- next: ch-14 lesson
+## 2026-08-14 · ch-14 · lesson
+- wrote: `course/part-03-theme-architecture/ch-14-layouts/lesson.md` covering layout slots, alternate frames, special layouts, and checkout migration boundaries.
+- flagged: `[VERIFY]` for alternate-layout, layout-none, and special-layout behavior before production use.
+- decided: treated the layout as a singular document frame with one platform head slot and one template render slot.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-14 exercise
+## 2026-08-14 · ch-14 · exercise
+- wrote: `course/part-03-theme-architecture/ch-14-layouts/exercise.md` with minimal layout, CSS, and explicit campaign-callout starter files.
+- flagged: `[VERIFY]` for current template compatibility before selecting an alternate production layout.
+- decided: made the document frame, single Shopify slots, skip-link target, and snippet/layout boundary observable in the starter.
+- next: ch-14 solution
+## 2026-08-14 · ch-14 · solution
+- wrote: `solutions/part-03-theme-architecture/ch-14-layouts/solution.md` with mirrored minimal layout, asset, and explicit campaign-callout snippet.
+- flagged: `[VERIFY]` for compatible production template selection of the alternate layout.
+- decided: preserved singular Shopify slots, document-level accessibility, and the boundary between frame concerns and template content.
+- next: ch-14 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-14 · review
+- wrote: finalised the chapter’s lesson, exercise, brief, and solution statuses.
+- flagged: retained `[VERIFY]` for alternate-layout compatibility before production selection.
+- decided: checklist confirmed all six scope items, starter/solution parity, singular layout slots, and review isolation from the completed answer.
+- next: ch-15 lesson
+## 2026-08-14 · ch-15 · lesson
+- wrote: `course/part-03-theme-architecture/ch-15-templates/lesson.md` covering template families, JSON/Liquid trade-offs, suffix routing, JSON anatomy, contextual objects, and assignments.
+- flagged: `[VERIFY]` for current JSON-template support and object availability by target template type.
+- decided: treated template suffixes as durable merchant composition choices and JSON entries as schema-constrained section instances.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-15 exercise
+## 2026-08-14 · ch-15 · exercise
+- wrote: `course/part-03-theme-architecture/ch-15-templates/exercise.md` with a JSON product alternate plus section, asset, locale, and template starter files.
+- flagged: `[VERIFY]` for current JSON-template and merchant assignment support before production use.
+- decided: made product-specific versus reusable section context, JSON instance ordering, locale copy, and suffix lifecycle explicit.
+- next: ch-15 solution
+## 2026-08-14 · ch-15 · solution
+- wrote: `solutions/part-03-theme-architecture/ch-15-templates/solution.md` with mirrored JSON template, sections, asset, locale, and assignment lifecycle guidance.
+- flagged: `[VERIFY]` for current production JSON-template and product-alternate assignment support.
+- decided: kept template instance configuration, product context, section settings, locale defaults, and merchant assignment as separate contracts.
+- next: ch-15 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-15 · review
+- wrote: finalised the chapter’s lesson, exercise, brief, and solution statuses.
+- flagged: retained `[VERIFY]` for JSON-template and alternate-assignment support in production contexts.
+- decided: checklist confirmed all six scope items, starter/solution parity, merchant lifecycle coverage, and review isolation from the completed answer.
+- next: ch-16 lesson
+## 2026-08-14 · ch-16 · lesson
+- wrote: `course/part-03-theme-architecture/ch-16-section-groups/lesson.md` covering persistent groups, layout mounts, group/template distinction, and overlays.
+- flagged: `[VERIFY]` for current group type, naming, placement, and `{% sections %}` syntax support.
+- decided: assigned persistent composition to layout-owned groups while preserving resource-specific content for template composition.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-16 exercise
+## 2026-08-14 · ch-16 · exercise
+- wrote: `course/part-03-theme-architecture/ch-16-section-groups/exercise.md` with header/aside group JSON, layout fragment, sections, CSS, and locale starter files.
+- flagged: `[VERIFY]` for current group naming, group-member eligibility, and layout mount syntax.
+- decided: made global header and aside ownership explicit while deferring drawer behavior and route-specific data.
+- next: ch-16 solution
+## 2026-08-14 · ch-16 · solution
+- wrote: `solutions/part-03-theme-architecture/ch-16-section-groups/solution.md` with mirrored group manifests, sections, layout fragment, asset, and locale files.
+- flagged: `[VERIFY]` for current group member eligibility, names, and layout mount support.
+- decided: separated persistent group ordering, singular layout mounting, global data discipline, and deferred interactive drawer behavior.
+- next: ch-16 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-16 · review
+- wrote: finalised the chapter’s lesson, exercise, brief, and solution statuses.
+- flagged: retained `[VERIFY]` for group syntax, naming, and member eligibility in current Shopify theme architecture.
+- decided: checklist confirmed all five scope items, starter/solution parity, persistent ownership, and review isolation from the completed answer.
+- next: ch-17 lesson
+## 2026-08-14 · ch-17 · lesson
+- wrote: `course/part-03-theme-architecture/ch-17-sections/lesson.md` covering anatomy, section object, schema controls, placement, limits, resources, and localization.
+- flagged: `[VERIFY]` for current `section.index`/`location` semantics and section resource aggregation behavior.
+- decided: treated schema as a constrained merchant product interface and resource aggregation as delivery rather than free performance.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-17 exercise
+## 2026-08-14 · ch-17 · exercise
+- wrote: `course/part-03-theme-architecture/ch-17-sections/exercise.md` with a localized feature-list section and locale starter files.
+- flagged: `[VERIFY]` for current schema, placement, and section resource-block behavior.
+- decided: constrained the editor task to four feature blocks, instance-safe IDs, schema localization, and progressive enhancement.
+- next: ch-17 solution
+## 2026-08-14 · ch-17 · solution
+- wrote: `solutions/part-03-theme-architecture/ch-17-sections/solution.md` with mirrored localized section and explicit section/block contract guidance.
+- flagged: `[VERIFY]` for current schema placement, localization, and resource aggregation behavior.
+- decided: kept section identity, block limits, merchant schema, placement, and progressive resources as separate reviewable contracts.
+- next: ch-17 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-17 · review
+- wrote: finalised the chapter’s lesson, exercise, brief, and solution statuses.
+- flagged: retained `[VERIFY]` for current schema, placement, and aggregated resource behavior.
+- decided: checklist confirmed all seven scope items, starter/solution parity, editor contract coverage, and review isolation from the completed answer.
+- next: ch-19 lesson
+## 2026-08-14 · ch-19 · lesson
+- wrote: `course/part-03-theme-architecture/ch-19-theme-blocks-in-depth/lesson.md` covering file visibility, schema, nesting, wildcards, static blocks, limits, and editor attributes.
+- flagged: `[VERIFY]` for current theme-block schema, wildcard, nesting, and editor-behavior rules.
+- decided: treated block files as governed editor capability surfaces with explicit parent contracts and shallow composition.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-19 exercise
+## 2026-08-14 · ch-19 · exercise
+- wrote: `course/part-03-theme-architecture/ch-19-theme-blocks-in-depth/exercise.md` with public/private block and governed parent-contract starter files.
+- flagged: `[VERIFY]` for current block visibility, wildcard, static-child, and app-block eligibility rules.
+- decided: made public editor capability, private implementation, shallow nesting, and wildcard governance explicit.
+- next: ch-19 solution
+## 2026-08-14 · ch-19 · solution
+- wrote: `solutions/part-03-theme-architecture/ch-19-theme-blocks-in-depth/solution.md` with mirrored public/private block and governed parent-contract files.
+- flagged: `[VERIFY]` for current block visibility, wildcard, app eligibility, and static-child behaviors.
+- decided: separated public capability, private structure, parent semantics, shallow nesting, and library lifecycle governance.
+- next: ch-19 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-19 · review
+- wrote: finalised the chapter’s lesson, exercise, brief, and solution statuses.
+- flagged: retained `[VERIFY]` for theme/app block wildcard, visibility, static-child, and nesting rules.
+- decided: checklist confirmed all seven scope items, starter/solution parity, block governance, and review isolation from the completed answer.
+- next: ch-20 lesson
+## 2026-08-14 · ch-20 · lesson
+- wrote: `course/part-03-theme-architecture/ch-20-content-for/lesson.md` covering dynamic/static slots, JSON ordering, capture/render wrappers, and composable parent contracts.
+- flagged: `[VERIFY]` for current dynamic/static `content_for` eligibility and static block declaration rules.
+- decided: kept Shopify composition order authoritative while assigning semantics and acceptance boundaries to the parent.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-20 exercise
+## 2026-08-14 · ch-20 · exercise
+- wrote: `course/part-03-theme-architecture/ch-20-content-for/exercise.md` with static/dynamic block, section, and wrapper-snippet starter files.
+- flagged: `[VERIFY]` for current static/dynamic content_for and capture/render support.
+- decided: separated fixed title placement, JSON-owned dynamic ordering, and explicit wrapper snippet input.
+- next: ch-20 solution
+## 2026-08-14 · ch-20 · solution
+- wrote: `solutions/part-03-theme-architecture/ch-20-content-for/solution.md` with mirrored static/dynamic block, section, and explicit wrapper files.
+- flagged: `[VERIFY]` for current static/dynamic content_for and declaration rules.
+- decided: enforced singular static placement, JSON-owned child order, and a wrapper snippet without hidden Shopify context.
+- next: ch-20 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-20 · review
+- wrote: finalised the chapter’s lesson, exercise, brief, and solution statuses.
+- flagged: retained `[VERIFY]` for dynamic/static content_for eligibility and declaration rules.
+- decided: checklist confirmed all five scope items, starter/solution parity, explicit composition ownership, and review isolation from the completed answer.
+- next: ch-21 lesson
+## 2026-08-14 · ch-21 · lesson
+- wrote: `course/part-03-theme-architecture/ch-21-snippets/lesson.md` covering render isolation, include deprecation, parameter APIs, recursion, docs, and surface choice.
+- flagged: `[VERIFY]` for current render scope, navigation recursion, and doc-tag tooling behavior.
+- decided: assigned data selection to callers and explicit rendering contracts to snippets.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-21 exercise
+## 2026-08-14 · ch-21 · exercise
+- wrote: `course/part-03-theme-architecture/ch-21-snippets/exercise.md` with a recursive navigation snippet, section, CSS, and documentation starter files.
+- flagged: `[VERIFY]` for current doc-tag support and navigation link depth/properties.
+- decided: made render isolation, caller-owned selection, finite recursion, and documented input contracts explicit.
+- next: ch-21 solution
+## 2026-08-14 · ch-21 · solution
+- wrote: `solutions/part-03-theme-architecture/ch-21-snippets/solution.md` with mirrored recursive snippet, calling section, and CSS files.
+- flagged: `[VERIFY]` for current doc-tag and navigation object/depth support.
+- decided: kept menu selection in the section and one-level rendering in an explicit recursive snippet API.
+- next: ch-21 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-21 · review
+- wrote: finalised the chapter’s lesson, exercise, brief, and solution statuses.
+- flagged: retained `[VERIFY]` for current render, navigation, and doc-tag behavior.
+- decided: checklist confirmed all seven scope items, starter/solution parity, explicit API coverage, and review isolation from the completed answer.
+- next: ch-22 lesson
+## 2026-08-14 · ch-22 · lesson
+- wrote: `course/part-03-theme-architecture/ch-22-settings-architecture/lesson.md` covering schema ordering, input/sidebar types, `visible_if`, merchant-owned configuration state, presets, schemes, and settings UX.
+- flagged: retained `[VERIFY]` for currently supported settings types, attributes, limits, and valid contexts.
+- decided: treated global setting IDs and defaults as a durable versioned API, and kept configuration ownership distinct from local section and block decisions.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-22 exercise
+## 2026-08-14 · ch-22 · exercise
+- wrote: `course/part-03-theme-architecture/ch-22-settings-architecture/exercise.md` plus realistic global schema, promotion section, and CSS starter files.
+- flagged: `[VERIFY]` for current settings-type, `visible_if`, persistence, and context behavior.
+- decided: made the reader design a small token-led merchant interface rather than expose raw visual properties.
+- next: ch-22 solution
+## 2026-08-14 · ch-22 · solution
+- wrote: `solutions/part-03-theme-architecture/ch-22-settings-architecture/solution.md` with mirrored global schema, promotion section, and CSS files.
+- flagged: `[VERIFY]` for the current `color_scheme` contract, theme scheme classes, `visible_if` syntax, and accepted setting attributes.
+- decided: kept state ownership global, guarded the hidden-but-persisted destination in Liquid, and selected a governed surface rather than individual colors.
+- next: ch-22 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-22 · review
+- reviewed: passed the seven numbered brief items in order, exercise solvability, terminology alignment, ledger updates, calibration floor, and starter/solution mirrors.
+- flagged: retained `[VERIFY]` where settings-type support, `visible_if`, color schemes, and persistence behavior require current Shopify documentation.
+- decided: no solution-derived structures were added to the lesson or exercise; only completion markers were applied.
+- next: ch-23 lesson
+## 2026-08-14 · ch-23 · lesson
+- wrote: `course/part-03-theme-architecture/ch-23-the-theme-editor-contract/lesson.md` covering editor identity, lifecycle events, live reordering, dynamic sources, and onboarding defaults.
+- flagged: `[VERIFY]` for current editor event payloads, `shopify_attributes` placement, and dynamic-source compatibility.
+- decided: isolated behavior to stable instance roots and made editor lifecycle behavior additive rather than a prerequisite for the customer storefront.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-23 exercise
+## 2026-08-14 · ch-23 · exercise
+- wrote: `course/part-03-theme-architecture/ch-23-the-theme-editor-contract/exercise.md` with realistic section, CSS, and JavaScript starter files.
+- flagged: `[VERIFY]` for editor-event payloads, dynamic sources, and `shopify_attributes` rules.
+- decided: required instance-local behavior, lifecycle cleanup, source fallbacks, and non-destructive onboarding without exposing a solution structure.
+- next: ch-23 solution
+## 2026-08-14 · ch-23 · solution
+- wrote: `solutions/part-03-theme-architecture/ch-23-the-theme-editor-contract/solution.md` with mirrored section, JavaScript, and CSS files.
+- flagged: `[VERIFY]` for current editor-event targets/payloads and compatible dynamic-source and richtext contracts.
+- decided: used a stable instance root, idempotent mounting, symmetric cleanup, and editor-only transient selection state.
+- next: ch-23 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-23 · review
+- reviewed: passed six numbered brief items in order, exercise solvability, terminology, ledger updates, calibration floor, and starter/solution parity.
+- flagged: retained `[VERIFY]` for live event contracts, editor attributes, source compatibility, and typed richtext rendering.
+- decided: no solution-derived structure was added to the lesson or exercise; only final markers and brief completion were applied.
+- next: ch-24 lesson
+## 2026-08-14 · ch-24 · lesson
+- wrote: `course/part-03-theme-architecture/ch-24-ai-generated-blocks/lesson.md` covering merchant generation, `@theme`/`@app`, block slots, `_blocks.liquid`, and design-system governance.
+- verified: consulted current Shopify documentation for wrapper preconditions, generation lifecycle, and app-block compatibility; cited those sources in the lesson.
+- decided: treated generated blocks as maintained theme code constrained by an intentional parent contract and review protocol.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-24 exercise
+## 2026-08-14 · ch-24 · exercise
+- wrote: `course/part-03-theme-architecture/ch-24-ai-generated-blocks/exercise.md` plus starter surfaces, wrapper, CSS, and code-review register.
+- flagged: `[VERIFY]` for live wrapper preconditions, generic block acceptance, and generation availability.
+- decided: made the reader own the composition contract and generated-code review rather than merely prompting an AI.
+- next: ch-24 solution
+## 2026-08-14 · ch-24 · solution
+- wrote: `solutions/part-03-theme-architecture/ch-24-ai-generated-blocks/solution.md` with mirrored open surface, valid wrapper, wrapper CSS, and review register.
+- verified: aligned wrapper preconditions and generic block categories with the Shopify documentation gathered for the lesson.
+- decided: placed visual governance in the wrapper and preserved generated blocks as independently rendered child code.
+- next: ch-24 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-24 · review
+- reviewed: passed four numbered brief items, verified wrapper claims against current Shopify documentation, exercise solvability, terminology, ledger updates, calibration floor, and starter/solution parity.
+- decided: applied only completion markers; no solution-derived implementation was transferred into the lesson or exercise.
+- next: ch-25 lesson
+## 2026-08-14 · ch-25 · lesson
+- wrote: `course/part-03-theme-architecture/ch-25-on-the-horizon-block-and-partial/lesson.md` covering the Liquid July ’26 preview, direct blocks, partials, Liquid-first composition, coexistence, and experiment discipline.
+- verified: consulted current Shopify developer-preview documents and cited all preview-specific claims.
+- decided: taught the capability only as an explicitly reversible preview track, never as a replacement promise for JSON templates or section groups.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-25 exercise
+## 2026-08-14 · ch-25 · exercise
+- wrote: `course/part-03-theme-architecture/ch-25-on-the-horizon-block-and-partial/exercise.md` with preview-only template, block, JavaScript, and evaluation starter files.
+- flagged: `[VERIFY]` for feature-preview activation, tag syntax, and partial-rendering package contract.
+- decided: required an isolated and reversible experiment rather than a migration of the stable JSON or section-group architecture.
+- next: ch-25 solution
+## 2026-08-14 · ch-25 · solution
+- wrote: `solutions/part-03-theme-architecture/ch-25-on-the-horizon-block-and-partial/solution.md` with mirrored preview template, block, partial-refresh script, and evaluation file.
+- verified: retained the feature-preview restriction and partial refresh behavior from Shopify’s current developer-preview references.
+- decided: isolated direct-block composition and partial refresh behind an explicit withdrawal decision rather than a stable migration claim.
+- next: ch-25 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-25 · review
+- reviewed: passed six numbered preview topics in order, cited current preview facts, exercise solvability, terminology, ledger updates, calibration floor, and starter/solution parity.
+- decided: applied final markers only; no solution-derived implementation was transferred to the lesson or exercise, and all preview code remains explicitly non-production.
+- next: ch-26 lesson
+## 2026-08-14 · ch-26 · lesson
+- wrote: `course/part-04-data-objects/ch-26-global-objects/lesson.md` covering shop, request, routes, global context objects, localization, and link trees.
+- verified: consulted current official Shopify object references for `shop`, `request`, `routes`, and `localization`, and cited them in the lesson.
+- decided: framed global reads as ownership and context contracts, including documented shop-property deprecations.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-26 exercise
+## 2026-08-14 · ch-26 · exercise
+- wrote: `course/part-04-data-objects/ch-26-global-objects/exercise.md` with footer, navigation snippet, and CSS starter files.
+- flagged: `[VERIFY]` for current global-object, localization-form, menu, route, and link-property contracts.
+- decided: made the reader replace every hardcoded context assumption with the owner-specific global object and a safe absent state.
+- next: ch-26 solution
+## 2026-08-14 · ch-26 · solution
+- wrote: `solutions/part-04-data-objects/ch-26-global-objects/solution.md` with mirrored footer, navigation snippet, and CSS files.
+- verified: based object, route, localization, payment, and deprecation claims on the current Shopify references used in the lesson.
+- decided: limited `request.design_mode` to a non-functional analytics guard while keeping all merchant and customer content contextually faithful.
+- next: ch-26 review; do not add solution-derived details to the lesson or exercise.
+## 2026-08-14 · ch-26 · review
+- reviewed: passed six numbered object topics, source-backed deprecation claims, exercise solvability, terminology, ledgers, calibration floor, and starter/solution parity.
+- decided: applied final markers only; no solution-specific construction was added to the lesson or exercise.
+- next: ch-27 lesson
+## 2026-08-14 · ch-27 · lesson
+- wrote: `course/part-04-data-objects/ch-27-products/lesson.md` covering product summaries, variant selection, pricing, inventory, media, subscriptions, metafields, and metadata.
+- verified: consulted current official Shopify references for product, variant, product-variant support, and selling-plan contracts; cited them in the lesson.
+- decided: made the selected variant the explicit source for transactional state while reserving product properties for range and resource summaries.
+- updated: `docs/COVERAGE.md` and `docs/GLOSSARY.md`.
+- next: ch-27 exercise
+## 2026-08-14 · ch-27 · exercise
+- wrote: `course/part-04-data-objects/ch-27-products/exercise.md` with main-product, media, and CSS starter files.
+- flagged: `[VERIFY]` for current option-value, media, quantity, selling-plan, and metafield contracts.
+- decided: required the reader to preserve deep-linked variant truth and model all purchase state around a deliberate current variant.
+- next: ch-27 solution
+## 2026-08-14 · ch-27 · solution
+- wrote: `solutions/part-04-data-objects/ch-27-products/solution.md` with mirrored main-product, media, and CSS solution files.
+- verified: retained selected variant, availability, media, quantity, plan, and metafield contracts from the current Shopify references.
+- decided: established one current-variant source for every transactional display and future client synchronization surface.
+- next: ch-27 review; do not add solution-derived details to the lesson or exercise.

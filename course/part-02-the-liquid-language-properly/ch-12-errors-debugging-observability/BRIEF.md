@@ -6,7 +6,7 @@ unit: "Chapter 12"
 title: "Errors, Debugging & Observability"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 12 — Errors, Debugging & Observability
@@ -15,12 +15,12 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 12.1 Liquid errors: syntax vs render vs silent nothing
-- [ ] 12.2 `{{ object | json }}` and pretty-printing techniques
-- [ ] 12.3 URL debugging parameters: `?view=`, `?section_id=`, `?preview_theme_id=`, `?_fd=0`
-- [ ] 12.4 Theme editor console and inspector workflows
-- [ ] 12.5 Building a `debug.liquid` snippet with an environment guard
-- [ ] 12.6 Reading the Shopify Theme Inspector flame profile
+- [x] 12.1 Liquid errors: syntax vs render vs silent nothing
+- [x] 12.2 `{{ object | json }}` and pretty-printing techniques
+- [x] 12.3 URL debugging parameters: `?view=`, `?section_id=`, `?preview_theme_id=`, `?_fd=0`
+- [x] 12.4 Theme editor console and inspector workflows
+- [x] 12.5 Building a `debug.liquid` snippet with an environment guard
+- [x] 12.6 Reading the Shopify Theme Inspector flame profile
 
 ## Labs assigned to this unit
 

@@ -6,7 +6,7 @@ unit: "Chapter 23"
 title: "The Theme Editor Contract"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 23 — The Theme Editor Contract
@@ -15,12 +15,12 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 23.1 How the editor mounts, targets, and reorders your markup
-- [ ] 23.2 `shopify_attributes` on sections and blocks — non-negotiable
-- [ ] 23.3 Theme editor JavaScript events: `shopify:section:load|unload|select|deselect|reorder`, `shopify:block:select|deselect`
-- [ ] 23.4 Writing sections that survive live reordering
-- [ ] 23.5 Dynamic sources: connecting settings to metafields
-- [ ] 23.6 Onboarding defaults and the first-install experience
+- [x] 23.1 How the editor mounts, targets, and reorders your markup
+- [x] 23.2 `shopify_attributes` on sections and blocks — non-negotiable
+- [x] 23.3 Theme editor JavaScript events: `shopify:section:load|unload|select|deselect|reorder`, `shopify:block:select|deselect`
+- [x] 23.4 Writing sections that survive live reordering
+- [x] 23.5 Dynamic sources: connecting settings to metafields
+- [x] 23.6 Onboarding defaults and the first-install experience
 
 ## Labs assigned to this unit
 

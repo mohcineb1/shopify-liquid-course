@@ -1,0 +1,4 @@
+.announcement-bar, .site-header, .cart-drawer-shell { padding: 1rem 1.5rem; }
+.announcement-bar { text-align: center; }
+.site-header { align-items: center; display: flex; justify-content: space-between; }
+.cart-drawer-shell { border-top: 1px solid rgba(var(--color-foreground), .16); }

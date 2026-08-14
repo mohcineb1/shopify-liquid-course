@@ -1,0 +1,7 @@
+{% doc %}
+  Renders one navigation level.
+  @param {linklist} links - Required links for this level.
+  @param {string} label - Optional accessible label.
+  @param {number} level - Optional nesting level.
+{% enddoc %}
+{%- comment -%} Guard links, render one list level, and recurse only for child links. {%- endcomment -%}

@@ -6,7 +6,7 @@ unit: "Chapter 15"
 title: "Templates"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 15 — Templates
@@ -15,12 +15,12 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 15.1 The full template type list: index, product, collection, list-collections, page, blog, article, cart, search, customers/*, 404, password, gift_card, metaobject
-- [ ] 15.2 JSON templates vs Liquid templates — capabilities, trade-offs, and when Liquid is still correct
-- [ ] 15.3 Alternate templates and suffix routing
-- [ ] 15.4 Anatomy of a JSON template: `sections`, `order`, `settings`, `blocks`
-- [ ] 15.5 Template-scoped objects and what is available where
-- [ ] 15.6 Merchant-assignable templates and product/collection template suffixes
+- [x] 15.1 The full template type list: index, product, collection, list-collections, page, blog, article, cart, search, customers/*, 404, password, gift_card, metaobject
+- [x] 15.2 JSON templates vs Liquid templates — capabilities, trade-offs, and when Liquid is still correct
+- [x] 15.3 Alternate templates and suffix routing
+- [x] 15.4 Anatomy of a JSON template: `sections`, `order`, `settings`, `blocks`
+- [x] 15.5 Template-scoped objects and what is available where
+- [x] 15.6 Merchant-assignable templates and product/collection template suffixes
 
 ## Labs assigned to this unit
 

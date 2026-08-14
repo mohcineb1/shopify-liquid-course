@@ -1,0 +1,37 @@
+{{ 'collection-notes.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'collection-notes.js' | asset_url }}" defer></script>
+
+<section class="collection-notes">
+  <div class="collection-notes__inner page-width">
+    <header class="collection-notes__header">
+      <p class="collection-notes__eyebrow">Collection notes</p>
+      <h2 class="collection-notes__title">Details worth keeping</h2>
+    </header>
+    <div class="collection-notes__panels">
+      {% for block in section.blocks %}
+        <article class="collection-notes__panel">
+          <h3>{{ block.settings.heading }}</h3>
+          <div class="rte">{{ block.settings.body }}</div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Collection notes",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "note",
+      "name": "Note",
+      "settings": [
+        { "type": "text", "id": "heading", "label": "Heading", "default": "Made with intention" },
+        { "type": "richtext", "id": "body", "label": "Body", "default": "<p>Add collection context here.</p>" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Collection notes", "blocks": [{ "type": "note" }] }]
+}
+{% endschema %}

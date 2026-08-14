@@ -6,7 +6,7 @@ unit: "Chapter 22"
 title: "Settings Architecture"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 22 — Settings Architecture
@@ -15,13 +15,13 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 22.1 `settings_schema.json` structure and ordering
-- [ ] 22.2 Every input setting type: text, textarea, richtext, inline_richtext, html, checkbox, radio, select, range, number, color, color_background, color_scheme, color_scheme_group, font_picker, image_picker, video, video_url, url, link_list, collection, collection_list, product, product_list, blog, page, article, metaobject, metaobject_list, text_alignment, style.layout_panel, liquid
-- [ ] 22.3 Sidebar setting types: header, paragraph, and visual grouping
-- [ ] 22.4 Conditional settings and `visible_if`
-- [ ] 22.5 `settings_data.json`, presets, and the merchant-owned state problem
-- [ ] 22.6 Color schemes and design tokens as a system
-- [ ] 22.7 Designing settings that don't overwhelm the merchant
+- [x] 22.1 `settings_schema.json` structure and ordering
+- [x] 22.2 Every input setting type: text, textarea, richtext, inline_richtext, html, checkbox, radio, select, range, number, color, color_background, color_scheme, color_scheme_group, font_picker, image_picker, video, video_url, url, link_list, collection, collection_list, product, product_list, blog, page, article, metaobject, metaobject_list, text_alignment, style.layout_panel, liquid
+- [x] 22.3 Sidebar setting types: header, paragraph, and visual grouping
+- [x] 22.4 Conditional settings and `visible_if`
+- [x] 22.5 `settings_data.json`, presets, and the merchant-owned state problem
+- [x] 22.6 Color schemes and design tokens as a system
+- [x] 22.7 Designing settings that don't overwhelm the merchant
 
 ## Labs assigned to this unit
 

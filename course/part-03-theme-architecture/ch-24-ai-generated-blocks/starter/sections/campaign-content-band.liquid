@@ -1,0 +1,21 @@
+{{ 'generated-blocks.css' | asset_url | stylesheet_tag }}
+
+<section class="campaign-content-band" {{ section.shopify_attributes }}>
+  <div class="campaign-content-band__inner page-width">
+    {% for block in section.blocks %}
+      <div class="campaign-content-band__item" {{ block.shopify_attributes }}>
+        {{ block.settings.heading }}
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Campaign content band",
+  "blocks": [
+    { "type": "message", "name": "Message", "settings": [{ "type": "text", "id": "heading", "label": "Heading" }] }
+  ],
+  "presets": [{ "name": "Campaign content band" }]
+}
+{% endschema %}

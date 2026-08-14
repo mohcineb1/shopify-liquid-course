@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "feature_list": {
+      "name": "Feature list",
+      "heading": "Heading",
+      "feature": "Feature",
+      "feature_heading": "Feature heading",
+      "feature_body": "Feature body",
+      "default_heading": "Why customers choose us"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{{ 'brand-promotion.css' | asset_url | stylesheet_tag }}
+
+<aside class="brand-promotion" aria-label="Promotion">
+  <div class="brand-promotion__inner page-width">
+    <p class="brand-promotion__eyebrow">Atelier North</p>
+    <h2 class="brand-promotion__title">Seasonal collection</h2>
+    <div class="brand-promotion__message">
+      <p>Configure this promotion through deliberate global settings.</p>
+    </div>
+  </div>
+</aside>
+
+{% schema %}
+{
+  "name": "Brand promotion",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Brand promotion"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,7 @@
+{
+  "sections": {
+    "announcement": { "type": "announcement-bar", "settings": {} },
+    "header": { "type": "site-header", "settings": {} }
+  },
+  "order": ["announcement", "header"]
+}

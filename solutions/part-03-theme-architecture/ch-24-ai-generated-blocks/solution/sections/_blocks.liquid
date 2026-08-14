@@ -1,0 +1,5 @@
+{{ 'generated-blocks.css' | asset_url | stylesheet_tag }}
+<section class="generated-blocks color-{{ section.settings.color_scheme }} generated-blocks--{{ section.settings.spacing }}" {{ section.shopify_attributes }}><div class="generated-blocks__inner page-width">{% content_for 'blocks' %}</div></section>
+{% schema %}
+{ "name": "Generated blocks", "settings": [{ "type": "select", "id": "spacing", "label": "Section spacing", "default": "normal", "options": [{ "value": "compact", "label": "Compact" }, { "value": "normal", "label": "Normal" }, { "value": "generous", "label": "Generous" }] }, { "type": "color_scheme", "id": "color_scheme", "label": "Colour scheme", "default": "scheme-1" }], "blocks": [{ "type": "@theme" }, { "type": "@app" }], "presets": [{ "name": "Generated blocks" }] }
+{% endschema %}

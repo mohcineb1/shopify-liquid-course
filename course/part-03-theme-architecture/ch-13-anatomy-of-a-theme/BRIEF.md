@@ -6,7 +6,7 @@ unit: "Chapter 13"
 title: "Anatomy of a Theme"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 13 — Anatomy of a Theme
@@ -15,10 +15,10 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 13.1 The directory contract: `layout/`, `templates/`, `sections/`, `blocks/`, `snippets/`, `config/`, `locales/`, `assets/`
-- [ ] 13.2 Files Shopify treats as special vs files you invent
-- [ ] 13.3 Platform limits: theme upload size, individual file size, file counts, block and section ceilings
-- [ ] 13.4 What a theme is *not* allowed to do
+- [x] 13.1 The directory contract: `layout/`, `templates/`, `sections/`, `blocks/`, `snippets/`, `config/`, `locales/`, `assets/`
+- [x] 13.2 Files Shopify treats as special vs files you invent
+- [x] 13.3 Platform limits: theme upload size, individual file size, file counts, block and section ceilings
+- [x] 13.4 What a theme is *not* allowed to do
 
 ## Labs assigned to this unit
 

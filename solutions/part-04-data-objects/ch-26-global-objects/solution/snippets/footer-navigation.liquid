@@ -1,0 +1,2 @@
+{% assign footer_menu = linklists[menu_handle] %}
+{% if footer_menu != blank %}<nav aria-label="Footer menu"><ul class="site-footer__menu">{% for link in footer_menu.links %}<li><a href="{{ link.url }}" {% if link.current %}aria-current="page"{% endif %}>{{ link.title | escape }}</a>{% if link.links != blank %}<ul>{% for child_link in link.links %}<li><a href="{{ child_link.url }}" {% if child_link.current %}aria-current="page"{% endif %}>{{ child_link.title | escape }}</a></li>{% endfor %}</ul>{% endif %}</li>{% endfor %}</ul></nav>{% endif %}

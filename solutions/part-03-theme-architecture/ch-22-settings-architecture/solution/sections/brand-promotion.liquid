@@ -1,0 +1,14 @@
+{{ 'brand-promotion.css' | asset_url | stylesheet_tag }}
+{% assign promotion_title = settings.promotion_title | default: 'New season, considered essentials' %}
+{% assign promotion_brand = settings.brand_name | default: shop.name %}
+<aside class="brand-promotion color-{{ settings.promotion_color_scheme }} brand-promotion--{{ settings.promotion_layout }}" aria-label="{{ promotion_brand | escape }} promotion">
+  <div class="brand-promotion__inner page-width">
+    <p class="brand-promotion__eyebrow">{{ promotion_brand | escape }}</p>
+    <h2 class="brand-promotion__title">{{ promotion_title | escape }}</h2>
+    {% if settings.promotion_message != blank %}<div class="brand-promotion__message rte">{{ settings.promotion_message }}</div>{% endif %}
+    {% if settings.promotion_show_cta and settings.promotion_cta_url != blank %}<a class="brand-promotion__link" href="{{ settings.promotion_cta_url }}">{{ settings.promotion_cta_label | default: 'Explore' | escape }}</a>{% endif %}
+  </div>
+</aside>
+{% schema %}
+{ "name": "Brand promotion", "settings": [], "presets": [{ "name": "Brand promotion" }] }
+{% endschema %}

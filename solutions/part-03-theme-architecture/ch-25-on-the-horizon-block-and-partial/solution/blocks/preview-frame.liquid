@@ -1,0 +1,9 @@
+{% doc %}
+  @param {string} [tag] - HTML element selected by the preview template.
+  @param {string} [class] - Class names selected by the preview template.
+{% enddoc %}
+{% assign tag = tag | default: 'div' %}
+<{{ tag }} class="{{ class }}">{{ block.content }}</{{ tag }}>
+{% schema %}
+{ "name": "Preview frame", "settings": [] }
+{% endschema %}

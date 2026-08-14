@@ -6,7 +6,7 @@ unit: "Chapter 16"
 title: "Section Groups"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 16 — Section Groups
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 16.1 What a section group solves
-- [ ] 16.2 `header-group.json`, `footer-group.json`, `aside-group.json`
-- [ ] 16.3 Wiring groups into `theme.liquid` with `{% sections %}`
-- [ ] 16.4 Group-level vs template-level composition
-- [ ] 16.5 Overlay/aside groups: drawers, popups, announcement layers
+- [x] 16.1 What a section group solves
+- [x] 16.2 `header-group.json`, `footer-group.json`, `aside-group.json`
+- [x] 16.3 Wiring groups into `theme.liquid` with `{% sections %}`
+- [x] 16.4 Group-level vs template-level composition
+- [x] 16.5 Overlay/aside groups: drawers, popups, announcement layers
 
 ## Labs assigned to this unit
 

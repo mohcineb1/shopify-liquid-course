@@ -1,0 +1,6 @@
+{%- doc -%}
+  Renders campaign content inside a template’s composition.
+  @param {string} heading - Callout heading.
+  @param {string} body - Callout body.
+{%- enddoc -%}
+<aside class="campaign-callout"><h2>{{ heading | escape }}</h2><p>{{ body | escape }}</p></aside>

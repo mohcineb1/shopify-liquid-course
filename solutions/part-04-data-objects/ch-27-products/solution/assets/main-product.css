@@ -1,0 +1,6 @@
+.main-product { padding-block: 3rem; }
+.main-product .page-width { display: grid; gap: 1rem; }
+.main-product__price { display: flex; gap: 0.5rem; font-size: 1.5rem; font-weight: 700; }
+.main-product form { display: grid; gap: 0.75rem; max-width: 28rem; }
+.main-product fieldset { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.main-product__media img, .main-product__media video, .main-product__media model-viewer { display: block; max-width: 100%; }

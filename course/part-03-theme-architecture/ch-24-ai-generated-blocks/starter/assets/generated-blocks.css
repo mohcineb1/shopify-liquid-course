@@ -1,0 +1,7 @@
+.campaign-content-band,
+.generated-blocks { padding-block: 2rem; }
+
+.campaign-content-band__inner,
+.generated-blocks__inner { max-width: 72rem; margin-inline: auto; }
+
+.generated-blocks { background: var(--generated-surface, transparent); }

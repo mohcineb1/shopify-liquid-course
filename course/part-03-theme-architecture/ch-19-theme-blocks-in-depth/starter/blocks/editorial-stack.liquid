@@ -1,0 +1,5 @@
+<section class="editorial-stack" {{ block.shopify_attributes }}>
+  <h2>{{ block.settings.heading | escape }}</h2>
+  <div class="editorial-stack__children">{%- comment -%} Render the controlled child region here. {%- endcomment -%}</div>
+</section>
+{% schema %}{ "name": "Editorial stack", "tag": "section", "class": "block-editorial-stack", "settings": [{ "type": "text", "id": "heading", "label": "Heading" }], "blocks": [{ "type": "@theme" }, { "type": "@app" }], "presets": [{ "name": "Editorial stack" }] }{% endschema %}

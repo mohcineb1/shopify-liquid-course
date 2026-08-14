@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Atelier North — Brand",
+    "settings": [
+      { "type": "header", "content": "Brand identity" },
+      { "type": "text", "id": "brand_name", "label": "Brand name", "default": "Atelier North" },
+      { "type": "paragraph", "content": "These settings are shared by every brand promotion in the theme." }
+    ]
+  },
+  {
+    "name": "Atelier North — Promotion surface",
+    "settings": [
+      { "type": "header", "content": "Choose a governed surface" },
+      { "type": "color_scheme", "id": "promotion_color_scheme", "label": "Promotion colour scheme", "default": "scheme-1" },
+      { "type": "radio", "id": "promotion_layout", "label": "Promotion emphasis", "default": "quiet", "options": [{ "value": "quiet", "label": "Quiet" }, { "value": "prominent", "label": "Prominent" }] }
+    ]
+  },
+  {
+    "name": "Atelier North — Promotion content",
+    "settings": [
+      { "type": "text", "id": "promotion_title", "label": "Campaign title", "default": "New season, considered essentials" },
+      { "type": "richtext", "id": "promotion_message", "label": "Campaign message", "default": "<p>Meet the pieces designed for the next chapter of your wardrobe.</p>" },
+      { "type": "checkbox", "id": "promotion_show_cta", "label": "Show a call to action", "default": true },
+      { "type": "text", "id": "promotion_cta_label", "label": "Call-to-action label", "default": "Shop the collection", "visible_if": "{{ settings.promotion_show_cta }}" },
+      { "type": "url", "id": "promotion_cta_url", "label": "Call-to-action destination", "visible_if": "{{ settings.promotion_show_cta }}" }
+    ]
+  }
+]

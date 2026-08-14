@@ -6,7 +6,7 @@ unit: "Chapter 11"
 title: "Drops in Depth"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 11 — Drops in Depth
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 11.1 What a drop really is under the hood
-- [ ] 11.2 Lazy evaluation: accessing a property can trigger a query
-- [ ] 11.3 Which property accesses are cheap and which are expensive
-- [ ] 11.4 Iterating drops safely
-- [ ] 11.5 Serialising drops with `| json` for the browser — and what leaks
+- [x] 11.1 What a drop really is under the hood
+- [x] 11.2 Lazy evaluation: accessing a property can trigger a query
+- [x] 11.3 Which property accesses are cheap and which are expensive
+- [x] 11.4 Iterating drops safely
+- [x] 11.5 Serialising drops with `| json` for the browser — and what leaks
 
 ## Labs assigned to this unit
 

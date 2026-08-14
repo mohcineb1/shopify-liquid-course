@@ -6,7 +6,7 @@ unit: "Chapter 21"
 title: "Snippets"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 21 — Snippets
@@ -15,13 +15,13 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 21.1 `{% render %}` — the isolated call
-- [ ] 21.2 `{% include %}` — deprecated, and the exact reasons why
-- [ ] 21.3 Passing parameters, `with`, `for`, and aliasing
-- [ ] 21.4 Designing a snippet API: required params, defaults, guard clauses
-- [ ] 21.5 Recursion with `{% render %}` (menus, nested navigation)
-- [ ] 21.6 Documenting snippets with `{% doc %}` for editor autocomplete
-- [ ] 21.7 Snippet vs block vs section — the decision tree
+- [x] 21.1 `{% render %}` — the isolated call
+- [x] 21.2 `{% include %}` — deprecated, and the exact reasons why
+- [x] 21.3 Passing parameters, `with`, `for`, and aliasing
+- [x] 21.4 Designing a snippet API: required params, defaults, guard clauses
+- [x] 21.5 Recursion with `{% render %}` (menus, nested navigation)
+- [x] 21.6 Documenting snippets with `{% doc %}` for editor autocomplete
+- [x] 21.7 Snippet vs block vs section — the decision tree
 
 ## Labs assigned to this unit
 

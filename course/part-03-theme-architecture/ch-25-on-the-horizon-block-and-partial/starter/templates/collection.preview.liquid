@@ -1,0 +1,18 @@
+<!-- Liquid July ’26 developer preview only. Do not ship to a stable theme. -->
+<section class="collection-preview page-width">
+  <header>
+    <h1>{{ collection.title }}</h1>
+    <label for="collection-preview-sort">Sort</label>
+    <select id="collection-preview-sort" data-collection-preview-sort>
+      <option value="">Featured</option>
+      <option value="price-ascending">Price, low to high</option>
+      <option value="price-descending">Price, high to low</option>
+    </select>
+  </header>
+  <div data-collection-preview-results>
+    {% for product in collection.products %}
+      <p>{{ product.title }}</p>
+    {% endfor %}
+  </div>
+</section>
+<script type="module" src="{{ 'collection-preview.js' | asset_url }}"></script>

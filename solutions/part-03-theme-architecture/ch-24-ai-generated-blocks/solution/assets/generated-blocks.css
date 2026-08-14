@@ -1,0 +1,5 @@
+.campaign-content-band, .generated-blocks { padding-block: 2rem; }
+.generated-blocks--compact { padding-block: 1rem; }
+.generated-blocks--generous { padding-block: clamp(3rem, 7vw, 6rem); }
+.campaign-content-band__inner, .generated-blocks__inner { max-width: 72rem; margin-inline: auto; }
+.generated-blocks { background: rgb(var(--color-background)); color: rgb(var(--color-foreground)); }

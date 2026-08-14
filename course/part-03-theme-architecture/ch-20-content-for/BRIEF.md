@@ -6,7 +6,7 @@ unit: "Chapter 20"
 title: "`content_for`"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 20 — `content_for`
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 20.1 `{% content_for 'blocks' %}` — the child render slot
-- [ ] 20.2 `{% content_for 'block', type: '...', id: '...' %}` — rendering one specific static block
-- [ ] 20.3 Ordering semantics and the JSON source of truth
-- [ ] 20.4 Wrapping children: the `capture` + `render 'group'` pattern
-- [ ] 20.5 Building a genuinely composable section from scratch
+- [x] 20.1 `{% content_for 'blocks' %}` — the child render slot
+- [x] 20.2 `{% content_for 'block', type: '...', id: '...' %}` — rendering one specific static block
+- [x] 20.3 Ordering semantics and the JSON source of truth
+- [x] 20.4 Wrapping children: the `capture` + `render 'group'` pattern
+- [x] 20.5 Building a genuinely composable section from scratch
 
 ## Labs assigned to this unit
 

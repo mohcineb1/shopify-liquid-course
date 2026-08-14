@@ -1,0 +1,9 @@
+{{ 'section-debug-spotlight.css' | asset_url | stylesheet_tag }}
+<section class="debug-spotlight" aria-labelledby="DebugSpotlightHeading-{{ section.id }}">
+  <h2 id="DebugSpotlightHeading-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+  {%- comment -%} Distinguish missing collection, selected empty collection, and normal bounded list. {%- endcomment -%}
+  {%- comment -%} Under settings.enable_theme_debug only, render the debug snippet with explicit title/count inputs. {%- endcomment -%}
+</section>
+{% schema %}
+{ "name": "Debug spotlight", "tag": "section", "settings": [{ "type": "text", "id": "heading", "label": "Heading", "default": "Collection spotlight" }, { "type": "collection", "id": "collection", "label": "Collection" }], "presets": [{ "name": "Debug spotlight" }] }
+{% endschema %}

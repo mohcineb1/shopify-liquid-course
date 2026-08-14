@@ -1,0 +1,6 @@
+.drop-preview { padding: 2rem 1.5rem; }
+.drop-preview__list, .drop-preview__variants { list-style: none; margin: 0; padding: 0; }
+.drop-preview__list { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
+.drop-preview__card { border: 1px solid rgba(var(--color-foreground), .16); border-radius: .75rem; padding: 1rem; }
+.drop-preview__card img { display: block; height: auto; max-width: 100%; }
+.drop-preview__variants { margin-top: .75rem; }

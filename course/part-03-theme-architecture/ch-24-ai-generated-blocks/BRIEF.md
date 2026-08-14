@@ -6,7 +6,7 @@ unit: "Chapter 24"
 title: "AI-Generated Blocks"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 24 — AI-Generated Blocks
@@ -15,10 +15,10 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 24.1 What merchants can now generate in the editor, and the constraints it puts on your schema
-- [ ] 24.2 Making a section eligible: `@theme` + `@app`, presets, `content_for 'blocks'`, no `templates` attribute
-- [ ] 24.3 The `_blocks.liquid` wrapper section and overriding it
-- [ ] 24.4 Keeping generated output visually consistent with your design system
+- [x] 24.1 What merchants can now generate in the editor, and the constraints it puts on your schema
+- [x] 24.2 Making a section eligible: `@theme` + `@app`, presets, `content_for 'blocks'`, no `templates` attribute
+- [x] 24.3 The `_blocks.liquid` wrapper section and overriding it
+- [x] 24.4 Keeping generated output visually consistent with your design system
 
 ## Labs assigned to this unit
 

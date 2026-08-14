@@ -1,0 +1,8 @@
+{{ 'section-drop-preview.css' | asset_url | stylesheet_tag }}
+<section class="drop-preview" aria-labelledby="DropPreviewHeading-{{ section.id }}">
+  <h2 id="DropPreviewHeading-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+  {%- comment -%} Add a bounded contextual product loop, optional featured image, bounded variants, and collection-empty state. {%- endcomment -%}
+</section>
+{% schema %}
+{ "name": "Drop preview", "tag": "section", "settings": [{ "type": "text", "id": "heading", "label": "Heading", "default": "Collection preview" }], "presets": [{ "name": "Drop preview" }] }
+{% endschema %}

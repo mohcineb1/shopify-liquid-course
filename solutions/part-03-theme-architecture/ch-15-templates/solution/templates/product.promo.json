@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-promo",
+      "settings": { "show_vendor": true }
+    },
+    "promo_callout": {
+      "type": "promo-callout",
+      "settings": { "message": "Selected products include this limited promotion." }
+    }
+  },
+  "order": ["main", "promo_callout"]
+}
