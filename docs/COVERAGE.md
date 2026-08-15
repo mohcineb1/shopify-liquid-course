@@ -444,3 +444,8 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** printable card set, safe data access, card update owner, card retirement record.
 **Assumed known from earlier:** Liquid render/objects, theme directories, debugging, accessibility, deprecations and release evidence.
 **Deliberately deferred:** actual account/recommendation/filter/metafield/provider/market configurations and current object/filter availability -> verify in current documentation/store context.
+### Appendix I — Glossary
+**Taught:** the canonical glossary’s architecture, commerce, interaction, operations and professional vocabulary; context distinctions; design-review language; and definition-maintenance discipline.
+**Introduced terms:** glossary context check, term-confusion matrix, stable definition, local convention label.
+**Assumed known from earlier:** all chapter and appendix terminology, route/data/component boundaries, release evidence and platform-change intake.
+**Deliberately deferred:** store-specific object availability, account/market/provider configuration and future platform terminology -> verify current context and documentation.

@@ -6,7 +6,7 @@ unit: "Appendix I"
 title: "Glossary"
 type: reference
 has_exercise: false
-status: todo
+status: final
 ---
 
 # Appendix I — Glossary
@@ -15,7 +15,7 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] Every Shopify-specific term used in the book, defined for someone coming from another platform.
+- [x] Every Shopify-specific term used in the book, defined for someone coming from another platform.
 
 ## Labs assigned to this unit
 

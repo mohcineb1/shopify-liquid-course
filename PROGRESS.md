@@ -1649,3 +1649,13 @@ Entry format:
 - verified: printed reference claims trace to current sources or remain `[VERIFY]`; project/store behavior is not presented as generic Liquid fact.
 - decided: applied final status and retained dated/revisioned distribution plus owner/retirement workflow as the printable-reference standard.
 - next: app-i lesson.
+## 2026-08-15 · app-i · lesson
+- wrote: a calibrated cross-platform glossary covering course terms, context-sensitive distinctions, design-review vocabulary and definition-maintenance practice.
+- verified: cited known collection/variant/Section Rendering facts and kept store/configuration-dependent terms marked `[VERIFY]`.
+- decided: the canonical glossary remains the append-only term source; the appendix teaches how to use, distinguish and update it without turning local policy into platform fact.
+- next: app-i review.
+## 2026-08-15 · app-i · review
+- reviewed: passed coverage of Shopify-specific vocabulary, cross-platform definitions, context boundaries, confusable terms and glossary maintenance.
+- verified: canonical terms retain source/chapter traceability; configuration-dependent objects and future/platform facts remain `[VERIFY]` rather than overstated.
+- decided: applied final status and preserved the glossary as a living, append-only reference with explicit stable-versus-local distinction.
+- next: app-j lesson.

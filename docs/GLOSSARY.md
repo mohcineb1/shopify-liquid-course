@@ -464,3 +464,6 @@ use; never introduce a synonym for something already listed.
 | Recipe lifecycle | The ownership, caller inventory, fixture, compatibility and removal practice for an adopted snippet. | app-g |
 | Printable card set | A dated, revisioned compact reference collection whose patterns link to current sources and owning chapters. | app-h |
 | Card retirement record | The recorded reason and replacement source for withdrawing a stale operational reference. | app-h |
+| Glossary context check | The discipline of asking where a term is available, who owns it and what happens when it is absent before using it as a design assumption. | app-i |
+| Term-confusion matrix | A compact comparison of similarly named Shopify concepts that have materially different architecture or ownership boundaries. | app-i |
+| Stable definition | A glossary definition grounded in a current authoritative platform source rather than a project-specific configuration. | app-i |
