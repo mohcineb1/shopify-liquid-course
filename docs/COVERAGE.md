@@ -454,3 +454,8 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** evidence hierarchy, resource-validation loop, personal source map, bounded review question.
 **Assumed known from earlier:** platform change/deprecation, reference themes, testing/release evidence, component contracts and professional practice.
 **Deliberately deferred:** access, eligibility, support/certification/partner outcome, actual store configuration and career outcome -> verify with current authorised sources.
+### Front Matter — Front Matter & Course Setup
+**Taught:** three reading paths, chapter/code conventions, prerequisites, deliberate exclusions, environment preparation, current-version/deprecation discipline and working-agreement setup.
+**Introduced terms:** reading mode, course candidate, working agreement, discovery pass, setup evidence.
+**Assumed known from earlier:** semantic frontend foundations, Git/npm/terminal/JSON, HTTP and frontend development practice.
+**Deliberately deferred:** Shopify account/store/CLI/auth/editor/reference-theme access, actual merchant/admin operations, app/headless implementation and release permissions -> verify authorised project context.

@@ -1669,3 +1669,13 @@ Entry format:
 - verified: source hierarchy prevents community/reference/tool output from being represented as official or store-specific platform proof; access/configuration claims remain `[VERIFY]`.
 - decided: applied final status and retained the resource-validation loop as the course’s final practice for staying current.
 - next: ch-00 lesson.
+## 2026-08-15 · ch-00 · lesson
+- wrote: calibrated front matter explaining course reading paths, chapter conventions, prerequisites, exclusions, safe environment setup and ongoing version/deprecation discipline.
+- verified: actual account/store/CLI/auth/reference-theme/platform-preview operations remain `[VERIFY]`; no live admin/merchant/app/headless action is implied.
+- decided: required a working agreement and discovery pass before real theme changes so course patterns remain bounded by evidence and recovery.
+- next: ch-00 review.
+## 2026-08-15 · ch-00 · review
+- reviewed: passed F.1 reading paths/chapter conventions, F.2 prerequisites, F.3 exclusions, F.4 environment setup and F.5 version/changelog/deprecation discipline in scope order.
+- verified: front matter neither re-teaches frontend basics nor claims account/store/CLI/auth/headless/app/admin access; all live-platform/project circumstances retain `[VERIFY]` boundaries.
+- decided: applied final status and retained working agreement, discovery pass and evidence/recovery checklist as the course entry standard.
+- next: completion validation; all generated units should now be final.

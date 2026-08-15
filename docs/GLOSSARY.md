@@ -470,3 +470,6 @@ use; never introduce a synonym for something already listed.
 | Evidence hierarchy | The ordering of official sources, verified project evidence, reference code, community hypotheses and store configuration evidence by the claim they can support. | app-j |
 | Resource-validation loop | The dated-source, local-assumption, safe-fixture and recorded-decision process used before adopting a resource recommendation. | app-j |
 | Personal source map | A maintained, searchable record of recurring technical sources with dates, confidence, ownership and use context. | app-j |
+| Reading mode | The intentional linear, reference-only or migration-driven way a reader uses the course and selects evidence/output. | ch-00 |
+| Working agreement | A project setup record defining candidate, boundaries, data access, approvals, evidence and recovery expectations before theme work begins. | ch-00 |
+| Discovery pass | A bounded initial inventory of architecture, dependencies, buyer/editor tasks and verification needs before changing an inherited theme. | ch-00 |

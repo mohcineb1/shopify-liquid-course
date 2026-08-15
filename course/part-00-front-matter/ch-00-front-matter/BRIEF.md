@@ -6,7 +6,7 @@ unit: "Front Matter"
 title: "Front Matter & Course Setup"
 type: reference
 has_exercise: false
-status: todo
+status: final
 ---
 
 # Front Matter — Front Matter & Course Setup
@@ -15,27 +15,27 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] F.1 How to Read This Book
-- [ ] Three reading paths: linear, reference-only, migration-driven
-- [ ] Chapter anatomy: concept → mental model → code → gotchas → lab
-- [ ] Code conventions, file-path notation, version flags
-- [ ] F.2 What This Course Assumes You Already Know
-- [ ] Semantic HTML, modern CSS, ES2020+, DOM APIs, HTTP basics
-- [ ] Git, npm, terminal, JSON
-- [ ] What we will **not** re-teach: loops as a concept, CSS layout, JS fundamentals, "what is an API"
-- [ ] F.3 What This Course Deliberately Excludes
-- [ ] Hydrogen/React storefronts (referenced, not taught)
-- [ ] App development in Remix (only where it touches themes)
-- [ ] Shopify admin operations and merchandising
-- [ ] F.4 Environment Setup Checklist
-- [ ] Partner account, development store, store preview data
-- [ ] Shopify CLI (current major), Node baseline, auth flow
-- [ ] Editor setup: Liquid language server, Theme Check, syntax highlighting, formatting
-- [ ] Cloning a reference theme (Dawn and Horizon) for side-by-side study
-- [ ] F.5 Version Note & How to Keep This Book Current
-- [ ] Which Liquid features are stable, which are developer preview
-- [ ] Reading the Shopify developer changelog as a discipline
-- [ ] Deprecation map at time of writing
+- [x] F.1 How to Read This Book
+- [x] Three reading paths: linear, reference-only, migration-driven
+- [x] Chapter anatomy: concept → mental model → code → gotchas → lab
+- [x] Code conventions, file-path notation, version flags
+- [x] F.2 What This Course Assumes You Already Know
+- [x] Semantic HTML, modern CSS, ES2020+, DOM APIs, HTTP basics
+- [x] Git, npm, terminal, JSON
+- [x] What we will **not** re-teach: loops as a concept, CSS layout, JS fundamentals, "what is an API"
+- [x] F.3 What This Course Deliberately Excludes
+- [x] Hydrogen/React storefronts (referenced, not taught)
+- [x] App development in Remix (only where it touches themes)
+- [x] Shopify admin operations and merchandising
+- [x] F.4 Environment Setup Checklist
+- [x] Partner account, development store, store preview data
+- [x] Shopify CLI (current major), Node baseline, auth flow
+- [x] Editor setup: Liquid language server, Theme Check, syntax highlighting, formatting
+- [x] Cloning a reference theme (Dawn and Horizon) for side-by-side study
+- [x] F.5 Version Note & How to Keep This Book Current
+- [x] Which Liquid features are stable, which are developer preview
+- [x] Reading the Shopify developer changelog as a discipline
+- [x] Deprecation map at time of writing
 
 ## Labs assigned to this unit
 
