@@ -390,3 +390,25 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** content decision record, settings contract, component card, market decision log, budget register, budget exception.
 **Assumed known from earlier:** theme architecture, metafields/metaobjects, dynamic sources, Theme Blocks, markets, accessibility, performance testing and candidate migration evidence.
 **Deliberately deferred:** actual capstone implementation, real market configuration, store-plan activation, source data migration, performance testing against a store, app selection and launch deployment -> later capstone chapters.
+### ch-69 — Building the Foundations
+**Taught:** layout/section-group/global-setting/color-scheme boundaries; explicit snippet-library contracts; foundation CSS ownership; progressive Web Component lifecycle; and minimal documented event-bus coordination.
+**Introduced terms:** section-group contract, color-scheme contract, negative snippet contract, foundation CSS ownership, event vocabulary, foundation contract review.
+**Assumed known from earlier:** template/section/block architecture, dynamic source boundaries, semantic settings, accessibility/performance budgets, component cards and candidate validation.
+**Deliberately deferred:** capstone commerce interactions, actual cart API use, editor event implementation, app integration, real section-group configuration and production asset testing -> later capstone chapters.
+### ch-70 — Building the Commerce Surfaces
+**Taught:** composable homepage constraints; URL-driven collection filtering/sorting/pagination; scalable product gallery/option/spec/recommendation contracts; cart-page/drawer section-rendering boundaries; search/account/content template responsibilities; and typed size-guide/store-locator patterns.
+**Introduced terms:** commerce surface, transaction boundary, owned fragment, option-value picker, recommendation intent, cart-page fallback, structured content reference.
+**Assumed known from earlier:** sections/blocks/snippets, dynamic sources, accessibility, performance, event vocabulary, Ajax/Section Rendering, metaobjects and content decisions.
+**Deliberately deferred:** real collection/filter configuration, actual cart mutation, production analytics, account configuration, customer data, maps/geolocation, third-party APIs, recommendation setup and store deployment -> later capstone/operations work.
+### ch-70 — Exercise: Repair the commerce-surface boundary
+**Practised:** turning six unsafe commerce surfaces into bounded candidate contracts: home rail, URL collection controls, high-variant product selection, guarded section refresh, route/data boundaries, and static structured-location fallback.
+**Evidence shipped:** multi-file starter with intentionally unsafe collection/product/cart/locator code and a six-surface authority/fallback record.
+**Review focus:** no browser-only collection truth; no full-variant serialization; one form owner; null-fragment/error guard; no global cart/customer event; no assumed map/account/recommendation/metaobject state.
+### ch-70 — Solution: Repair the commerce-surface boundary
+**Solved:** bounded collection home rail; URL/server-state collection rendering; a single high-variant-aware product form; explicit spec/guide snippets; guarded locale-aware fragment replacement; static locator; and a six-surface verification matrix.
+**Key decisions:** `product-card` is display-only; full-page/cart-page/static paths are durable recovery; a null section is failure; every provider/account/metaobject/recommendation/mutation assumption remains a release gate.
+### ch-71 — Hardening & Shipping
+**Taught:** evidence-based Theme Check/performance/accessibility gates; multi-market/translation matrices; safe defaults/presets; role-based handoff/training; and reversible, observable release/iteration practices.
+**Introduced terms:** release evidence row, quality gate, route-state matrix, literal inventory, onboarding safety, rollback artifact, observable hypothesis.
+**Assumed known from earlier:** component authority, accessibility, Section Rendering, markets, structured content, testing and deployment boundaries.
+**Deliberately deferred:** running tools, accepting actual thresholds, store configuration, translation publishing, analytics/consent, release permissions and live deployment -> verified project operations.

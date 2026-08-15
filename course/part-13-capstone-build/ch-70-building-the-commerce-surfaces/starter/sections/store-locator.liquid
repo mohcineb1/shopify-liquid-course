@@ -1,0 +1,9 @@
+<section class="store-locator">
+  <h2>{{ section.settings.heading }}</h2>
+  <div id="Map" data-provider-key="candidate-map-key"></div>
+  <div class="size-guide">{{ product.description }}</div>
+</section>
+<script src="https://maps.example.invalid/api.js"></script>
+{% schema %}
+{"name":"Store locator","settings":[{"type":"text","id":"heading","label":"Heading","default":"Find a store"}]}
+{% endschema %}

@@ -6,7 +6,7 @@ unit: "Chapter 70"
 title: "Building the Commerce Surfaces"
 type: capstone
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 70 — Building the Commerce Surfaces
@@ -15,12 +15,12 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 70.1 Home page from composable theme blocks
-- [ ] 70.2 Collection page with filtering, sorting, pagination
-- [ ] 70.3 Product page: gallery, variant picker, metafield spec tables, related products
-- [ ] 70.4 Cart drawer and cart page with Section Rendering API
-- [ ] 70.5 Search, account, blog, and content templates
-- [ ] 70.6 Metaobject-driven size guides and store locator
+- [x] 70.1 Home page from composable theme blocks
+- [x] 70.2 Collection page with filtering, sorting, pagination
+- [x] 70.3 Product page: gallery, variant picker, metafield spec tables, related products
+- [x] 70.4 Cart drawer and cart page with Section Rendering API
+- [x] 70.5 Search, account, blog, and content templates
+- [x] 70.6 Metaobject-driven size guides and store locator
 
 ## Labs assigned to this unit
 

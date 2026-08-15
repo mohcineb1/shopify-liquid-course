@@ -1,0 +1,1 @@
+class ThemeElement extends HTMLElement { connectedCallback(){ window.customer = this.dataset.customer; document.querySelectorAll('button').forEach((button)=>button.addEventListener('click', this.handle)); } handle(){ window.cart = 'changed'; } }

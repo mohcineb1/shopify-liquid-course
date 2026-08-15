@@ -1,0 +1,1 @@
+{% if guide != blank %}<aside class="guide-callout" aria-labelledby="GuideTitle"><h2 id="GuideTitle">{{ guide.title }}</h2>{% if guide.body != blank %}<div>{{ guide.body | metafield_tag }}</div>{% endif %}</aside>{% endif %}

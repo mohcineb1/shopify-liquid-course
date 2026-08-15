@@ -1,0 +1,1 @@
+{% if product != blank %}<article class="product-card"><a class="product-card__link" href="{{ product.url }}"><h2>{{ product.title | escape }}</h2>{% render 'price', product: product %}</a></article>{% endif %}

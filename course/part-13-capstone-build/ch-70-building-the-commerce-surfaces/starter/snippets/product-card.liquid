@@ -1,0 +1,7 @@
+<article class="product-card">
+  <a href="{{ product.url }}">{{ product.featured_image | image_url: width: 640 | image_tag: alt: product.title }}<h2>{{ product.title }}</h2></a>
+  <p>{{ product.price | money }}</p>
+  {% if show_form %}
+    {% form 'product', product %}<input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}"><button>Add to cart</button>{% endform %}
+  {% endif %}
+</article>

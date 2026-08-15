@@ -1,0 +1,17 @@
+<section class="collection-grid" data-section-id="{{ section.id }}">
+  <h1>{{ collection.title }}</h1>
+  <label for="BrowserSort">Sort products</label>
+  <select id="BrowserSort" data-browser-sort>
+    <option value="price">Price</option>
+    <option value="title">Title</option>
+  </select>
+  <ul id="CollectionProducts" role="list">
+    {% for product in collection.products %}
+      <li data-price="{{ product.price }}">{% render 'product-card', product: product %}</li>
+    {% endfor %}
+  </ul>
+</section>
+<script src="{{ 'commerce-surfaces.js' | asset_url }}" defer></script>
+{% schema %}
+{"name":"Collection product grid","settings":[]}
+{% endschema %}

@@ -1,0 +1,20 @@
+{% paginate collection.products by 24 %}
+  {% assign selected_sort = collection.sort_by | default: collection.default_sort_by %}
+  <section class="collection-grid" data-section-id="{{ section.id }}" aria-labelledby="CollectionTitle-{{ section.id }}">
+    <h1 id="CollectionTitle-{{ section.id }}">{{ collection.title }}</h1>
+    <form method="get" class="collection-grid__controls">
+      <label for="SortBy-{{ section.id }}">Sort products</label>
+      <select id="SortBy-{{ section.id }}" name="sort_by" onchange="this.form.submit()">
+        {% for option in collection.sort_options %}<option value="{{ option.value }}" {% if option.value == selected_sort %}selected{% endif %}>{{ option.name }}</option>{% endfor %}
+      </select>
+      <noscript><button type="submit">Apply</button></noscript>
+    </form>
+    <div data-owned-replacement="collection-results" tabindex="-1">
+      <ul class="product-grid" role="list">{% for product in collection.products %}<li>{% render 'product-card', product: product, image_loading: 'lazy' %}</li>{% else %}<li>No products match this collection state.</li>{% endfor %}</ul>
+      {{ paginate | default_pagination }}
+    </div>
+  </section>
+{% endpaginate %}
+{% schema %}
+{"name":"Collection product grid","settings":[]}
+{% endschema %}

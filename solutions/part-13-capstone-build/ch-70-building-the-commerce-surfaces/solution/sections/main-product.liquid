@@ -1,0 +1,15 @@
+{% assign product_form_id = 'ProductForm-' | append: section.id %}
+<section class="product" data-section-id="{{ section.id }}" aria-labelledby="ProductTitle-{{ section.id }}">
+  <h1 id="ProductTitle-{{ section.id }}">{{ product.title }}</h1>
+  <div class="product-gallery">{% for media in product.media %}{{ media | image_url: width: 1200 | image_tag: loading: 'lazy', alt: media.alt }}{% endfor %}</div>
+  {% form 'product', product, id: product_form_id %}
+    {% for option in product.options_with_values %}<fieldset class="product-options__group"><legend>{{ option.name }}</legend>{% for option_value in option.values %}{% capture input_id %}Option-{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}{% endcapture %}<input id="{{ input_id }}" type="radio" name="{{ option.name | escape }}" value="{{ option_value | escape }}" {% if option_value.selected %}checked{% endif %} {% unless option_value.available %}disabled{% endunless %}><label for="{{ input_id }}">{{ option_value }}</label>{% endfor %}</fieldset>{% endfor %}
+    <button type="submit">Add to cart</button>
+  {% endform %}
+  {% render 'product-specs', specifications: product.metafields.custom.specifications.value %}
+  {% render 'guide-callout', guide: product.metafields.custom.size_guide.value %}
+  {% if recommendations.performed and recommendations.products_count > 0 %}<aside aria-labelledby="RelatedTitle-{{ section.id }}"><h2 id="RelatedTitle-{{ section.id }}">Related products</h2><ul role="list">{% for recommendation in recommendations.products %}<li>{% render 'product-card', product: recommendation, image_loading: 'lazy' %}</li>{% endfor %}</ul></aside>{% endif %}
+</section>
+{% schema %}
+{"name":"Main product","settings":[]}
+{% endschema %}

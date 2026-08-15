@@ -1,0 +1,12 @@
+<section class="product" data-product-id="{{ product.id }}">
+  <h1>{{ product.title }}</h1>
+  {% assign all_variants = product.variants | json %}
+  <script>window.currentVariants = {{ all_variants }};</script>
+  <div class="product-gallery">{% for media in product.media %}{{ media | image_url: width: 1200 | image_tag }}{% endfor %}</div>
+  {% render 'product-card', product: product, show_form: true %}
+  <div class="product-description">{{ product.description }}</div>
+  <aside class="recommendations">You might also like</aside>
+</section>
+{% schema %}
+{"name":"Main product","settings":[]}
+{% endschema %}

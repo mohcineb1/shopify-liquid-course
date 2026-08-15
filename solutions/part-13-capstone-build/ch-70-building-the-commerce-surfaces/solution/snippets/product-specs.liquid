@@ -1,0 +1,1 @@
+{% if specifications != blank %}<table class="product-specs"><caption>Product specifications</caption><tbody>{% for specification in specifications %}<tr><th scope="row">{{ specification.label }}</th><td>{{ specification.value }}</td></tr>{% endfor %}</tbody></table>{% endif %}

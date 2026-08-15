@@ -1,0 +1,16 @@
+{% assign source_collection = section.settings.collection %}
+<section class="home-commerce-rail" aria-labelledby="HomeRail-{{ section.id }}">
+  {% if section.settings.heading != blank %}<h2 id="HomeRail-{{ section.id }}">{{ section.settings.heading }}</h2>{% endif %}
+  {% if source_collection != blank and source_collection.products_count > 0 %}
+    <ul class="product-grid" role="list">
+      {% for product in source_collection.products limit: section.settings.products_to_show %}
+        <li>{% render 'product-card', product: product, image_loading: 'lazy' %}</li>
+      {% endfor %}
+    </ul>
+  {% elsif request.design_mode %}
+    <p class="home-commerce-rail__empty">Choose a collection with products to populate this rail.</p>
+  {% endif %}
+</section>
+{% schema %}
+{"name":"Home commerce rail","settings":[{"type":"text","id":"heading","label":"Heading","default":"Featured products"},{"type":"collection","id":"collection","label":"Collection"},{"type":"range","id":"products_to_show","label":"Products to show","min":2,"max":12,"step":1,"default":4}]}
+{% endschema %}

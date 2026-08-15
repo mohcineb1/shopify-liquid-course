@@ -424,3 +424,24 @@ use; never introduce a synonym for something already listed.
 | Market decision log | A record of default/override behavior, market scope, content ownership, fallback, fixture, acceptance and removal for market-sensitive work. | ch-68 |
 | Budget register | The route, fixture, metric, threshold, tool, owner, exception and regression record that makes quality constraints testable. | ch-68 |
 | Budget exception | A time-bounded documented acceptance of a measured quality cost with owner, reason, compensating action and retest date. | ch-68 |
+| Section-group contract | The documented scope, permitted composition, owner, market/app policy, limit, empty state and test for a layout-rendered global section group. | ch-69 |
+| Color-scheme contract | A semantic role/fallback/consumer/accessibility/editor contract for a controlled set of component colors. | ch-69 |
+| Negative snippet contract | An explicit statement of responsibilities a reusable snippet must not assume or perform. | ch-69 |
+| Foundation CSS ownership | The allocation of token, utility, layout and component style responsibility that prevents cross-component selector coupling. | ch-69 |
+| Event vocabulary | The versioned set of named, documented producer/consumer/fallback events for owned theme enhancements. | ch-69 |
+| Foundation contract review | A dependency-graph review of layout, settings, snippets, events, no-JS and editor/language fixtures before downstream interaction work. | ch-69 |
+| Commerce surface | A buyer-facing route/component defined by task, resource context, authority, baseline, enhancement, error and accessibility contracts. | ch-70 |
+| Transaction boundary | The explicit request/response/owned-fragment/error/focus boundary for a candidate commerce interaction. | ch-70 |
+| Owned fragment | A DOM/section region whose requesting, replacement, reinitialisation and failure handling are assigned to one component. | ch-70 |
+| Option-value picker | A product-option control built from contextual option values rather than an assumption that all variants are loaded. | ch-70 |
+| Recommendation intent | The named merchandising purpose—such as related or complementary—governing a recommendation component’s source and empty behavior. | ch-70 |
+| Cart-page fallback | The full cart route that remains usable if a cart drawer or asynchronous refresh cannot enhance an interaction. | ch-70 |
+| Structured content reference | A typed, explicit relationship that supplies reusable structured content to a component with an empty-state contract. | ch-70 |
+| URL-driven state | A buyer-visible collection/search state represented by a resource URL and full-page request, not only client-side DOM ordering. | ch-70 solution |
+| Fragment-refresh guard | The conditions that permit replacement of an owned rendered fragment: request success, string response, matching owner and replacement target. | ch-70 solution |
+| Release evidence row | A reproducible record connecting a quality/release claim to theme version, route, fixture, environment, output, owner and decision. | ch-71 |
+| Route-state matrix | A test inventory that pairs each route with important content, interaction, failure, locale and accessibility states. | ch-71 |
+| Literal inventory | A classified record of customer-facing text and values used to drive translation, content, accessibility and ownership review. | ch-71 |
+| Onboarding safety | The property that defaults, presets, labels and empty states enable configuration without publishing a false, broken or inaccessible surface. | ch-71 |
+| Rollback artifact | The identified prior deployable version and procedure needed to reverse a release under a named owner. | ch-71 |
+| Observable hypothesis | A release/iteration claim tied to a metric or signal, baseline, threshold, owner and response action. | ch-71 |

@@ -1539,3 +1539,48 @@ Entry format:
 - verified: the capstone starts with bounded owners, typed content, semantic controls, component cards, candidate fixture budgets and explicit uncertainties rather than a theme implementation.
 - decided: applied final markers and retained `[VERIFY]` gates for plan, markets, data, editor, owner, baseline, target, release and rollback facts.
 - next: ch-69 lesson.
+## 2026-08-15 · ch-69 · lesson
+- wrote: layout/section groups/global settings/color schemes; explicit snippet library and CSS ownership; and progressive Web Component/event-vocabulary foundation for the capstone.
+- verified: used the local verified theme-limit/deprecation ledger and the dynamic-source boundary; calibration passed at 2,160 words.
+- decided: kept all store/component/editor/event/app/market facts `[VERIFY]`; required semantic settings, explicit snippet inputs, one ownership boundary and no-JS/lifecycle fallbacks before interaction work.
+- next: ch-69 exercise.
+## 2026-08-15 · ch-69 · exercise
+- wrote: a capstone foundation exercise covering layout/groups/settings/schemes, explicit snippets, CSS ownership, lifecycle-safe components, minimal events and candidate validation.
+- shipped: real layout/config/section/snippet/assets starters with product/checkout/global script coupling, unsafe settings, implicit snippets, focus removal and global state/event anti-patterns.
+- decided: prohibited store/customer/cart/checkout/app actions and framework dependency; required semantic boundaries, one product-form owner, explicit inputs, minimal event detail and `[VERIFY]` lifecycle facts.
+- next: ch-69 solution.
+## 2026-08-15 · ch-69 · solution
+- wrote: bounded layout/settings, explicit standard snippets, scoped CSS, lifecycle-safe base component, narrow event target and candidate validation/degradation contracts.
+- shipped: solution layout/config/section/snippets/assets plus foundation, settings, library, CSS, component-event and matrix records.
+- verified: removed global product/checkout behavior, arbitrary settings, include, card form/price calculation, inaccessible focus CSS, global customer/cart state and unrestricted window event relay.
+- next: ch-69 review; do not transfer solution implementation into course files.
+## 2026-08-15 · ch-69 · review
+- reviewed: passed layout/section-groups/global settings/color schemes, standard snippets, and base Web Component/event-bus scope in order with calibration, practical-file parity and anti-leak boundaries.
+- verified: the foundation retains document/component/data authority boundaries, progressive enhancement, explicit contracts, scoped style ownership and degraded-path behavior.
+- decided: applied final markers and retained `[VERIFY]` gates for theme/editor/app/market/component/event/store/release facts.
+- next: ch-70 lesson.
+## 2026-08-15 · ch-70 · lesson
+- wrote: capstone home/collection/product/cart/search/account/content/metaobject surfaces with bounded authority, accessible baselines, progressive enhancement and candidate failure contracts.
+- verified: grounded Section Rendering, collection sort/pagination, high-variant and recommendation facts in current Shopify documentation; calibration passed at 2,188 words.
+- decided: retained `[VERIFY]` gates for all store/configuration/data/provider/consent/account/release facts; required URL-driven collection state, option-value overfetch avoidance, cart-page fallback and typed reference fallbacks.
+- next: ch-70 exercise.
+## 2026-08-15 · ch-70 · exercise
+- wrote: a 954-word capstone exercise that repairs commerce-surface authority while prohibiting store mutation, fabricated provider/account/customer behavior and checkout changes.
+- shipped: real multi-file starter across collection, product, locator, card, templates, JavaScript and contract records, seeded with URL, variant, cart-event, map and typed-content defects.
+- decided: required a bounded home rail, URL/full-page collection baseline, option-value product inputs, cart-page/static fallbacks and `[VERIFY]` handling for all platform/store configuration facts.
+- next: ch-70 solution.
+## 2026-08-15 · ch-70 · solution
+- wrote: a 1,442-word worked solution isolating Liquid URL truth, sole product-form ownership, explicit structured inputs, guarded Section Rendering and route/static recovery paths.
+- shipped: real mirror assets, sections, snippets, templates and a six-surface contract record with owner, fallback, error and release gates.
+- verified: collection sort/pagination, high-variant cap/relevant null state, recommendations and Section Rendering facts were sourced; no solution code entered course files.
+- next: ch-70 review; do not transfer solution-specific construction into lesson or exercise.
+## 2026-08-15 · ch-70 · review
+- reviewed: passed the home composition, collection filtering/sort/pagination, product/gallery/variant/spec/recommendation, cart Section Rendering, route/template and metaobject guide/location scope in order.
+- verified: lesson/exercise retain conceptual boundaries and observable requirements without copying mirror-only implementation; all provider, account, cart mutation, recommendation, data and release facts remain gated as `[VERIFY]`.
+- decided: applied final markers and retained full-page, cart-page and static accessibility fallbacks as non-negotiable acceptance evidence.
+- next: ch-71 lesson.
+## 2026-08-15 · ch-71 · lesson
+- wrote: evidence-first hardening and release guidance covering quality gates, market/translation review, merchant-safe defaults, handoff/training and reversible monitoring/iteration.
+- verified: preserved a strict distinction between targets and observed results; all real tools, thresholds, store configuration, consent, permissions and live-release claims remain `[VERIFY]`.
+- decided: required route-state evidence, literal inventory, onboarding safety, role-specific documentation, rollback artifact, observable-hypothesis and triage records.
+- next: ch-71 exercise.

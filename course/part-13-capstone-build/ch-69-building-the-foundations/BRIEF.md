@@ -6,7 +6,7 @@ unit: "Chapter 69"
 title: "Building the Foundations"
 type: capstone
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 69 — Building the Foundations
@@ -15,9 +15,9 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 69.1 Layout, section groups, global settings, color schemes
-- [ ] 69.2 The theme's standard library of snippets
-- [ ] 69.3 Base web component class and event bus
+- [x] 69.1 Layout, section groups, global settings, color schemes
+- [x] 69.2 The theme's standard library of snippets
+- [x] 69.3 Base web component class and event bus
 
 ## Labs assigned to this unit
 
