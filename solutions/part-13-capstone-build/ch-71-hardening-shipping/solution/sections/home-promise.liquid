@@ -1,0 +1,4 @@
+<section class="home-promise" aria-labelledby="PromiseTitle-{{ section.id }}">{% if section.settings.heading != blank %}<h2 id="PromiseTitle-{{ section.id }}">{{ section.settings.heading }}</h2>{% endif %}{% if section.settings.message != blank %}<p>{{ section.settings.message }}</p>{% elsif request.design_mode %}<p>Choose approved editorial copy before publishing this section.</p>{% endif %}</section>
+{% schema %}
+{"name":"Home information","settings":[{"type":"text","id":"heading","label":"Heading","default":"Shop with confidence"},{"type":"text","id":"message","label":"Approved message"}],"presets":[{"name":"Home information"}]}
+{% endschema %}

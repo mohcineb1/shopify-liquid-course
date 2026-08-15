@@ -6,7 +6,7 @@ unit: "Chapter 71"
 title: "Hardening & Shipping"
 type: capstone
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 71 — Hardening & Shipping
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 71.1 Theme Check clean, Lighthouse targets hit, a11y pass
-- [ ] 71.2 Multi-market and translation pass
-- [ ] 71.3 Merchant onboarding defaults and presets
-- [ ] 71.4 Documentation, handoff, and training
-- [ ] 71.5 Deploy, monitor, iterate
+- [x] 71.1 Theme Check clean, Lighthouse targets hit, a11y pass
+- [x] 71.2 Multi-market and translation pass
+- [x] 71.3 Merchant onboarding defaults and presets
+- [x] 71.4 Documentation, handoff, and training
+- [x] 71.5 Deploy, monitor, iterate
 
 ## Labs assigned to this unit
 

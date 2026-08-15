@@ -1584,3 +1584,18 @@ Entry format:
 - verified: preserved a strict distinction between targets and observed results; all real tools, thresholds, store configuration, consent, permissions and live-release claims remain `[VERIFY]`.
 - decided: required route-state evidence, literal inventory, onboarding safety, role-specific documentation, rollback artifact, observable-hypothesis and triage records.
 - next: ch-71 exercise.
+## 2026-08-15 · ch-71 · exercise
+- wrote: a calibrated release-evidence packet exercise that turns unsupported delivery claims into route-state, market, onboarding, handoff, gate and triage records.
+- shipped: real starter section and five defective operational records, with constraints against fabricated measurement, stores, translations, analytics, permissions and release outcome.
+- decided: required reviewable version/fixture/owner/raw-output records and explicit `[VERIFY]` escalation for any unavailable operational evidence.
+- next: ch-71 solution.
+## 2026-08-15 · ch-71 · solution
+- wrote: a 1,301-word solution that replaces score assertions with source/manual evidence, literal/market ownership, safe onboarding, role handoff, gates and accountable triage.
+- shipped: mirror home section plus quality, literal, handoff, deploy and triage records with real diffable paths.
+- verified: no actual tool, market, translation, analytics, permission or release result is claimed; all such operations remain `[VERIFY]` release gates.
+- next: ch-71 review; do not introduce the solution’s record structure into course lesson/exercise.
+## 2026-08-15 · ch-71 · review
+- reviewed: passed Theme Check/performance/accessibility evidence, multi-market translation boundaries, onboarding defaults, handoff/training and deploy-monitor-iterate scope in order.
+- verified: course files distinguish targets from outcomes and retain `[VERIFY]` gates for actual tools, stores, permissions, consent, analytics, release and rollback execution; no solution-specific record implementation leaked into learning material.
+- decided: applied final markers and retained route-state evidence, named ownership and explicit fallback/abort decisions as the chapter’s release standard.
+- next: ch-72 lesson.

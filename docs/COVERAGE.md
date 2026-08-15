@@ -412,3 +412,10 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** release evidence row, quality gate, route-state matrix, literal inventory, onboarding safety, rollback artifact, observable hypothesis.
 **Assumed known from earlier:** component authority, accessibility, Section Rendering, markets, structured content, testing and deployment boundaries.
 **Deliberately deferred:** running tools, accepting actual thresholds, store configuration, translation publishing, analytics/consent, release permissions and live deployment -> verified project operations.
+### ch-71 — Exercise: Build a release-evidence packet
+**Practised:** replacing unsupported quality/release claims with a route-state evidence matrix, literal inventory, safe default, role handoff, release gate and time-bounded triage record.
+**Evidence shipped:** starter theme section plus deficient quality, market, handoff, deploy and triage records for review-driven correction.
+**Review focus:** no fabricated tools/scores/targets/markets/monitoring/permissions; every claim has version, fixture, owner, raw-evidence location, decision and `[VERIFY]` boundary.
+### ch-71 — Solution: Build a release-evidence packet
+**Solved:** source and manual quality evidence matrix; literal/market inventory; neutral merchant-safe onboarding; role handoff/training; gated deployment/observation/iteration; and accountable triage template.
+**Key decisions:** candidate records never claim observed results; locale-aware request behavior is cited; unverified store/permission/consent/analytics/release facts remain gates.

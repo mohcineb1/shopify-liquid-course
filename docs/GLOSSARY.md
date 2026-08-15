@@ -445,3 +445,5 @@ use; never introduce a synonym for something already listed.
 | Onboarding safety | The property that defaults, presets, labels and empty states enable configuration without publishing a false, broken or inaccessible surface. | ch-71 |
 | Rollback artifact | The identified prior deployable version and procedure needed to reverse a release under a named owner. | ch-71 |
 | Observable hypothesis | A release/iteration claim tied to a metric or signal, baseline, threshold, owner and response action. | ch-71 |
+| Quality gate | A release decision point with declared evidence, owner, abort/response condition and unresolved verification boundaries. | ch-71 solution |
+| Time-bounded exception | A risk decision that records approval, control, expiry and reopening event instead of silently accepting a defect. | ch-71 solution |
