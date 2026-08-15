@@ -1659,3 +1659,13 @@ Entry format:
 - verified: canonical terms retain source/chapter traceability; configuration-dependent objects and future/platform facts remain `[VERIFY]` rather than overstated.
 - decided: applied final status and preserved the glossary as a living, append-only reference with explicit stable-versus-local distinction.
 - next: app-j lesson.
+## 2026-08-15 · app-j · lesson
+- wrote: a calibrated resource appendix covering official docs/changelog, reference themes, community evidence, tooling boundaries, validation loop and sustainable learning cadence.
+- verified: sources are ranked by the claim they can establish; access/store/eligibility/outcome claims remain `[VERIFY]`.
+- decided: required dated source maps, bounded review questions and small reproducible fixtures before resource advice becomes project implementation.
+- next: app-j review.
+## 2026-08-15 · app-j · review
+- reviewed: passed official docs/changelog, reference themes, community, tooling and after-book learning-cadence coverage with source/evidence boundaries.
+- verified: source hierarchy prevents community/reference/tool output from being represented as official or store-specific platform proof; access/configuration claims remain `[VERIFY]`.
+- decided: applied final status and retained the resource-validation loop as the course’s final practice for staying current.
+- next: ch-00 lesson.

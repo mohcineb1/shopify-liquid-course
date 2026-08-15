@@ -449,3 +449,8 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** glossary context check, term-confusion matrix, stable definition, local convention label.
 **Assumed known from earlier:** all chapter and appendix terminology, route/data/component boundaries, release evidence and platform-change intake.
 **Deliberately deferred:** store-specific object availability, account/market/provider configuration and future platform terminology -> verify current context and documentation.
+### Appendix J — Resources
+**Taught:** hierarchy of official docs/changelog/reference/community/project/store evidence; reference-theme and tooling boundaries; resource-validation loop; source-map/review practice; and continuing learning cadence.
+**Introduced terms:** evidence hierarchy, resource-validation loop, personal source map, bounded review question.
+**Assumed known from earlier:** platform change/deprecation, reference themes, testing/release evidence, component contracts and professional practice.
+**Deliberately deferred:** access, eligibility, support/certification/partner outcome, actual store configuration and career outcome -> verify with current authorised sources.

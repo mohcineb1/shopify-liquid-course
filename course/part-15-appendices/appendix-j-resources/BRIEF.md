@@ -6,7 +6,7 @@ unit: "Appendix J"
 title: "Resources"
 type: reference
 has_exercise: false
-status: todo
+status: final
 ---
 
 # Appendix J — Resources
@@ -15,7 +15,7 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] Official docs and changelog, reference themes, community sources, tooling, and a suggested learning cadence after finishing the book.
+- [x] Official docs and changelog, reference themes, community sources, tooling, and a suggested learning cadence after finishing the book.
 
 ## Labs assigned to this unit
 

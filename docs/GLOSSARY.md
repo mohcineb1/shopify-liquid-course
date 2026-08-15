@@ -467,3 +467,6 @@ use; never introduce a synonym for something already listed.
 | Glossary context check | The discipline of asking where a term is available, who owns it and what happens when it is absent before using it as a design assumption. | app-i |
 | Term-confusion matrix | A compact comparison of similarly named Shopify concepts that have materially different architecture or ownership boundaries. | app-i |
 | Stable definition | A glossary definition grounded in a current authoritative platform source rather than a project-specific configuration. | app-i |
+| Evidence hierarchy | The ordering of official sources, verified project evidence, reference code, community hypotheses and store configuration evidence by the claim they can support. | app-j |
+| Resource-validation loop | The dated-source, local-assumption, safe-fixture and recorded-decision process used before adopting a resource recommendation. | app-j |
+| Personal source map | A maintained, searchable record of recurring technical sources with dates, confidence, ownership and use context. | app-j |
