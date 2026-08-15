@@ -439,3 +439,8 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** recipe contract, display-only card, snippet caller contract, recipe lifecycle, compatibility window.
 **Assumed known from earlier:** render isolation, Liquid objects, product/collection surfaces, accessibility, structured content and component ownership.
 **Deliberately deferred:** actual rating/review/filter/unit-price/market/recommendation/JSON-LD/location data and provider behavior -> verify data source and current platform configuration.
+### Appendix H — Cheat Sheets (printable)
+**Taught:** printable syntax, filter, object, directory, debugging and deprecation cards, extended with component-contract, route-state, safe-data, incident and update workflows.
+**Introduced terms:** printable card set, safe data access, card update owner, card retirement record.
+**Assumed known from earlier:** Liquid render/objects, theme directories, debugging, accessibility, deprecations and release evidence.
+**Deliberately deferred:** actual account/recommendation/filter/metafield/provider/market configurations and current object/filter availability -> verify in current documentation/store context.

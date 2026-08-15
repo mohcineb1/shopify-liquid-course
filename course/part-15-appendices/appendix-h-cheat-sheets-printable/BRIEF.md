@@ -6,7 +6,7 @@ unit: "Appendix H"
 title: "Cheat Sheets (printable)"
 type: reference
 has_exercise: false
-status: todo
+status: final
 ---
 
 # Appendix H — Cheat Sheets (printable)
@@ -15,7 +15,7 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] Syntax card · Filter card · Object map · Theme directory map · Debugging card · Deprecation card.
+- [x] Syntax card · Filter card · Object map · Theme directory map · Debugging card · Deprecation card.
 
 ## Labs assigned to this unit
 

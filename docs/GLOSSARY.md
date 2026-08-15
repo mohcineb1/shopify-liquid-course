@@ -462,3 +462,5 @@ use; never introduce a synonym for something already listed.
 | Recipe contract | The named input, narrow output, blank behavior, semantics and ownership boundary that makes a snippet reusable. | app-g |
 | Snippet caller contract | The page/component responsibility that remains outside a snippet, including resource context, landmark, form, data and error decisions. | app-g |
 | Recipe lifecycle | The ownership, caller inventory, fixture, compatibility and removal practice for an adopted snippet. | app-g |
+| Printable card set | A dated, revisioned compact reference collection whose patterns link to current sources and owning chapters. | app-h |
+| Card retirement record | The recorded reason and replacement source for withdrawing a stale operational reference. | app-h |

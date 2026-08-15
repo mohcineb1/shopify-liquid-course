@@ -1639,3 +1639,13 @@ Entry format:
 - verified: recipe inputs, blank states, semantic ownership and data-dependent `[VERIFY]` boundaries are explicit; no cookbook entry asserts a store/provider/review configuration.
 - decided: applied final status and preserved caller responsibility for route/resource/form/data/CSS/JS and accessibility outcomes.
 - next: app-h lesson.
+## 2026-08-15 · app-h · lesson
+- wrote: a calibrated printable-card appendix for syntax, filters, object/directory maps, debugging, deprecations, component contracts, test states, safe data and maintenance.
+- verified: platform/data assertions remain tied to sources or `[VERIFY]`; cards distinguish reusable patterns from project/store facts.
+- decided: required every distributed card to carry source date, revision, owner/review date and retirement record.
+- next: app-h review.
+## 2026-08-15 · app-h · review
+- reviewed: passed syntax, filter, object map, directory map, debugging and deprecation cards, with supplementary contract/test/data/incident/printing cards.
+- verified: printed reference claims trace to current sources or remain `[VERIFY]`; project/store behavior is not presented as generic Liquid fact.
+- decided: applied final status and retained dated/revisioned distribution plus owner/retirement workflow as the printable-reference standard.
+- next: app-i lesson.
