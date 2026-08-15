@@ -459,3 +459,6 @@ use; never introduce a synonym for something already listed.
 | Deprecation inventory | A dated record of candidate legacy surfaces, status, owners, source evidence, replacement decision and test/release state. | app-f |
 | Active-use verification | Evidence that a located artifact is actually used in the relevant published/configured environment, not merely present in source history. | app-f |
 | Closure review | A final migration review joining source status, implementation, operations and acceptance evidence before retiring a deprecation item. | app-f |
+| Recipe contract | The named input, narrow output, blank behavior, semantics and ownership boundary that makes a snippet reusable. | app-g |
+| Snippet caller contract | The page/component responsibility that remains outside a snippet, including resource context, landmark, form, data and error decisions. | app-g |
+| Recipe lifecycle | The ownership, caller inventory, fixture, compatibility and removal practice for an adopted snippet. | app-g |

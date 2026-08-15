@@ -434,3 +434,8 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** deprecation inventory, replacement-capability matrix, active-use verification, closure review.
 **Assumed known from earlier:** snippets, checkout/theme boundaries, Functions, accounts, section architecture and release evidence.
 **Deliberately deferred:** real store checkout/account configuration, extensions, app eligibility, consent, customer data, platform permissions and migration outcome -> verify with owners and current sources.
+### Appendix G — Snippet Cookbook
+**Taught:** forty-four narrow snippet recipes for money, media, icons/navigation, product/collection UI and structured content; plus explicit caller contracts, accessibility tests, asset ownership and lifecycle.
+**Introduced terms:** recipe contract, display-only card, snippet caller contract, recipe lifecycle, compatibility window.
+**Assumed known from earlier:** render isolation, Liquid objects, product/collection surfaces, accessibility, structured content and component ownership.
+**Deliberately deferred:** actual rating/review/filter/unit-price/market/recommendation/JSON-LD/location data and provider behavior -> verify data source and current platform configuration.

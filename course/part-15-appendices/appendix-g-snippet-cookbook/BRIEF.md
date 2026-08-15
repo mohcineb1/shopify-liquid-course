@@ -6,7 +6,7 @@ unit: "Appendix G"
 title: "Snippet Cookbook"
 type: reference
 has_exercise: false
-status: todo
+status: final
 ---
 
 # Appendix G — Snippet Cookbook
@@ -15,7 +15,7 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 40+ production-ready snippets: money formatting, responsive image, icon system, breadcrumb, JSON-LD, pagination, rating stars, badge logic, truncation, safe metafield access.
+- [x] 40+ production-ready snippets: money formatting, responsive image, icon system, breadcrumb, JSON-LD, pagination, rating stars, badge logic, truncation, safe metafield access.
 
 ## Labs assigned to this unit
 

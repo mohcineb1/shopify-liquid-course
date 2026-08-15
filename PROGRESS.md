@@ -1629,3 +1629,13 @@ Entry format:
 - verified: separated source presence from active store use and retained `[VERIFY]` gates for every store/app/extension/account/consent/release fact.
 - decided: applied final status and required evidence-based, reversible migrations rather than cross-surface theme shims.
 - next: app-g lesson.
+## 2026-08-15 · app-g · lesson
+- wrote: a calibrated cookbook of forty-four bounded snippets for price, media, navigation, commerce cards and structured content, plus integration and lifecycle discipline.
+- verified: used explicit render/input contracts and retained `[VERIFY]` gates for data-dependent recipes including ratings, filters, JSON-LD, markets and providers.
+- decided: snippets remain display/presentation units; caller owns context, form, route, data authority, CSS/JS lifecycle and accessibility task evidence.
+- next: app-g review.
+## 2026-08-15 · app-g · review
+- reviewed: passed the 40-plus recipe catalogue across money, responsive media, icons, navigation, JSON-LD, pagination, ratings, badges, truncation and safe metafield access.
+- verified: recipe inputs, blank states, semantic ownership and data-dependent `[VERIFY]` boundaries are explicit; no cookbook entry asserts a store/provider/review configuration.
+- decided: applied final status and preserved caller responsibility for route/resource/form/data/CSS/JS and accessibility outcomes.
+- next: app-h lesson.
