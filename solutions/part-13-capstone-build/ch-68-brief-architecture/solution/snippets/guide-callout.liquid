@@ -1,0 +1,1 @@
+{% if guide != blank %}<aside class="guide-callout" aria-labelledby="guide-title-{{ section.id }}"><h2 id="guide-title-{{ section.id }}">{{ guide.title | escape }}</h2>{{ guide.instructions | metafield_tag }}</aside>{% endif %}

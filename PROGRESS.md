@@ -1499,3 +1499,43 @@ Entry format:
 - verified: the course requires authority mapping, typed relationships, safe API boundaries, gap disposition, candidate reconciliation, communications and rollback before cutover.
 - decided: applied final markers and retained `[VERIFY]` gates for all source system, Shopify plan/surface, data, client, owner, candidate, release and rollback facts.
 - next: ch-67 lesson.
+## 2026-08-14 · ch-67 · lesson
+- wrote: 30-point evidence-led inherited-theme audit; dead/orphan proof ladder; verified-deprecation portfolio; honest refactor ranges; and decision-ready client audit report.
+- verified: grounded the deprecation sweep in the local verified ledger; calibration passed at 2,106 words.
+- decided: required evidence levels, candidate/owner/release/rollback records and `[VERIFY]` gates before classifying anything as unused, deprecated remediation-ready or estimated.
+- next: ch-67 exercise.
+## 2026-08-14 · ch-67 · exercise
+- wrote: an inherited-theme audit exercise covering breadth, dependency evidence, deprecations, estimate, report, safe helper and validation matrix.
+- shipped: legacy layout analytics, include section, candidate block, unsafe deletion helper, Ruby Script export and uncertain checkout/editor notes as real correction targets.
+- decided: prohibited deletion, production/app/checkout actions, live data, vendor contact and unsupported claims; required evidence, owners, candidate tests, cutover/rollback and `[VERIFY]` boundaries.
+- next: ch-67 solution.
+## 2026-08-14 · ch-67 · solution
+- wrote: audit checklist/inventory/proof records, a non-destructive helper, report status snippet, deprecation portfolio, transparent estimate, client report and candidate validation matrix.
+- shipped: corrected solution layout/snippet/asset plus all audit, dependency, portfolio, estimate, report and matrix records.
+- verified: removed deletion network behavior, unqualified dead-code conclusions, direct tracking migration, checkout assumption and fixed-price estimate claims.
+- next: ch-67 review; do not transfer solution implementation into course files.
+## 2026-08-14 · ch-67 · review
+- reviewed: passed audit checklist, orphan/dead-code proof, include/script/checkout/Scripts deprecations, honest estimation, and client-report topics in scope order, calibration, practical-file parity and anti-leak boundaries.
+- verified: the course requires local evidence to be bounded, deprecations to be behavior-led, estimates to declare uncertainty, and reports to supply owners, decisions, acceptance and rollback.
+- decided: applied final markers and retained `[VERIFY]` gates for all theme/editor/app/configuration/client/release/rollback facts.
+- next: ch-68 lesson.
+## 2026-08-15 · ch-68 · lesson
+- wrote: multi-market apparel brief translation, information architecture/content modeling, design-token/settings contract, component inventory, market decision log, and quality-budget governance.
+- verified: grounded markets, dynamic-source, performance and accessibility facts in current Shopify documentation; calibration passed at 2,224 words.
+- decided: preserved `[VERIFY]` gates for plan/market/catalog/editor/owner/baseline/target facts; required typed content decisions, component cards and budget-register evidence before implementation.
+- next: ch-68 exercise.
+## 2026-08-15 · ch-68 · exercise
+- wrote: a capstone architecture exercise covering multi-market brief, content decisions, bounded settings/tokens, component inventory, market log, budgets and candidate validation.
+- shipped: real config, section, snippet, asset and notes starters that expose unsafe global data/settings, duplicated product forms, hidden guide dependencies and blocking global JavaScript.
+- decided: prohibited store/market deployment, production content, unbounded settings and asserted targets; required `[VERIFY]` gates, one product-form authority, typed content records and route/fixture quality budgets.
+- next: ch-68 solution.
+## 2026-08-15 · ch-68 · solution
+- wrote: capstone brief, architecture/content decisions, semantic global settings, presentational card, explicit guide, bounded campaign section, market log, budget register and candidate matrix.
+- shipped: corrected config/sections/snippets/asset plus all capstone decision and validation records.
+- verified: removed arbitrary CSS/HTML/data settings, implicit product dependencies, duplicated card purchase form, parser-blocking external bundle and untestable quality claims.
+- next: ch-68 review; do not transfer solution implementation into course files.
+## 2026-08-15 · ch-68 · review
+- reviewed: passed multi-market brief, information/content architecture, token/settings contract, component inventory and quality-budget topics in scope order, calibration, practical-file parity and anti-leak boundaries.
+- verified: the capstone starts with bounded owners, typed content, semantic controls, component cards, candidate fixture budgets and explicit uncertainties rather than a theme implementation.
+- decided: applied final markers and retained `[VERIFY]` gates for plan, markets, data, editor, owner, baseline, target, release and rollback facts.
+- next: ch-69 lesson.

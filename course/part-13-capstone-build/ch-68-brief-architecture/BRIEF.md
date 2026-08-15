@@ -6,7 +6,7 @@ unit: "Chapter 68"
 title: "Brief & Architecture"
 type: capstone
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 68 — Brief & Architecture
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 68.1 The client brief: a multi-market apparel store
-- [ ] 68.2 Information architecture and content modelling
-- [ ] 68.3 Design tokens and the settings contract
-- [ ] 68.4 Component inventory: sections, blocks, snippets
-- [ ] 68.5 Performance and accessibility budgets agreed up front
+- [x] 68.1 The client brief: a multi-market apparel store
+- [x] 68.2 Information architecture and content modelling
+- [x] 68.3 Design tokens and the settings contract
+- [x] 68.4 Component inventory: sections, blocks, snippets
+- [x] 68.5 Performance and accessibility budgets agreed up front
 
 ## Labs assigned to this unit
 

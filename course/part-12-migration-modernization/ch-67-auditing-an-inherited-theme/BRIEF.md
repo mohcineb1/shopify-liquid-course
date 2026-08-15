@@ -6,7 +6,7 @@ unit: "Chapter 67"
 title: "Auditing an Inherited Theme"
 type: practice
 has_exercise: true
-status: todo
+status: final
 ---
 
 # Chapter 67 — Auditing an Inherited Theme
@@ -15,11 +15,11 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 67.1 A 30-point audit checklist
-- [ ] 67.2 Finding dead code, orphaned sections, and unreferenced blocks
-- [ ] 67.3 Deprecation sweep: `include`, script tags, checkout remnants, legacy Scripts
-- [ ] 67.4 Estimating a refactor honestly
-- [ ] 67.5 Writing the audit report a client will pay for
+- [x] 67.1 A 30-point audit checklist
+- [x] 67.2 Finding dead code, orphaned sections, and unreferenced blocks
+- [x] 67.3 Deprecation sweep: `include`, script tags, checkout remnants, legacy Scripts
+- [x] 67.4 Estimating a refactor honestly
+- [x] 67.5 Writing the audit report a client will pay for
 
 ## Labs assigned to this unit
 

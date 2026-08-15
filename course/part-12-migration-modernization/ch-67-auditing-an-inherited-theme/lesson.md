@@ -1,4 +1,4 @@
-<!-- STATUS: draft -->
+<!-- STATUS: final -->
 ---
 id: ch-67
 title: "Auditing an Inherited Theme"

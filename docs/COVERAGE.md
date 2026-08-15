@@ -385,3 +385,8 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** audit finding, candidate orphan, proof ladder, deprecation portfolio, finding confidence, gap/readback record, report acceptance baseline.
 **Assumed known from earlier:** theme architecture, editor state, app blocks/embeds, candidate testing, platform deprecations, performance/accessibility/privacy and migration evidence.
 **Deliberately deferred:** live audit execution, production deletions, client/vendor interviews, Theme Check/Lighthouse runs, actual checkout/pixel migration, and paid proposal negotiation -> authorised delivery work.
+### ch-68 — Brief & Architecture
+**Taught:** multi-market apparel brief translation; route/content/data architecture; semantic design-token and settings contract; section/block/snippet inventory; and performance/accessibility budget governance.
+**Introduced terms:** content decision record, settings contract, component card, market decision log, budget register, budget exception.
+**Assumed known from earlier:** theme architecture, metafields/metaobjects, dynamic sources, Theme Blocks, markets, accessibility, performance testing and candidate migration evidence.
+**Deliberately deferred:** actual capstone implementation, real market configuration, store-plan activation, source data migration, performance testing against a store, app selection and launch deployment -> later capstone chapters.

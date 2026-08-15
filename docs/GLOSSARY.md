@@ -418,3 +418,9 @@ use; never introduce a synonym for something already listed.
 | Finding confidence | The declared strength and limits of evidence supporting an audit conclusion. | ch-67 |
 | Finding readback | A documented review with technical and merchant owners that validates scope, evidence, assumptions, impact, and next decision. | ch-67 |
 | Report acceptance baseline | The dated candidate/evidence/reviewer/decision record that makes an audit reusable for later change work. | ch-67 |
+| Content decision record | A governed description of content semantics, owner, data type, relation, workflow, market/locale behavior, fallback, consumer and lifecycle. | ch-68 |
+| Settings contract | The defined meaning, valid range, default, consumer, accessibility/performance conditions and prohibited uses for an editor-facing setting. | ch-68 |
+| Component card | A component-level contract covering purpose, context, inputs, output, editor controls, quality behavior, tests, ownership and removal. | ch-68 |
+| Market decision log | A record of default/override behavior, market scope, content ownership, fallback, fixture, acceptance and removal for market-sensitive work. | ch-68 |
+| Budget register | The route, fixture, metric, threshold, tool, owner, exception and regression record that makes quality constraints testable. | ch-68 |
+| Budget exception | A time-bounded documented acceptance of a measured quality cost with owner, reason, compensating action and retest date. | ch-68 |

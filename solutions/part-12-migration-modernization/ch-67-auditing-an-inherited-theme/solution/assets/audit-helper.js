@@ -1,0 +1,1 @@
+(function () { const candidatePaths = ['sections/product-legacy.liquid','blocks/promo-legacy.liquid','snippets/legacy-card.liquid','scripts/shipping-rule.rb']; window.themeAuditInventory = candidatePaths.map((path) => ({path, classification: 'unknown', evidence: 'local starter inventory only', next: 'verify candidate/editor/app/route evidence'})); }());

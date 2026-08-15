@@ -1,0 +1,1 @@
+<article class="product-card"><a href="{{ product.url }}" class="product-card__link">{% if product.featured_image != blank %}{{ product.featured_image | image_url: width: 800 | image_tag: loading: 'lazy', alt: product.featured_image.alt }}{% endif %}<h2>{{ product.title | escape }}</h2><p>{{ product.price | money }}</p></a></article>

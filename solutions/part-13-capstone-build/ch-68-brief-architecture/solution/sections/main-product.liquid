@@ -1,0 +1,2 @@
+<section class="main-product"><h1>{{ product.title }}</h1>{% form 'product', product %}<label for="variant-{{ section.id }}">Variant</label><select id="variant-{{ section.id }}" name="id">{% for variant in product.variants %}<option value="{{ variant.id }}">{{ variant.title }}</option>{% endfor %}</select><button type="submit">Add to cart</button>{% endform %}</section>
+{% schema %}{"name":"Main product","settings":[]}{% endschema %}
