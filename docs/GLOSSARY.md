@@ -452,3 +452,7 @@ use; never introduce a synonym for something already listed.
 | Dependency/risk register | A maintained inventory of platform, integration, data and operational dependencies with owners, impact and review dates. | ch-72 |
 | Platform-change intake | The repeatable process that classifies an authoritative platform update, tests its impact and records an adopt/defer/ignore decision. | ch-72 |
 | Reconsideration trigger | An event that requires a recorded decision to be reviewed, such as an app update, market change or deprecation. | ch-72 |
+| Platform ceiling | A verified maximum accepted by the platform, distinct from a project’s intentional design budget. | app-e |
+| Local budget | A project-defined threshold below a platform maximum that triggers review before architecture/editor quality degrades. | app-e |
+| Dense-editor fixture | A deliberately content-rich template/group configuration used to test composition, editor and performance boundaries. | app-e |
+| Limit-failure classification | The practice of identifying the exact constrained object before selecting a structural repair. | app-e |

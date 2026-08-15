@@ -6,7 +6,7 @@ unit: "Appendix E"
 title: "Platform Limits & Quotas"
 type: reference
 has_exercise: false
-status: todo
+status: final
 ---
 
 # Appendix E — Platform Limits & Quotas
@@ -15,7 +15,7 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] File sizes, theme size, section and block ceilings, nesting depth, pagination caps, `all_products` limits, request timeouts.
+- [x] File sizes, theme size, section and block ceilings, nesting depth, pagination caps, `all_products` limits, request timeouts.
 
 ## Labs assigned to this unit
 

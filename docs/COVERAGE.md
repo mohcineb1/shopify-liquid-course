@@ -424,3 +424,8 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** requirement matrix, supported configuration envelope, dependency/risk register, platform-change intake, decision record, reconsideration trigger.
 **Assumed known from earlier:** theme architecture, structured content, quality/release evidence, markets, performance and accessibility boundaries.
 **Deliberately deferred:** real submission eligibility, pricing/terms, legal/tax/employment choices, negotiated maintenance terms, preview access and individual career decisions -> verified project and personal contexts.
+### Appendix E — Platform Limits & Quotas
+**Taught:** verified template/group/block/file/package/naming ceilings; bounded pagination; cautious `all_products` use; unverified timeout discipline; local budgets; and limit-failure triage.
+**Introduced terms:** platform ceiling, local budget, dense-editor fixture, composition inventory, limit-failure classification.
+**Assumed known from earlier:** sections/blocks, schema, collections/pagination, structured content, performance evidence and release triage.
+**Deliberately deferred:** current `all_products` quota, runtime timeout, plan-specific quotas, app/API quotas and actual store/tool behavior -> verify current authoritative sources.

@@ -1609,3 +1609,13 @@ Entry format:
 - verified: no personal price, contract, legal, tax, employment, submission or platform-access recommendation was introduced; all concrete business/platform circumstances remain `[VERIFY]`.
 - decided: applied final status and retained source-linked evidence, explicit support boundaries and reconsideration triggers as the professional practice standard.
 - next: app-e lesson.
+## 2026-08-15 · app-e · lesson
+- wrote: a calibrated reference for verified theme limits, pagination, cautious handle lookup, unverified timeouts, local budgets and limit-failure diagnosis.
+- verified: quoted numeric limits only from the 2026-08-13 ledger and marked `all_products`, timeout, plan/app/API and runtime behavior `[VERIFY]`.
+- decided: separated platform ceilings from local budgets and required rooted failure classification plus route/editor retests for every repair.
+- next: app-e review.
+## 2026-08-15 · app-e · review
+- reviewed: passed file/theme size, sections/blocks/nesting, pagination, `all_products` and request-timeout coverage with limits stated only where verified.
+- verified: numeric ceilings trace to the project ledger; all current handle lookup, timeout, entitlement and runtime facts remain `[VERIFY]` rather than inferred.
+- decided: applied final status and retained local-budget plus diagnostic workflow as the safe operational use of fixed platform limits.
+- next: app-f lesson.
