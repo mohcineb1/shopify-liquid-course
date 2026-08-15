@@ -447,3 +447,8 @@ use; never introduce a synonym for something already listed.
 | Observable hypothesis | A release/iteration claim tied to a metric or signal, baseline, threshold, owner and response action. | ch-71 |
 | Quality gate | A release decision point with declared evidence, owner, abort/response condition and unresolved verification boundaries. | ch-71 solution |
 | Time-bounded exception | A risk decision that records approval, control, expiry and reopening event instead of silently accepting a defect. | ch-71 solution |
+| Requirement matrix | A dated, source-linked record that maps an external requirement to theme surface, evidence, owner, exception and remediation state. | ch-72 |
+| Supported configuration envelope | The explicitly documented set of merchant/data/integration conditions a theme product is designed to handle safely. | ch-72 |
+| Dependency/risk register | A maintained inventory of platform, integration, data and operational dependencies with owners, impact and review dates. | ch-72 |
+| Platform-change intake | The repeatable process that classifies an authoritative platform update, tests its impact and records an adopt/defer/ignore decision. | ch-72 |
+| Reconsideration trigger | An event that requires a recorded decision to be reviewed, such as an app update, market change or deprecation. | ch-72 |

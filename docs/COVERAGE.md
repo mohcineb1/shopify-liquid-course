@@ -419,3 +419,8 @@ before writing, so it knows what has already been taught and what it may assume.
 ### ch-71 — Solution: Build a release-evidence packet
 **Solved:** source and manual quality evidence matrix; literal/market inventory; neutral merchant-safe onboarding; role handoff/training; gated deployment/observation/iteration; and accountable triage template.
 **Key decisions:** candidate records never claim observed results; locale-aware request behavior is cited; unverified store/permission/consent/analytics/release facts remain gates.
+### ch-72 — The Professional Layer
+**Taught:** Theme Store evidence discipline; client-versus-product boundaries; risk-aware scope; maintenance/platform-change practice; changelog/preview intake; and role-based career development.
+**Introduced terms:** requirement matrix, supported configuration envelope, dependency/risk register, platform-change intake, decision record, reconsideration trigger.
+**Assumed known from earlier:** theme architecture, structured content, quality/release evidence, markets, performance and accessibility boundaries.
+**Deliberately deferred:** real submission eligibility, pricing/terms, legal/tax/employment choices, negotiated maintenance terms, preview access and individual career decisions -> verified project and personal contexts.

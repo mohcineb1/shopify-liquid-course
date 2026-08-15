@@ -6,7 +6,7 @@ unit: "Chapter 72"
 title: "The Professional Layer"
 type: concept
 has_exercise: false
-status: todo
+status: final
 ---
 
 # Chapter 72 — The Professional Layer
@@ -15,12 +15,12 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] 72.1 Shopify Theme Store requirements and review criteria
-- [ ] 72.2 Building a theme as a product vs a client deliverable
-- [ ] 72.3 Scoping and pricing theme work
-- [ ] 72.4 Maintenance contracts and platform-update risk
-- [ ] 72.5 Staying current: changelog, developer previews, editions
-- [ ] 72.6 Career paths: theme specialist, app developer, headless architect, technical lead
+- [x] 72.1 Shopify Theme Store requirements and review criteria
+- [x] 72.2 Building a theme as a product vs a client deliverable
+- [x] 72.3 Scoping and pricing theme work
+- [x] 72.4 Maintenance contracts and platform-update risk
+- [x] 72.5 Staying current: changelog, developer previews, editions
+- [x] 72.6 Career paths: theme specialist, app developer, headless architect, technical lead
 
 ## Labs assigned to this unit
 

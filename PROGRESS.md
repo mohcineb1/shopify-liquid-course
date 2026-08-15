@@ -1599,3 +1599,13 @@ Entry format:
 - verified: course files distinguish targets from outcomes and retain `[VERIFY]` gates for actual tools, stores, permissions, consent, analytics, release and rollback execution; no solution-specific record implementation leaked into learning material.
 - decided: applied final markers and retained route-state evidence, named ownership and explicit fallback/abort decisions as the chapter’s release standard.
 - next: ch-72 lesson.
+## 2026-08-15 · ch-72 · lesson
+- wrote: the professional layer on Theme Store evidence, product/client boundaries, scope risk, platform maintenance, change intake and career responsibility.
+- verified: kept Theme Store eligibility, commercial/legal terms, personal career choices and preview/platform access as `[VERIFY]` decisions rather than recommendations.
+- decided: required source-linked matrices, supported configuration envelopes, dependency registers and inspectable decision records for professional practice.
+- next: ch-72 review.
+## 2026-08-15 · ch-72 · review
+- reviewed: passed Theme Store/review evidence, product-versus-client design, scope/pricing risk, maintenance/change intake and career-path boundaries in order.
+- verified: no personal price, contract, legal, tax, employment, submission or platform-access recommendation was introduced; all concrete business/platform circumstances remain `[VERIFY]`.
+- decided: applied final status and retained source-linked evidence, explicit support boundaries and reconsideration triggers as the professional practice standard.
+- next: app-e lesson.
