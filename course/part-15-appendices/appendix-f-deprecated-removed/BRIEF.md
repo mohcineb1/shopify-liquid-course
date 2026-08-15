@@ -6,7 +6,7 @@ unit: "Appendix F"
 title: "Deprecated & Removed"
 type: reference
 has_exercise: false
-status: todo
+status: final
 ---
 
 # Appendix F — Deprecated & Removed
@@ -15,7 +15,7 @@ status: todo
 
 ## Scope (from the course index — this is the contract)
 
-- [ ] `include`, `checkout.liquid`, script tags, Shopify Scripts, vintage section behaviour, legacy customer accounts — with dates, replacements, and detection tips.
+- [x] `include`, `checkout.liquid`, script tags, Shopify Scripts, vintage section behaviour, legacy customer accounts — with dates, replacements, and detection tips.
 
 ## Labs assigned to this unit
 

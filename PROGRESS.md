@@ -1619,3 +1619,13 @@ Entry format:
 - verified: numeric ceilings trace to the project ledger; all current handle lookup, timeout, entitlement and runtime facts remain `[VERIFY]` rather than inferred.
 - decided: applied final status and retained local-budget plus diagnostic workflow as the safe operational use of fixed platform limits.
 - next: app-f lesson.
+## 2026-08-15 · app-f · lesson
+- wrote: a calibrated deprecation/migration reference covering `include`, checkout, ScriptTags, Scripts, vintage structure and legacy customer accounts.
+- verified: quoted dates/replacements from the current ledger and marked all store/app/account/checkout/consent/entitlement facts `[VERIFY]`.
+- decided: required active-use verification, capability mapping, buyer/editor/operations acceptance and closure review before a deprecation item can close.
+- next: app-f review.
+## 2026-08-15 · app-f · review
+- reviewed: passed `include`, checkout, ScriptTags, Shopify Scripts, vintage-section and legacy-account coverage with verified dates/replacements and detection tips.
+- verified: separated source presence from active store use and retained `[VERIFY]` gates for every store/app/extension/account/consent/release fact.
+- decided: applied final status and required evidence-based, reversible migrations rather than cross-surface theme shims.
+- next: app-g lesson.

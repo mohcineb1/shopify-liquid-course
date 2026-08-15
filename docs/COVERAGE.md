@@ -429,3 +429,8 @@ before writing, so it knows what has already been taught and what it may assume.
 **Introduced terms:** platform ceiling, local budget, dense-editor fixture, composition inventory, limit-failure classification.
 **Assumed known from earlier:** sections/blocks, schema, collections/pagination, structured content, performance evidence and release triage.
 **Deliberately deferred:** current `all_products` quota, runtime timeout, plan-specific quotas, app/API quotas and actual store/tool behavior -> verify current authoritative sources.
+### Appendix F — Deprecated & Removed
+**Taught:** dated migrations for `include`, checkout surfaces, ScriptTags and Shopify Scripts; cautious vintage/account discovery; replacement evidence; and reversible deprecation workflow.
+**Introduced terms:** deprecation inventory, replacement-capability matrix, active-use verification, closure review.
+**Assumed known from earlier:** snippets, checkout/theme boundaries, Functions, accounts, section architecture and release evidence.
+**Deliberately deferred:** real store checkout/account configuration, extensions, app eligibility, consent, customer data, platform permissions and migration outcome -> verify with owners and current sources.

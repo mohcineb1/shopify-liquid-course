@@ -456,3 +456,6 @@ use; never introduce a synonym for something already listed.
 | Local budget | A project-defined threshold below a platform maximum that triggers review before architecture/editor quality degrades. | app-e |
 | Dense-editor fixture | A deliberately content-rich template/group configuration used to test composition, editor and performance boundaries. | app-e |
 | Limit-failure classification | The practice of identifying the exact constrained object before selecting a structural repair. | app-e |
+| Deprecation inventory | A dated record of candidate legacy surfaces, status, owners, source evidence, replacement decision and test/release state. | app-f |
+| Active-use verification | Evidence that a located artifact is actually used in the relevant published/configured environment, not merely present in source history. | app-f |
+| Closure review | A final migration review joining source status, implementation, operations and acceptance evidence before retiring a deprecation item. | app-f |
