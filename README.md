@@ -85,4 +85,6 @@ pandoc book/shopify-liquid-book.md -o book/shopify-liquid.pdf \
   --toc --toc-depth=3 --number-sections --highlight-style=tango
 ```
 
+**Working through the course as a learner? Start with [`STUDY.md`](STUDY.md).**
+
 See `docs/WORKFLOW.md` for the full method and `CLAUDE.md` for the agent contract.

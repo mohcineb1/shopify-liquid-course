@@ -6,8 +6,10 @@
 book/
 
 # shopify cli / theme dev
-playground/.shopify/
-playground/node_modules/
+# playground/ is the learner's live sandbox: pull a real theme in and break it.
+# Everything there is ignored except the README that explains what it is for.
+playground/*
+!playground/README.md
 .shopify/
 node_modules/
 
