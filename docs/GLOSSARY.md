@@ -19,7 +19,7 @@ use; never introduce a synonym for something already listed.
 | Liquid tag | An instruction enclosed in `{% %}` that controls flow, rendering, output, or theme behavior. | app-a |
 | Static section | A section rendered with `{% section %}`; merchants cannot add, remove, or reorder it like a section in a JSON template or section group. | app-a |
 | Snippet | A reusable Liquid file in `snippets/`, rendered with `{% render %}` and isolated from caller-created variables unless they are passed as parameters. | app-a |
-| Liquid filter | A transformation applied with the pipe operator (`|`) to a Liquid value; chained filters receive the preceding filter’s output from left to right. | app-b |
+| Liquid filter | A transformation applied with the pipe operator (`\|`) to a Liquid value; chained filters receive the preceding filter’s output from left to right. | app-b |
 | Context-bound filter | A filter whose valid input depends on a particular Shopify object or rendering context, such as a cart, form, customer, or media object. | app-b |
 | Liquid object | A Shopify-supplied data object available to Liquid in a documented global, template, or local rendering context. | app-c |
 | Template-scoped object | A Liquid object supplied by a particular template or resource context, such as `product` on a product template or `collection` on a collection template. | app-c |

@@ -35,18 +35,18 @@ These cards are designed for printing or keeping beside an editor. They are retr
 
 | Outcome | Common filter/pattern | Contract |
 | --- | --- | --- |
-| Store price | `amount | money` | Store formatting is authoritative. |
-| Currency price | `amount | money_with_currency` | Use only where presentation calls for it. |
-| Image URL | `image | image_url: width: 640` | Source/image presence required. |
-| Image element | `... | image_tag: loading: 'lazy', alt: alt` | Caller owns meaningful alt decision. |
-| Default | `value | default: fallback` | Do not hide meaningful missing data. |
-| Escape | `text | escape` | Use at HTML text/attribute boundary. |
-| URL encode | `value | url_encode` | Apply to intended URL parameter values. |
-| Handle | `text | handleize` | Do not assume generated handle exists. |
-| Strip markup | `html | strip_html` | Presentation transform, not content policy. |
-| Truncate | `text | truncate: 80` | Do not truncate critical meaning. |
-| Metafield HTML | `field | metafield_tag` | Field type and source must be verified. |
-| JSON | `value | json` | Avoid serializing full product/variant data without a scale reason. |
+| Store price | `amount \| money` | Store formatting is authoritative. |
+| Currency price | `amount \| money_with_currency` | Use only where presentation calls for it. |
+| Image URL | `image \| image_url: width: 640` | Source/image presence required. |
+| Image element | `... \| image_tag: loading: 'lazy', alt: alt` | Caller owns meaningful alt decision. |
+| Default | `value \| default: fallback` | Do not hide meaningful missing data. |
+| Escape | `text \| escape` | Use at HTML text/attribute boundary. |
+| URL encode | `value \| url_encode` | Apply to intended URL parameter values. |
+| Handle | `text \| handleize` | Do not assume generated handle exists. |
+| Strip markup | `html \| strip_html` | Presentation transform, not content policy. |
+| Truncate | `text \| truncate: 80` | Do not truncate critical meaning. |
+| Metafield HTML | `field \| metafield_tag` | Field type and source must be verified. |
+| JSON | `value \| json` | Avoid serializing full product/variant data without a scale reason. |
 
 > [VERIFY] Filter availability and output semantics against current Shopify Liquid documentation when a pattern affects a data type not taught in its originating chapter.
 

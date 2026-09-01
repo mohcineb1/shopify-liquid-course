@@ -80,11 +80,11 @@ A plain `for` loop renders at most 50 iterations. That is a rendering limit, not
 
 | Tag | Signature | Canonical example | Important constraint |
 |---|---|---|---|
-| `assign` | `{% assign name = value %}` | `{% assign title = product.title | upcase %}` | Creates a variable; never shadow a Shopify object such as `product` or `cart`. |
-| `capture` | `{% capture name %}…{% endcapture %}` | `{% capture label %}{{ product.title }} — {{ product.price | money }}{% endcapture %}` | Always captures rendered text, not the source value’s original type. |
+| `assign` | `{% assign name = value %}` | `{% assign title = product.title \| upcase %}` | Creates a variable; never shadow a Shopify object such as `product` or `cart`. |
+| `capture` | `{% capture name %}…{% endcapture %}` | `{% capture label %}{{ product.title }} — {{ product.price \| money }}{% endcapture %}` | Always captures rendered text, not the source value’s original type. |
 | `increment` | `{% increment name %}` | `{% increment card_index %}` | First output is `0`; its counter namespace is separate from `assign` and `capture`. |
 | `decrement` | `{% decrement name %}` | `{% decrement countdown %}` | First output is `-1`; it shares its counter with `increment`. |
-| `echo` | `{% echo expression %}` | `{% echo product.title | escape %}` | Outputs from inside a `{% liquid %}` block. |
+| `echo` | `{% echo expression %}` | `{% echo product.title \| escape %}` | Outputs from inside a `{% liquid %}` block. |
 
 `increment` and `decrement` are not general numeric variables. Their state is local to the layout, template, or section that declares them, shared with snippets rendered from that file, and independent of ordinary assigned variables.[3]
 

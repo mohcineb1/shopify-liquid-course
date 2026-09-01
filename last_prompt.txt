@@ -1,0 +1,79 @@
+You are picking up an existing project mid-flight. Read this fully before acting.
+
+REPO: https://github.com/mohcineb1/shopify-liquid-course  (branch: main)
+
+First: clone or pull main, then read CLAUDE.md, docs/WORKFLOW.md and
+docs/CONTENT_CONTRACT.md in full. They are the authoritative contract.
+
+STATE: All 83 units are written and marked final. scripts/next.py reports
+nothing left to generate, and scripts/check.py exits 0. The course builds to
+~186,000 words. DO NOT re-author chapters and DO NOT regenerate anything that
+already exists. The remaining work is cleanup, in the order below.
+
+--------------------------------------------------------------------
+TASK 1 — Remove [VERIFY] contamination  (blocks delivery, do this first)
+--------------------------------------------------------------------
+There are 1,071 [VERIFY] markers across 266 files, and 429 of them survive
+into the built book. Find them with:
+
+    grep -rn "\[VERIFY\]" course/ solutions/ --include=*.md | grep -v /exemple/
+
+Per CLAUDE.md rule 6, [VERIFY] means "I could not confirm this Shopify fact and
+refuse to guess." It is a blockquote flag on its own line, like the two real
+examples in solutions/exemple/. It is NOT a fill-in placeholder.
+
+Most current uses are wrong — they sit inside table cells standing in for
+values the reader supplies, e.g. "[VERIFY] live store, published ID" or
+"Accessibility owner [VERIFY]". Fix each one as follows:
+
+  - Reader-supplied value  -> replace with a real placeholder the reader
+                              understands, e.g. `<your published theme ID>`,
+                              `<your team's accessibility owner>`. Never leave
+                              a [VERIFY] token in a table.
+  - Genuine uncertainty    -> check it against shopify.dev now. If you can
+                              confirm it, state the fact and cite the page. If
+                              you cannot, keep it as a proper blockquote
+                              [VERIFY] flag on its own line, outside tables.
+
+Work through it in batches of about 5 files, committing each batch.
+
+--------------------------------------------------------------------
+TASK 2 — Deepen the 112 files that sit under target
+--------------------------------------------------------------------
+    python3 scripts/check.py
+
+It prints a THIN list: 60 lessons, 32 solutions, 20 exercises that clear the
+floor but sit under 95% of the calibration target (lesson 2,450 words /
+exercise 700 / solution 1,350). Several sit within a few words of the floor,
+which means the pass stopped the moment the check went green.
+
+Chapter 18 is the reference and sits at 102-106% on all three files. Read
+course/part-03-theme-architecture/ch-18-blocks-the-three-kinds/ and its mirror
+in solutions/ before you start, then bring THIN files up by adding real
+teaching -- worked examples, edge cases, failure modes -- never padding.
+
+--------------------------------------------------------------------
+TASK 3 — Rebuild and confirm
+--------------------------------------------------------------------
+    python3 scripts/build_book.py
+    grep -c "\[VERIFY\]" book/shopify-liquid-book.md
+
+Report the final word count and the remaining [VERIFY] count, which should be
+zero or only genuine unresolved flags you can name individually.
+
+--------------------------------------------------------------------
+WORKING RULES — these were broken last time
+--------------------------------------------------------------------
+- ONE logical change per commit. The previous session pushed a single commit
+  of 310 files spanning 18 chapters. Do not batch like that again; it makes
+  review impossible and it destroyed the ordering guarantee that keeps
+  solutions from leaking into lessons.
+- Commit and push to main after each batch. Never a branch, never a PR.
+- scripts/check.py must exit 0 before every commit.
+- Solutions live only in the solutions/ mirror, never in course/.
+- Append one entry to PROGRESS.md per work batch.
+- If you are unsure about a Shopify object, filter or limit, verify it against
+  shopify.dev. Do not guess, and do not paper over it with a [VERIFY] token.
+
+Start with Task 1. Report after the first batch of 5 files so I can check your
+approach before you do the remaining 261.

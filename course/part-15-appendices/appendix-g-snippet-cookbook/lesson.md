@@ -23,7 +23,7 @@ Pass named inputs. Give snippets semantic names and let a component decide wheth
 
 | # | Snippet | Inputs | Contract |
 | ---: | --- | --- | --- |
-| 1 | `money` | `amount` | Prints `amount | money` only when nonblank. |
+| 1 | `money` | `amount` | Prints `amount \| money` only when nonblank. |
 | 2 | `money-with-currency` | `amount` | Uses `money_with_currency`; store formatting remains authoritative. |
 | 3 | `price` | `price`, `compare_at_price` | Renders current/compare price with a sale state only if compare exceeds current. |
 | 4 | `unit-price` | `variant` | Outputs unit-price presentation only when platform data is present `[VERIFY]`. |
