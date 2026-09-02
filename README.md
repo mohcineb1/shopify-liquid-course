@@ -86,5 +86,6 @@ pandoc book/shopify-liquid-book.md -o book/shopify-liquid.pdf \
 ```
 
 **Working through the course as a learner? Start with [`STUDY.md`](STUDY.md).**
+**Shopify CLI reference: [`SHOPIFY-COMMANDS.md`](SHOPIFY-COMMANDS.md).**
 
 See `docs/WORKFLOW.md` for the full method and `CLAUDE.md` for the agent contract.
