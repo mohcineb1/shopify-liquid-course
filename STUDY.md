@@ -2,7 +2,8 @@
 
 You are a working frontend developer. This course takes you from "I know JavaScript and
 CSS" to "I can build and ship a Shopify theme that another developer is happy to
-inherit." It is 83 units — 72 chapters and 10 appendices — with 71 hands-on exercises.
+inherit." It is 83 units — front matter, 72 chapters and 10 appendices — with 71
+hands-on exercises.
 
 Nothing here explains loops, variables, HTTP or CSS layout. It explains Shopify.
 

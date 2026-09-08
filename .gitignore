@@ -5,6 +5,15 @@
 # generated book artifacts
 book/
 
+# assembled prompts — scripts/prompt.py --out writes these. They are derived from
+# prompts/, docs/ and a unit's BRIEF.md, so they go stale the moment a ledger
+# changes. Regenerate, never commit: python scripts/prompt.py ch-22 --kind lesson
+.ch-*-prompt.md
+
+# per-chapter research scratch from an authoring session
+.ch-*-research.md
+.current-research*.md
+
 # shopify cli / theme dev
 # playground/ is the learner's live sandbox: pull a real theme in and break it.
 # Everything there is ignored except the README that explains what it is for.

@@ -24,7 +24,8 @@ solutions/         mirrored tree — NEVER opened while working
     ch-18-blocks-the-three-kinds/
       solution.md
       solution/
-docs/              style guide, content contract, coverage log, glossary, deprecations
+docs/              style guide, content contract, coverage log, glossary, deprecations,
+                   remaining work
 prompts/           the prompt templates the AI author runs on
 scripts/           prompt assembly, status, reveal, book build
 index/             the original course index
@@ -89,3 +90,6 @@ pandoc book/shopify-liquid-book.md -o book/shopify-liquid.pdf \
 **Shopify CLI reference: [`SHOPIFY-COMMANDS.md`](SHOPIFY-COMMANDS.md).**
 
 See `docs/WORKFLOW.md` for the full method and `CLAUDE.md` for the agent contract.
+
+All 83 units are written and final. What is left is correction, not authoring — see
+[`docs/REMAINING_WORK.md`](docs/REMAINING_WORK.md).

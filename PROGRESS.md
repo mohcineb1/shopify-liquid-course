@@ -1679,3 +1679,9 @@ Entry format:
 - verified: front matter neither re-teaches frontend basics nor claims account/store/CLI/auth/headless/app/admin access; all live-platform/project circumstances retain `[VERIFY]` boundaries.
 - decided: applied final status and retained working agreement, discovery pass and evidence/recovery checklist as the course entry standard.
 - next: completion validation; all generated units should now be final.
+## 2026-09-08 · repo · cleanup
+- removed: 89 assembled prompt/research scratch files at the repo root (3.5 MB) that were `scripts/prompt.py --out` artifacts, plus three superseded handoff prompts and the `solutions/exemple/` chapter-18 calibration seed — the last `STATUS: draft` files in the tree.
+- verified: nothing referenced any of them; `check.py` still exits 0 and `next.py` still reports every unit final. The chapter-18 reference implementation named in `CLAUDE.md` is untouched.
+- found: 19 files across 7 units (ch-20, ch-22–ch-27) are written in French and marked `final`. `check.py` counts words without inspecting language, so it never caught this.
+- decided: gitignored the scratch patterns so `--out` cannot re-commit them, and recorded the outstanding `[VERIFY]`, `THIN` and language defects in `docs/REMAINING_WORK.md` rather than leaving them in a loose root prompt file.
+- next: `docs/REMAINING_WORK.md` task 1 — translate the seven French units.
