@@ -46,19 +46,64 @@ non-interactive shell.
 Three commands cover most theme work.
 
 ```bash
+# Run these from the repo root. Inside playground/horizon, drop --path.
+
 # 1. Start a local dev server against your store, with live reload
-shopify theme dev --path playground/dawn --store your-store.myshopify.com
+shopify theme dev --path playground/horizon --store liquid-lab-g2sfvzyn.myshopify.com
 
 # 2. Send local files up to a theme
-shopify theme push --path playground/dawn
+shopify theme push --path playground/horizon
 
 # 3. Bring remote files down (merchant edits happen in the editor, not your editor)
-shopify theme pull --path playground/dawn
+shopify theme pull --path playground/horizon
 ```
 
 `theme dev` uploads your work as a **development theme** — a hidden, temporary theme —
 and prints editor and preview URLs. It is the safe place to work. Nothing you do there
 touches the live storefront.
+
+---
+
+## Working on a duplicate theme
+
+The development theme is temporary: `shopify auth logout` deletes it, and anything you
+set in the theme editor goes with it. The alternative, and the usual way to work on a
+real client store, is to duplicate a theme and point `theme dev` at the copy with
+`--theme`. You still edit locally; `--theme` only changes where the files sync to.
+
+```bash
+# Inside playground/horizon. Duplicate first in the admin:
+# Online Store → Themes → ⋯ → Duplicate, and rename it, e.g. "Liquid Lab Horizon WIP".
+
+# 1. Find the duplicate's ID
+shopify theme list --store liquid-lab-g2sfvzyn.myshopify.com
+
+# 2. Pull it, so local matches remote. git status shows what changed.
+shopify theme pull --theme <id> --store liquid-lab-g2sfvzyn.myshopify.com
+
+# 3. Work against it
+shopify theme dev --theme <id> --store liquid-lab-g2sfvzyn.myshopify.com
+
+# 4. Finished? Publish the duplicate from the admin, or:
+shopify theme publish --theme <id> --store liquid-lab-g2sfvzyn.myshopify.com
+```
+
+**Pull before you dev.** `theme dev --theme <id>` uploads your local files *onto* that
+theme. Skip the pull and your local copy overwrites whatever the duplicate held: the
+live theme's settings, sections and content, which is the reason you duplicated it.
+
+| | `theme dev` | `theme dev --theme <id>` on a duplicate |
+|---|---|---|
+| Syncs to | A hidden development theme | A named theme in your library |
+| Survives `auth logout` | No | Yes |
+| Theme editor settings | Lost with the development theme | Kept on the theme |
+| When finished | Still needs a push somewhere | Already there; publish it |
+| Starts from | Your local files | The live theme's real settings and content |
+
+Add `--theme-editor-sync` if you also customise in the theme editor while `dev` runs,
+so those changes land in your local files instead of being overwritten.
+
+Git in `playground/horizon` stays your history; the duplicate is only where you preview.
 
 ---
 
@@ -94,8 +139,8 @@ Shared by `dev`, `push` and `pull`:
 
 | Flag | Meaning |
 |---|---|
-| `--path=<dir>` | Which directory to act on. Essential here — your theme is in `playground/dawn`, not the repo root |
-| `-s, --store=<value>` | Target store, e.g. `your-store.myshopify.com` |
+| `--path=<dir>` | Which directory to act on. Essential here — your theme is in `playground/horizon`, not the repo root |
+| `-s, --store=<value>` | Target store, e.g. `liquid-lab-g2sfvzyn.myshopify.com` |
 | `-t, --theme=<value>` | Target a theme by ID or name |
 | `-e, --environment=<value>` | Use a named environment from `shopify.theme.toml` |
 | `-o, --only=<pattern>` | Restrict to matching files |
@@ -112,7 +157,9 @@ Shared by `dev`, `push` and `pull`:
 | `--live-reload=<mode>` | Control hot reload behaviour |
 | `--error-overlay=<default\|silent>` | Show or suppress the in-browser error overlay |
 | `--host=<value>` / `--port=<value>` | Bind the local server differently |
-| `--theme-editor-sync=<keep-local\|keep-remote\|abort>` | Decide who wins when a merchant edits the theme in the editor while you are working |
+| `--theme-editor-sync` | Copy changes made in the theme editor back into your local files while you work |
+| `--reconciliation-strategy=<keep-local\|keep-remote\|abort>` | With `--theme-editor-sync`: who wins when local and remote JSON conflict |
+| `--store-password=<value>` | Storefront password, so a password-protected dev store doesn't prompt |
 
 `theme push` also has:
 
@@ -126,7 +173,7 @@ Shared by `dev`, `push` and `pull`:
 
 | Flag | Meaning |
 |---|---|
-| `-u, --clone-url=<url>` | Repo to clone. **Default is Shopify's Skeleton theme, not Dawn** |
+| `-u, --clone-url=<url>` | Repo to clone. **Default is Shopify's Skeleton theme, not Horizon** |
 | `-l, --latest` | Use the latest release of the clone URL |
 
 ---
@@ -173,20 +220,20 @@ shopify doc fetch <path>                 # download a full document verbatim
 
 ## Using this repo
 
-Your theme lives in `playground/dawn`, so nearly every command needs `--path`:
+Your theme lives in `playground/horizon`, so nearly every command needs `--path`:
 
 ```bash
-shopify theme check --path playground/dawn
-shopify theme dev   --path playground/dawn --store your-store.myshopify.com
+shopify theme check --path playground/horizon
+shopify theme dev   --path playground/horizon --store liquid-lab-g2sfvzyn.myshopify.com
 ```
 
-Or `cd playground/dawn` first and drop the flag entirely.
+Or `cd playground/horizon` first and drop the flag entirely.
 
 `playground/` is git-ignored except its README, so nothing you do there can pollute the
 course repo. Break it freely — that is what it is for.
 
-Dawn was cloned with its own `.git` directory. Committing inside `playground/dawn`
-commits to **Dawn's** history, not yours. Delete that `.git` if you want a clean slate.
+Horizon was cloned with its own `.git` directory. Committing inside `playground/horizon`
+commits to **Horizon's** history, not yours. Delete that `.git` if you want a clean slate.
 
 ---
 

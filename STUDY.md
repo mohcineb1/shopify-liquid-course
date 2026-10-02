@@ -17,9 +17,11 @@ not make you competent at Liquid.
 1. **Create a Shopify Partner account and a development store.** Free, no card. The
    development store is where every exercise gets tested.
 2. **Install the Shopify CLI** and confirm `shopify version` runs.
-3. **Pull a reference theme into `playground/`.** Dawn is the standard reference: run
-   `shopify theme pull` inside `playground/`, or clone Dawn there. `playground/` is your
-   live sandbox and is git-ignored — break it freely.
+3. **Pull a reference theme into `playground/`.** The playground uses Horizon:
+   `git clone https://github.com/Shopify/horizon.git playground/horizon`. Chapters that
+   walk through Dawn code can use a Dawn clone next to it
+   (`git clone https://github.com/Shopify/dawn.git playground/dawn`). `playground/` is
+   your live sandbox and is git-ignored — break it freely.
 4. **Read `course/part-00-front-matter/ch-00-front-matter/lesson.md`.** It defines the
    conventions the rest of the book uses. Ten minutes now saves confusion later.
 5. **Skim `docs/DEPRECATIONS.md`.** Every dated platform fact in the course is quoted
