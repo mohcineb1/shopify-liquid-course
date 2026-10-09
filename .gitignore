@@ -14,6 +14,9 @@ book/
 .ch-*-research.md
 .current-research*.md
 
+# personal git / deploy notes for the playground theme — local only
+GIT-WORKFLOW.md
+
 # shopify cli / theme dev
 # playground/ is the learner's live sandbox: pull a real theme in and break it.
 # Everything there is ignored except the README that explains what it is for.
